@@ -1,0 +1,69 @@
+2020_answers_converted.xlsx (CHECKED)   --> 2020_answers.pdf (correct answer A)
+IMAGE-RELATED QUESTIONS: 
+*35 - ssm20203813554
+*36 - ssm20203813604
+*87 - ssm20203816154
+*92 - ssm20203816404
+*112 - ssm20203817404
+*113 - ssm20203817454
+
+----------------------------------
+
+2021_answers_converted.xlsx (CHECKED)   --> 2021_answers.pdf (correct answer A)
+IMAGE-RELATED QUESTIONS: 
+*3 - ssm202110228954
+*33 - ssm202110230454
+*37 - ssm202110230654
+*93 - ssm202110233454
+*115 - ssm202110234554
+*116 - ssm202110234604
+
+-----------------------------------
+
+2022_answers_converted.xlsx (CHECKED)   --> 2022_answers.pdf (correct answer A)
+IMAGE-RELATED QUESTIONS: 
+*13 - ssm2022153
+*83 - ssm2022223
+*84 - ssm2022224
+*85 - ssm2022225
+
+-----------------------------------
+
+2023_answers_converted.xlsx (CHECKED) --> 2023_answers.pdf --> (correct answer A)
+IMAGE-RELATED QUESTIONS: 
+
+
+
+2024_answers_converted.xlsx (CHECKED)   --> 2024_answers.pdf (correct answer A)
+IMAGE-RELATED QUESTIONS: 
+*42 - ssm2023622
+*43 - ssm2023623
+*64 - ssm2023644
+*73 - ssm2023653
+*120 - ssm2023700
+*133 - ssm2023713
+*134 - ssm2023714
+*138 - ssm2023718
+
+
+
+
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+
+
+Key metrics to evaluate:
+1. Time to answer each questions(Avg) + confidence interval
+2. Time to finish a complete exam (Avg) + confidence interval
+3. Accuracy (%): correct answers on total answers (Best, Worst, Avg) + confidence interval
+4. Score: +1 for correct answers, 0 for blank and -0.25 for wrong ones (best, worst, Avg) + confidence interval
+5. Intra-run consistency: instability defined as (1-(freq_max)/50) (Avg)
+
+With statistical analysis we can measure the average quality, reliability and robustness of the models. 
+
+
+Plot
+Boxplot
+Heatmap 
+
+

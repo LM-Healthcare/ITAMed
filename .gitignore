@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.so
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Intermediate/temporary data
+Data/Classified/
+Data/Classified_EN/
+Data/Translated_EN/
+Data/*.xlsx
+Eliminabili/
+
+# Legacy files
+Distribuzione_domande_dataset.xlsx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log

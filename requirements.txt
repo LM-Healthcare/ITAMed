@@ -1,0 +1,11 @@
+# ITAMed Dataset — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# PDF text extraction
+pdfplumber>=0.10
+
+# Excel file handling
+openpyxl>=3.1
+
+# LLM API (required for classification and translation steps only)
+anthropic>=0.42
