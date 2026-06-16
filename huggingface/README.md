@@ -65,7 +65,7 @@ configs:
 # ITAMed: Italian Medical Specialization Exam Dataset (2017–2025)
 
 <p align="center">
-  <a href="https://github.com/Filo-White/ITAMed"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"/></a>
+  <a href="https://github.com/LM-Healthcare/ITAMed"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"/></a>
   <a href="https://huggingface.co/spaces/Filo-White/ITAMed-Explorer"><img src="https://img.shields.io/badge/🤗-Interactive%20Demo-orange" alt="Demo"/></a>
   <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a>
 </p>
@@ -149,7 +149,7 @@ Questions were extracted from the official PDF documents of the Italian National
 4. **Translation** — LLM-based medical translation (Claude claude-opus-4-8, IT→EN)
 5. **Quality Control** — Manual review and validation against official source documents
 
-Full methodology: [DATASET_CONSTRUCTION.md](https://github.com/Filo-White/ITAMed/blob/main/DATASET_CONSTRUCTION.md)
+Full methodology: [DATASET_CONSTRUCTION.md](https://github.com/LM-Healthcare/ITAMed/blob/main/DATASET_CONSTRUCTION.md)
 
 ## Use Cases
 
