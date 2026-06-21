@@ -7,5 +7,10 @@ pdfplumber>=0.10
 # Excel file handling
 openpyxl>=3.1
 
-# LLM API (required for classification and translation steps only)
+# LLM APIs (required for classification and translation steps only)
 anthropic>=0.42
+openai>=1.0
+
+# Data analysis and inter-rater agreement
+pandas>=2.0
+scikit-learn>=1.0

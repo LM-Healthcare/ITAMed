@@ -53,7 +53,9 @@ ITAMed/
 ├── scripts/                           # Reproducible pipeline
 │   ├── extract_ssm_standalone.py      #   PDF → structured data (2020–2025)
 │   ├── extract_ssm_scenario.py        #   PDF → structured data (2017–2019)
-│   ├── classify_questions.py          #   LLM-based specialty classification
+│   ├── classify_questions.py          #   Specialty classification (Claude Opus 4.8)
+│   ├── classify_questions_gpt.py      #   Specialty classification (GPT-5.5)
+│   ├── inter_rater_agreement.py       #   Cohen's κ + contingency table + discordances
 │   └── translate_questions.py         #   LLM-based IT→EN medical translation
 │
 ├── Charts/                            # Distribution visualizations (IT)
@@ -189,11 +191,17 @@ The full pipeline is documented in [`DATASET_CONSTRUCTION.md`](DATASET_CONSTRUCT
 python scripts/extract_ssm_scenario.py     # 2017–2019
 python scripts/extract_ssm_standalone.py   # 2020–2025
 
-# 2. Classify by medical specialty (requires Anthropic API key)
+# 2. Classify by medical specialty (dual-annotator pipeline)
 export ANTHROPIC_API_KEY="sk-ant-..."
-python scripts/classify_questions.py
+python scripts/classify_questions.py         # Claude Opus 4.8
 
-# 3. Translate to English (requires Anthropic API key)
+export OPENAI_API_KEY="sk-..."
+python scripts/classify_questions_gpt.py     # GPT-5.5
+
+# 3. Inter-rater agreement (Cohen's κ, contingency table, discordance list)
+python scripts/inter_rater_agreement.py
+
+# 4. Translate to English (requires Anthropic API key)
 python scripts/translate_questions.py
 ```
 
@@ -203,6 +211,9 @@ python scripts/translate_questions.py
 pdfplumber
 openpyxl
 anthropic>=0.42
+openai>=1.0
+pandas>=2.0
+scikit-learn>=1.0
 ```
 
 ---
