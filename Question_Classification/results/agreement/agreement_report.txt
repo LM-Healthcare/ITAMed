@@ -1,0 +1,74 @@
+======================================================================
+ITAMed — Inter-Rater Agreement Report
+Annotators: Claude Opus 4.8 vs GPT-5.5
+======================================================================
+
+OVERALL STATISTICS
+----------------------------------------
+  Total questions:             1260
+  Primary-category agreement:  1134 / 1260  (90.0%)
+  Exact-match agreement:       880 / 1260  (69.8%)
+  Cohen's Kappa (primary):     0.8950
+
+  Interpretation (Landis & Koch, 1977):
+    < 0.00  Poor
+    0.00–0.20  Slight
+    0.21–0.40  Fair
+    0.41–0.60  Moderate
+    0.61–0.80  Substantial
+    0.81–1.00  Almost perfect
+
+  Number of discordances:      126
+
+
+PER-CATEGORY KAPPA (one-vs-all)
+----------------------------------------
+  Medicina Interna                                    κ = 1.0000
+  Psichiatria                                         κ = 1.0000
+  Oftalmologia                                        κ = 0.9814
+  Ortopedia e Traumatologia                           κ = 0.9579
+  Immunologia e Reumatologia                          κ = 0.9457
+  Neurologia e Neurochirurgia                         κ = 0.9447
+  Ginecologia e Ostetricia                            κ = 0.9440
+  Endocrinologia                                      κ = 0.9411
+  Medicina del Lavoro                                 κ = 0.9367
+  Urologia                                            κ = 0.9330
+  Cardiologia e Cardiochirurgia                       κ = 0.9268
+  Genetica Medica                                     κ = 0.9177
+  Ematologia                                          κ = 0.9167
+  Igiene, Epidemiologia e Statistica                  κ = 0.9165
+  Otorinolaringoiatria                                κ = 0.9103
+  Nutrizione Clinica                                  κ = 0.9087
+  Dermatologia e Venereologia                         κ = 0.9008
+  Pneumologia e Chirurgia Toracica                    κ = 0.9005
+  Gastroenterologia                                   κ = 0.8822
+  Anestesia e Rianimazione                            κ = 0.8775
+  Malattie Infettive                                  κ = 0.8731
+  Medicina Legale                                     κ = 0.8698
+  Nefrologia                                          κ = 0.8643
+  Chirurgia Generale                                  κ = 0.8319
+  Pediatria                                           κ = 0.8142
+  Farmacologia e Tossicologia                         κ = 0.7829
+  Oncologia                                           κ = 0.7184
+  Diagnostica per Immagini e Medicina Nucleare        κ = 0.6951
+
+
+DISCORDANCE SUMMARY BY YEAR
+----------------------------------------
+  2017: 12 discordances
+  2018: 13 discordances
+  2019: 13 discordances
+  2020: 11 discordances
+  2021: 15 discordances
+  2022: 15 discordances
+  2023: 23 discordances
+  2024: 10 discordances
+  2025: 14 discordances
+
+======================================================================
+Files saved in: Data/Agreement/
+  - contingency_table.xlsx
+  - discordances.xlsx
+  - discordances.json
+  - agreement_report.txt
+======================================================================

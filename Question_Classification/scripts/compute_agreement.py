@@ -53,10 +53,11 @@ from sklearn.metrics import cohen_kappa_score, confusion_matrix
 # Configuration
 # ==============================================================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OFFICIAL_DIR = os.path.join(BASE_DIR, "Official", "IT")
-GPT_DIR = os.path.join(BASE_DIR, "Data", "Classified_GPT")
-OUTPUT_DIR = os.path.join(BASE_DIR, "Data", "Agreement")
+QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO_ROOT = os.path.dirname(QC_DIR)
+OFFICIAL_DIR = os.path.join(REPO_ROOT, "Official", "IT")
+GPT_DIR = os.path.join(QC_DIR, "results", "gpt")
+OUTPUT_DIR = os.path.join(QC_DIR, "results", "agreement")
 
 YEARS = list(range(2017, 2026))
 

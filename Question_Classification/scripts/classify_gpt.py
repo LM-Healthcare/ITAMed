@@ -1,34 +1,34 @@
 """
 ==============================================================================
-ITAMed — Medical Specialty Classification Script
+ITAMed — Medical Specialty Classification Script (GPT-5.5)
 ==============================================================================
 
 Purpose:
     Classifies extracted SSM (Specializzazione in Medicina) questions into
-    medical specialties using the Anthropic Claude API.
+    medical specialties using the OpenAI GPT-5.5 API.
 
-    Each question is assigned one or two categories from a standardized
-    taxonomy of 28 Italian medical specialties, based on its clinical
-    content, question stem, and answer options.
+    This script mirrors the logic of classify_questions.py (Claude-based) to
+    enable inter-rater agreement analysis between two independent LLM
+    annotators. Each question is assigned one or two categories from the
+    same standardized taxonomy of 28 Italian medical specialties.
 
 Input:
-    XLSX files in 'Data/' containing extracted questions
-    (output of extract_ssm_standalone.py or extract_ssm_scenario.py).
-    Expected format: columns [Codice Domanda, Domanda, Risposta A–E]
+    Official/IT/ITAMed_{year}_Checked.xlsx files containing the verified
+    questions (columns: Anno, Numero Domanda, Codice Domanda, Domanda,
+    Risposta A–E, Risposta Corretta, Categoria, Immagine, ...).
 
 Output:
-    Classified XLSX files in 'Data/Classified/' with an additional
-    'Categoria' column containing the assigned specialty(ies).
-    Intermediate JSON files are saved for resume support.
+    Classified JSON files in 'Data/Classified_GPT/' with GPT-5.5
+    category assignments, plus consolidated XLSX files.
 
 Requirements:
-    - anthropic>=0.42 (Claude API client)
+    - openai>=1.0 (OpenAI API client)
     - openpyxl (XLSX read/write)
-    - ANTHROPIC_API_KEY environment variable must be set
+    - OPENAI_API_KEY environment variable must be set
 
 Usage:
-    export ANTHROPIC_API_KEY="sk-ant-..."
-    python classify_questions.py
+    export OPENAI_API_KEY="sk-..."
+    python classify_questions_gpt.py
 
 Author: ITAMed Dataset Team
 ==============================================================================
@@ -41,20 +41,20 @@ import time
 from collections import Counter
 
 import openpyxl
-import anthropic
+from openai import OpenAI, RateLimitError
 
 # ==============================================================================
 # Configuration
 # ==============================================================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "Data")
-OUTPUT_DIR = os.path.join(BASE_DIR, "Data", "Classified")
+QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO_ROOT = os.path.dirname(QC_DIR)
+DATA_DIR = os.path.join(REPO_ROOT, "Official", "IT")
+OUTPUT_DIR = os.path.join(QC_DIR, "results", "gpt")
 
-MODEL = "claude-opus-4-8"
+MODEL = "gpt-5.5"
 BATCH_SIZE = 10
 YEARS = list(range(2017, 2026))
-EXPECTED_QUESTIONS = 140
 
 # ==============================================================================
 # Medical Specialty Taxonomy (28 categories)
@@ -94,7 +94,7 @@ CATEGORIES = [
 CATEGORIES_STR = "\n".join(f"{i+1}. {cat}" for i, cat in enumerate(CATEGORIES))
 
 # ==============================================================================
-# LLM Prompt
+# LLM Prompt (identical to Claude version for fair comparison)
 # ==============================================================================
 
 SYSTEM_PROMPT = f"""Sei un esperto medico italiano specializzato nella classificazione di domande dell'esame SSM (Specializzazione in Medicina).
@@ -120,19 +120,20 @@ Rispondi SOLO in formato JSON, un array di oggetti con "id" (numero della domand
 # ==============================================================================
 
 
-def classify_batch(client: anthropic.Anthropic, questions_batch: list, batch_start_idx: int) -> list | None:
+def classify_batch(client: OpenAI, questions_batch: list, batch_start_idx: int) -> list | None:
     """
-    Classify a batch of questions using the Claude API.
+    Classify a batch of questions using the OpenAI GPT-5.5 API.
 
     Args:
-        client: Anthropic API client instance.
-        questions_batch: List of question dicts with keys 'codice', 'domanda', 'A'–'E'.
+        client: OpenAI API client instance.
+        questions_batch: List of question dicts with keys
+                         'codice', 'domanda', 'A'–'E'.
         batch_start_idx: Starting index of this batch (for logging).
 
     Returns:
         List of classification results, or None if all retries failed.
     """
-    
+
     # Format questions for the prompt
     questions_text = ""
     for i, q in enumerate(questions_batch):
@@ -144,7 +145,7 @@ def classify_batch(client: anthropic.Anthropic, questions_batch: list, batch_sta
         questions_text += f"C: {q['C']}\n"
         questions_text += f"D: {q['D']}\n"
         questions_text += f"E: {q['E']}\n"
-    
+
     user_prompt = f"""Classifica le seguenti {len(questions_batch)} domande dell'esame SSM.
 
 {questions_text}
@@ -152,68 +153,77 @@ def classify_batch(client: anthropic.Anthropic, questions_batch: list, batch_sta
 Rispondi con un JSON array. Esempio:
 [{{"id": 1, "categorie": "Cardiologia e Cardiochirurgia"}}, {{"id": 2, "categorie": "Neurologia e Neurochirurgia; Oncologia"}}]
 """
-    
+
     max_retries = 3
     for attempt in range(max_retries):
         try:
-            response = client.messages.create(
+            response = client.chat.completions.create(
                 model=MODEL,
-                max_tokens=2000,
-                system=SYSTEM_PROMPT,
-                messages=[{"role": "user", "content": user_prompt}]
+                max_completion_tokens=2000,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": user_prompt},
+                ],
+                temperature=1,
             )
-            
+
             # Parse response
-            response_text = response.content[0].text.strip()
-            
+            response_text = response.choices[0].message.content.strip()
+
             # Extract JSON from response (handle potential markdown code blocks)
             if "```" in response_text:
                 json_match = response_text.split("```")[1]
                 if json_match.startswith("json"):
                     json_match = json_match[4:]
                 response_text = json_match.strip()
-            
+
             results = json.loads(response_text)
-            
+
             # Validate results
             if len(results) != len(questions_batch):
-                print(f"  WARNING: Expected {len(questions_batch)} results, got {len(results)}. Retrying...")
+                print(f"  WARNING: Expected {len(questions_batch)} results, "
+                      f"got {len(results)}. Retrying...")
                 if attempt < max_retries - 1:
                     time.sleep(2)
                     continue
-            
+
             return results
-            
+
         except json.JSONDecodeError as e:
             print(f"  JSON parse error (attempt {attempt+1}): {e}")
             print(f"  Response: {response_text[:200]}")
             if attempt < max_retries - 1:
                 time.sleep(2)
-        except anthropic.RateLimitError:
-            print(f"  Rate limited. Waiting 30s...")
+        except RateLimitError:
+            print("  Rate limited. Waiting 30s...")
             time.sleep(30)
         except Exception as e:
             print(f"  API error (attempt {attempt+1}): {e}")
             if attempt < max_retries - 1:
                 time.sleep(5)
-    
+
     return None
 
 
 def load_questions(xlsx_path: str) -> list:
-    """Load questions from an XLSX file produced by the extraction scripts."""
+    """
+    Load questions from an Official/IT XLSX file.
+
+    Expected columns: Anno, Numero Domanda, Codice Domanda, Domanda,
+                      Risposta A–E, Risposta Corretta, Categoria, ...
+    """
     wb = openpyxl.load_workbook(xlsx_path)
     ws = wb.active
     questions = []
     for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
         questions.append({
-            'codice': row[0].value,
-            'domanda': row[1].value,
-            'A': row[2].value,
-            'B': row[3].value,
-            'C': row[4].value,
-            'D': row[5].value,
-            'E': row[6].value,
+            "codice": row[2].value,     # Codice Domanda (col C)
+            "domanda": row[3].value,    # Domanda (col D)
+            "A": row[4].value,          # Risposta A
+            "B": row[5].value,          # Risposta B
+            "C": row[6].value,          # Risposta C
+            "D": row[7].value,          # Risposta D
+            "E": row[8].value,          # Risposta E
         })
     return questions
 
@@ -244,94 +254,101 @@ def validate_categories(categories_str: str) -> str:
     return "; ".join(valid)
 
 
-def process_year(year: int, client: anthropic.Anthropic) -> dict | None:
+def process_year(year: int, client: OpenAI) -> dict | None:
     """
-    Process all questions for a given year: load, classify, validate, and save.
+    Process all questions for a given year: load, classify, validate, save.
 
     Supports resuming from intermediate results if the process was interrupted.
 
     Args:
         year: Exam year (2017–2025).
-        client: Anthropic API client instance.
+        client: OpenAI API client instance.
 
     Returns:
-        Dictionary mapping question numbers to categories, or None on failure.
+        Dictionary mapping question codes to GPT categories, or None on failure.
     """
-    xlsx_path = os.path.join(DATA_DIR, f"{year}_answers.xlsx")
-    
+    xlsx_path = os.path.join(DATA_DIR, f"ITAMed_{year}_Checked.xlsx")
+
     if not os.path.exists(xlsx_path):
         print(f"  File not found: {xlsx_path}")
-        return
-    
+        return None
+
     questions = load_questions(xlsx_path)
     print(f"  Loaded {len(questions)} questions")
-    
-    # Check if we have a partial results file (for resuming)
-    results_json_path = os.path.join(OUTPUT_DIR, f"{year}_classifications.json")
+
+    # Check for partial results (resume support)
+    results_json_path = os.path.join(OUTPUT_DIR, f"{year}_classifications_gpt.json")
     existing_results = {}
     if os.path.exists(results_json_path):
-        with open(results_json_path, 'r', encoding='utf-8') as f:
+        with open(results_json_path, "r", encoding="utf-8") as f:
             existing_results = json.load(f)
         print(f"  Resuming from {len(existing_results)} previously classified questions")
-    
+
     # Process in batches
     all_results = existing_results.copy()
-    
+
     for batch_start in range(0, len(questions), BATCH_SIZE):
         batch_end = min(batch_start + BATCH_SIZE, len(questions))
-        
+
         # Check if this batch is already done (1-indexed)
-        batch_keys = [str(i+1) for i in range(batch_start, batch_end)]
+        batch_keys = [str(i + 1) for i in range(batch_start, batch_end)]
         if all(k in all_results for k in batch_keys):
             continue
-        
+
         batch = questions[batch_start:batch_end]
         print(f"  Processing questions {batch_start+1}-{batch_end}...")
-        
+
         results = classify_batch(client, batch, batch_start)
-        
+
         if results:
             for i, result in enumerate(results):
                 q_idx = batch_start + i + 1  # 1-indexed
                 categories = validate_categories(result.get("categorie", ""))
                 all_results[str(q_idx)] = categories
-            
+
             # Save intermediate results
-            with open(results_json_path, 'w', encoding='utf-8') as f:
+            with open(results_json_path, "w", encoding="utf-8") as f:
                 json.dump(all_results, f, ensure_ascii=False, indent=2)
         else:
             print(f"  FAILED to classify batch {batch_start+1}-{batch_end}")
-        
+
         # Rate limiting pause
         time.sleep(1)
-    
-    # Create output xlsx with classifications
-    output_path = os.path.join(OUTPUT_DIR, f"{year}_answers_classified.xlsx")
+
+    # Create output XLSX with GPT classifications
+    output_path = os.path.join(OUTPUT_DIR, f"{year}_answers_classified_gpt.xlsx")
     wb = openpyxl.Workbook()
     ws = wb.active
     ws.title = "SSM_Test"
-    
-    headers = ['Codice Domanda', 'Domanda', 'Risposta A', 'Risposta B', 
-               'Risposta C', 'Risposta D', 'Risposta E', 'Categoria']
+
+    headers = [
+        "Codice Domanda", "Domanda",
+        "Risposta A", "Risposta B", "Risposta C", "Risposta D", "Risposta E",
+        "Categoria GPT",
+    ]
     ws.append(headers)
-    
+
     for i, q in enumerate(questions):
-        category = all_results.get(str(i+1), "NON CLASSIFICATA")  # 1-indexed
-        ws.append([q['codice'], q['domanda'], q['A'], q['B'], q['C'], q['D'], q['E'], category])
-    
+        category = all_results.get(str(i + 1), "NON CLASSIFICATA")
+        ws.append([
+            q["codice"], q["domanda"],
+            q["A"], q["B"], q["C"], q["D"], q["E"],
+            category,
+        ])
+
     wb.save(output_path)
-    print(f"  Saved classified file: {output_path}")
-    
+    print(f"  Saved: {output_path}")
+
     # Summary
     cat_counts = Counter()
     for cat_str in all_results.values():
         for cat in cat_str.split("; "):
             cat_counts[cat.strip()] += 1
-    
+
     print(f"\n  Distribution for {year}:")
     for cat, count in sorted(cat_counts.items(), key=lambda x: -x[1]):
         print(f"    {cat}: {count}")
-    
+
     return all_results
 
 
@@ -343,17 +360,17 @@ def process_year(year: int, client: anthropic.Anthropic) -> dict | None:
 def main():
     """
     Main entry point. Classifies all SSM questions (2017–2025) by medical
-    specialty using the Claude API.
+    specialty using the OpenAI GPT-5.5 API.
     """
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("OPENAI_API_KEY", "")
     if not api_key:
-        print("ERROR: ANTHROPIC_API_KEY environment variable not set.")
-        print("  Linux/macOS: export ANTHROPIC_API_KEY='sk-ant-...'")
-        print("  Windows:     $env:ANTHROPIC_API_KEY = 'sk-ant-...'")
+        print("ERROR: OPENAI_API_KEY environment variable not set.")
+        print("  Linux/macOS: export OPENAI_API_KEY='sk-...'")
+        print("  Windows:     $env:OPENAI_API_KEY = 'sk-...'")
         sys.exit(1)
 
     print("=" * 70)
-    print("ITAMed — Medical Specialty Classification")
+    print("ITAMed — Medical Specialty Classification (GPT-5.5)")
     print("=" * 70)
     print(f"  Model:            {MODEL}")
     print(f"  Input directory:  {DATA_DIR}")
@@ -363,7 +380,7 @@ def main():
     print()
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    client = anthropic.Anthropic(api_key=api_key)
+    client = OpenAI(api_key=api_key)
 
     for year in YEARS:
         print(f"\n{'='*70}")
@@ -372,7 +389,7 @@ def main():
         process_year(year, client)
 
     print(f"\n{'='*70}")
-    print("CLASSIFICATION COMPLETE")
+    print("CLASSIFICATION COMPLETE (GPT-5.5)")
     print(f"Results saved in: {OUTPUT_DIR}")
     print(f"{'='*70}")
 

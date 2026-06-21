@@ -53,10 +53,13 @@ ITAMed/
 ├── scripts/                           # Reproducible pipeline
 │   ├── extract_ssm_standalone.py      #   PDF → structured data (2020–2025)
 │   ├── extract_ssm_scenario.py        #   PDF → structured data (2017–2019)
-│   ├── classify_questions.py          #   Specialty classification (Claude Opus 4.8)
-│   ├── classify_questions_gpt.py      #   Specialty classification (GPT-5.5)
-│   ├── inter_rater_agreement.py       #   Cohen's κ + contingency table + discordances
 │   └── translate_questions.py         #   LLM-based IT→EN medical translation
+│
+├── Question_Classification/           # Dual-annotator classification module
+│   ├── README.md                      #   Full methodology & results (κ=0.8950)
+│   ├── scripts/                       #   Classification & agreement scripts
+│   ├── results/                       #   Claude, GPT, and agreement outputs
+│   └── expert_review/                 #   Expert adjudication workflow
 │
 ├── Charts/                            # Distribution visualizations (IT)
 ├── Charts_EN/                         # Distribution visualizations (EN)
@@ -191,17 +194,20 @@ The full pipeline is documented in [`DATASET_CONSTRUCTION.md`](DATASET_CONSTRUCT
 python scripts/extract_ssm_scenario.py     # 2017–2019
 python scripts/extract_ssm_standalone.py   # 2020–2025
 
-# 2. Classify by medical specialty (dual-annotator pipeline)
+# 2. Classify by medical specialty (dual-annotator, see Question_Classification/)
 export ANTHROPIC_API_KEY="sk-ant-..."
-python scripts/classify_questions.py         # Claude Opus 4.8
+python Question_Classification/scripts/classify_claude.py
 
 export OPENAI_API_KEY="sk-..."
-python scripts/classify_questions_gpt.py     # GPT-5.5
+python Question_Classification/scripts/classify_gpt.py
 
 # 3. Inter-rater agreement (Cohen's κ, contingency table, discordance list)
-python scripts/inter_rater_agreement.py
+python Question_Classification/scripts/compute_agreement.py
 
-# 4. Translate to English (requires Anthropic API key)
+# 4. Expert review → apply adjudicated categories
+python Question_Classification/scripts/apply_expert_review.py
+
+# 5. Translate to English (requires Anthropic API key)
 python scripts/translate_questions.py
 ```
 
