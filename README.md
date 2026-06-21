@@ -44,13 +44,13 @@ ITAMed/
 ├── Dataset/                           # Final dataset (ready to use)
 │   ├── IT/
 │   │   ├── xlsx/                      #   Italian XLSX (per-year + complete)
-│   │   └── json/                      #   Italian JSON (per-year + complete)
+│   │   ├── json/                      #   Italian JSON (per-year + complete)
+│   │   └── ITAMed_Distribution_IT.xlsx #  Category & image distribution (IT)
 │   ├── EN/
 │   │   ├── xlsx/                      #   English XLSX (per-year + complete)
-│   │   └── json/                      #   English JSON (per-year + complete)
-│   ├── images/                        #   Extracted question images by year
-│   ├── ITAMed_Distribution.xlsx       #   Category & image distribution (IT)
-│   └── ITAMed_Distribution_EN.xlsx    #   Category & image distribution (EN)
+│   │   ├── json/                      #   English JSON (per-year + complete)
+│   │   └── ITAMed_Distribution_EN.xlsx #  Category & image distribution (EN)
+│   └── images/                        #   Extracted question images by year
 │
 ├── Data_Extraction/                   # PDF sources & extraction scripts
 │   ├── README.md                      #   Extraction methodology
