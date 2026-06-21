@@ -186,7 +186,6 @@ Questions were extracted from the official PDF documents of the Italian National
 - **2017–2019**: Scenario-based format — questions grouped under shared clinical scenarios
 - **2020–2025**: Standalone format — each question self-contained
 - **All years**: Correct answer always in position A (official release format)
-- **2023**: Unique PDF format (no word spacing, commentary blocks)
 
 ---
 

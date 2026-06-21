@@ -15,7 +15,7 @@ Purpose:
     producing fully self-contained question records.
 
 Input:
-    Official PDF answer documents located in the 'Pdf_Data/' directory.
+    Official PDF answer documents located in the 'pdf_sources/' directory.
     Expected filename format: '{year}_answers.pdf'
     Each PDF contains 140 questions with 5 answer options (A–E).
 

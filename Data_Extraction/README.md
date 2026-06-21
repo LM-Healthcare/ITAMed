@@ -16,7 +16,6 @@ The `pdf_sources/` directory contains the official exam PDFs published by the It
 |:------|:-------|:-------|
 | 2017–2019 | **Scenario-based** — Questions grouped under shared clinical vignettes | `extract_ssm_scenario.py` |
 | 2020–2025 | **Standalone** — Each question is self-contained | `extract_ssm_standalone.py` |
-| 2023 | **Special case** — No word spacing in PDF, commentary blocks mixed with questions | `extract_ssm_standalone.py` (with year-specific handling) |
 
 ---
 

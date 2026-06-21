@@ -142,7 +142,7 @@ domanda nel batch) e "categorie" (stringa con la/le categoria/e).
 ## Input Data
 
 - **Total questions**: 1,260 (140 questions × 9 years: 2017–2025)
-- **Source**: Verified official files (`Official/IT/ITAMed_{year}_Checked.xlsx`)
+- **Source**: Verified dataset files (`Dataset/IT/xlsx/ITAMed_{year}.xlsx`)
 - **Provided to models**: question code, question text, 5 answer options (A–E)
 - **NOT provided**: correct answer, year, images (to avoid classification bias)
 

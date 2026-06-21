@@ -207,7 +207,7 @@ Rispondi con un JSON array. Esempio:
 
 def load_questions(xlsx_path: str) -> list:
     """
-    Load questions from an Official/IT XLSX file.
+    Load questions from a Dataset/IT/xlsx file.
 
     Expected columns: Anno, Numero Domanda, Codice Domanda, Domanda,
                       Risposta A–E, Risposta Corretta, Categoria, ...

@@ -53,11 +53,17 @@ This document describes the end-to-end procedure used to construct the ITAMed da
 A unified taxonomy of **28 medical specialties** was defined by harmonizing the inconsistent category names used across official distribution documents (available for 2020–2024 only). The taxonomy covers all specialties represented in the Italian medical specialization system.
 
 ### Method
-- **Model**: Anthropic Claude (claude-opus-4-8)
-- **Approach**: Batch classification (10 questions per API request)
-- **Prompt design**: The model was instructed to classify each question into exactly one or two categories from the predefined taxonomy, based on the clinical content of the question and answer options.
+- **Dual-annotator protocol**: Two independent LLMs classified all questions
+  - **Annotator 1**: Anthropic Claude (claude-opus-4-8)
+  - **Annotator 2**: OpenAI GPT-5.5
+- **Approach**: Batch classification (10 questions per API request), identical prompt for both models
+- **Prompt design**: Each model was instructed to classify each question into exactly one or two categories from the predefined taxonomy, based on the clinical content of the question and answer options.
+- **Inter-rater agreement**: Cohen's Kappa κ = 0.8950 ("almost perfect", Landis & Koch 1977), 90% primary-category concordance
+- **Expert adjudication**: 126 discordant questions (10%) were reviewed and resolved by medical specialists
 - **Output**: JSON with category assignments for each question.
 - **Validation**: Categories checked against allowed list; fuzzy matching for minor variations; manual review of edge cases.
+
+Full classification methodology and results are documented in [`Question_Classification/README.md`](Question_Classification/README.md).
 
 ### Key decisions
 - Questions clearly spanning two specialties (e.g., a forensic medicine case involving pediatrics) receive both categories, separated by semicolons.
@@ -111,15 +117,19 @@ Each question record contains:
 5. **Image metadata**: presence flag + image category
 
 ### Output formats
-- **XLSX**: One file per year (convenient for manual inspection)
-- **CSV**: Single file with all 1,260 questions (machine-readable, tabular)
-- **JSON**: Single file with all 1,260 questions (structured, API-friendly)
+- **XLSX**: One file per year + one consolidated file (convenient for manual inspection)
+- **JSON**: One file per year + one consolidated file (structured, API-friendly)
 
 ### Folder structure
 ```
-Official/
-├── IT/    (Italian: XLSX per year + CSV + JSON)
-└── EN/    (English: XLSX per year + CSV + JSON)
+Dataset/
+├── IT/
+│   ├── xlsx/    (Italian XLSX: per-year + complete)
+│   └── json/    (Italian JSON: per-year + complete)
+├── EN/
+│   ├── xlsx/    (English XLSX: per-year + complete)
+│   └── json/    (English JSON: per-year + complete)
+└── images/      (Extracted question images by year)
 ```
 
 ---
@@ -139,24 +149,27 @@ Official/
 
 ## 8. Reproducibility
 
-All scripts used in the construction pipeline are available in the `scripts/` directory:
-- `extract_ssm_standalone.py` — Extraction for standalone-format PDFs (2020–2025)
-- `extract_ssm_scenario.py` — Extraction for scenario-based PDFs (2017–2019)
-- `classify_questions.py` — LLM-based specialty classification
-- `translate_questions.py` — LLM-based medical translation (IT→EN)
+Scripts are organized by module:
+- `Data_Extraction/scripts/` — PDF extraction ([README](Data_Extraction/README.md))
+- `Question_Classification/scripts/` — Dual-annotator classification & agreement ([README](Question_Classification/README.md))
+- `scripts/translate_questions.py` — LLM-based medical translation (IT→EN)
 
 To reproduce the full pipeline:
 ```bash
-# 1. Extract questions from PDFs
-python scripts/extract_ssm_scenario.py     # 2017–2019 (scenario-based)
-python scripts/extract_ssm_standalone.py   # 2020–2025 (standalone)
+# 1. Extract questions from PDFs (see Data_Extraction/)
+python Data_Extraction/scripts/extract_ssm_scenario.py     # 2017–2019
+python Data_Extraction/scripts/extract_ssm_standalone.py   # 2020–2025
 
-# 2. Classify by medical specialty (requires Anthropic API key)
+# 2. Classify by medical specialty (see Question_Classification/)
 export ANTHROPIC_API_KEY="sk-ant-..."
-python scripts/classify_questions.py
+python Question_Classification/scripts/classify_claude.py
+export OPENAI_API_KEY="sk-..."
+python Question_Classification/scripts/classify_gpt.py
+python Question_Classification/scripts/compute_agreement.py
+python Question_Classification/scripts/apply_expert_review.py
 
 # 3. Translate to English (requires Anthropic API key)
 python scripts/translate_questions.py
 ```
 
-**Note**: Steps 2 and 3 require an Anthropic API key and incur API costs. The classification and translation outputs are provided in the `Official/` directory for direct use without re-running the pipeline.
+**Note**: Steps 2 and 3 require API keys and incur API costs. The classification and translation outputs are provided in the `Dataset/` directory for direct use without re-running the pipeline.

@@ -9,7 +9,7 @@ Purpose:
     (years 2020–2025).
 
 Input:
-    Official PDF answer documents located in the 'Pdf_Data/' directory.
+    Official PDF answer documents located in the 'pdf_sources/' directory.
     Expected filename format: '{year}_answers.pdf'
     Each PDF contains 140 questions with 5 answer options (A–E).
 
@@ -22,8 +22,6 @@ Output:
 Format Notes:
     - Years 2020–2024 use plain text format (A: ... B: ... C: ... D: ... E: ...)
     - Year 2025 uses checkbox format (☒ A: ... ☐ B: ... etc.)
-    - Year 2023 has a unique layout without word spacing (text runs together)
-      and includes commentary blocks (CC:) after each question
     - The correct answer is ALWAYS option A (as per official released format)
     - This script handles ALL format variations automatically
 
@@ -66,7 +64,7 @@ EXPECTED_QUESTIONS = 140
 # ==============================================================================
 
 # Regex pattern to identify question headers across all format variants.
-# Handles variable spacing (2023 has no spaces between tokens).
+# Handles variable spacing across all format variants.
 QUESTION_HEADER_PATTERN = re.compile(
     r'Domanda\s*(\d+)\s*:\s*\(codice\s*domanda\s*:\s*(ssm\w+)\)'
 )
@@ -98,7 +96,7 @@ def extract_options(block: str) -> tuple:
     Uses a multi-pass strategy to handle different PDF format variants:
       1. Newline-based parsing (standard format: 2020–2022, 2024)
       2. Newline with checkbox markers (2025 format)
-      3. Inline option detection with preprocessing (2023 edge cases)
+      3. Inline option detection with preprocessing (edge cases)
 
     Args:
         block: Raw text between two question headers.
@@ -120,8 +118,8 @@ def extract_options(block: str) -> tuple:
         options = {m.group(1): m.group(2).strip() for m in matches}
         return options, matches[0].start()
 
-    # --- Pass 2: Split-based parsing (for 2023 no-space format) ---
-    # Options start on their own line but text has no word spacing
+    # --- Pass 2: Split-based parsing (fallback for non-standard spacing) ---
+    # Options start on their own line but text may lack word spacing
     opt_line_start = re.compile(r'(?:^|\n)([A-E]):', re.MULTILINE)
     splits = list(opt_line_start.finditer(block))
     if len(splits) >= 5:
@@ -141,7 +139,7 @@ def extract_options(block: str) -> tuple:
                 options[letter] = re.sub(r'\s+', ' ', text).strip()
             return options, first_pos
 
-    # --- Pass 3: Inline option detection (2023 edge cases) ---
+    # --- Pass 3: Inline option detection (edge cases) ---
     # Some options appear inline without a preceding newline (e.g., "...testo B:...")
     # Insert newline before inline [B-E]: that follow lowercase/punctuation
     processed = re.sub(r'([a-zà-ú\)\.0-9])([B-E]:)', r'\1\n\2', block)

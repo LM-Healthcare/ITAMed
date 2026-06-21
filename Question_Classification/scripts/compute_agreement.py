@@ -107,7 +107,7 @@ def get_primary_category(cat_str: str) -> str:
 
 def load_claude_classifications() -> pd.DataFrame:
     """
-    Load Claude classifications from Official/IT XLSX files.
+    Load Claude classifications from Dataset/IT/xlsx files.
 
     Returns:
         DataFrame with columns: year, question_number, question_code,
