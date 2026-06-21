@@ -18,9 +18,9 @@ Purpose:
     exact-match agreement on the full category string.
 
 Input:
-    - Claude classifications: Official/IT/ITAMed_{year}_Checked.xlsx
+    - Claude classifications: Dataset/IT/xlsx/ITAMed_{year}.xlsx
       (column 'Categoria')
-    - GPT classifications: Data/Classified_GPT/{year}_classifications_gpt.json
+    - GPT classifications: Question_Classification/results/gpt/{year}_classifications_gpt.json
 
 Output:
     All outputs are saved to Data/Agreement/:
@@ -55,7 +55,7 @@ from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
 QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.path.dirname(QC_DIR)
-OFFICIAL_DIR = os.path.join(REPO_ROOT, "Official", "IT")
+OFFICIAL_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "xlsx")
 GPT_DIR = os.path.join(QC_DIR, "results", "gpt")
 OUTPUT_DIR = os.path.join(QC_DIR, "results", "agreement")
 
@@ -115,7 +115,7 @@ def load_claude_classifications() -> pd.DataFrame:
     """
     records = []
     for year in YEARS:
-        xlsx_path = os.path.join(OFFICIAL_DIR, f"ITAMed_{year}_Checked.xlsx")
+        xlsx_path = os.path.join(OFFICIAL_DIR, f"ITAMed_{year}.xlsx")
         if not os.path.exists(xlsx_path):
             print(f"  WARNING: Claude file not found: {xlsx_path}")
             continue

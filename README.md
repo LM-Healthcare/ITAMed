@@ -41,25 +41,30 @@ with_images = dataset.filter(lambda x: x["has_image"])
 
 ```
 ITAMed/
-├── Official/                          # Final dataset (ready to use)
-│   ├── IT/                            #   Italian — XLSX per year + complete XLSX/JSON
-│   ├── EN/                            #   English — XLSX per year + complete XLSX/JSON
-│   ├── images/                        #   Extracted question images, organized by year
-│   ├── ITAMed_Distribution.xlsx       #   Category & image distribution tables (IT)
-│   └── ITAMed_Distribution_EN.xlsx    #   Category & image distribution tables (EN)
+├── Dataset/                           # Final dataset (ready to use)
+│   ├── IT/
+│   │   ├── xlsx/                      #   Italian XLSX (per-year + complete)
+│   │   └── json/                      #   Italian JSON (per-year + complete)
+│   ├── EN/
+│   │   ├── xlsx/                      #   English XLSX (per-year + complete)
+│   │   └── json/                      #   English JSON (per-year + complete)
+│   ├── images/                        #   Extracted question images by year
+│   ├── ITAMed_Distribution.xlsx       #   Category & image distribution (IT)
+│   └── ITAMed_Distribution_EN.xlsx    #   Category & image distribution (EN)
 │
-├── Pdf_Data/                          # Source PDFs (official SSM exams)
-│
-├── scripts/                           # Reproducible pipeline
-│   ├── extract_ssm_standalone.py      #   PDF → structured data (2020–2025)
-│   ├── extract_ssm_scenario.py        #   PDF → structured data (2017–2019)
-│   └── translate_questions.py         #   LLM-based IT→EN medical translation
+├── Data_Extraction/                   # PDF sources & extraction scripts
+│   ├── README.md                      #   Extraction methodology
+│   ├── pdf_sources/                   #   Official SSM exam PDFs (2017–2025)
+│   └── scripts/                       #   PDF → structured data extractors
 │
 ├── Question_Classification/           # Dual-annotator classification module
 │   ├── README.md                      #   Full methodology & results (κ=0.8950)
 │   ├── scripts/                       #   Classification & agreement scripts
 │   ├── results/                       #   Claude, GPT, and agreement outputs
 │   └── expert_review/                 #   Expert adjudication workflow
+│
+├── scripts/                           # Translation pipeline
+│   └── translate_questions.py         #   LLM-based IT→EN medical translation
 │
 ├── Charts/                            # Distribution visualizations (IT)
 ├── Charts_EN/                         # Distribution visualizations (EN)
@@ -187,14 +192,14 @@ Questions were extracted from the official PDF documents of the Italian National
 
 ## Reproducibility
 
-The full pipeline is documented in [`DATASET_CONSTRUCTION.md`](DATASET_CONSTRUCTION.md) and all scripts are provided in the `scripts/` directory.
+The full pipeline is documented in [`DATASET_CONSTRUCTION.md`](DATASET_CONSTRUCTION.md). Each module has its own README with detailed methodology.
 
 ```bash
-# 1. Extract questions from official PDFs
-python scripts/extract_ssm_scenario.py     # 2017–2019
-python scripts/extract_ssm_standalone.py   # 2020–2025
+# 1. Extract questions from official PDFs (see Data_Extraction/)
+python Data_Extraction/scripts/extract_ssm_scenario.py     # 2017–2019
+python Data_Extraction/scripts/extract_ssm_standalone.py   # 2020–2025
 
-# 2. Classify by medical specialty (dual-annotator, see Question_Classification/)
+# 2. Classify by medical specialty (see Question_Classification/)
 export ANTHROPIC_API_KEY="sk-ant-..."
 python Question_Classification/scripts/classify_claude.py
 

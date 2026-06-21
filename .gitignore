@@ -26,11 +26,16 @@ env/
 Thumbs.db
 desktop.ini
 
-# Intermediate/temporary data
-Data/Classified/
-Data/Classified_EN/
-Data/Translated_EN/
-Data/*.xlsx
+# Intermediate/working data (not part of the official dataset)
+Data/
+Data_Extraction/output/
+
+# Expert review internal instructions
+Question_Classification/expert_review/instructions.md
+
+# Dataset backups
+Dataset/*/backup_pre_review/
+
 Eliminabili/
 
 # Legacy files

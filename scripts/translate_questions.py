@@ -52,8 +52,8 @@ import anthropic
 # ==============================================================================
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CLASSIFIED_DIR = os.path.join(BASE_DIR, "Data", "Classified")
-OUTPUT_DIR = os.path.join(BASE_DIR, "Data", "Translated_EN")
+CLASSIFIED_DIR = os.path.join(BASE_DIR, "Dataset", "IT", "xlsx")
+OUTPUT_DIR = os.path.join(BASE_DIR, "Dataset", "EN", "xlsx")
 INTERMEDIATE_DIR = os.path.join(OUTPUT_DIR, "intermediate")
 
 MODEL = "claude-opus-4-8"

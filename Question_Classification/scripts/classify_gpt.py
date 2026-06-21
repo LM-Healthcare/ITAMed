@@ -13,7 +13,7 @@ Purpose:
     same standardized taxonomy of 28 Italian medical specialties.
 
 Input:
-    Official/IT/ITAMed_{year}_Checked.xlsx files containing the verified
+    Dataset/IT/xlsx/ITAMed_{year}.xlsx files containing the verified
     questions (columns: Anno, Numero Domanda, Codice Domanda, Domanda,
     Risposta A–E, Risposta Corretta, Categoria, Immagine, ...).
 
@@ -49,7 +49,7 @@ from openai import OpenAI, RateLimitError
 
 QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.path.dirname(QC_DIR)
-DATA_DIR = os.path.join(REPO_ROOT, "Official", "IT")
+DATA_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "xlsx")
 OUTPUT_DIR = os.path.join(QC_DIR, "results", "gpt")
 
 MODEL = "gpt-5.5"
@@ -267,7 +267,7 @@ def process_year(year: int, client: OpenAI) -> dict | None:
     Returns:
         Dictionary mapping question codes to GPT categories, or None on failure.
     """
-    xlsx_path = os.path.join(DATA_DIR, f"ITAMed_{year}_Checked.xlsx")
+    xlsx_path = os.path.join(DATA_DIR, f"ITAMed_{year}.xlsx")
 
     if not os.path.exists(xlsx_path):
         print(f"  File not found: {xlsx_path}")

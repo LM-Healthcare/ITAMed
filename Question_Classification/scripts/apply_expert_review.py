@@ -15,21 +15,21 @@ Purpose:
 Input:
     - Expert review file:
       Question_Classification/expert_review/discordances_to_review.xlsx
-      (column 'CATEGORIA FINALE (compilare)' must be filled for all rows)
+      Column layout: Anno | N. Domanda | Codice | Domanda | Risposta Corretta |
+      Categoria Claude | Categoria GPT | CATEGORIA FINALE 1 (compilare) |
+      CATEGORIA FINALE 2 (compilare) | CATEGORIA FINALE (formula)
 
     - Original dataset files:
-      Official/IT/ITAMed_{year}_Checked.xlsx
-      Official/IT/ITAMed_complete.json
-      Official/IT/ITAMed_complete.xlsx
+      Dataset/IT/xlsx/ITAMed_{year}.xlsx
+      Dataset/IT/json/ITAMed_{year}.json
+      Dataset/IT/xlsx/ITAMed_complete.xlsx
+      Dataset/IT/json/ITAMed_complete.json
 
 Output:
-    Updated versions of:
-      - Official/IT/ITAMed_{year}_Checked.xlsx (per-year files)
-      - Official/IT/ITAMed_complete.json (consolidated JSON)
-      - Official/IT/ITAMed_complete.xlsx (consolidated XLSX)
+    Updated versions of all the above files.
 
     A backup of original files is created in:
-      Official/IT/backup_pre_review/
+      Dataset/IT/backup_pre_review/
 
 Requirements:
     - openpyxl>=3.1
@@ -56,11 +56,13 @@ import pandas as pd
 # ==============================================================================
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-OFFICIAL_DIR = os.path.join(BASE_DIR, "Official", "IT")
+DATASET_IT_DIR = os.path.join(BASE_DIR, "Dataset", "IT")
+XLSX_DIR = os.path.join(DATASET_IT_DIR, "xlsx")
+JSON_DIR = os.path.join(DATASET_IT_DIR, "json")
 REVIEW_FILE = os.path.join(
     BASE_DIR, "Question_Classification", "expert_review", "discordances_to_review.xlsx"
 )
-BACKUP_DIR = os.path.join(OFFICIAL_DIR, "backup_pre_review")
+BACKUP_DIR = os.path.join(DATASET_IT_DIR, "backup_pre_review")
 
 YEARS = list(range(2017, 2026))
 
@@ -84,7 +86,7 @@ def load_expert_decisions() -> dict:
         print(f"ERROR: Review file not found: {REVIEW_FILE}")
         sys.exit(1)
 
-    wb = openpyxl.load_workbook(REVIEW_FILE)
+    wb = openpyxl.load_workbook(REVIEW_FILE, data_only=True)
     ws = wb.active
 
     decisions = {}
@@ -93,7 +95,7 @@ def load_expert_decisions() -> dict:
     for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
         year = row[0].value          # Anno
         q_num = row[1].value         # N. Domanda
-        final_cat = row[11].value    # CATEGORIA FINALE (col L, 0-indexed = 11)
+        final_cat = row[9].value     # CATEGORIA FINALE (col J, 0-indexed = 9)
 
         if not final_cat or str(final_cat).strip() == "":
             missing.append(f"  Year {year}, Question {q_num}")
@@ -114,17 +116,23 @@ def load_expert_decisions() -> dict:
 
 
 def backup_originals():
-    """Create a timestamped backup of all original dataset files."""
+    """Create a backup of all original dataset files before modification."""
     os.makedirs(BACKUP_DIR, exist_ok=True)
 
     files_to_backup = []
-    for year in YEARS:
-        f = os.path.join(OFFICIAL_DIR, f"ITAMed_{year}_Checked.xlsx")
-        if os.path.exists(f):
-            files_to_backup.append(f)
 
-    for f in ["ITAMed_complete.json", "ITAMed_complete.xlsx"]:
-        path = os.path.join(OFFICIAL_DIR, f)
+    # Per-year XLSX and JSON
+    for year in YEARS:
+        for d, pattern in [(XLSX_DIR, f"ITAMed_{year}.xlsx"),
+                           (JSON_DIR, f"ITAMed_{year}.json")]:
+            path = os.path.join(d, pattern)
+            if os.path.exists(path):
+                files_to_backup.append(path)
+
+    # Complete files
+    for d, name in [(XLSX_DIR, "ITAMed_complete.xlsx"),
+                    (JSON_DIR, "ITAMed_complete.json")]:
+        path = os.path.join(d, name)
         if os.path.exists(path):
             files_to_backup.append(path)
 
@@ -148,7 +156,7 @@ def update_yearly_xlsx(decisions: dict) -> int:
     updated = 0
 
     for year in YEARS:
-        xlsx_path = os.path.join(OFFICIAL_DIR, f"ITAMed_{year}_Checked.xlsx")
+        xlsx_path = os.path.join(XLSX_DIR, f"ITAMed_{year}.xlsx")
         if not os.path.exists(xlsx_path):
             continue
 
@@ -162,9 +170,7 @@ def update_yearly_xlsx(decisions: dict) -> int:
             key = (int(row_year), int(q_num))
 
             if key in decisions:
-                old_cat = row[10].value
-                new_cat = decisions[key]
-                row[10].value = new_cat
+                row[10].value = decisions[key]
                 year_updates += 1
                 updated += 1
 
@@ -175,36 +181,59 @@ def update_yearly_xlsx(decisions: dict) -> int:
     return updated
 
 
-def update_complete_json(decisions: dict) -> int:
+def update_json_files(decisions: dict) -> int:
     """
-    Update the consolidated JSON file with expert-adjudicated categories.
+    Update all JSON files (per-year and consolidated) with expert categories.
 
     Args:
         decisions: Dict mapping (year, q_num) -> final_category.
 
     Returns:
-        Number of records updated.
+        Total number of records updated across all files.
     """
-    json_path = os.path.join(OFFICIAL_DIR, "ITAMed_complete.json")
-    if not os.path.exists(json_path):
-        print("  WARNING: ITAMed_complete.json not found, skipping")
-        return 0
+    total_updated = 0
 
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    # Per-year JSON files
+    for year in YEARS:
+        json_path = os.path.join(JSON_DIR, f"ITAMed_{year}.json")
+        if not os.path.exists(json_path):
+            continue
 
-    updated = 0
-    for item in data:
-        key = (int(item["year"]), int(item["question_number"]))
-        if key in decisions:
-            item["category"] = decisions[key]
-            updated += 1
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-    with open(json_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+        year_updates = 0
+        for item in data:
+            key = (int(item["year"]), int(item["question_number"]))
+            if key in decisions:
+                item["category"] = decisions[key]
+                year_updates += 1
 
-    print(f"  ITAMed_complete.json: updated {updated} records")
-    return updated
+        if year_updates > 0:
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"  ITAMed_{year}.json: updated {year_updates} records")
+            total_updated += year_updates
+
+    # Consolidated JSON
+    json_path = os.path.join(JSON_DIR, "ITAMed_complete.json")
+    if os.path.exists(json_path):
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        updated = 0
+        for item in data:
+            key = (int(item["year"]), int(item["question_number"]))
+            if key in decisions:
+                item["category"] = decisions[key]
+                updated += 1
+
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"  ITAMed_complete.json: updated {updated} records")
+        total_updated += updated
+
+    return total_updated
 
 
 def update_complete_xlsx(decisions: dict) -> int:
@@ -217,7 +246,7 @@ def update_complete_xlsx(decisions: dict) -> int:
     Returns:
         Number of cells updated.
     """
-    xlsx_path = os.path.join(OFFICIAL_DIR, "ITAMed_complete.xlsx")
+    xlsx_path = os.path.join(XLSX_DIR, "ITAMed_complete.xlsx")
     if not os.path.exists(xlsx_path):
         print("  WARNING: ITAMed_complete.xlsx not found, skipping")
         return 0
@@ -271,8 +300,8 @@ def main():
     n_yearly = update_yearly_xlsx(decisions)
     print()
 
-    print("Updating consolidated JSON...")
-    n_json = update_complete_json(decisions)
+    print("Updating JSON files (per-year + consolidated)...")
+    n_json = update_json_files(decisions)
     print()
 
     print("Updating consolidated XLSX...")
@@ -284,7 +313,7 @@ def main():
     print("REVIEW APPLIED SUCCESSFULLY")
     print(f"  Total discordances resolved: {len(decisions)}")
     print(f"  Yearly XLSX updates:         {n_yearly}")
-    print(f"  Complete JSON updates:        {n_json}")
+    print(f"  JSON updates (all files):    {n_json}")
     print(f"  Complete XLSX updates:        {n_xlsx}")
     print(f"  Backup location:             {BACKUP_DIR}")
     print("=" * 70)

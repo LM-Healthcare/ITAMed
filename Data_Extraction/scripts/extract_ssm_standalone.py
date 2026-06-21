@@ -51,9 +51,9 @@ import openpyxl
 # Configuration
 # ==============================================================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PDF_DIR = os.path.join(BASE_DIR, "Pdf_Data")
-OUTPUT_DIR = os.path.join(BASE_DIR, "Data")
+EXTRACTION_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PDF_DIR = os.path.join(EXTRACTION_DIR, "pdf_sources")
+OUTPUT_DIR = os.path.join(EXTRACTION_DIR, "output")
 
 # Years to process (standalone format only)
 YEARS = [2020, 2021, 2022, 2023, 2024, 2025]
