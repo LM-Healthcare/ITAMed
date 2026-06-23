@@ -228,7 +228,7 @@ scikit-learn>=1.0
 
 ---
 
-## Related Work
+<!-- ## Related Work
 
 | Project | Description |
 |:--------|:------------|
@@ -236,7 +236,7 @@ scikit-learn>=1.0
 | [AURORA](https://github.com/LM-Healthcare/AURORA) | On-premise clinical assistant for structured remote anamnesis |
 | [LLM_DEMENTIA](https://github.com/LM-Healthcare/LLM_DEMENTIA) | LLM-based dementia diagnosis with incremental clinical evidence |
 
----
+--- -->
 
 ## Citation
 
