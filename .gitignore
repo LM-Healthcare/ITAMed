@@ -56,3 +56,10 @@ Distribuzione_domande_dataset.xlsx
 # various
 ITAMed_repository_Zenodo_checklist.md
 
+# Translation (internal review files)
+gpt55_medical_translation_review_guidelines.md
+Dataset_Translation/ITAMed_complete_EN_translation_TO_CHECK.xlsx
+Dataset_Translation/ITAMed_complete_IT_base_for_translation.xlsx
+Dataset_Translation/scripts/review_translations_gpt.py
+Dataset_Translation/review_progress.json
+

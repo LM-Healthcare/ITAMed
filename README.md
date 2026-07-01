@@ -63,8 +63,9 @@ ITAMed/
 │   ├── results/                       #   Claude, GPT, and agreement outputs
 │   └── expert_review/                 #   Expert adjudication workflow
 │
-├── scripts/                           # Translation pipeline
-│   └── translate_questions.py         #   LLM-based IT→EN medical translation
+├── Dataset_Translation/               # Translation module (IT→EN)
+│   ├── README.md                      #   Translation methodology & review process
+│   └── scripts/                       #   Translation scripts
 │
 ├── Charts/                            # Distribution visualizations (IT)
 ├── Charts_EN/                         # Distribution visualizations (EN)
@@ -211,8 +212,8 @@ python Question_Classification/scripts/compute_agreement.py
 # 4. Expert review → apply adjudicated categories
 python Question_Classification/scripts/apply_expert_review.py
 
-# 5. Translate to English (requires Anthropic API key)
-python scripts/translate_questions.py
+# 5. Translate to English (see Dataset_Translation/)
+python Dataset_Translation/scripts/translate_questions.py
 ```
 
 ### Requirements

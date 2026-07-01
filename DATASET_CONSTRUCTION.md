@@ -152,7 +152,7 @@ Dataset/
 Scripts are organized by module:
 - `Data_Extraction/scripts/` — PDF extraction ([README](Data_Extraction/README.md))
 - `Question_Classification/scripts/` — Dual-annotator classification & agreement ([README](Question_Classification/README.md))
-- `scripts/translate_questions.py` — LLM-based medical translation (IT→EN)
+- `Dataset_Translation/scripts/` — Translation & review ([README](Dataset_Translation/README.md))
 
 To reproduce the full pipeline:
 ```bash
@@ -169,7 +169,7 @@ python Question_Classification/scripts/compute_agreement.py
 python Question_Classification/scripts/apply_expert_review.py
 
 # 3. Translate to English (requires Anthropic API key)
-python scripts/translate_questions.py
+python Dataset_Translation/scripts/translate_questions.py
 ```
 
 **Note**: Steps 2 and 3 require API keys and incur API costs. The classification and translation outputs are provided in the `Dataset/` directory for direct use without re-running the pipeline.
