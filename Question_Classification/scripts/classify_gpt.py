@@ -7,7 +7,7 @@ Purpose:
     Classifies extracted SSM (Specializzazione in Medicina) questions into
     medical specialties using the OpenAI GPT-5.5 API.
 
-    This script mirrors the logic of classify_questions.py (Claude-based) to
+    This script mirrors the logic of classify_claude.py to
     enable inter-rater agreement analysis between two independent LLM
     annotators. Each question is assigned one or two categories from the
     same standardized taxonomy of 28 Italian medical specialties.
@@ -18,8 +18,8 @@ Input:
     Risposta A–E, Risposta Corretta, Categoria, Immagine, ...).
 
 Output:
-    Classified JSON files in 'Data/Classified_GPT/' with GPT-5.5
-    category assignments, plus consolidated XLSX files.
+    Classified JSON files in 'Question_Classification/results/gpt/' with
+    GPT-5.5 category assignments.
 
 Requirements:
     - openai>=1.0 (OpenAI API client)
@@ -28,7 +28,7 @@ Requirements:
 
 Usage:
     export OPENAI_API_KEY="sk-..."
-    python classify_questions_gpt.py
+    python classify_gpt.py
 
 Author: ITAMed Dataset Team
 ==============================================================================

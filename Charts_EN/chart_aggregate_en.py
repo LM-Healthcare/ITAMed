@@ -2,8 +2,9 @@
 Aggregate English charts across all years (2017-2025).
 """
 
+import os
 import sys
-sys.path.insert(0, r"c:\Users\filow\OneDrive\Desktop\Repository\ITAMed\Charts_EN")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import matplotlib.pyplot as plt
 import numpy as np

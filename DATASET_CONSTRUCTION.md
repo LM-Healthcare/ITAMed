@@ -99,6 +99,15 @@ Each image-related question was assigned one of **21 image categories** based on
   - Follow international medical examination conventions (USMLE-style English)
 - **Output**: Complete English versions of all 1,260 questions with all five answer options.
 
+### Expert Review
+- The complete English translation was reviewed by a bilingual medical professional (native Italian, fluent English) with clinical expertise.
+- The reviewer examined all 1,260 questions individually, checking semantic fidelity, medical terminology accuracy, negation/temporality preservation, numerical accuracy, grammar, and terminological consistency.
+- Corrections were recorded in a structured format and applied programmatically to the dataset files via `apply_translation_review.py`.
+- A tracked-changes version of the dataset (`ITAMed_complete_EN_tracked.xlsx`) was generated with modified cells highlighted and original text preserved in cell comments.
+- **Result**: 431 questions received corrections (571 individual field corrections out of 7,560 total fields).
+
+Full translation methodology and review results are documented in [`Dataset_Translation/README.md`](Dataset_Translation/README.md).
+
 ### Quality considerations
 - Medical terminology verified against standard English usage (e.g., "infarto miocardico" → "myocardial infarction", not "heart attack").
 - Clinical abbreviations preserved where standard in both languages.
@@ -142,6 +151,7 @@ Dataset/
 | pdfplumber | latest | PDF text extraction |
 | openpyxl | latest | XLSX read/write |
 | anthropic | 0.42+ | Claude API client |
+| openai | 1.0+ | OpenAI API client |
 | matplotlib | 3.9+ | Visualization |
 | seaborn | 0.13+ | Statistical plots |
 
@@ -170,6 +180,9 @@ python Question_Classification/scripts/apply_expert_review.py
 
 # 3. Translate to English (requires Anthropic API key)
 python Dataset_Translation/scripts/translate_questions.py
+
+# 4. Apply expert translation review
+python Dataset_Translation/scripts/apply_translation_review.py
 ```
 
 **Note**: Steps 2 and 3 require API keys and incur API costs. The classification and translation outputs are provided in the `Dataset/` directory for direct use without re-running the pipeline.

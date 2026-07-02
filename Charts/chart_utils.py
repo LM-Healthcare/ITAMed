@@ -12,9 +12,10 @@ import seaborn as sns
 import numpy as np
 
 # --- Paths ---
-BASE_DIR = r"c:\Users\filow\OneDrive\Desktop\Repository\ITAMed"
-CLASSIFIED_DIR = os.path.join(BASE_DIR, "Data", "Classified")
-CHARTS_OUTPUT_DIR = os.path.join(BASE_DIR, "Charts", "Output")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+DATASET_JSON_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "json")
+CHARTS_OUTPUT_DIR = os.path.join(SCRIPT_DIR, "Output")
 
 # Create output dir
 os.makedirs(CHARTS_OUTPUT_DIR, exist_ok=True)
@@ -107,13 +108,21 @@ YEARS = list(range(2017, 2026))
 
 
 def load_all_classifications():
-    """Load all classification data. Returns dict: {year: {q_num: category_str}}"""
+    """Load all classification data from dataset JSON files.
+    
+    Returns dict: {year: {q_num: category_str}}
+    """
     all_data = {}
     for year in YEARS:
-        json_path = os.path.join(CLASSIFIED_DIR, f"{year}_classifications.json")
+        json_path = os.path.join(DATASET_JSON_DIR, f"ITAMed_{year}.json")
         if os.path.exists(json_path):
             with open(json_path, 'r', encoding='utf-8') as f:
-                all_data[year] = json.load(f)
+                items = json.load(f)
+            year_data = {}
+            for item in items:
+                q_num = str(item["question_number"])
+                year_data[q_num] = item.get("category", "")
+            all_data[year] = year_data
     return all_data
 
 

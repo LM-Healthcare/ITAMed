@@ -23,7 +23,7 @@ Input:
     - GPT classifications: Question_Classification/results/gpt/{year}_classifications_gpt.json
 
 Output:
-    All outputs are saved to Data/Agreement/:
+    All outputs are saved to Question_Classification/results/agreement/:
       - contingency_table.xlsx     — Full N×N contingency matrix
       - agreement_report.txt       — Summary statistics and Kappa values
       - discordances.xlsx          — Questions with disagreeing classifications
@@ -341,7 +341,7 @@ def generate_report(stats: dict, ct: pd.DataFrame, disc: pd.DataFrame) -> str:
     lines += [
         "",
         "=" * 70,
-        "Files saved in: Data/Agreement/",
+        "Files saved in: Question_Classification/results/agreement/",
         "  - contingency_table.xlsx",
         "  - discordances.xlsx",
         "  - discordances.json",
@@ -379,7 +379,7 @@ def main():
 
     if gpt_df.empty:
         print("\nERROR: No GPT classifications found.")
-        print("  Run classify_questions_gpt.py first.")
+        print("  Run classify_gpt.py first.")
         return
 
     # --- Merge ---

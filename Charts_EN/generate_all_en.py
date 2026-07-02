@@ -3,8 +3,9 @@ Master script: generates ALL English charts in one run.
 Output: Charts_EN/Output/
 """
 
+import os
 import sys
-sys.path.insert(0, r"c:\Users\filow\OneDrive\Desktop\Repository\ITAMed\Charts_EN")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 print("=" * 50)
 print("GENERATING ALL SSM CHARTS (ENGLISH)")

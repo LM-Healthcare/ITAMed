@@ -49,7 +49,8 @@ ITAMed/
 │   ├── EN/
 │   │   ├── xlsx/                      #   English XLSX (per-year + complete)
 │   │   ├── json/                      #   English JSON (per-year + complete)
-│   │   └── ITAMed_Distribution_EN.xlsx #  Category & image distribution (EN)
+│   │   ├── ITAMed_Distribution_EN.xlsx #  Category & image distribution (EN)
+│   │   └── ITAMed_complete_EN_tracked.xlsx # Translation corrections (highlighted)
 │   └── images/                        #   Extracted question images by year
 │
 ├── Data_Extraction/                   # PDF sources & extraction scripts
@@ -65,7 +66,8 @@ ITAMed/
 │
 ├── Dataset_Translation/               # Translation module (IT→EN)
 │   ├── README.md                      #   Translation methodology & review process
-│   └── scripts/                       #   Translation scripts
+│   ├── scripts/                       #   Translation & review-application scripts
+│   └── translation_corrections.json   #   Structured log of expert corrections
 │
 ├── Charts/                            # Distribution visualizations (IT)
 ├── Charts_EN/                         # Distribution visualizations (EN)
@@ -214,6 +216,9 @@ python Question_Classification/scripts/apply_expert_review.py
 
 # 5. Translate to English (see Dataset_Translation/)
 python Dataset_Translation/scripts/translate_questions.py
+
+# 6. Apply expert translation review
+python Dataset_Translation/scripts/apply_translation_review.py
 ```
 
 ### Requirements

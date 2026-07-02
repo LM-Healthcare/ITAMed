@@ -14,7 +14,7 @@ Input:
     Each PDF contains 140 questions with 5 answer options (A–E).
 
 Output:
-    One XLSX file per year in 'Data/' with columns:
+    One XLSX file per year in 'Data_Extraction/output/' with columns:
         - Codice Domanda (question code)
         - Domanda (question text)
         - Risposta A through E (answer options A–E)

@@ -15,13 +15,11 @@ Purpose:
     - USMLE-style English conventions
 
 Input:
-    Classified XLSX files in 'Data/Classified/' containing Italian questions
-    with specialty annotations.
-    Expected format: columns [Codice Domanda, Domanda, Risposta A–E,
-                              Categoria, Immagine, Categoria Immagine]
+    Italian XLSX files in 'Dataset/IT/xlsx/' containing classified
+    questions with specialty annotations.
 
 Output:
-    Translated XLSX files in 'Data/Translated_EN/' with English text
+    Translated XLSX files in 'Dataset/EN/xlsx/' with English text
     and translated metadata (category names, image flags).
     Intermediate JSON files are saved for resume support.
 

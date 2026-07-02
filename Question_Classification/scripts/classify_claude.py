@@ -12,13 +12,13 @@ Purpose:
     content, question stem, and answer options.
 
 Input:
-    XLSX files in 'Data/' containing extracted questions
-    (output of extract_ssm_standalone.py or extract_ssm_scenario.py).
-    Expected format: columns [Codice Domanda, Domanda, Risposta A–E]
+    XLSX files in 'Dataset/IT/xlsx/' containing the verified questions
+    (columns: Anno, Numero Domanda, Codice Domanda, Domanda,
+    Risposta A–E, Risposta Corretta, Categoria, Immagine, ...).
 
 Output:
-    Classified XLSX files in 'Data/Classified/' with an additional
-    'Categoria' column containing the assigned specialty(ies).
+    Classified JSON files in 'Question_Classification/results/claude/' with
+    the assigned specialty(ies) for each question.
     Intermediate JSON files are saved for resume support.
 
 Requirements:
@@ -28,7 +28,7 @@ Requirements:
 
 Usage:
     export ANTHROPIC_API_KEY="sk-ant-..."
-    python classify_questions.py
+    python classify_claude.py
 
 Author: ITAMed Dataset Team
 ==============================================================================

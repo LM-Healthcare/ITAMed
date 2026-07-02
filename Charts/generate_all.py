@@ -3,8 +3,9 @@ Master script: generates ALL charts in one run.
 Output: Charts/Output/
 """
 
+import os
 import sys
-sys.path.insert(0, r"c:\Users\filow\OneDrive\Desktop\Repository\ITAMed\Charts")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 print("=" * 50)
 print("GENERATING ALL SSM CHARTS")
