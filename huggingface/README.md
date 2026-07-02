@@ -149,7 +149,7 @@ Questions were extracted from the official PDF documents of the Italian National
 4. **Translation** — LLM-based medical translation (Claude claude-opus-4-8, IT→EN)
 5. **Quality Control** — Manual review and validation against official source documents
 
-Full methodology: [DATASET_CONSTRUCTION.md](https://github.com/LM-Healthcare/ITAMed/blob/main/DATASET_CONSTRUCTION.md)
+Full methodology documented in each module's README: [Data_Extraction](https://github.com/LM-Healthcare/ITAMed/tree/main/Data_Extraction), [Question_Classification](https://github.com/LM-Healthcare/ITAMed/tree/main/Question_Classification), [Dataset_Translation](https://github.com/LM-Healthcare/ITAMed/tree/main/Dataset_Translation)
 
 ## Use Cases
 

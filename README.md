@@ -72,7 +72,6 @@ ITAMed/
 ├── Charts/                            # Distribution visualizations (IT)
 ├── Charts_EN/                         # Distribution visualizations (EN)
 │
-├── DATASET_CONSTRUCTION.md            # Full construction methodology
 └── README.md                          # This file
 ```
 
@@ -194,7 +193,8 @@ Questions were extracted from the official PDF documents of the Italian National
 
 ## Reproducibility
 
-The full pipeline is documented in [`DATASET_CONSTRUCTION.md`](DATASET_CONSTRUCTION.md). Each module has its own README with detailed methodology.
+Each module has its own README with detailed methodology:
+[`Data_Extraction/`](Data_Extraction/README.md) · [`Question_Classification/`](Question_Classification/README.md) · [`Dataset_Translation/`](Dataset_Translation/README.md)
 
 ```bash
 # 1. Extract questions from official PDFs (see Data_Extraction/)
