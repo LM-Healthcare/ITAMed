@@ -42,7 +42,6 @@ Question_Classification/expert_review/ITAMed_complete_to_review_REVIEWER1_EMILIA
 # Dataset backups
 Dataset/*/backup_pre_review/
 Dataset/EN/backup_pre_translation_review/
-Dataset/EN/ITAMed_complete_EN_tracked.xlsx
 
 Eliminabili/
 
@@ -60,9 +59,7 @@ ITAMed_repository_Zenodo_checklist.md
 
 # Translation (internal review files)
 gpt55_medical_translation_review_guidelines.md
-Dataset_Translation/ITAMed_complete_EN_translation_TO_CHECK.xlsx
 Dataset_Translation/ITAMed_complete_IT_base_for_translation.xlsx
 Dataset_Translation/scripts/review_translations_gpt.py
-Dataset_Translation/scripts/apply_translation_review.py
 Dataset_Translation/review_progress.json
 
