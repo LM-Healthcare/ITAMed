@@ -2,7 +2,7 @@
 
 ## Overview
 
-All 1,260 questions in the ITAMed dataset were classified into medical specialties using a **dual-annotator LLM protocol** followed by **expert adjudication** of disagreements. This approach ensures reproducibility, transparency, and scientific rigor in the specialty taxonomy assignment.
+All 1,260 questions in the ITAMed dataset were classified into medical specialties using a **dual-annotator LLM protocol** followed by **independent expert adjudication** of disagreements by two medical specialists. This approach ensures reproducibility, transparency, and scientific rigor in the specialty taxonomy assignment.
 
 ---
 
@@ -27,7 +27,16 @@ All 1,260 questions in the ITAMed dataset were classified into medical specialti
            │                       │
            ▼                       ▼
     Category confirmed      Expert Adjudication
-                            (Medical specialists)
+                       ┌────────────┴────────────┐
+                       │                         │
+                  Reviewer 1               Reviewer 2
+                 (independent)            (independent)
+                       │                         │
+                       └────────────┬────────────┘
+                                    │
+                                    ▼
+                       Inter-Reviewer Agreement
+                        (Cohen's κ + resolution)
                                     │
                                     ▼
                             Final category
@@ -228,13 +237,30 @@ Year 2023 shows a slightly higher discordance rate, likely due to its atypical P
 
 ## Expert Adjudication Process
 
-The 126 discordant questions were reviewed by domain experts (medical specialists) who independently adjudicated each disagreement. For each discordant question, the reviewers received:
+The 126 discordant questions were reviewed by **two independent medical specialists** (Reviewer 1 and Reviewer 2). Each reviewer worked **separately and independently**, without access to the other's decisions.
+
+For each discordant question, each reviewer received:
 
 - The full question text and all five answer options
 - The category assigned by Claude Opus 4.8
 - The category assigned by GPT-5.5
 
-The reviewers then selected the correct classification (or proposed a third option if neither was adequate). Their decisions were applied back to the official dataset using the `apply_expert_review.py` script, which automatically propagates changes to all dataset files with a backup of the originals.
+Each reviewer independently selected the correct classification (or proposed a third option if neither LLM assignment was adequate).
+
+### Inter-Reviewer Agreement
+
+After both reviewers completed their independent review, their decisions were compared to compute inter-reviewer agreement:
+
+| Metric | Value |
+|:-------|------:|
+| Total discordances reviewed | 126 |
+| Reviewer agreement | _TBD_ |
+| **Cohen's Kappa (reviewers)** | **κ = _TBD_** |
+| Cases requiring resolution | _TBD_ |
+
+_This section will be updated once both reviewers have submitted their decisions._
+
+The final adjudicated categories were applied back to the official dataset using the `apply_expert_review.py` script, which automatically propagates changes to all dataset files with a backup of the originals.
 
 ---
 
@@ -303,9 +329,10 @@ The dual-annotator LLM protocol follows established best practices for annotated
 1. **Independence** — The two models classify without knowledge of each other's output
 2. **Identical prompt** — Ensures fairness in the comparison
 3. **Cohen's Kappa** — Standard inter-annotator agreement metric that corrects for chance
-4. **Expert adjudication** — Disagreements are resolved by domain professionals (medical specialists), not by the algorithm
+4. **Expert adjudication** — Disagreements are resolved by two independent medical specialists, not by the algorithm
+5. **Inter-reviewer agreement** — The two reviewers' decisions are compared for consistency before final resolution
 
 This approach is more robust than single-model classification because it:
 - Identifies ambiguous or boundary questions between specialties
 - Provides a quantitative measure of taxonomy reliability
-- Ensures every contested assignment is validated by a human expert
+- Ensures every contested assignment is validated independently by two human experts
