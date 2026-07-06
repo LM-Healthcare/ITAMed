@@ -23,7 +23,7 @@ All 1,260 questions in the ITAMed dataset were classified into medical specialti
            ┌───────────┴───────────┐
            │                       │
       Concordant              Discordant
-     (1,134 questions)       (126 questions)
+      (880 questions)        (380 questions)
            │                       │
            ▼                       ▼
     Category confirmed      Expert Adjudication
@@ -164,10 +164,10 @@ domanda nel batch) e "categorie" (stringa con la/le categoria/e).
 | Metric | Value |
 |:-------|------:|
 | Total questions | 1,260 |
-| Primary-category agreement | 1,134 / 1,260 (**90.0%**) |
+| Primary-category agreement | 1,134 / 1,260 (90.0%) |
 | Exact-match agreement (full string) | 880 / 1,260 (69.8%) |
 | **Cohen's Kappa (primary category)** | **κ = 0.8950** |
-| Discordances | 126 |
+| **Total discordances (exact-match)** | **380** |
 
 ### Interpretation (Landis & Koch, 1977)
 
@@ -217,19 +217,19 @@ The value **κ = 0.8950** indicates **almost perfect agreement** between the two
 
 All categories reach at least "substantial" agreement (κ > 0.60).
 
-### Discordances by Year
+### Discordances by Year (exact-match)
 
 | Year | Discordances | % |
 |:-----|:-----------:|:---:|
-| 2017 | 12 | 8.6% |
-| 2018 | 13 | 9.3% |
-| 2019 | 13 | 9.3% |
-| 2020 | 11 | 7.9% |
-| 2021 | 15 | 10.7% |
-| 2022 | 15 | 10.7% |
-| 2023 | 23 | 16.4% |
-| 2024 | 10 | 7.1% |
-| 2025 | 14 | 10.0% |
+| 2017 | 39 | 27.9% |
+| 2018 | 43 | 30.7% |
+| 2019 | 43 | 30.7% |
+| 2020 | 40 | 28.6% |
+| 2021 | 42 | 30.0% |
+| 2022 | 44 | 31.4% |
+| 2023 | 51 | 36.4% |
+| 2024 | 32 | 22.9% |
+| 2025 | 46 | 32.9% |
 
 Year 2023 shows a slightly higher discordance rate, likely due to its atypical PDF format.
 
@@ -237,7 +237,7 @@ Year 2023 shows a slightly higher discordance rate, likely due to its atypical P
 
 ## Expert Adjudication Process
 
-The 126 discordant questions were reviewed by **two independent medical specialists** (Reviewer 1 and Reviewer 2). Each reviewer worked **separately and independently**, without access to the other's decisions.
+All **380 questions with any classification disagreement** (primary and/or secondary category) were reviewed by **two independent medical specialists** (Reviewer 1 and Reviewer 2). Each reviewer worked **separately and independently**, without access to the other's decisions.
 
 For each discordant question, each reviewer received:
 
@@ -253,7 +253,7 @@ After both reviewers completed their independent review, their decisions were co
 
 | Metric | Value |
 |:-------|------:|
-| Total discordances reviewed | 126 |
+| Total discordances reviewed | 380 |
 | Reviewer agreement | _TBD_ |
 | **Cohen's Kappa (reviewers)** | **κ = _TBD_** |
 | Cases requiring resolution | _TBD_ |

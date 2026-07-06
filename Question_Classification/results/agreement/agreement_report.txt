@@ -18,7 +18,8 @@ OVERALL STATISTICS
     0.61–0.80  Substantial
     0.81–1.00  Almost perfect
 
-  Number of discordances:      126
+  Number of discordances (primary):  126
+  Number of discordances (exact):    380
 
 
 PER-CATEGORY KAPPA (one-vs-all)
@@ -53,20 +54,20 @@ PER-CATEGORY KAPPA (one-vs-all)
   Diagnostica per Immagini e Medicina Nucleare        κ = 0.6951
 
 
-DISCORDANCE SUMMARY BY YEAR
+DISCORDANCE SUMMARY BY YEAR (exact-match)
 ----------------------------------------
-  2017: 12 discordances
-  2018: 13 discordances
-  2019: 13 discordances
-  2020: 11 discordances
-  2021: 15 discordances
-  2022: 15 discordances
-  2023: 23 discordances
-  2024: 10 discordances
-  2025: 14 discordances
+  2017: 39 discordances
+  2018: 43 discordances
+  2019: 43 discordances
+  2020: 40 discordances
+  2021: 42 discordances
+  2022: 44 discordances
+  2023: 51 discordances
+  2024: 32 discordances
+  2025: 46 discordances
 
 ======================================================================
-Files saved in: Data/Agreement/
+Files saved in: Question_Classification/results/agreement/
   - contingency_table.xlsx
   - discordances.xlsx
   - discordances.json
