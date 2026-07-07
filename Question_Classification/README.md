@@ -131,11 +131,6 @@ Each question is presented to the model in the following format:
 --- Domanda N ---
 Codice: ssmYYYYXX
 Testo: [question text]
-A: [option A]
-B: [option B]
-C: [option C]
-D: [option D]
-E: [option E]
 Risposta Corretta: [correct answer text]
 ```
 
@@ -166,8 +161,8 @@ Risposta Corretta: [correct answer text]
 
 - **Total questions**: 1,260 (140 questions × 9 years: 2017–2025)
 - **Source**: Verified dataset files (`Dataset/IT/xlsx/ITAMed_{year}.xlsx`)
-- **Provided to models**: question code, question text, 5 answer options (A–E), correct answer
-- **NOT provided**: year, images (to avoid classification bias)
+- **Provided to models**: question code, question text, correct answer (always option A)
+- **NOT provided**: incorrect answer options (B–E), year, images (to avoid classification bias)
 
 ---
 

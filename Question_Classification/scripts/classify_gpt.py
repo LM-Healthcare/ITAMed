@@ -127,7 +127,7 @@ def classify_batch(client: OpenAI, questions_batch: list, batch_start_idx: int) 
     Args:
         client: OpenAI API client instance.
         questions_batch: List of question dicts with keys
-                         'codice', 'domanda', 'A'–'E', 'corretta'.
+                         'codice', 'domanda', 'corretta'.
         batch_start_idx: Starting index of this batch (for logging).
 
     Returns:
@@ -140,11 +140,6 @@ def classify_batch(client: OpenAI, questions_batch: list, batch_start_idx: int) 
         questions_text += f"\n--- Domanda {i+1} ---\n"
         questions_text += f"Codice: {q['codice']}\n"
         questions_text += f"Testo: {q['domanda']}\n"
-        questions_text += f"A: {q['A']}\n"
-        questions_text += f"B: {q['B']}\n"
-        questions_text += f"C: {q['C']}\n"
-        questions_text += f"D: {q['D']}\n"
-        questions_text += f"E: {q['E']}\n"
         questions_text += f"Risposta Corretta: {q['corretta']}\n"
 
     user_prompt = f"""Classifica le seguenti {len(questions_batch)} domande dell'esame SSM.
@@ -220,12 +215,7 @@ def load_questions(xlsx_path: str) -> list:
         questions.append({
             "codice": row[2].value,     # Codice Domanda (col C)
             "domanda": row[3].value,    # Domanda (col D)
-            "A": row[4].value,          # Risposta A
-            "B": row[5].value,          # Risposta B
-            "C": row[6].value,          # Risposta C
-            "D": row[7].value,          # Risposta D
-            "E": row[8].value,          # Risposta E
-            "corretta": row[9].value,   # Risposta Corretta
+            "corretta": row[4].value,   # Risposta Corretta (always A)
         })
     return questions
 
@@ -323,20 +313,12 @@ def process_year(year: int, client: OpenAI) -> dict | None:
     ws = wb.active
     ws.title = "SSM_Test"
 
-    headers = [
-        "Codice Domanda", "Domanda",
-        "Risposta A", "Risposta B", "Risposta C", "Risposta D", "Risposta E",
-        "Categoria GPT",
-    ]
+    headers = ["Codice Domanda", "Domanda", "Risposta Corretta", "Categoria GPT"]
     ws.append(headers)
 
     for i, q in enumerate(questions):
         category = all_results.get(str(i + 1), "NON CLASSIFICATA")
-        ws.append([
-            q["codice"], q["domanda"],
-            q["A"], q["B"], q["C"], q["D"], q["E"],
-            category,
-        ])
+        ws.append([q["codice"], q["domanda"], q["corretta"], category])
 
     wb.save(output_path)
     print(f"  Saved: {output_path}")
