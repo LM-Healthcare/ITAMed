@@ -66,3 +66,6 @@ Dataset_Translation/review_progress.json
 # Demo app (managed separately)
 demo/
 
+#README Zenodo
+README_ZENODO.md
+
