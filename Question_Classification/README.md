@@ -125,6 +125,20 @@ Rispondi SOLO in formato JSON, un array di oggetti con "id" (numero della
 domanda nel batch) e "categorie" (stringa con la/le categoria/e).
 ```
 
+Each question is presented to the model in the following format:
+
+```
+--- Domanda N ---
+Codice: ssmYYYYXX
+Testo: [question text]
+A: [option A]
+B: [option B]
+C: [option C]
+D: [option D]
+E: [option E]
+Risposta Corretta: [correct answer text]
+```
+
 **Translation of the rules** (for reference):
 1. Assign the most appropriate PRIMARY category for each question.
 2. If clearly multidisciplinary, assign up to 2 categories (semicolon-separated).
@@ -152,8 +166,8 @@ domanda nel batch) e "categorie" (stringa con la/le categoria/e).
 
 - **Total questions**: 1,260 (140 questions × 9 years: 2017–2025)
 - **Source**: Verified dataset files (`Dataset/IT/xlsx/ITAMed_{year}.xlsx`)
-- **Provided to models**: question code, question text, 5 answer options (A–E)
-- **NOT provided**: correct answer, year, images (to avoid classification bias)
+- **Provided to models**: question code, question text, 5 answer options (A–E), correct answer
+- **NOT provided**: year, images (to avoid classification bias)
 
 ---
 

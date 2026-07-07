@@ -49,7 +49,7 @@ import anthropic
 
 QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.path.dirname(QC_DIR)
-DATA_DIR = os.path.join(REPO_ROOT, "Data")
+DATA_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "xlsx")
 OUTPUT_DIR = os.path.join(QC_DIR, "results", "claude")
 
 MODEL = "claude-opus-4-8"
@@ -127,7 +127,7 @@ def classify_batch(client: anthropic.Anthropic, questions_batch: list, batch_sta
 
     Args:
         client: Anthropic API client instance.
-        questions_batch: List of question dicts with keys 'codice', 'domanda', 'A'–'E'.
+        questions_batch: List of question dicts with keys 'codice', 'domanda', 'A'–'E', 'corretta'.
         batch_start_idx: Starting index of this batch (for logging).
 
     Returns:
@@ -145,6 +145,7 @@ def classify_batch(client: anthropic.Anthropic, questions_batch: list, batch_sta
         questions_text += f"C: {q['C']}\n"
         questions_text += f"D: {q['D']}\n"
         questions_text += f"E: {q['E']}\n"
+        questions_text += f"Risposta Corretta: {q['corretta']}\n"
     
     user_prompt = f"""Classifica le seguenti {len(questions_batch)} domande dell'esame SSM.
 
@@ -208,13 +209,14 @@ def load_questions(xlsx_path: str) -> list:
     questions = []
     for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
         questions.append({
-            'codice': row[0].value,
-            'domanda': row[1].value,
-            'A': row[2].value,
-            'B': row[3].value,
-            'C': row[4].value,
-            'D': row[5].value,
-            'E': row[6].value,
+            'codice': row[2].value,     # Codice Domanda (col C)
+            'domanda': row[3].value,    # Domanda (col D)
+            'A': row[4].value,          # Risposta A
+            'B': row[5].value,          # Risposta B
+            'C': row[6].value,          # Risposta C
+            'D': row[7].value,          # Risposta D
+            'E': row[8].value,          # Risposta E
+            'corretta': row[9].value,   # Risposta Corretta
         })
     return questions
 
@@ -258,7 +260,7 @@ def process_year(year: int, client: anthropic.Anthropic) -> dict | None:
     Returns:
         Dictionary mapping question numbers to categories, or None on failure.
     """
-    xlsx_path = os.path.join(DATA_DIR, f"{year}_answers.xlsx")
+    xlsx_path = os.path.join(DATA_DIR, f"ITAMed_{year}.xlsx")
     
     if not os.path.exists(xlsx_path):
         print(f"  File not found: {xlsx_path}")

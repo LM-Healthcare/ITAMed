@@ -127,7 +127,7 @@ def classify_batch(client: OpenAI, questions_batch: list, batch_start_idx: int) 
     Args:
         client: OpenAI API client instance.
         questions_batch: List of question dicts with keys
-                         'codice', 'domanda', 'A'–'E'.
+                         'codice', 'domanda', 'A'–'E', 'corretta'.
         batch_start_idx: Starting index of this batch (for logging).
 
     Returns:
@@ -145,6 +145,7 @@ def classify_batch(client: OpenAI, questions_batch: list, batch_start_idx: int) 
         questions_text += f"C: {q['C']}\n"
         questions_text += f"D: {q['D']}\n"
         questions_text += f"E: {q['E']}\n"
+        questions_text += f"Risposta Corretta: {q['corretta']}\n"
 
     user_prompt = f"""Classifica le seguenti {len(questions_batch)} domande dell'esame SSM.
 
@@ -224,6 +225,7 @@ def load_questions(xlsx_path: str) -> list:
             "C": row[6].value,          # Risposta C
             "D": row[7].value,          # Risposta D
             "E": row[8].value,          # Risposta E
+            "corretta": row[9].value,   # Risposta Corretta
         })
     return questions
 
