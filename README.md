@@ -4,6 +4,7 @@
     <strong>Italian Medical Specialization Exam Dataset (2017–2025)</strong>
   </p>
   <p align="center">
+    <a href="https://huggingface.co/datasets/Filo-White/ITAMed"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow" alt="HuggingFace Dataset"/></a>
     <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a>
     <a href="#license"><img src="https://img.shields.io/badge/License-TBD-lightgrey" alt="License"/></a>
   </p>
@@ -19,6 +20,19 @@ Every question is enriched with:
 - **Medical specialty classification** across a standardized taxonomy of 28 categories
 - **Image metadata** — presence flag, image type (21 categories), and file path to the extracted image
 - **Bilingual text** — original Italian + English translation produced by Claude (claude-opus-4-8)
+
+### Quick Start
+
+```python
+# Via HuggingFace
+from datasets import load_dataset
+
+dataset = load_dataset("Filo-White/ITAMed", split="train")
+
+# Filter by year, specialty, or image presence
+cardiology = dataset.filter(lambda x: "Cardiology" in x["category"])
+with_images = dataset.filter(lambda x: x["has_image"])
+```
 
 ---
 
@@ -254,3 +268,4 @@ If you use this dataset, please cite:
 ## Contact
 
 - **GitHub**: [@Filo-White](https://github.com/Filo-White)
+- **HuggingFace**: [Filo-White](https://huggingface.co/Filo-White)

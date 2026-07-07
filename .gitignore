@@ -63,7 +63,6 @@ Dataset_Translation/ITAMed_complete_IT_base_for_translation.xlsx
 Dataset_Translation/scripts/review_translations_gpt.py
 Dataset_Translation/review_progress.json
 
-# HuggingFace and demo (managed separately)
-huggingface/
+# Demo app (managed separately)
 demo/
 
