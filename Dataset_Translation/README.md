@@ -31,7 +31,7 @@ The complete English translation was reviewed by a bilingual medical professiona
 - **Grammar and fluency** — Grammatical correctness while maintaining a neutral, professional medical register
 - **Terminological consistency** — Consistent use of medical terms across the entire dataset
 
-Where corrections were needed, the revised text was recorded in the designated columns of the review file alongside a brief note describing the change. Questions with accurate translations were left unchanged.
+Where corrections were needed, the revised text was recorded in the designated columns of the review file. Questions with accurate translations were left unchanged.
 
 ### Step 3 — Applying Corrections to the Dataset
 
@@ -65,7 +65,7 @@ This process is fully automated by the `apply_translation_review.py` script.
 
 | File | Description |
 |:-----|:------------|
-| `ITAMed_complete_EN_translation_TO_CHECK.xlsx` | English translation with review columns: corrected text (where applicable) and reviewer notes |
+| `ITAMed_complete_EN_translation_TO_CHECK.xlsx` | English translation with review columns: corrected text (where applicable) |
 | `translation_corrections.json` | Structured log of all corrections extracted from the reviewed file |
 
 ### Review Columns in the XLSX File
@@ -75,7 +75,6 @@ This process is fully automated by the `apply_translation_review.py` script.
 | A–I | Original English translation (Year, Question Number, Code, Question, Answers A–E) |
 | J | Question checked — revised question text (blank if no change needed) |
 | K–O | Answer A–E checked — revised answer text (blank if no change needed) |
-| P | Additional comment — brief note on what was corrected |
 
 ---
 
