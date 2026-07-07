@@ -6,7 +6,7 @@
   <p align="center">
     <a href="https://huggingface.co/datasets/Filo-White/ITAMed"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow" alt="HuggingFace Dataset"/></a>
     <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a>
-    <a href="#license"><img src="https://img.shields.io/badge/License-TBD-lightgrey" alt="License"/></a>
+    <a href="#license"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-green" alt="License: CC BY 4.0"/></a>
   </p>
 </p>
 
@@ -40,43 +40,45 @@ with_images = dataset.filter(lambda x: x["has_image"])
 
 ```
 ITAMed/
-├── Dataset/                           # Final dataset (ready to use)
+├── Dataset/                              # Final dataset (ready to use)
 │   ├── IT/
-│   │   ├── xlsx/                      #   Italian XLSX (per-year + complete)
-│   │   ├── json/                      #   Italian JSON (per-year + complete)
-│   │   └── ITAMed_Distribution_IT.xlsx #  Category & image distribution (IT)
+│   │   ├── xlsx/                         #   Italian XLSX (per-year + complete)
+│   │   ├── json/                         #   Italian JSON (per-year + complete)
+│   │   └── ITAMed_Distribution_IT.xlsx   #   Category & image distribution (IT)
 │   ├── EN/
-│   │   ├── xlsx/                      #   English XLSX (per-year + complete)
-│   │   ├── json/                      #   English JSON (per-year + complete)
-│   │   ├── ITAMed_Distribution_EN.xlsx #  Category & image distribution (EN)
-│   │   └── ITAMed_complete_EN_tracked.xlsx # Translation corrections (highlighted)
-│   └── images/                        #   Extracted question images by year
+│   │   ├── xlsx/                         #   English XLSX (per-year + complete)
+│   │   ├── json/                         #   English JSON (per-year + complete)
+│   │   └── ITAMed_Distribution_EN.xlsx   #   Category & image distribution (EN)
+│   └── images/                           #   Extracted question images by year
 │
-├── Data_Extraction/                   # PDF sources & extraction scripts
-│   ├── README.md                      #   Extraction methodology
-│   ├── pdf_sources/                   #   Official SSM exam PDFs (2017–2025)
-│   └── scripts/                       #   PDF → structured data extractors
+├── Data_Extraction/                      # PDF sources & extraction scripts
+│   ├── README.md                         #   Extraction methodology
+│   ├── pdf_sources/                      #   Official SSM exam PDFs (2017–2025)
+│   └── scripts/                          #   PDF → structured data extractors
 │
-├── Question_Classification/           # Dual-annotator classification module
-│   ├── README.md                      #   Full methodology & results (κ=0.8950)
-│   ├── scripts/                       #   Classification & agreement scripts
-│   ├── results/                       #   Claude, GPT, and agreement outputs
-│   └── expert_review/                 #   Expert adjudication workflow
+├── Question_Classification/              # Dual-annotator classification module
+│   ├── README.md                         #   Full methodology & results (κ=0.8950)
+│   ├── scripts/                          #   Classification & agreement scripts
+│   ├── results/                          #   Claude, GPT, and agreement outputs
+│   └── expert_review/                    #   Expert adjudication workflow
 │
-├── Dataset_Translation/               # Translation module (IT→EN)
-│   ├── README.md                      #   Translation methodology & review process
-│   ├── scripts/                       #   Translation & review-application scripts
-│   └── translation_corrections.json   #   Structured log of expert corrections
+├── Dataset_Translation/                  # Translation module (IT→EN)
+│   ├── README.md                         #   Translation methodology & review process
+│   ├── scripts/                          #   Translation & review-application scripts
+│   ├── translation_corrections.json      #   Structured log of expert corrections
+│   └── ITAMed_complete_EN_tracked.xlsx   #   Translation corrections (highlighted)
 │
-├── Charts/                            # Distribution visualizations (IT)
-├── Charts_EN/                         # Distribution visualizations (EN)
+├── Charts/                               # Distribution visualizations (IT)
+├── Charts_EN/                            # Distribution visualizations (EN)
 │
-└── README.md                          # This file
+└── README.md                             # This file
 ```
 
 ---
 
 ## Dataset Schema
+
+### XLSX Columns
 
 | Field | IT Column | EN Column | Type | Description |
 |:------|:----------|:----------|:-----|:------------|
@@ -91,6 +93,43 @@ ITAMed/
 | Image | `Immagine` | `Image` | str | `Si`/`No` (IT) or `Yes`/`No` (EN) |
 | Image Category | `Categoria Immagine` | `Image Category` | str | Diagnostic image type |
 | Image Path | `Percorso Immagine` | `Image Path` | str | Relative path to image file |
+
+### JSON Structure
+
+Each JSON file contains an array of question objects:
+
+```json
+{
+  "year": 2020,
+  "question_number": 1,
+  "question_code": "ssm20203811854",
+  "question": "A 25-year-old man presents to his physician...",
+  "answer_a": "Livedo reticularis",
+  "answer_b": "Raynaud's phenomenon",
+  "answer_c": "Perniosis",
+  "answer_d": "Erythromelalgia",
+  "answer_e": "Vasculitis",
+  "correct_answer": "A",
+  "category": "Immunology and Rheumatology",
+  "has_image": false,
+  "image_category": "",
+  "image_path": ""
+}
+```
+
+| Field | Type | Description |
+|:------|:-----|:------------|
+| `year` | int | Exam year (2017–2025) |
+| `question_number` | int | Position within year (1–140) |
+| `question_code` | str | Official unique identifier |
+| `question` | str | Clinical vignette + question stem |
+| `answer_a` | str | **Always the correct answer** |
+| `answer_b`–`answer_e` | str | Distractor options |
+| `correct_answer` | str | Always `"A"` |
+| `category` | str | Medical specialty (1–2, semicolon-separated) |
+| `has_image` | bool | Whether the question includes a figure |
+| `image_category` | str | Diagnostic image type (empty if no image) |
+| `image_path` | str | Relative path to image file (empty if no image) |
 
 ---
 
@@ -261,7 +300,16 @@ If you use this dataset, please cite:
 
 ## License
 
-[To be determined]
+This dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
+
+Copyright (c) 2026 Filippo Bianchini, Edoardo Bianchini, Emiliano Bianchini, Massimo Marano, Massimo Mecella, Nicolas Vuillerme.
+
+- **Data** (dataset, translations, annotations, documentation): CC BY 4.0
+- **Original exam questions**: public domain under Article 5, Italian Law 633/1941 (official acts of the State)
+
+You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 ---
 
