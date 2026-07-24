@@ -15,7 +15,8 @@
     "answer_a": "Whole-body PET-CT"
   },
   "ssm201739": {
-    "answer_a": "rectocolonoscopy"
+    "answer_a": "rectocolonoscopy",
+    "question": "A 54-year-old patient has complained for 3 months of severe anal pain, triggered by defecation but persisting for several hours. At times he experiences mild rectal bleeding. To rule out the presence of other conditions that may cause rectal bleeding, also considering the patient's age, it is furthermore appropriate to perform as a first-line examination"
   },
   "ssm201753": {
     "question": "What are the pathophysiological phases of burn disease, in chronological order?"
@@ -51,19 +52,21 @@
   },
   "ssm201792": {
     "answer_a": "diagnostic investigations to evaluate an endocrine-metabolic and anatomical etiology in the woman and a semen analysis of the partner",
-    "answer_d": "measurement of FSH and LH, and semen analysis"
+    "answer_d": "measurement of FSH and LH, and semen analysis",
+    "question": "A young couple presents to the gynecologist because they are unable to conceive. The first-line diagnostic workup should include"
   },
   "ssm201793": {
     "answer_e": "Placental abruption"
   },
   "ssm201794": {
-    "question": "A 32-year-old primiparous woman, with an unremarkable pre-pregnancy medical history, is diagnosed with moderate gestational hypertension. The patient contacts her gynecologist reporting that both her legs are swollen, but with no swelling in other locations. Based on what she has described over the phone, she is advised to:"
+    "question": "A 32-year-old primiparous woman, with an unremarkable pre-pregnancy medical history, is diagnosed with moderate gestational hypertension. The patient contacts her gynecologist reporting that both her legs are swollen, but with no swelling in other locations. Based on what she has described over the phone, she is advised to"
   },
   "ssm201795": {
-    "question": "A 32-year-old primiparous woman, with an unremarkable pre-pregnancy medical history, is diagnosed with moderate gestational hypertension. The patient telephones her gynecologist complaining of abdominal pain after having eaten spoiled food. She is therefore advised to go to the nearest emergency department since, in view of her underlying condition, this symptom could bring the following conditions into the differential diagnosis:"
+    "question": "A 32-year-old primiparous woman, with an unremarkable pre-pregnancy medical history, is diagnosed with moderate gestational hypertension. The patient telephones her gynecologist complaining of abdominal pain after having eaten spoiled food. She is therefore advised to go to the nearest emergency department since, in view of her underlying condition, this symptom could bring the following conditions into the differential diagnosis"
   },
   "ssm201796": {
-    "answer_c": "magnetic resonance imaging must be performed to confirm the excess of amniotic fluid"
+    "answer_c": "magnetic resonance imaging must be performed to confirm the excess of amniotic fluid",
+    "question": "A 42-year-old patient, gravida 3 para 0, is very frightened because a screening ultrasound at 32 weeks revealed an excess of amniotic fluid. The patient is informed that this condition is not very common and that"
   },
   "ssm2017105": {
     "answer_b": "It is combined with the pertussis vaccine and the rotavirus vaccine"
@@ -72,10 +75,10 @@
     "answer_b": "The inhalation of the water used for metal cooling"
   },
   "ssm2017126": {
-    "question": "A 48-year-old man, a smoker with hypertension treated with an ACE inhibitor, complains of epigastric pain for about 6 hours. The following parameters are recorded: BP 90/50 mmHg, HR 57/min, SpO2 99%, and an ECG is performed as shown in the figure. The abnormalities present are compatible with:"
+    "question": "A 48-year-old man, a smoker with hypertension treated with an ACE inhibitor, complains of epigastric pain for about 6 hours. The following parameters are recorded: BP 90/50 mmHg, HR 57/min, SpO2 99%, and an ECG is performed as shown in the figure. The abnormalities present are compatible with"
   },
   "ssm2017127": {
-    "question": "A 48-year-old man, a smoker with hypertension on ACE inhibitor therapy, complains of epigastric pain for about 6 hours. The following parameters are recorded: BP 90/50 mmHg, HR 57/min, SpO2 99%, and an ECG is performed as shown in the figure. While the cath lab is being alerted, it is appropriate to begin administration of:"
+    "question": "A 48-year-old man, a smoker with hypertension on ACE inhibitor therapy, complains of epigastric pain for about 6 hours. The following parameters are recorded: BP 90/50 mmHg, HR 57/min, SpO2 99%, and an ECG is performed as shown in the figure. While the cath lab is being alerted, it is appropriate to begin administration of"
   },
   "ssm2017137": {
     "question": "A 67-year-old woman is brought to the Emergency Department with fever (body temperature 38.8 °C), altered state of consciousness, hypotension (BP 80/40 mmHg), tachycardia (HR 100 bpm), tachypnea (RR 25 breaths/min), and oxygen saturation of 82% on room air. Laboratory tests reveal neutrophilic leukocytosis (WBC 22,000/mm3; neutrophils 84%); serum creatinine and liver function parameters are within normal limits, with hyperlactatemia. Septic shock is suspected. Which of the following parameters for rapid screening of septic shock constitute the quick SOFA (Quick Sequential Organ Failure Assessment) score?"
@@ -105,7 +108,7 @@
     "question": "A patient presents to the Emergency Department with fever, cough, and respiratory difficulty. Blood sampling and a chest X-ray are performed, the latter documenting a left lobar pneumonia. In an adult man without comorbidities, which antibiotic treatment is NOT appropriate for empiric therapy?"
   },
   "ssm2017176": {
-    "question": "A 67-year-old woman is found dead by her son in her apartment in Rome. When the Carabinieri arrive, they find her lying supine on the bed with her arms flexed beneath her head. The windows of the house are closed and the ambient temperature is 20 °C. During the on-site investigation, the forensic pathologist measures the body's rectal temperature, which is 36 °C at the start of the investigation and 35.5 °C at the final measurement (about one hour later). Rigor mortis is absent, but faint hypostatic patches are present on the buttocks and shoulders. Externally, there are \"suspicious\" lesions on the patient's neck and chest that make an autopsy necessary. The findings identified by the forensic pathologist made it possible to determine the time of the woman's death, estimating that death most likely occurred:"
+    "question": "A 67-year-old woman is found dead by her son in her apartment in Rome. When the Carabinieri arrive, they find her lying supine on the bed with her arms flexed beneath her head. The windows of the house are closed and the ambient temperature is 20 °C. During the on-site investigation, the forensic pathologist measures the body's rectal temperature, which is 36 °C at the start of the investigation and 35.5 °C at the final measurement (about one hour later). Rigor mortis is absent, but faint hypostatic patches are present on the buttocks and shoulders. Externally, there are \"suspicious\" lesions on the patient's neck and chest that make an autopsy necessary. The findings identified by the forensic pathologist made it possible to determine the time of the woman's death, estimating that death most likely occurred"
   },
   "ssm2017177": {
     "answer_a": "Asphyxia due to throttling/manual strangulation"
@@ -186,22 +189,23 @@
     "question": "A 36-year-old woman presents to the Emergency Department complaining of severe left flank pain radiating to the groin. While in the waiting room she begins to experience chills and fever. Which type of stone is NOT visible on an abdominal X-ray?"
   },
   "ssm20182141904": {
-    "question": "Barrett's esophagus is a condition in which the following is always present:",
+    "question": "Barrett's esophagus is a condition in which the following is always present",
     "answer_d": "carcinoma in situ in the distal esophagus"
   },
   "ssm20182142004": {
-    "question": "In patients with Burkitt lymphoma, especially in the endemic variant, previous infection with has been demonstrated:",
+    "question": "In patients with Burkitt lymphoma, especially in the endemic variant, previous infection with has been demonstrated",
     "answer_a": "Epstein-Barr virus",
     "answer_c": "Herpes simplex virus"
   },
   "ssm20182142404": {
-    "question": "A 45-year-old woman arrives at the Emergency Department in a coma and with respiratory depression; the physician administers naloxone hydrochloride 0.4 mg intravenously. Naloxone hydrochloride is:"
+    "question": "A 45-year-old woman arrives at the Emergency Department in a coma and with respiratory depression; the physician administers naloxone hydrochloride 0.4 mg intravenously. Naloxone hydrochloride is"
   },
   "ssm20182142454": {
     "question": "A 40-year-old female patient, with no dyspnea, reports having had an episode of paroxysmal atrial fibrillation lasting 24 hours one month earlier. Echocardiography reveals mitral valve prolapse due to flail of P2 with moderate-to-severe mitral regurgitation. Ejection fraction (LVEF) 58%. According to the recent European Society of Cardiology guidelines, which procedure is indicated in this patient?"
   },
   "ssm20182142504": {
-    "answer_e": "a complication of a low-residue diet"
+    "answer_e": "a complication of a low-residue diet",
+    "question": "Meckel's diverticulum is"
   },
   "ssm20182142654": {
     "question": "A 21-year-old young man presents to the Emergency Department for pain in the right iliac fossa exacerbated by deep palpation, with the abdomen otherwise soft. The complete blood count shows significant leukocytosis (white blood cells 22,000/mm3). What is the most likely diagnosis?"
@@ -246,7 +250,8 @@
   },
   "ssm20182144504": {
     "answer_d": "the fraction of subjects positive on the test out of the total number of diseased individuals",
-    "answer_e": "the fraction of subjects negative on the test out of the total number of healthy individuals"
+    "answer_e": "the fraction of subjects negative on the test out of the total number of healthy individuals",
+    "question": "The accuracy of a diagnostic test represents"
   },
   "ssm20182144654": {
     "answer_a": "The hyperbilirubinemia is predominantly direct",
@@ -286,16 +291,18 @@
     "question": "A 76-year-old woman reports that, for several months, she has felt her right arm to be weaker; this symptom seems to have a worsening course. In recent weeks, she also reportedly developed speech difficulties. The patient therefore consults a neurologist, who finds a strength deficit in the right upper limb and expressive aphasia. The neurologist therefore recommends a contrast-enhanced brain MRI. This examination reveals the presence of a likely extra-axial expansile lesion in the right frontal region, intensely and homogeneously enhancing, associated with thickening of the perilesional dura mater (dural tail) (see image). What is the most likely diagnosis?"
   },
   "ssm20182146704": {
-    "question": "A 30-year-old patient presents for neurological evaluation regarding headache. The symptoms first appeared one year earlier. The pain was localized in the right orbital and supraorbital region and lasted up to a maximum of 3 hours. It was associated with conjunctival hyperemia, lacrimation, and palpebral edema, all ipsilateral. The episodes continued to occur on a daily basis for about a month and then ceased completely. After several months free of these symptoms, the headache has recurred for about a week with unchanged features. The most likely diagnosis is:"
+    "question": "A 30-year-old patient presents for neurological evaluation regarding headache. The symptoms first appeared one year earlier. The pain was localized in the right orbital and supraorbital region and lasted up to a maximum of 3 hours. It was associated with conjunctival hyperemia, lacrimation, and palpebral edema, all ipsilateral. The episodes continued to occur on a daily basis for about a month and then ceased completely. After several months free of these symptoms, the headache has recurred for about a week with unchanged features. The most likely diagnosis is"
   },
   "ssm20182146754": {
-    "question": "A 32-year-old pregnant woman, with symptoms attributable to pre-eclampsia, subacutely develops headache, visual disturbance, confusional state, and seizures in rapid succession. Brain MRI with and without contrast reveals areas of T2 hyperintensity in the bilateral parieto-occipital regions. The most likely diagnosis is:"
+    "question": "A 32-year-old pregnant woman, with symptoms attributable to pre-eclampsia, subacutely develops headache, visual disturbance, confusional state, and seizures in rapid succession. Brain MRI with and without contrast reveals areas of T2 hyperintensity in the bilateral parieto-occipital regions. The most likely diagnosis is"
   },
   "ssm20182146854": {
-    "answer_c": "it is an imprecise technique"
+    "answer_c": "it is an imprecise technique",
+    "question": "In the case of cataract surgery using the femtosecond laser technique, it is correct to state that"
   },
   "ssm20182146904": {
-    "answer_a": "barrier laser photocoagulation to circumscribe the lesion"
+    "answer_a": "barrier laser photocoagulation to circumscribe the lesion",
+    "question": "A man presents to the physician complaining of persistent floaters and photopsias for 2 days; fundus examination reveals a peripheral horseshoe-shaped retinal tear without surrounding retinal detachment; visual acuity is perfectly preserved. The most appropriate therapy involves"
   },
   "ssm20182147104": {
     "question": "A 60-year-old man reports that for some time he has had persistent pain in the right shoulder radiating to the ipsilateral upper limb along the entire ulnar side. A radiograph of the shoulder documents erosion at the level of the first and second right ribs. Pancoast syndrome is suspected. Which type of neoplasm is most frequently associated with this syndrome?"
@@ -320,7 +327,7 @@
     "answer_e": "The diagnosis can be made solely on the basis of clinical and medical history criteria without resorting to the oral food challenge (OFC)"
   },
   "ssm20182147954": {
-    "question": "Following placental abruption, a newborn experiences prolonged hypoxia. Hypoxic-ischemic encephalopathy (HIE) is one of the most commonly recognized causes of cerebral palsy (6-23%); cerebral hypothermia is currently the treatment of choice for HIE. The following are considered eligible for this treatment:",
+    "question": "Following placental abruption, a newborn experiences prolonged hypoxia. Hypoxic-ischemic encephalopathy (HIE) is one of the most commonly recognized causes of cerebral palsy (6-23%); cerebral hypothermia is currently the treatment of choice for HIE. The following are considered eligible for this treatment",
     "answer_a": "newborns of gestational age ≥ 35 weeks, within 6 hours of life",
     "answer_b": "newborns of gestational age ≥ 37 weeks, within 6 hours of life",
     "answer_c": "newborns of gestational age ≥ 37 weeks, within 3 hours of life",
@@ -371,10 +378,12 @@
     "question": "In a 60-year-old multiparous woman with a negative family history for malignancy, screening mammography reveals branching linear microcalcifications in the lower inner quadrant of the right breast. On palpation, no pathological nodules are appreciated. What should the patient undergo initially?"
   },
   "ssm201949": {
-    "answer_a": "color Doppler ultrasound of the spermatic cord and testis"
+    "answer_a": "color Doppler ultrasound of the spermatic cord and testis",
+    "question": "A 15-year-old boy presents with asymmetry of the scrotum with painless swelling of the left hemiscrotum due to ectasia of the pampiniform plexus. The most appropriate diagnostic examination is"
   },
   "ssm201953": {
-    "answer_c": "is no longer performed because it is associated with excessive mortality and morbidity"
+    "answer_c": "is no longer performed because it is associated with excessive mortality and morbidity",
+    "question": "A 50-year-old patient presents with a squamous cell carcinoma of the left lung, cT1, N1, M0. Surgery is planned to remove the neoplasm. The treatment of certain types of early-stage lung cancer involves surgical resection. Pneumonectomy"
   },
   "ssm201956": {
     "answer_b": "Superficial venous thrombosis"
@@ -392,7 +401,8 @@
     "answer_a": "It is indeed a hypothesis to consider, because the diagnosis can also be made outside the pediatric age range"
   },
   "ssm201983": {
-    "answer_b": "tolerance to physical exertion"
+    "answer_b": "tolerance to physical exertion",
+    "question": "The Barthel Index is used to assess"
   },
   "ssm201984": {
     "question": "A 75-year-old man reports that for about a week he has experienced intense pain in the masticatory muscles. This pain occurs after he starts chewing and resolves once he stops chewing. The treating physician believes that this disorder is a manifestation of a systemic disease. The presence of which of the following symptoms should be investigated?"
@@ -410,7 +420,8 @@
     "question": "A 52-year-old woman presents with persistent diarrhea for one week. All of the following situations can frequently lead to diarrhea, EXCEPT one: which one?"
   },
   "ssm2019126": {
-    "answer_c": "hirsutism, involuntary tremors, albinism"
+    "answer_c": "hirsutism, involuntary tremors, albinism",
+    "question": "Wolff-Parkinson-White syndrome is characterized by"
   },
   "ssm2019127": {
     "question": "A 75-year-old hypertensive patient on pharmacological treatment reports episodes of palpitations. Which of the following is the first diagnostic test to order?",
@@ -441,10 +452,11 @@
     "answer_b": "take the medical history and perform the gynecological examination to ascertain the presence of signs of any assault sustained, after contacting the team",
     "answer_c": "take the medical history and perform the gynecological examination to ascertain the presence of signs of any assault sustained, after contacting the team",
     "answer_d": "take the medical history and perform the gynecological examination to ascertain the presence of signs of any assault sustained, after contacting the team",
-    "answer_e": "take only the medical history and, after drafting the report, contact the judicial authority that will activate the anti-violence network and, upon"
+    "answer_e": "take only the medical history and, after drafting the report, contact the judicial authority that will activate the anti-violence network and, upon",
+    "question": "A 22-year-old woman presents to the gynecological Emergency Department and reports that during a private party she was approached by an unknown man who then sexually assaulted her. The on-call gynecologist must"
   },
   "ssm2019178": {
-    "question": "A boy, returning from school, while crossing the street at a pedestrian crossing, is struck by a car in the act of overtaking. He is first thrown onto the hood of the car and then propelled several meters away, sustaining polytrauma. After being attended to by the 118 emergency medical service and undergoing instrumental investigations, he is admitted to the hospital's Orthopedics ward with a diagnosis of \"open fracture of the right radius, displaced fracture of the left radius, and displaced fracture of both bones of the left leg.\" In light of the severity of the injuries found, the Emergency Department physician must:"
+    "question": "A boy, returning from school, while crossing the street at a pedestrian crossing, is struck by a car in the act of overtaking. He is first thrown onto the hood of the car and then propelled several meters away, sustaining polytrauma. After being attended to by the 118 emergency medical service and undergoing instrumental investigations, he is admitted to the hospital's Orthopedics ward with a diagnosis of \"open fracture of the right radius, displaced fracture of the left radius, and displaced fracture of both bones of the left leg.\" In light of the severity of the injuries found, the Emergency Department physician must"
   },
   "ssm2019185": {
     "question": "A 50-year-old man has had dependent pitting edema for several months. He has noticed a weight gain of approximately 8 kg. A chest X-ray shows bilateral pleural effusion and an enlargement of the cardiac silhouette. His blood pressure is 130/80 mmHg. What is the threshold value of proteinuria above which a diagnosis of nephrotic syndrome can be made in the presence of the other clinical symptoms?"
@@ -456,7 +468,7 @@
     "answer_e": "Cranial nerve VI"
   },
   "ssm2019203": {
-    "question": "A 7-year-old boy presents to an ophthalmologist's office accompanied by his parents, who report that over the past few months their son has been getting very close to objects to observe them. The child, who is particularly tall for his age, has compound myopic astigmatism -4.00 sph -2.00 cyl 100° in one eye and ectopia lentis in the other. Based on the clinical picture described, it is correct to suspect:"
+    "question": "A 7-year-old boy presents to an ophthalmologist's office accompanied by his parents, who report that over the past few months their son has been getting very close to objects to observe them. The child, who is particularly tall for his age, has compound myopic astigmatism -4.00 sph -2.00 cyl 100° in one eye and ectopia lentis in the other. Based on the clinical picture described, it is correct to suspect"
   },
   "ssm2019208": {
     "question": "A 34-year-old man presents with a painless testicular nodule of hard consistency. The patient is afebrile. What is the appropriate initial step?"
@@ -484,153 +496,236 @@
   },
   "ssm20203811854": {
     "question": "A 25-year-old man presents to his physician reporting episodes characterized by pallor of the fingers followed by a bluish discoloration and subsequent reddening of the skin. What is the described triphasic sequence called?",
-    "answer_c": "Perniosis"
+    "answer_c": "Perniosis",
+    "answer_a": "Raynaud's phenomenon",
+    "answer_b": "Livedo reticularis"
   },
   "ssm20203811954": {
-    "question": "An 18-year-old man presents to the medical on-call service with a sense of chest tightness associated with a nonproductive cough. On physical examination, SpO2 is 96% on room air, and tachypnea, tachycardia, wheezing and whistling sounds throughout the chest are present. Which of the following measures is the most appropriate?"
+    "question": "An 18-year-old man presents to the medical on-call service with a sense of chest tightness associated with a nonproductive cough. On physical examination, SpO2 is 96% on room air, and tachypnea, tachycardia, wheezing and whistling sounds throughout the chest are present. Which of the following measures is the most appropriate?",
+    "answer_a": "Inhaled administration of salbutamol",
+    "answer_b": "Intravenous administration of atropine"
   },
   "ssm20203812004": {
-    "question": "A 62-year-old man, BMI 30, presents to the Emergency Department with severe dyspnea associated with tachypnea, tachycardia, and hypertension. On chest auscultation, crackles and wheezes are present. Blood chemistry tests show a significant increase in BNP. Which of the above clinical and laboratory findings most strongly suggests a cardiogenic cause of the clinical picture described?"
+    "question": "A 62-year-old man, BMI 30, presents to the Emergency Department with severe dyspnea associated with tachypnea, tachycardia, and hypertension. On chest auscultation, crackles and wheezes are present. Blood chemistry tests show a significant increase in BNP. Which of the above clinical and laboratory findings most strongly suggests a cardiogenic cause of the clinical picture described?",
+    "answer_a": "Increased BNP levels",
+    "answer_b": "Hypertension"
   },
   "ssm20203812154": {
-    "question": "A man with a history of mild renal insufficiency and gout wakes up at night with very intense pain in his knee, which rapidly becomes swollen and warm. The physician at an after-hours service makes a diagnosis of a gout flare. What is the most appropriate therapy in this case?"
+    "question": "A man with a history of mild renal insufficiency and gout wakes up at night with very intense pain in his knee, which rapidly becomes swollen and warm. The physician at an after-hours service makes a diagnosis of a gout flare. What is the most appropriate therapy in this case?",
+    "answer_a": "Colchicine",
+    "answer_b": "Acetaminophen"
   },
   "ssm20203812204": {
-    "question": "A 50-year-old woman is admitted for venous thromboembolism. Treatment is initially started with subcutaneous heparin, with the goal of subsequently initiating an oral vitamin K antagonist (warfarin). Which of the following recommendations regarding the management of anticoagulant therapy is correct?"
+    "question": "A 50-year-old woman is admitted for venous thromboembolism. Treatment is initially started with subcutaneous heparin, with the goal of subsequently initiating an oral vitamin K antagonist (warfarin). Which of the following recommendations regarding the management of anticoagulant therapy is correct?",
+    "answer_a": "Warfarin must be started and continued in combination with subcutaneous heparin until the therapeutic INR range (between 2 and 3) is reached; heparin can then be discontinued after at least 48 hours",
+    "answer_b": "Warfarin (maintaining an INR range between 2 and 3) must be started and continued in combination with subcutaneous heparin for at least 1 month"
   },
   "ssm20203812254": {
-    "answer_e": "Cholestyramine 3"
+    "answer_e": "Cholestyramine",
+    "answer_a": "Activated charcoal",
+    "answer_b": "Sodium sucralfate"
   },
   "ssm20203812354": {
-    "answer_b": "Oral anticoagulant therapy with an INR value within the therapeutic range"
+    "answer_b": "Blood pressure 140/90 mmHg",
+    "answer_a": "Oral anticoagulant therapy with an INR value within the therapeutic range"
   },
   "ssm20203812654": {
     "question": "A 55-year-old man presents to a gastroenterologist with the onset of pruritus and acholic stools, associated with poorly localized pain in the right hypochondrium. Blood chemistry tests show predominantly direct hyperbilirubinemia; abdominal ultrasound reveals dilation of the intrahepatic ducts. With suspicion of cholangiocarcinoma, which of the following measures is the most appropriate?",
-    "answer_e": "Esophagogastroduodenoscopy on the 5th"
+    "answer_e": "Esophagogastroduodenoscopy",
+    "answer_a": "Endoscopic cholangioscopy with possible placement of a stent for biliary drainage",
+    "answer_b": "Neoadjuvant chemotherapy followed by surgery"
   },
   "ssm20203812804": {
     "question": "A 65-year-old woman presents to the on-call physician with the onset of high fever, visual disturbances, and painful skin lesions. These lesions appear as blisters with areas of epidermal detachment spread over the entire body. Until a few days earlier, the woman had been in excellent health except for hip pain, for which she had started taking anti-inflammatory drugs. In the setting of a suspected allergic drug reaction, what is the most appropriate decision that the on-call physician should make?",
-    "answer_c": "Discontinuation of the drug only in the case of NSAIDs, with a request for a dermatological consultation as soon as possible"
+    "answer_c": "Discontinuation of the drug only in the case of NSAIDs, with a request for a dermatological consultation as soon as possible",
+    "answer_a": "Discontinuation of the drug and immediate hospitalization",
+    "answer_b": "Immediate discontinuation of the drug and prescription of topical steroid therapy"
   },
   "ssm20203813504": {
-    "question": "A 64-year-old man presents to the hospital with the onset of headache, vague chest pain, and the finding of elevated blood pressure values. Blood pressure is 190/110 mmHg. For approximately 2 years he has been taking Ramipril 2.5 mg in the morning as monotherapy. No neurological deficits. ECG, brain and chest CT scans, and renal artery ultrasound are normal. Hematologic and biochemical profile is normal. What is the most likely diagnosis?"
+    "question": "A 64-year-old man presents to the hospital with the onset of headache, vague chest pain, and the finding of elevated blood pressure values. Blood pressure is 190/110 mmHg. For approximately 2 years he has been taking Ramipril 2.5 mg in the morning as monotherapy. No neurological deficits. ECG, brain and chest CT scans, and renal artery ultrasound are normal. Hematologic and biochemical profile is normal. What is the most likely diagnosis?",
+    "answer_a": "Grade 3 arterial hypertension",
+    "answer_b": "Secondary hypertension"
   },
   "ssm20203813554": {
-    "question": "A 78-year-old minimally symptomatic patient, during self-measurement of blood pressure, detects a certain irregularity of the heartbeat. The ECG shown in the figure reveals:",
-    "answer_e": "Sinus rhythm with fascicular hemiblock of 9"
+    "question": "A 78-year-old minimally symptomatic patient, during self-measurement of blood pressure, detects a certain irregularity of the heartbeat. The ECG shown in the figure reveals",
+    "answer_e": "Sinus rhythm with fascicular hemiblock",
+    "answer_a": "Sinus rhythm with second-degree atrioventricular block, Mobitz type 1",
+    "answer_b": "Sinus rhythm with second-degree atrioventricular block, Mobitz type 2"
   },
   "ssm20203813604": {
     "question": "A 70-year-old hypertensive man, a smoker, who recently underwent prostatectomy, seeks assistance for dyspnea that began approximately 5 hours ago. On the ambulance staff's monitor, his blood pressure is 100/50 mmHg and O2 saturation is 88%. The electrocardiogram shown in the figure is also recorded. What is the most likely diagnosis?",
-    "answer_a": "Postoperative anemia"
+    "answer_a": "Acute pulmonary embolism",
+    "answer_b": "Postoperative anemia"
   },
   "ssm20203813654": {
-    "question": "A 77-year-old woman, hypertensive and not on pharmacological treatment, presents for medical attention with bilateral dependent edema and reduced exercise tolerance. On physical examination: HR 98 bpm, varicosities of the superficial veins of the right leg, soft abdomen with a tender lower hepatic margin extending 3 cm below the costal arch. What is the most likely diagnosis?"
+    "question": "A 77-year-old woman, hypertensive and not on pharmacological treatment, presents for medical attention with bilateral dependent edema and reduced exercise tolerance. On physical examination: HR 98 bpm, varicosities of the superficial veins of the right leg, soft abdomen with a tender lower hepatic margin extending 3 cm below the costal arch. What is the most likely diagnosis?",
+    "answer_a": "Congestive heart failure",
+    "answer_b": "Deep vein thrombosis"
   },
   "ssm20203814354": {
-    "answer_a": "Myasthenia gravis"
+    "answer_a": "Miller Fisher syndrome",
+    "answer_b": "Myasthenia gravis"
   },
   "ssm20203814404": {
-    "question": "A 7-year-old girl has presented for several weeks with multiple episodes of impaired consciousness throughout the day, during which she abruptly interrupts her activities, staring into space. Each episode lasts between 20 and 30 seconds and recurs up to 10 times a day. Numerous episodes have occurred during school lessons, alarming classmates and teachers. The episodes are often accompanied by cutaneous pallor and gestural automatisms, particularly orobuccal automatisms. The girl's parents consult their regular pediatrician and report some behavioral changes, whereby she appears more taciturn and withdrawn. What is the most appropriate diagnostic workup to follow?"
+    "question": "A 7-year-old girl has presented for several weeks with multiple episodes of impaired consciousness throughout the day, during which she abruptly interrupts her activities, staring into space. Each episode lasts between 20 and 30 seconds and recurs up to 10 times a day. Numerous episodes have occurred during school lessons, alarming classmates and teachers. The episodes are often accompanied by cutaneous pallor and gestural automatisms, particularly orobuccal automatisms. The girl's parents consult their regular pediatrician and report some behavioral changes, whereby she appears more taciturn and withdrawn. What is the most appropriate diagnostic workup to follow?",
+    "answer_a": "Specialist neuropsychiatric evaluation and electroencephalogram",
+    "answer_b": "Brain CT and electroencephalogram with sleep deprivation"
   },
   "ssm20203814454": {
     "question": "At the end of a university lecture, a 21-year-old young man experiences a strong sense of unease and anguish, appears disoriented and perplexed regarding the surrounding reality, and perceives objects and people as disturbing and hostile. To a certain extent, it is as if something extraordinary were about to reveal itself. Which psychopathological phenomenon is this?",
-    "answer_b": "Delusional mood"
+    "answer_b": "Acute paranoid delusion",
+    "answer_a": "Delusional mood"
   },
   "ssm20203814504": {
-    "question": "A 24-year-old young man comes to the Emergency Department accompanied by his parents because for several days he has reportedly been experiencing an intense state of worry. On psychiatric evaluation, he reports a vague sensation that grips him, causing marked anguish: \"I feel changed, different, it's as if I no longer had complete control of my body, as if my body had become foreign to me, as if it were no longer my own!\". What type of phenomenon is the patient describing?"
+    "question": "A 24-year-old young man comes to the Emergency Department accompanied by his parents because for several days he has reportedly been experiencing an intense state of worry. On psychiatric evaluation, he reports a vague sensation that grips him, causing marked anguish: \"I feel changed, different, it's as if I no longer had complete control of my body, as if my body had become foreign to me, as if it were no longer my own!\". What type of phenomenon is the patient describing?",
+    "answer_a": "Depersonalization",
+    "answer_b": "Hallucinosis"
   },
   "ssm20203814554": {
-    "question": "A 12-year-old girl has a homozygous F508del mutation in the CFTR gene and is therefore affected by cystic fibrosis. The gene responsible for the disease is located on the:"
+    "question": "A 12-year-old girl has a homozygous F508del mutation in the CFTR gene and is therefore affected by cystic fibrosis. The gene responsible for the disease is located on the",
+    "answer_a": "Long arm of chromosome 7",
+    "answer_b": "Short arm of chromosome 13"
   },
   "ssm20203814604": {
-    "answer_e": "Either upper limb"
+    "answer_e": "Either upper limb",
+    "answer_a": "Right upper limb",
+    "answer_b": "Left upper limb"
   },
   "ssm20203814704": {
-    "answer_c": "Prick-to-prick test, using the fresh food"
+    "answer_c": "Prick-to-prick test, using the fresh food",
+    "answer_a": "Oral food challenge",
+    "answer_b": "Prick test, applying a food extract"
   },
   "ssm20203814904": {
-    "answer_c": "Immune hemolytic anemia"
+    "answer_c": "Immune hemolytic anemia",
+    "answer_a": "Sickle cell anemia",
+    "answer_b": "Beta-thalassemia"
   },
   "ssm20203814954": {
-    "answer_c": "They can be functioning or non-functioning"
+    "answer_c": "They can be functioning or non-functioning",
+    "answer_a": "Metastases spread only via the lymphatic route",
+    "answer_b": "It has an annual incidence of 0.5-2 new cases per million inhabitants",
+    "question": "Which of the following statements regarding adrenocortical carcinoma is INCORRECT"
   },
   "ssm20203815054": {
-    "question": "A 65-year-old patient presents to the Emergency Department after a large meal with acute pain in the right hypochondrium and onset of vomiting. Physical examination shows a soft abdomen with localized tenderness in the right hypochondrium. Laboratory tests show mild leukocytosis with increased total and direct bilirubin. Which diagnostic test would you request first?"
+    "question": "A 65-year-old patient presents to the Emergency Department after a large meal with acute pain in the right hypochondrium and onset of vomiting. Physical examination shows a soft abdomen with localized tenderness in the right hypochondrium. Laboratory tests show mild leukocytosis with increased total and direct bilirubin. Which diagnostic test would you request first?",
+    "answer_a": "Abdominal ultrasound",
+    "answer_b": "Gastroscopy"
   },
   "ssm20203815404": {
     "question": "An 82-year-old patient with cardiac disease and obesity, affected by colonic diverticula, undergoes surgery for an acute abdomen. On surgical exploration, fecal peritonitis is found. How will the operation proceed?",
-    "answer_a": "Lavage of the peritoneal cavity and closure of the abdominal wall with multiple drains"
+    "answer_a": "Hartmann's colonic resection",
+    "answer_b": "Lavage of the peritoneal cavity and closure of the abdominal wall with multiple drains"
   },
   "ssm20203815604": {
-    "question": "Chorionic Gonadotropin is which type of hormone?"
+    "question": "Chorionic Gonadotropin is which type of hormone?",
+    "answer_a": "Glycoprotein",
+    "answer_b": "Protein"
   },
   "ssm20203815904": {
-    "answer_e": "Zygote Intra Fallopian Transfer of 19"
+    "answer_e": "Zygote Intra Fallopian Transfer",
+    "answer_a": "Intracytoplasmic Sperm Injection",
+    "answer_b": "In Vitro Fertilization and Embryo Transfer"
   },
   "ssm20203816104": {
-    "question": "An X-ray is ordered for a 16-year-old boy following the onset over the past few weeks of severe pain and swelling of the right knee. The radiograph shows, at the level of the right distal femur, an alternation of radiolucent and radiopaque areas and a \"sunburst\" appearance with periosteal reaction known as Codman's triangle. The most likely diagnosis is:"
+    "question": "An X-ray is ordered for a 16-year-old boy following the onset over the past few weeks of severe pain and swelling of the right knee. The radiograph shows, at the level of the right distal femur, an alternation of radiolucent and radiopaque areas and a \"sunburst\" appearance with periosteal reaction known as Codman's triangle. The most likely diagnosis is",
+    "answer_a": "Osteosarcoma",
+    "answer_b": "Osteoclastoma"
   },
   "ssm20203816254": {
-    "question": "A 58-year-old man goes to his General Practitioner for the onset, over approximately 3 days, of fever, pain, and edema at the level of the right testicle. He also reports strangury and urinary frequency. On examination, the hemiscrotum appears increased in volume, warm to the touch, and tender on palpation. What is the most likely diagnosis?"
+    "question": "A 58-year-old man goes to his General Practitioner for the onset, over approximately 3 days, of fever, pain, and edema at the level of the right testicle. He also reports strangury and urinary frequency. On examination, the hemiscrotum appears increased in volume, warm to the touch, and tender on palpation. What is the most likely diagnosis?",
+    "answer_a": "Acute right orchiepididymitis",
+    "answer_b": "Testicular torsion"
   },
   "ssm20203816404": {
-    "question": "An 82-year-old man presents to the Emergency Department: for several days he has reported difficulty walking, with a sensation of his right leg feeling \"heavy.\" For about 2 days his children have also noticed speech disturbances; they further report that approximately 4 weeks earlier their father sustained a head injury from an accidental fall. His medical history is notable for arterial hypertension on medical therapy, type II diabetes mellitus, and atrial fibrillation (treated with warfarin). On examination by the neurosurgeon, the patient presents with expressive aphasia and a marked drift of the right upper and lower limb on antigravity testing. A brain CT is performed, demonstrating a crescent-shaped blood collection, iso-hypodense relative to the cerebral parenchyma (see image). What is the most likely diagnosis, considering the neuroradiological images and the clinical history?"
+    "question": "An 82-year-old man presents to the Emergency Department: for several days he has reported difficulty walking, with a sensation of his right leg feeling \"heavy.\" For about 2 days his children have also noticed speech disturbances; they further report that approximately 4 weeks earlier their father sustained a head injury from an accidental fall. His medical history is notable for arterial hypertension on medical therapy, type II diabetes mellitus, and atrial fibrillation (treated with warfarin). On examination by the neurosurgeon, the patient presents with expressive aphasia and a marked drift of the right upper and lower limb on antigravity testing. A brain CT is performed, demonstrating a crescent-shaped blood collection, iso-hypodense relative to the cerebral parenchyma (see image). What is the most likely diagnosis, considering the neuroradiological images and the clinical history?",
+    "answer_a": "Chronic subdural hematoma",
+    "answer_b": "Acute subdural hematoma"
   },
   "ssm20203816604": {
-    "answer_e": "Thermal spa treatments of the 23rd"
+    "answer_e": "Thermal spa treatments of the 23rd",
+    "answer_a": "Endoscopic surgery",
+    "answer_b": "Radiotherapy"
   },
   "ssm20203816704": {
-    "question": "In a patient with suspected acoustic neuroma, which is the most accurate test to confirm the diagnostic suspicion?"
+    "question": "In a patient with suspected acoustic neuroma, which is the most accurate test to confirm the diagnostic suspicion?",
+    "answer_a": "MRI with gadolinium",
+    "answer_b": "CT without contrast medium"
   },
   "ssm20203816854": {
-    "answer_b": "Control of cardiovascular risk factors, optimization of medical therapy, walking training, and clinical follow-up"
+    "answer_b": "Hospital admission to perform surgical placement of a right femoropopliteal bypass",
+    "answer_a": "Control of cardiovascular risk factors, optimization of medical therapy, walking training, and clinical follow-up"
   },
   "ssm20203816954": {
-    "question": "Which of the following testicular tumors is of \"non-germ cell\" origin?"
+    "question": "Which of the following testicular tumors is of \"non-germ cell\" origin?",
+    "answer_a": "Leydig cell tumor",
+    "answer_b": "Embryonal carcinoma"
   },
   "ssm20203817504": {
     "question": "A 57-year-old patient presents to medical attention with the progressive onset of headache and bitemporal hemianopia. In light of the clinical picture, which of the following imaging studies is most appropriate?",
-    "answer_a": "Brain MRI without contrast, with evaluation of the sella turcica",
-    "answer_b": "Brain MRI without and with contrast, with evaluation of the sella turcica",
+    "answer_a": "Brain MRI without and with contrast, with evaluation of the sella turcica",
+    "answer_b": "Brain MRI without contrast, with evaluation of the sella turcica",
     "answer_c": "CT with and without contrast, with evaluation of the sella turcica",
     "answer_d": "Skull radiography as the initial investigation, followed by MRI with contrast",
     "answer_e": "Skull radiography as the initial investigation, followed by CT with contrast"
   },
   "ssm20203817554": {
-    "answer_e": "Elevation of the left hemidiaphragm by 28"
+    "answer_e": "Elevation of the left hemidiaphragm by",
+    "answer_a": "Presence of a subdiaphragmatic crescent of air",
+    "answer_b": "Presence of a supradiaphragmatic crescent of air"
   },
   "ssm20203817754": {
-    "answer_b": "Fluid loading in suspected renal failure, including possible prerenal failure"
+    "answer_b": "Low-dose norepinephrine",
+    "answer_a": "Fluid loading in suspected renal failure, including possible prerenal failure"
   },
   "ssm20203817904": {
-    "answer_e": "Pulmonary gas embolism"
+    "answer_e": "Pulmonary gas embolism",
+    "answer_a": "Chronic obstructive pulmonary disease with FEV1 >70% predicted",
+    "answer_b": "Massive pneumonia"
   },
   "ssm20203817954": {
     "question": "A 60-year-old woman is brought to the intensive care unit for septic shock due to secondary postsurgical peritonitis. Her history is notable for hypertensive heart disease with mild left ventricular hypertrophy. An echocardiogram is performed, showing normal biventricular contractile function and normal global and segmental wall motion. Blood pressure is 75/45 mmHg. What is the first-line vasoactive amine support for fluid-refractory hypotension?",
-    "answer_e": "Isoprenaline 30"
+    "answer_e": "Isoprenaline",
+    "answer_a": "Norepinephrine",
+    "answer_b": "Epinephrine"
   },
   "ssm20203818154": {
-    "answer_d": "Until the patient is able to complete the 100-meter dash in less than 15 seconds"
+    "answer_d": "Until the patient is able to complete the 100-meter dash in less than 15 seconds",
+    "answer_a": "At least 8 weeks, with variable extension up to 12 weeks",
+    "answer_b": "Pulmonary rehabilitation is not part of the treatment of COPD"
   },
   "ssm20203818254": {
-    "question": "Which of these drugs most frequently causes thyroid dysfunction:"
+    "question": "Which of these drugs most frequently causes thyroid dysfunction",
+    "answer_a": "Amiodarone",
+    "answer_b": "Beta-blockers"
   },
   "ssm20203818504": {
-    "answer_c": "If they have received a vaccination course, even if incomplete, within the last 10 years"
+    "answer_c": "If they have received a vaccination course, even if incomplete, within the last 10 years",
+    "answer_a": "Only if the subject has received 3 or more doses of vaccine within the last 5 years",
+    "answer_b": "Only if the wound is neither severe nor deep, regardless of the subject's vaccination status"
   },
   "ssm20203818604": {
     "question": "A man works at a metal-processing plant where non-galvanic lead-coating procedures are carried out. During a periodic occupational health examination, he undergoes a blood draw, which reveals elevated blood lead levels and alterations in blood chemistry parameters suggestive of chronic nephropathy. Which of the following findings is associated with saturnine (lead) nephropathy?",
-    "answer_d": "Extrasystoles"
+    "answer_d": "Extrasystoles",
+    "answer_a": "Arterial hypertension",
+    "answer_b": "Arterial hypotension"
   },
   "ssm20203818654": {
     "question": "For several months, a farmer has been suffering from productive cough and progressively worsening dyspnea, which flare up during the periods when he has to handle the hay and fodder stored inside a barn; he undergoes a physical examination and serum/blood tests. All of the following clinical and instrumental findings are suggestive of chronic extrinsic allergic alveolitis (EAA), EXCEPT one. Which?",
-    "answer_c": "Mid-basal inspiratory crackles"
+    "answer_c": "Mid-basal inspiratory crackles",
+    "answer_a": "Neutropenia",
+    "answer_b": "Presence of specific IgG precipitating antibodies (\"precipitins\")"
   },
   "ssm20203818704": {
-    "answer_b": "Regarding organ procurement for transplantation purposes (Law 519/1968)"
+    "answer_b": "Regarding voluntary termination of pregnancy after the first 90 days from conception (Law 194/1978)",
+    "answer_a": "Regarding organ procurement for transplantation purposes (Law 519/1968)",
+    "question": "In Italy, in the exercise of their profession, a physician may invoke conscientious objection in the following cases. All of the answers are correct EXCEPT ONE",
+    "answer_e": "Regarding voluntary termination of pregnancy within the first 90 days from conception (Law 194/1978)"
   },
   "ssm20203818754": {
-    "question": "A grandmother comes to the Emergency Department with her 10-month-old granddaughter. The grandmother reports an unwitnessed fall from a high chair, as she was in another room at the time. The child presents with multiple bruises on the upper and lower limbs at different stages of color change, and minor abrasions on the left arm and left leg. During the examination, the pediatrician notes a marked painful response to mobilization of the lower limbs and therefore a targeted X-ray is decided upon, which diagnoses a metaphyseal fracture of the right femur in a non-ambulatory pediatric patient, suggesting that the trauma was not accidental. The physician must decide whether or not to report the matter to the judicial authority, because:"
+    "question": "A grandmother comes to the Emergency Department with her 10-month-old granddaughter. The grandmother reports an unwitnessed fall from a high chair, as she was in another room at the time. The child presents with multiple bruises on the upper and lower limbs at different stages of color change, and minor abrasions on the left arm and left leg. During the examination, the pediatrician notes a marked painful response to mobilization of the lower limbs and therefore a targeted X-ray is decided upon, which diagnoses a metaphyseal fracture of the right femur in a non-ambulatory pediatric patient, suggesting that the trauma was not accidental. The physician must decide whether or not to report the matter to the judicial authority, because",
+    "answer_a": "A report/complaint addressed to the public prosecutor is mandatory",
+    "answer_b": "The report/complaint may be omitted because it would expose the person concerned to criminal proceedings"
   },
   "ssm202110229054": {
     "question": "A 75-year-old hypertensive woman with heart failure presents to the Emergency Department with palpitations that began at least three days earlier. On examination, she is found to have a BP of 145/90 and an irregular heart rate of 140 bpm. The ECG reveals atrial fibrillation with a ventricular rate of 130 bpm. Which of the following therapeutic choices is indicated as first-line management?"
@@ -639,7 +734,7 @@
     "question": "A 55-year-old woman, who is completely well, undergoes routine blood chemistry and urine tests. The woman has been in menopause for about 4 years. Her history is notable for arterial hypertension and osteopenia. Microscopic examination of the urinary sediment shows the presence of scant bacterial flora. Which of the following is the most appropriate therapeutic approach?"
   },
   "ssm202110229504": {
-    "question": "A 78-year-old man, bedridden for two weeks following hemiarthroplasty for a femoral neck fracture, presents with a skin lesion in the sacral region, oval-shaped, with irregular margins, red-violaceous in color, which does not blanch on digital pressure, without signs of tissue loss. This is:",
+    "question": "A 78-year-old man, bedridden for two weeks following hemiarthroplasty for a femoral neck fracture, presents with a skin lesion in the sacral region, oval-shaped, with irregular margins, red-violaceous in color, which does not blanch on digital pressure, without signs of tissue loss. This is",
     "answer_a": "Stage I pressure injury",
     "answer_b": "Stage II pressure injury",
     "answer_c": "Diaper dermatitis"
@@ -649,14 +744,14 @@
     "answer_d": "PTH-related peptide (PTHrP)-secreting tumor"
   },
   "ssm202110229854": {
-    "question": "An 82-year-old man presents to the \"dermatologic emergency\" clinic because of the appearance, over the past approximately 2 weeks, of tense blisters on erythematous-edematous skin at the proximal portions of both lower limbs and on the trunk, accompanied by itching and burning, in the absence of obvious triggering factors such as trauma, burns, or drug intake. The most likely diagnosis is:",
+    "question": "An 82-year-old man presents to the \"dermatologic emergency\" clinic because of the appearance, over the past approximately 2 weeks, of tense blisters on erythematous-edematous skin at the proximal portions of both lower limbs and on the trunk, accompanied by itching and burning, in the absence of obvious triggering factors such as trauma, burns, or drug intake. The most likely diagnosis is",
     "answer_b": "Herpes zoster infection"
   },
   "ssm202110229904": {
     "question": "A 60-year-old man has had, for about 10 days, an oval erythematous patch approximately 5 cm in size with a peripheral scaly collarette located on the trunk. For the past two days, similar small erythematous patches have appeared, again on the trunk and on the proximal limbs. A diagnosis of pityriasis rosea is made. Based on this diagnosis, which of the following statements is correct?"
   },
   "ssm202110229954": {
-    "question": "For moderate fatigue, a 44-year-old man undergoes blood tests that document the following complete blood count values: Leukocytes 11,400/mm3 (including neutrophils 8,900/mm3), hemoglobin 11.7 g/dL, MCV 87 fL; platelets 690,000/mm3. The values are confirmed in two subsequent tests. Which of the following tests should be performed:"
+    "question": "For moderate fatigue, a 44-year-old man undergoes blood tests that document the following complete blood count values: Leukocytes 11,400/mm3 (including neutrophils 8,900/mm3), hemoglobin 11.7 g/dL, MCV 87 fL; platelets 690,000/mm3. The values are confirmed in two subsequent tests. Which of the following tests should be performed"
   },
   "ssm202110230104": {
     "answer_e": "Serum insulin level"
@@ -705,20 +800,22 @@
   },
   "ssm202110232104": {
     "answer_a": "It is a tumor that is more likely to cause anemia and less likely to cause obstruction than left-sided colon cancer",
-    "answer_d": "The presence of N+ on preoperative investigations indicates the need for chemoradiotherapy"
+    "answer_d": "The presence of N+ on preoperative investigations indicates the need for chemoradiotherapy",
+    "question": "Which of the following statements about right-sided colon cancer is correct"
   },
   "ssm202110232204": {
     "answer_a": "difficulty swallowing liquids, but not solids",
     "answer_b": "difficulty swallowing solids, but not liquids",
     "answer_c": "dysphagia that occurs when the patient is supine",
     "answer_d": "dysphagia with hot foods",
-    "answer_e": "dysphagia with cold foods"
+    "answer_e": "dysphagia with cold foods",
+    "question": "Paradoxical dysphagia in the early phase is"
   },
   "ssm202110232304": {
     "answer_e": "No, it depends on the type of approach, laparoscopic or laparotomic"
   },
   "ssm202110233054": {
-    "question": "A 13-year-old boy comes to medical attention complaining of right knee pain for several weeks. On physical examination there is swelling and tenderness over the anterior tibial tuberosity at the insertion of the patellar tendon. The boy's clinical presentation and history point toward a diagnosis of:"
+    "question": "A 13-year-old boy comes to medical attention complaining of right knee pain for several weeks. On physical examination there is swelling and tenderness over the anterior tibial tuberosity at the insertion of the patellar tendon. The boy's clinical presentation and history point toward a diagnosis of"
   },
   "ssm202110233254": {
     "question": "A 64-year-old man reports urinary symptoms for about 6 months. The PSA value is 8.4 ng/mL, with a free/total ratio of 10%. On digital rectal examination, increased firmness of the prostate is noted. Which diagnostic investigation should be requested before a possible prostate biopsy?"
@@ -730,7 +827,8 @@
     "question": "A 50-year-old woman with diabetes and hypertension, who had undergone cataract removal surgery with intraocular lens implantation in the right eye 2 years earlier, visits her regular ophthalmologist complaining of decreased visual acuity specifically in the right eye over the last 2 months. She reports having undergone fluorescein angiography about 1 month earlier, which was normal in both eyes, as part of the periodic check-ups she undergoes for her diabetic condition. Visual acuity is 5/10 and does not improve with optical correction. What is the most likely diagnosis?"
   },
   "ssm202110234004": {
-    "answer_b": "Proliferative hairy leukoplakia"
+    "answer_b": "Proliferative hairy leukoplakia",
+    "question": "A 40-year-old female presents with a bilateral symmetrical whitish reticular lesion of the oral cavity; a biopsy of the lesion is performed, and histological examination reveals acanthosis, parakeratosis, and an intense band-like subepithelial lymphocytic infiltrate, with liquefaction of the basement membrane; the picture is consistent with"
   },
   "ssm202110234054": {
     "question": "A 48-year-old woman presents with unilateral serosanguineous discharge from the right nipple for approximately 6 months. Breast ultrasound reveals ductal ectasia in the retroareolar region with a solid intraluminal mass measuring 1.5 cm in diameter. Histological examination of the core biopsy reveals the presence of tissue composed of arborescent projections with a well-defined fibrovascular core, with a dual myoepithelial-epithelial lining, in the absence of significant atypia. What is the correct diagnosis?"
@@ -745,11 +843,13 @@
     "answer_e": "Cortico-subcortical area of encephalomalacia"
   },
   "ssm202110234704": {
-    "answer_c": "Has the same effects as fentanyl"
+    "answer_c": "Has the same effects as fentanyl",
+    "question": "A 45-year-old woman with a history of substance abuse presents to the Emergency Department in a coma with respiratory depression; naloxone hydrochloride 0.4 mg is administered intravenously because it is"
   },
   "ssm202110234854": {
     "answer_c": "A 500 mL crystalloid bolus to counteract the vasovagal reaction",
-    "answer_e": "A 250 mL crystalloid bolus for suspected septic shock"
+    "answer_e": "A 250 mL crystalloid bolus for suspected septic shock",
+    "question": "A woman is bedridden due to a right femur fracture. During hospitalization, while awaiting surgery, she suddenly complains of a sensation of shortness of breath and chest pain. The on-call orthopedist is contacted, who calls the intensivist; the latter finds her agitated, dyspneic, and hypotensive. The intensivist immediately orders"
   },
   "ssm202110234954": {
     "answer_e": "Psychotic episode"
@@ -774,13 +874,15 @@
     "answer_b": "Continuous diuretic infusion"
   },
   "ssm2022145": {
-    "answer_d": "In patients with mechanical cardiac prostheses"
+    "answer_d": "In patients with mechanical cardiac prostheses",
+    "question": "In a patient with paroxysmal atrial fibrillation and a CHA2DS2-VASc score >3, anticoagulant therapy is indicated and may be administered with DOACs."
   },
   "ssm2022148": {
-    "answer_b": "In the presence of suspected high-risk pulmonary embolism, characterized by hemodynamic instability, bedside echocardiography or urgent CT angiography, if available, is recommended"
+    "answer_b": "In the presence of suspected high-risk pulmonary embolism, characterized by hemodynamic instability, bedside echocardiography or urgent CT angiography, if available, is recommended",
+    "question": "In the absence of contraindications to the use of iodinated contrast media, all statements regarding the diagnosis of pulmonary embolism are correct EXCEPT one:"
   },
   "ssm2022149": {
-    "answer_d": "Airways, Breathing, Circulation: perform an assessment of vital functions when a patient is unconscious. Certainly, performing an ECG is not a priority action to ensure proper oxygenation of the patient, much less cardioversion (a valid option if an analysis of the cardiac rhythm reveals a supraventricular arrhythmia such as atrial fibrillation) or an echocardiogram, a second-line examination in the cardiological risk stratification of a patient. Volume replacement should be considered when cardiac pump function is ensured, but in this patient the priority is to support tissue oxygenation, which has been lost due to respiratory arrest. Correct answer A. Difficulty: Low"
+    "answer_d": "Initiate volume replacement"
   },
   "ssm2022158": {
     "question": "A 58-year-old patient in good condition, with a prior history of jaundice for which she underwent biliary stent placement, undergoes systemic staging that reveals metastatic disease in the peritoneum. Histological examination yields a diagnosis of primary adenocarcinoma of the pancreas. Which of the following is the most appropriate therapeutic strategy?",
@@ -807,7 +909,7 @@
     "answer_b": "Glucagon-like peptide-1 (GLP-1) inhibitors"
   },
   "ssm2022181": {
-    "answer_e": "In COVID-19 pneumonia, the radiological picture does not always show consolidations, and not effusions; in amiodarone-induced lung injury, a fibrotic pattern develops. The option regarding COPD may indeed be characterized by pleural effusion, but associated with emphysematous bullae, which are not mentioned in the question. The picture therefore more likely concerns heart failure. Difficulty"
+    "answer_e": "Acute exacerbation of COPD"
   },
   "ssm2022184": {
     "question": "A 43-year-old Italian man, residing in Sicily, presents to the Emergency Department with a fever that has persisted for 2 weeks and has not responded to treatment with amoxicillin/clavulanic acid administered for 7 days. On admission to the Emergency Department, fever is recorded (body temperature 38.7°C); the physical examination is negative for pathological findings involving the heart and chest, while hepatomegaly and splenomegaly are evident. The complete blood count shows normochromic normocytic anemia, leukopenia, and thrombocytopenia. Among the infectious disease hypotheses, which is most likely:"
@@ -841,12 +943,13 @@
     "answer_e": "No, it is preferable to perform a video capsule endoscopy"
   },
   "ssm2022207": {
-    "question": "In jaundice, the suspicion that it may be obstructive arises when:",
+    "question": "In jaundice, the suspicion that it may be obstructive arises when",
     "answer_a": "The urine is dark-colored and the stools are acholic",
     "answer_b": "The urine is light-colored and the stools are normally colored"
   },
   "ssm2022208": {
-    "answer_c": "In the recumbent position"
+    "answer_c": "In the recumbent position",
+    "question": "Whipple's triad, a set of three elements suggestive of the presence of an insulinoma, typically manifests"
   },
   "ssm2022210": {
     "question": "A 38-year-old woman underwent laparoscopic cholecystectomy for symptomatic cholelithiasis. The definitive histological report describes a gallbladder carcinoma invading the lamina propria (pT1a). What is the best therapeutic choice for this patient?",
@@ -869,7 +972,8 @@
     "question": "Which histological subtype of ovarian tumor is most frequently associated with ovarian endometriosis?"
   },
   "ssm2022219": {
-    "answer_d": "Infected uterine myoma undergoing expulsion"
+    "answer_d": "Infected uterine myoma undergoing expulsion",
+    "question": "A 32-year-old woman in the puerperium presents with persistent lochia three months after delivery, which progressively becomes more abundant, malodorous, and associated with evening fever. She undergoes a pelvic ultrasound that demonstrates a focal endometrial thickening of 25 mm. The most likely diagnosis is:"
   },
   "ssm2022225": {
     "question": "A 22-year-old volleyball player presents with acute pain in the left knee and mild joint swelling following a twisting injury sustained after a jump. He reports a sensation of knee locking, and examination of the range of motion shows an arc of movement between 20 and 90 degrees. Figure A shows an arthroscopic image of the anteromedial compartment of the knee, and Figure B shows an MRI image. Which of the following diagnoses is the most likely?"
@@ -891,7 +995,8 @@
     "question": "A 75-year-old man consults his physician because he has had \"double vision\" for a few days. Examination reveals right eyelid ptosis and downward and outward deviation of the right eye. Which of the following imaging studies would you request urgently?"
   },
   "ssm2022240": {
-    "question": "A 31-year-old female patient, originally from Peru, presents with pain and weakness of the left upper limb, especially during hyperabduction (positive Wright test), along with the onset of paresthesias in the hand and radial aspect of the wrist, ipsilaterally. Her medical history includes a supernumerary left cervical rib. Based on the available clinical information, which of the following appears to be the most likely diagnosis?"
+    "question": "A 31-year-old female patient, originally from Peru, presents with pain and weakness of the left upper limb, especially during hyperabduction (positive Wright test), along with the onset of paresthesias in the hand and radial aspect of the wrist, ipsilaterally. Her medical history includes a supernumerary left cervical rib. Based on the available clinical information, which of the following appears to be the most likely diagnosis?",
+    "answer_a": "Thoracic outlet syndrome"
   },
   "ssm2022248": {
     "question": "A 52-year-old man, with no history of COVID-19 and vaccinated with three doses of a COVID-19 mRNA vaccine, undergoes a serological test for anti-SARS-CoV-2 antibodies one month after the third dose. What serological profile do we expect to find?"
@@ -906,7 +1011,7 @@
     "question": "A 74-year-old patient, bedridden after surgery for a femur fracture, presents to the Emergency Department with syncope, chest pain, and sudden-onset dyspnea. The patient also has fever and an irritating cough. In suspected acute pulmonary embolism, what is the gold standard diagnostic investigation?"
   },
   "ssm2022254": {
-    "question": "A 74-year-old patient, bedridden after surgery for a femoral fracture, presents to the Emergency Department for syncope, chest pain, and sudden-onset dyspnea. The patient also presents with fever and a hacking cough. With a suspicion of a bronchopneumonic process associated with pulmonary embolism, which of the following statements is correct?"
+    "question": "A 74-year-old patient, bedridden after surgery for a femoral fracture, presents to the Emergency Department with syncope, chest pain, and sudden-onset dyspnea. The patient also presents with fever and a hacking cough. Given the suspicion of a bronchopneumonic process associated with pulmonary embolism, which of the following statements is correct?"
   },
   "ssm2022255": {
     "question": "A 50-year-old patient presents to the Emergency Department with right flank pain radiating downward to the ipsilateral testicle, hematuria, and vomiting. Renal colic caused by a stone is suspected. Which of the following statements is true?",
@@ -927,23 +1032,25 @@
     "question": "A 28-year-old patient with no history of systemic diseases and a reported allergic reaction to cephalosporins is a candidate for cholecystectomy for cholelithiasis. After induction of general anesthesia with propofol, fentanyl, and midazolam, neuromuscular blockade with rocuronium, and orotracheal intubation, an anaphylactic reaction occurs with a shrimp-red erythema, initially on the upper chest and face, edema of the tongue, eyelids, and lips, hypotension with tachycardia, and convulsive seizures. Which of the following classes of drugs is most likely to induce anaphylactic complications?"
   },
   "ssm2022260": {
-    "question": "A 70-year-old patient undergoing general anesthesia with orotracheal intubation develops severe desaturation with pinkish fluid coming out of the endotracheal tube and, on auscultation, diffuse crackles over both hemithoraces, leading to suspicion of pulmonary edema. Among other measures regarding the ventilator settings, it is appropriate to:",
+    "question": "A 70-year-old patient undergoing general anesthesia with orotracheal intubation develops severe desaturation with pinkish fluid emerging from the endotracheal tube and, on auscultation, diffuse crackles over both hemithoraces, raising suspicion of pulmonary edema. Among other measures regarding the established ventilator settings, it is appropriate to:",
     "answer_c": "Do not modify the PEEP set at 5 cm H2O from the beginning"
   },
   "ssm2022265": {
     "answer_a": "Tracheostomy can be performed with an open \"surgical\" technique or with a \"percutaneous\" dilatational technique",
     "answer_b": "The dilatational technique entails a higher incidence of post-procedural bleeding",
-    "answer_d": "Long-term complications are greater with dilatational tracheostomy"
+    "answer_d": "Long-term complications are greater with dilatational tracheostomy",
+    "question": "Indicate the correct statement regarding the tracheostomy procedure."
   },
   "ssm2022266": {
     "answer_a": "Accentuation of the normal anterior flexion angle of the thoraco-lumbar spine in the sagittal plane, which decreases in the recumbent position",
     "answer_e": "Accentuation of the normal anterior flexion angle of the thoraco-lumbar spine in the sagittal plane, which markedly increases in the recumbent position"
   },
   "ssm2022269": {
-    "answer_d": "Have as their objective the determination of the maximum tolerated dose"
+    "answer_d": "Have as their objective the determination of the maximum tolerated dose",
+    "question": "Phase II clinical trials"
   },
   "ssm2022273": {
-    "question": "In the case of vaccine-preventable diseases, the goal of eradication is achieved when:",
+    "question": "In the case of vaccine-preventable diseases, the goal of eradication is achieved when",
     "answer_a": "At the global level the incidence of the disease is consistently 0 and the causative agent is no longer present in nature",
     "answer_b": "At the global level the incidence is consistently 0, even in the presence of infected animal or environmental reservoirs",
     "answer_c": "In one or more WHO regions the incidence of the disease is consistently 0, even in the presence of infected animal or environmental reservoirs",
@@ -956,20 +1063,22 @@
   "ssm2022278": {
     "answer_b": "Notify the Labor Court of the event",
     "answer_c": "Notify the INPS (National Social Security Institute) of the event",
-    "answer_e": "Notify the Guardianship Judge of the event"
+    "answer_e": "Notify the Guardianship Judge of the event",
+    "question": "Following a fall from scaffolding at the construction site where he was working, a 40-year-old man presents to the Emergency Department with multiple injuries (polytrauma) and a prognosis exceeding 40 days. Since the injuries are likely the result of negligence, the physician must"
   },
   "ssm2022279": {
-    "question": "An 80-year-old man, suffering from metastatic cancer for several years, dies at his home. The family members contact the treating physician requesting, if possible, to schedule the funeral for that same afternoon. The treating physician:",
+    "question": "An 80-year-old man, who had suffered from metastatic malignancy for several years, dies at his home. The family members contact the treating physician, requesting that, if possible, the funeral be scheduled for that same afternoon. The treating physician:",
     "answer_a": "Advises that the funeral cannot be carried out before the examination by the local physician responsible for death verification",
     "answer_b": "Goes immediately to the patient's home, completes the ISTAT form, and draws up the death verification certificate",
     "answer_e": "Completes only the death verification certificate"
   },
   "ssm2023441": {
     "answer_d": "Left mid-axillary line at the 5th intercostal space",
-    "answer_e": "Right mid-axillary line at the 5th intercostal space"
+    "answer_e": "Right mid-axillary line at the 5th intercostal space",
+    "question": "A 28-year-old man with severe aortic valve stenosis is scheduled for aortic valve replacement via ministernotomy. The procedure is performed with an incision"
   },
   "ssm2023451": {
-    "question": "An eight-year-old patient is brought to the Emergency Department because of the onset of a painful, erythematous anterior midline cervical swelling. During swallowing, a relationship with the hyoid bone is noted. Which of the following is the most likely diagnosis?",
+    "question": "An eight-year-old patient is brought to the Emergency Department for the onset of a painful, erythematous anterior midline cervical swelling. On swallowing, movement in relation to the hyoid bone is appreciated. Which of the following is the most likely diagnosis?",
     "answer_c": "Suppurative lymphadenopathy"
   },
   "ssm2023453": {
@@ -980,27 +1089,31 @@
     "question": "A 55-year-old man, who has suffered from dyspeptic disorders for a long time, presents for evaluation of swelling in the left supraclavicular fossa (Troisier's sign). Which of the following is the most likely suspected diagnosis?"
   },
   "ssm2023458": {
-    "answer_b": "Upper gastrointestinal series"
+    "answer_b": "Upper gastrointestinal series",
+    "question": "In a 75-year-old man with long-standing chronic dyspepsia refractory to therapy, which of the following is the most appropriate initial diagnostic investigation?"
   },
   "ssm2023462": {
     "question": "A patient presents to the Emergency Department with abdominal pain associated with fever accompanied by chills and jaundice. What is the name of the combination of the three clinical signs presented by the patient?"
   },
   "ssm2023465": {
-    "question": "A 35-year-old woman presents to the gynecology clinic reporting amenorrhea for approximately 6 months, sleep disturbances, and dyspareunia. In previous years, her menstrual cycles had always been regular in terms of frequency, duration, and flow. She brings hormonal tests showing elevated FSH and LH levels, low Estradiol and Progesterone levels, and nothing else of relevance. The most likely cause of amenorrhea is:"
+    "question": "A 35-year-old woman presents to the gynecology clinic reporting amenorrhea for approximately 6 months, sleep disturbances, and dyspareunia. In previous years, her menstrual cycles had always been regular in terms of frequency, duration, and flow. She brings hormonal tests showing elevated FSH and LH levels, low Estradiol and Progesterone levels, and nothing else of relevance. The most likely cause of amenorrhea is",
+    "answer_a": "Premature menopause"
   },
   "ssm2023469": {
     "question": "A 15-year-old girl presents with her mother for a gynecological visit because menarche has not yet occurred. The girl, born by spontaneous vaginal delivery, demonstrates complete development of secondary sexual characteristics and a height within the normal range for age and ethnicity; however, the patient reports occasional abdominal pain about once a month, which resolves after a few days and the intake of painkillers. Which of the following diagnoses is the most likely?"
   },
   "ssm2023472": {
     "question": "Which of the following clinical and diagnostic findings is NOT typical of a complete hydatidiform mole?",
-    "answer_a": "Beta-hCG low for gestational age"
+    "answer_a": "Beta-hCG low for gestational age",
+    "answer_b": "Metrorrhagia"
   },
   "ssm2023477": {
     "question": "A 65-year-old patient undergoes total knee arthroplasty of the right knee for severe symptomatic osteoarthritis. Two years after surgery, during which the pain symptoms had completely resolved, the patient begins to complain of stiffness, pain, and swelling of the operated knee. He undergoes arthrocentesis of the knee, which yields a cloudy, yellowish fluid, with a protein concentration of 3.7 g/dL, glucose 10 mg/dL, and LDH 4,800 U/L. The most likely diagnosis among the following is:"
   },
   "ssm2023481": {
     "question": "A three-year-old child is brought to the Emergency Department because he ingested an unspecified number of acetylsalicylic acid tablets. On admission the child complains of subjective dizziness, is vomiting, and physical examination reveals tachypnea. Which of the following measures is NOT correct?",
-    "answer_a": "Rapidly infuse large amounts of fluids to force diuresis"
+    "answer_a": "Rapidly infuse large amounts of fluids to force diuresis",
+    "answer_e": "Assess respiratory and circulatory stability, establish venous access, and perform blood tests (measurement of serum salicylate level, arterial blood gas analysis, blood glucose, serum electrolytes, serum creatinine, and urinalysis)."
   },
   "ssm2023482": {
     "question": "A two-year-old girl is brought to the Emergency Department with a clinical picture that arose rapidly about one hour earlier, characterized by barking cough, inspiratory stridor, agitation, high fever, drooling, and dysphagia. SpO2 on room air is 90%. Which of the following is the most likely diagnosis?",
@@ -1022,19 +1135,20 @@
     "question": "A 32-year-old man comes to the outpatient clinic with diffuse pruritus without head involvement, present for two weeks. He reports that the pruritus is more pronounced during nighttime hours. On clinical evaluation, papules, some excoriated, and scratch lesions are present. On the lateral surface of the index finger of one hand, linear lesions about one centimeter in length are observed, with a small papule at one end. Which of the following is the first condition that should be suspected?"
   },
   "ssm2023491": {
-    "answer_b": "Nicolau's livedoid dermatitis"
+    "answer_b": "Nicolau's livedoid dermatitis",
+    "question": "A 60-year-old female patient presents to the dermatology department with a diffuse morbilliform maculopapular eruption, facial edema, intense pruritus, and high fever. Three weeks earlier she had started treatment with allopurinol. Blood tests are performed, revealing hypereosinophilia (2000/mm3), atypical lymphocytes (more than 5%), and elevated transaminases, lipase, and amylase. The clinical picture is consistent with"
   },
   "ssm2023494": {
     "answer_b": "Benign monoclonal lymphocytosis"
   },
   "ssm2023495": {
-    "question": "A 40-year-old female patient with hypertension and a recent diagnosis of papillary thyroid carcinoma has undergone total thyroidectomy and subsequent radioiodine therapy. In light of this information, the trend of which of the following parameters should be monitored during this patient's follow-up:"
+    "question": "A 40-year-old female patient with hypertension and a recent diagnosis of papillary thyroid carcinoma has undergone total thyroidectomy and subsequent radioiodine therapy. In light of this information, the trend of which of the following parameters should be monitored during this patient's follow-up"
   },
   "ssm2023502": {
-    "question": "The first-line drug, in the absence of contraindications, in a 54-year-old female patient diagnosed with stable angina detected during a visit to the cardiology outpatient clinic is:"
+    "question": "The first-line drug, in the absence of contraindications, in a 54-year-old female patient diagnosed with stable angina detected during a visit to the cardiology outpatient clinic is"
   },
   "ssm2023504": {
-    "question": "A 50-year-old man has been diagnosed with idiopathic dilated cardiomyopathy. Therapy with ACE inhibitors and beta-blockers has been prescribed. In this case, it would also be necessary to prescribe therapy with:"
+    "question": "A 50-year-old man has been diagnosed with idiopathic dilated cardiomyopathy. Therapy with ACE inhibitors and beta-blockers has been prescribed. In this case, it would also be necessary to prescribe therapy with"
   },
   "ssm2023506": {
     "question": "A 45-year-old female patient with no prior cardiovascular history except for arterial hypertension treated with low-dose ramipril presents to the Emergency Department with anterior chest pain that does not change with exertion but does change with respiratory movements. High-sensitivity troponin is measured and found to be elevated, while the ECG shows a pattern consistent with early repolarization and a heart rate of 70 bpm. Which of the following is the most likely diagnosis?"
@@ -1043,16 +1157,18 @@
     "answer_a": "Blood D-dimer measurement"
   },
   "ssm2023513": {
-    "question": "A 65-year-old woman, a former smoker with a 40 pack-year history, who has COPD with an FEV1 equal to 28% of predicted (last spirometry performed approximately six months ago) presents for evaluation with the following arterial blood gas analysis performed while the patient was breathing room air: pH=7.35, PaO2=40 mmHg, PaCO2=55 mmHg, HCO3-=27 mmol/L. This blood gas analysis is most indicative of a patient with:"
+    "question": "A 65-year-old woman, a former smoker with a 40 pack-year history, who has COPD with an FEV1 equal to 28% of predicted (last spirometry performed approximately six months ago) presents for evaluation with the following arterial blood gas analysis performed while the patient was breathing room air: pH=7.35, PaO2=40 mmHg, PaCO2=55 mmHg, HCO3-=27 mmol/L. This blood gas analysis is most indicative of a patient with",
+    "answer_d": "Respiratory alkalosis"
   },
   "ssm2023515": {
     "question": "A patient with symptoms of acute meningitis has normal blood chemistry tests. Lumbar puncture reveals cerebrospinal fluid with a pressure of 35 cm H2O, clear in appearance, with leukocytes 460/mm3 (lymphomonocytes 89%), CSF protein 42 mg/dL, and CSF glucose 56 mg/dL (with blood glucose 88 mg/dL). Which of the following is the most likely diagnosis?"
   },
   "ssm2023517": {
-    "question": "A 30-year-old man is found in a public garden by emergency medical services personnel, unconscious, bradypneic, and with a pulse present. Signs of recent venipuncture are evident, and a tourniquet is present. The pupils are miotic, and blood pressure is 90/60 mmHg. The drug to be administered among the following is:"
+    "question": "A 30-year-old man is found in a public garden by emergency medical services personnel, unconscious, bradypneic, and with a pulse present. Signs of recent venipuncture are evident, and a tourniquet is present. The pupils are miotic, and blood pressure is 90/60 mmHg. The drug to be administered among the following is"
   },
   "ssm2023518": {
-    "answer_a": "Meningitis secondary to otitis caused by Streptococcus pneumoniae"
+    "answer_a": "Meningitis secondary to otitis caused by Streptococcus pneumoniae",
+    "question": "An 80-year-old man has had fever and otalgia for several days, for which he has used a topical antibiotic. Due to the persistence of symptoms, the patient goes to the Emergency Department. Laboratory tests reveal neutrophilic leukocytosis and an increase in C-reactive protein. During observation in the ED, the patient develops a fever spike with nuchal rigidity and subsequent reduction in level of consciousness progressing to coma. Among the following, the most likely hypothesis is that the patient has developed"
   },
   "ssm2023521": {
     "question": "A 65-year-old patient, a smoker (40 pack-years), hypertensive, presents to the Emergency Department with cough, also productive, blood-streaked sputum, and dyspnea. No fever, no preference for any particular position when lying down, with a 5 kg weight loss over the past month without any change in dietary regimen. A complete blood count, ECG, chest X-ray, and BNP measurement were performed; the BNP was 80 pg/mL. While awaiting the other results, which of the following is the most likely diagnosis?"
@@ -1070,7 +1186,7 @@
     "question": "A 27-year-old man has been complaining for approximately 2 years of low back pain radiating to the buttocks. The symptoms are worse upon waking and progressively improve throughout the day. Tests show a moderate increase in inflammatory markers, but radiographs of the pelvis and lumbosacral spine reveal no significant abnormalities. Which of these examinations is most indicated?"
   },
   "ssm2023537": {
-    "question": "An 80-year-old patient presents to the Emergency Department for the acute onset, approximately two hours earlier, of weakness of the right hemibody. Neurological examination: the patient is alert and cooperative; motor deficit of the right limbs with early drift on the Mingazzini maneuver, mild language deficit with anomia. The diagnostic investigation to be performed immediately is:"
+    "question": "An 80-year-old patient presents to the Emergency Department for the acute onset, approximately two hours earlier, of weakness of the right hemibody. Neurological examination: the patient is alert and cooperative; motor deficit of the right limbs with early drift on the Mingazzini maneuver, mild language deficit with anomia. The diagnostic investigation to be performed immediately is"
   },
   "ssm2023539": {
     "question": "A 20-year-old woman presents for medical evaluation regarding a disorder characterized by paresthesias located symmetrically in the distal portions of the four limbs. When questioned, she reports that the symptoms appeared the previous day but are progressing in intensity. Two weeks before the onset of symptoms, an episode of gastroenteritis that resolved after about five days is reported. On neurological examination, the only notable findings concern distal hypoesthesia in the lower and upper limbs and absence of the Achilles reflexes bilaterally, with reduced elicitability of all other deep tendon reflexes. The most likely diagnostic hypothesis among the following is:"
@@ -1078,7 +1194,8 @@
   "ssm2023540": {
     "answer_a": "The emotional distress between the role, the gender expressed by the individual, and the sex assigned at birth",
     "answer_c": "A fear or thought in an adolescent who thinks they are attracted to people of the same sex",
-    "answer_e": "Psychopathic conduct accompanied by other manifestations such as prostitution and drug addiction"
+    "answer_e": "Psychopathic conduct accompanied by other manifestations such as prostitution and drug addiction",
+    "question": "Gender dysphoria can be defined as"
   },
   "ssm2023542": {
     "question": "Which drug is most indicated as a mood stabilizer in the treatment of patients with bipolar I disorder?"
@@ -1090,24 +1207,25 @@
     "question": "A 63-year-old man, former professional footballer, now a coach, undergoes an examination for sports eligibility. No past medical history. The ECG reveals low limb-lead voltages, left anterior fascicular block, and anterior pseudo-necrosis. Blood chemistry tests and serum and urine electrophoresis are within normal limits. An echocardiogram is ordered, which shows symmetric hypertrophy of the left ventricle, right ventricle, and septum. An endomyocardial biopsy is performed, which reveals: \"Myocytes of increased size, occasionally fragmented and atrophic; in the myocardial interstitium there is an eosinophilic, amorphous, homogeneous substance.\" In light of the clinical and histological picture, which of the following is the most likely diagnosis?"
   },
   "ssm2023551": {
-    "question": "A 23-year-old woman has had a nodule in the upper inner quadrant of the left breast for approximately two months which, she reports, has been growing. When the patient presents to her physician, the nodule is 2.2 cm, clinically has well-defined margins, is mobile, and has a firm-elastic consistency. An ultrasound-guided biopsy is performed, and histological examination shows: \"Fibroepithelial lesion with diffusely increased stromal cellularity in the absence of atypia; glandular proliferation with features of ductal hyperplasia without atypia. There is 1 mitosis/10 HPF.\" Based on the clinical and histological findings, which of the following is the most likely diagnosis?"
+    "question": "A 23-year-old woman has had a nodule in the upper inner quadrant of the left breast for approximately two months which, she reports, has been enlarging. When the patient presents to her physician, the nodule is 2.2 cm, clinically has well-defined margins, is mobile, and has a firm-elastic consistency. An ultrasound-guided biopsy is performed, and histological examination shows: \"Fibroepithelial lesion with diffusely increased stromal cellularity in the absence of atypia; glandular proliferation with features of ductal hyperplasia without atypia. There is 1 mitosis/10 HPF.\" Based on the clinical and histological findings, which of the following is the most likely diagnosis?"
   },
   "ssm2023555": {
-    "answer_e": "Use mosquito repellents"
+    "answer_e": "Use repellents to avoid mosquito bites"
   },
   "ssm2023556": {
     "answer_b": "In carriers of beta-thalassemia minor, no iron treatment is appropriate; therefore, testing of vitamin B12 and folic acid levels is prescribed for possible support with hematinic vitamins",
-    "answer_e": "A gastroscopy and a rectocolonoscopy are prescribed for suspected internal bleeding due to chronic blood loss"
+    "answer_e": "A gastroscopy and colonoscopy are prescribed for suspected anemia due to chronic blood loss."
   },
   "ssm2023564": {
-    "question": "A 3-year-old child is brought for medical evaluation accompanied by the parents, who report an accidental fall down the stairs. The child appears frightened and, on inspection, the healthcare providers note the presence of multiple ecchymoses at different stages of coloration on the dorsal region of both forearms. Radiological examinations show evidence of fractures, including \"greenstick\" fractures, of the limbs. The healthcare providers consult one another regarding the need to inform the judicial authority. This obligation falls upon:"
+    "question": "A 3-year-old child is brought for medical evaluation accompanied by the parents, who report an accidental fall down the stairs. The child appears frightened and, on inspection, the healthcare providers note the presence of multiple ecchymoses at different stages of coloration on the dorsal region of both forearms. Radiological examinations show evidence of fractures, including \"greenstick\" fractures, of the limbs. The healthcare providers consult one another regarding the need to inform the judicial authority. This obligation falls upon"
   },
   "ssm2023565": {
     "question": "An adult is transported urgently to the Emergency Department following a road traffic accident. The physicians determine that urgent intervention is necessary because the investigations have revealed a large intracranial hematoma. The person is unconscious and unable to give consent. Which of the following courses of action is the correct one?"
   },
   "ssm2023566": {
     "answer_c": "Zero when the individual is exposed to the risk factor",
-    "answer_d": "Equivalent between being exposed and not being exposed"
+    "answer_d": "Equivalent between being exposed and not being exposed",
+    "question": "For a group of 500 patients, a relative risk (RR) of 5.65 was calculated with respect to exposure to a specific risk factor. This means that the probability of developing a certain disease is"
   },
   "ssm2023570": {
     "answer_c": "Spinal shock due to a spinal fracture with spinal cord injury"
@@ -1116,7 +1234,8 @@
     "question": "A 62-year-old female patient undergoes placement of a ureteral stent for nephrolithiasis under general anesthesia. No intraoperative complications are recorded. Upon awakening, she presents with rigors, tachypnea, and tachycardia. Vital signs are: GCS 14/15, SpO2 99% on room air, BP 140/100 mmHg, temperature 39.5 degrees Celsius. Which of the following is the most likely diagnosis?"
   },
   "ssm2023575": {
-    "answer_d": "The recovery of deep sensation through the stimulation of thermoalgesic afferents"
+    "answer_d": "The recovery of deep sensation through the stimulation of thermoalgesic afferents",
+    "question": "Proprioceptive rehabilitation aims at"
   },
   "ssm2023576": {
     "question": "An 80-year-old man, who underwent hip arthroplasty for left hip osteoarthritis, is transferred from the Orthopedics ward to the Rehabilitation Medicine ward to begin rehabilitation. His medical history includes: chronic ischemic heart disease and cognitive impairment with still-preserved independence, but with occasional episodes of disorientation, especially at night. Upon his arrival, the patient presents with intense pain at the operated hip, and the nursing staff reports that the previous night, during an episode of disorientation, the patient repeatedly attempted to climb over the bed rails. Clinically, the left lower limb appears swollen at the proximal thigh, shortened compared to the contralateral side, externally rotated, with difficulty in passive mobilization that provokes intense pain. There are no objectively detectable peripheral neurovascular deficits. What is the most appropriate course of action?"
@@ -1158,13 +1277,14 @@
     "question": "A 73-year-old man presents for a hematology consultation because for the past couple of months he has been experiencing evening low-grade fever associated with anemia. Liver and kidney function tests are normal. An infectious disease evaluation revealed no findings suggestive of an infectious disease. Physical examination reveals splenomegaly. Which of the following should be the first additional diagnostic investigation?"
   },
   "ssm2023625": {
-    "question": "In a 75-year-old woman who presented for evaluation for persistent polycythemia, after secondary causes of erythrocytosis had been excluded, the JAK2 V617F mutation was detected in a homozygous state. In light of the clinical and laboratory picture, the therapeutic strategy will be based on:"
+    "question": "In a 75-year-old woman who presented for evaluation for persistent polycythemia, after secondary causes of erythrocytosis had been excluded, the JAK2 V617F mutation was detected in a homozygous state. In light of the clinical and laboratory picture, the therapeutic strategy will be based on"
   },
   "ssm2023630": {
-    "answer_a": "Benign prostatic hyperplasia"
+    "answer_a": "Benign prostatic hyperplasia",
+    "question": "A 78-year-old man, in fairly good general condition, with arterial hypertension and dyslipidemia, presents to the Emergency Department for acute urinary retention. On examination, a distended bladder is noted. The most likely cause among the following is"
   },
   "ssm2023632": {
-    "question": "An 82-year-old patient presents to the Geriatrics Unit with a unilateral pleural effusion. The history reveals that the patient worked for several years in a factory where asbestos was used. Given the clinical picture, pleural mesothelioma is suspected. Confirmation of the clinical suspicion requires:"
+    "question": "An 82-year-old patient presents to the Geriatrics Unit with a unilateral pleural effusion. The history reveals that the patient worked for several years in a factory where asbestos was used. Given the clinical picture, pleural mesothelioma is suspected. Confirmation of the clinical suspicion requires"
   },
   "ssm2023635": {
     "question": "Which of these congenital heart diseases can most frequently be duct-dependent for the systemic circulation?"
@@ -1203,7 +1323,8 @@
     "question": "A five-year-old girl is brought to the pediatrician for acute febrile bronchitis. The mother reports frequent (more than 10-12 per year) episodes of upper and lower respiratory tract infections, otitis, and gastrointestinal infections. Because an immune deficiency is suspected, blood tests are performed, which among other findings reveal: IgG: 1117 mg/dL; IgA: 3 mg/dL; IgM: 119 mg/dL. Which of the following is the most likely diagnosis?"
   },
   "ssm2023672": {
-    "answer_b": "Arnold-Chiari malformation"
+    "answer_b": "Arnold-Chiari malformation",
+    "question": "A female newborn delivered by spontaneous vaginal delivery at 36 weeks of gestation presents with macrocephaly (head circumference > 97th percentile). While awaiting the results of other tests, a transfontanellar cranial ultrasound and a fundus oculi examination are performed, which reveal hydrocephalus with intracranial calcifications and chorioretinitis. The clinical picture is strongly suggestive of a diagnosis of"
   },
   "ssm2023673": {
     "question": "A 14-year-old boy is brought to the pediatrician. According to his parents, he has delayed pubertal development and tends to be taller than his peers, particularly with an altered ratio of trunk length to lower limb length. On physical examination, mild gynecomastia with reduced testicular volume is evident. Given the suspicion of a chromosomal abnormality syndrome, karyotyping is recommended. Which of the following is the most likely diagnosis?"
@@ -1231,7 +1352,7 @@
     "question": "A 46-year-old man, a smoker, notices a firm nodule at the level of the right mandibular angle while shaving. He goes to the doctor, who finds, on palpation, a 2.5 cm diameter nodule at the level of the parotid gland; a cytological examination is therefore performed via fine-needle aspiration, which shows: \"Sheets of oxyphilic cells embedded in a debris-rich material containing numerous small-sized lymphocytes.\" Based on the clinical picture and cytological report, which of the following is the most likely diagnosis?"
   },
   "ssm2023690": {
-    "question": "A 70-year-old patient, who underwent cholecystectomy under general anesthesia, is transferred to the recovery room. Transfer to the general ward is indicated when, in two consecutive assessments, the minimum Aldrete Score (in the absence of a 0 for any individual item) is:"
+    "question": "A 70-year-old patient, who underwent cholecystectomy under general anesthesia, is transferred to the recovery room. Transfer to the general ward is indicated when, in two consecutive assessments, the minimum Aldrete Score (in the absence of a 0 for any individual item) is"
   },
   "ssm2023691": {
     "question": "A 45-year-old woman presents to the Emergency Department, accompanied by her husband, for the onset of a severe headache associated with somnolence and 2 episodes of vomiting. Past medical history: hypercholesterolemia, smoking habit, arterial hypertension under treatment. On arrival at the Emergency Department: GCS 11, BP 175/95 mmHg, HR 72 bpm, SpO2 97% on room air, body temperature 36.9°C. Given the clinical picture, which of the following do you consider to be the first-line diagnostic procedure to perform?"
@@ -1240,7 +1361,8 @@
     "answer_c": "Gastroenteritis with fluid and electrolyte imbalance"
   },
   "ssm2023699": {
-    "answer_a": "The crude mortality rate in Italy is higher as a consequence of the different distribution by age group within the population"
+    "answer_a": "The crude mortality rate in Italy is higher as a consequence of the different distribution by age group within the population",
+    "question": "The crude mortality rate in Italy is approximately 100/100,000, whereas in Algeria it is below 50/100,000. The explanation for this difference is"
   },
   "ssm2023705": {
     "question": "In a 10-year-old girl, the parents noticed a dorsal prominence and, at the physiatry visit, bring a standing full-spine radiograph for review. The radiograph shows right-convex thoracic scoliosis of approximately 30° Cobb with a significant rotational component and Risser 0. The girl has not yet had menarche. Which of the following treatments is appropriate as first-line management?",
@@ -1251,7 +1373,8 @@
   },
   "ssm2023708": {
     "answer_c": "A pointed and edged weapon",
-    "answer_e": "A slashing blow"
+    "answer_e": "A slashing blow",
+    "question": "A body is found in a park, and on external examination the forensic pathologist notes a head wound of elongated shape characterized by irregular, contused, and abraded margins with tissue bridges between the margins, with the cranial vault intact. These wound characteristics are typically produced by"
   },
   "ssm2023715": {
     "answer_d": "68Ga-DOTApeptides (DOTATOC; DOTANOC; DOTATE) PET/CT can be used in the study of well-differentiated neuroendocrine neoplasms"
@@ -1431,5 +1554,903 @@
   },
   "ssm2025999": {
     "answer_e": "Radioligand therapy with Lu-PSMA"
+  },
+  "ssm20203811904": {
+    "answer_a": "Scleroderma",
+    "answer_b": "Fibromyalgia"
+  },
+  "ssm20203812054": {
+    "answer_a": "Atenolol",
+    "answer_b": "Furosemide"
+  },
+  "ssm20203812104": {
+    "answer_a": "Administer intravenous epinephrine",
+    "answer_b": "Immediately begin cardiopulmonary resuscitation maneuvers"
+  },
+  "ssm20203812304": {
+    "answer_a": "Lhermitte's sign",
+    "answer_b": "Stewart-Holmes sign"
+  },
+  "ssm20203812404": {
+    "answer_a": "Intravenous epinephrine",
+    "answer_b": "Intravenous aminophylline"
+  },
+  "ssm20203812454": {
+    "answer_a": "Infusion of purified coagulation factors (prothrombin complex)",
+    "answer_b": "Vitamin K"
+  },
+  "ssm20203812504": {
+    "answer_a": "Doppler ultrasound of the abdominal aorta",
+    "answer_b": "CT angiography of the abdominal aorta"
+  },
+  "ssm20203812554": {
+    "answer_a": "Finasteride",
+    "answer_b": "Sildenafil"
+  },
+  "ssm20203812604": {
+    "answer_a": "Patient with a mechanical heart valve",
+    "answer_b": "Treatment of pulmonary thromboembolism"
+  },
+  "ssm20203812704": {
+    "answer_a": "Ewing sarcoma",
+    "answer_b": "Hodgkin lymphoma"
+  },
+  "ssm20203812754": {
+    "answer_a": "Osimertinib",
+    "answer_b": "Chemotherapy"
+  },
+  "ssm20203812854": {
+    "answer_a": "Systemic antibiotics",
+    "answer_b": "Corticosteroids"
+  },
+  "ssm20203812904": {
+    "answer_a": "Genital herpes",
+    "answer_b": "Primary syphilis"
+  },
+  "ssm20203812954": {
+    "answer_a": "Bone marrow aspirate and peripheral venous blood smear",
+    "answer_b": "D-dimer measurement"
+  },
+  "ssm20203813004": {
+    "answer_a": "Red cell mass measurement",
+    "answer_b": "Ferritin level"
+  },
+  "ssm20203813054": {
+    "answer_a": "T-cell lymphoblastic leukemia",
+    "answer_b": "B-cell lymphoblastic leukemia"
+  },
+  "ssm20203813104": {
+    "answer_a": "The presence of atrophic gastritis does not reduce L-thyroxine absorption",
+    "answer_b": "Taking L-thyroxine in a non-fasting state may alter its absorption"
+  },
+  "ssm20203813154": {
+    "answer_a": "Sheehan syndrome",
+    "answer_b": "Pregnancy"
+  },
+  "ssm20203813204": {
+    "answer_a": "Methylprednisolone",
+    "answer_b": "Risedronate"
+  },
+  "ssm20203813254": {
+    "answer_a": "Class II obesity",
+    "answer_b": "Class I obesity"
+  },
+  "ssm20203813304": {
+    "answer_a": "Schatzki ring",
+    "answer_b": "Esophageal adenocarcinoma"
+  },
+  "ssm20203813354": {
+    "answer_a": "Metoclopramide",
+    "answer_b": "Amitriptyline"
+  },
+  "ssm20203813404": {
+    "answer_a": "Mycophenolate",
+    "answer_b": "Sulfasalazine"
+  },
+  "ssm20203813454": {
+    "answer_a": "Normal blood pressure in the clinical setting and pathologically elevated outside of it (home self-measurement or 24-hour monitoring)",
+    "answer_b": "Pathologically elevated blood pressure both in the clinical setting and outside of it (home self-measurement or 24-hour monitoring)",
+    "question": "A 58-year-old man subjected to high levels of stress in the workplace, not on pharmacological treatment for arterial hypertension and with a medical history negative for significant conditions, presents to his general practitioner for a blood pressure check, reporting the finding of elevated blood pressure values (around 155/95 mmHg) during occasional measurements taken at the workplace. The physician finds levels of 138/88 mmHg (average of multiple measurements). In subjects not on antihypertensive treatment, as in the patient described, masked hypertension is defined by"
+  },
+  "ssm20203813704": {
+    "answer_a": "The normal LVEF rules out the hypothesis of heart failure",
+    "answer_b": "Pulmonary hilar congestion supports the diagnosis of heart failure"
+  },
+  "ssm20203813754": {
+    "answer_a": "Acute myopericarditis",
+    "answer_b": "Acute pericarditis"
+  },
+  "ssm20203813804": {
+    "answer_a": "Respiratory acidosis",
+    "answer_b": "Respiratory alkalosis"
+  },
+  "ssm20203813854": {
+    "answer_a": "Pleural metastases from primary lung carcinoma",
+    "answer_b": "Pleural metastases from prostate carcinoma"
+  },
+  "ssm20203813904": {
+    "answer_a": "Bronchial asthma",
+    "answer_b": "Static and dynamic lung volumes within normal limits"
+  },
+  "ssm20203813954": {
+    "answer_a": "Anosmia",
+    "answer_b": "Vomiting and diarrhea"
+  },
+  "ssm20203814004": {
+    "answer_a": "Between 30 and 50 days",
+    "answer_b": "More than 6 months"
+  },
+  "ssm20203814054": {
+    "answer_a": "Infusion of calcium gluconate 10% - 10 mL intravenously over 10 minutes",
+    "answer_b": "Administration of cation-exchange resin"
+  },
+  "ssm20203814104": {
+    "answer_a": "Diabetic nephropathy",
+    "answer_b": "Acute tubular necrosis",
+    "question": "The most frequent cause of chronic renal failure in Western countries is"
+  },
+  "ssm20203814154": {
+    "answer_a": "Psoriasis",
+    "answer_b": "Eczema"
+  },
+  "ssm20203814204": {
+    "answer_a": "Methotrexate",
+    "answer_b": "Hydroxychloroquine"
+  },
+  "ssm20203814254": {
+    "answer_a": "Subacute combined degeneration",
+    "answer_b": "Amyotrophic lateral sclerosis"
+  },
+  "ssm20203814304": {
+    "answer_a": "Multiple sclerosis with a lesion along the course of the left optic tract",
+    "answer_b": "Multiple sclerosis with a lesion along the course of the right optic tract"
+  },
+  "ssm20203814654": {
+    "answer_a": "Breath test",
+    "answer_b": "A 15-day trial with Lactobacillus reuteri"
+  },
+  "ssm20203814754": {
+    "answer_a": "Paracetamol 10-15 mg/kg orally",
+    "answer_b": "Paracetamol 100 mg/kg orally"
+  },
+  "ssm20203814804": {
+    "answer_a": "Desmopressin",
+    "answer_b": "Betamethasone"
+  },
+  "ssm20203814854": {
+    "answer_a": "Hypercalcemia",
+    "answer_b": "Hyperkalemia"
+  },
+  "ssm20203815004": {
+    "answer_a": "Right-sided valvular heart disease",
+    "answer_b": "Left-sided valvular heart disease",
+    "question": "A frequent complication of carcinoid syndrome is"
+  },
+  "ssm20203815104": {
+    "answer_a": "All of the other answers are correct",
+    "answer_b": "Myocardial infarction"
+  },
+  "ssm20203815154": {
+    "answer_a": ">20 and <=50 mm",
+    "answer_b": ">50 mm"
+  },
+  "ssm20203815204": {
+    "answer_a": "Iliac lymph nodes",
+    "answer_b": "Superficial inguinal lymph nodes",
+    "question": "The lymphatic vessels of the upper third of the vagina drain directly to"
+  },
+  "ssm20203815254": {
+    "answer_a": "Abdominal ultrasound",
+    "answer_b": "Abdominal CT with contrast medium"
+  },
+  "ssm20203815304": {
+    "answer_a": "Left gastric artery",
+    "answer_b": "Right gastric artery"
+  },
+  "ssm20203815354": {
+    "answer_a": "Pheochromocytoma",
+    "answer_b": "Pancreatic endocrine tumors"
+  },
+  "ssm20203815454": {
+    "answer_a": "Surgery is not urgent and should be performed after improving respiratory function and correcting pulmonary hypertension",
+    "answer_b": "Surgery is urgent and must necessarily be performed within 12 hours, after correcting the respiratory distress and pulmonary hypertension"
+  },
+  "ssm20203815504": {
+    "answer_a": "Fluid requirements in the burn patient",
+    "answer_b": "Caloric intake in the patient undergoing bariatric surgery",
+    "question": "The Parkland formula, also known as the Baxter formula, is used to estimate"
+  },
+  "ssm20203815554": {
+    "answer_a": "Vaginal agenesis, absence of uterus, and presence of ovaries",
+    "answer_b": "Vaginal agenesis with presence of uterus and ovaries",
+    "question": "Rokitansky syndrome is characterized by"
+  },
+  "ssm20203815654": {
+    "answer_a": "One vein, two arteries, and Wharton's jelly",
+    "answer_b": "One artery, two veins, and Wharton's jelly"
+  },
+  "ssm20203815704": {
+    "answer_a": "Uterine atony",
+    "answer_b": "Retained placental tissue"
+  },
+  "ssm20203815754": {
+    "answer_a": "Heparin",
+    "answer_b": "Carbimazole",
+    "question": "All of the following drugs cross the placenta, except"
+  },
+  "ssm20203815804": {
+    "answer_a": "Amniotic fluid sampling for fetal karyotype analysis",
+    "answer_b": "Chorionic villus sampling for fetal karyotype analysis"
+  },
+  "ssm20203815854": {
+    "answer_a": "Toxoplasmosis",
+    "answer_b": "Gonorrhea"
+  },
+  "ssm20203815954": {
+    "answer_a": "Pellegrini-Stieda syndrome",
+    "answer_b": "Neoplasms",
+    "question": "Adhesive capsulitis of the shoulder, also known as \"frozen shoulder,\" can frequently be associated with all of the following conditions EXCEPT ONE"
+  },
+  "ssm20203816004": {
+    "answer_a": "A common osteoporotic fracture is that of the femoral shaft",
+    "answer_b": "The risk of osteoporotic fracture increases after menopause"
+  },
+  "ssm20203816054": {
+    "answer_a": "For 5 weeks",
+    "answer_b": "No longer than one week because of the risk of hemorrhage",
+    "question": "A patient must undergo hip arthroplasty surgery. After the operation, prophylaxis with low-molecular-weight heparin must be carried out"
+  },
+  "ssm20203816154": {
+    "answer_a": "Subcapital fracture of the left femur",
+    "answer_b": "Transcervical fracture of the left femur"
+  },
+  "ssm20203816204": {
+    "answer_a": "Emergency surgical intervention within 6 hours",
+    "answer_b": "Analgesics until complete resolution of the pain"
+  },
+  "ssm20203816304": {
+    "answer_a": "All the other answers are correct",
+    "answer_b": "Cystitis",
+    "question": "Hematuria can be caused by"
+  },
+  "ssm20203816354": {
+    "answer_a": "Apply the ABCDE protocol (Airway, Breathing, Circulation, Disability, Exposure) according to ATLS (Advanced Trauma Life Support) guidelines",
+    "answer_b": "Contrast-enhanced brain CT"
+  },
+  "ssm20203816454": {
+    "answer_a": "Cataract",
+    "answer_b": "Hypertensive retinopathy"
+  },
+  "ssm20203816504": {
+    "answer_a": "An acute attack of glaucoma",
+    "answer_b": "Viral keratoconjunctivitis",
+    "question": "A 45-year-old man, hyperopic by 6 diopters, presents to the Emergency Department complaining of severe pain and blurred vision in the right eye, which also appears markedly hyperemic. On slit-lamp examination, in addition to conjunctival and perikeratic hyperemia, there is corneal edema, a mid-dilated pupil unreactive to light stimuli, and an extremely shallow anterior chamber; the eye is hard on palpation. It can therefore be concluded that the patient has"
+  },
+  "ssm20203816554": {
+    "answer_a": "Low-tension glaucoma",
+    "answer_b": "Ischemic optic neuropathy",
+    "question": "A 40-year-old man undergoes an ophthalmologic examination because he wants to change his glasses. During the examination, a pronounced cupping of the optic nerve and a nasal displacement of the emergence of the retinal vascular tree from the optic disc are noted in both eyes. The intraocular pressure is 15 mmHg. A Visual Field test is then requested, which reveals a localized \"arcuate scotoma\"-type defect bilaterally. The patient reports having no significant medical conditions and, in fact, tends to be hypotensive, generally having a blood pressure of 105/65 mmHg. The most likely diagnosis is"
+  },
+  "ssm20203816654": {
+    "answer_a": "Treacher-Collins syndrome",
+    "answer_b": "Whipple syndrome"
+  },
+  "ssm20203816754": {
+    "answer_a": "Ostium secundum type ASD",
+    "answer_b": "Ostium primum type ASD"
+  },
+  "ssm20203816804": {
+    "answer_a": "Segmentectomy/wedge resection",
+    "answer_b": "Pneumonectomy"
+  },
+  "ssm20203816904": {
+    "answer_a": "Use of an antiplatelet agent",
+    "answer_b": "Use of low-molecular-weight heparin"
+  },
+  "ssm20203817004": {
+    "answer_a": "Pilocytic astrocytoma",
+    "answer_b": "Optic nerve glioma and mesothelioma"
+  },
+  "ssm20203817054": {
+    "answer_a": "In approximately 60% of cases it originates in T-NK cells and only in 40% is it of B-cell origin",
+    "answer_b": "Bone marrow involvement is frequent"
+  },
+  "ssm20203817104": {
+    "answer_a": "Kidney",
+    "answer_b": "Lung",
+    "question": "Wilms tumor is a neoplasm of the"
+  },
+  "ssm20203817154": {
+    "answer_a": "Chlamydia trachomatis",
+    "answer_b": "Gardnerella vaginalis"
+  },
+  "ssm20203817204": {
+    "answer_a": "Streptococcus pneumoniae",
+    "answer_b": "Staphylococcus aureus"
+  },
+  "ssm20203817254": {
+    "answer_a": "Fluctuating hyperbilirubinemia",
+    "answer_b": "Persistent hyperbilirubinemia",
+    "question": "A 25-year-old patient diagnosed with Gilbert syndrome shows the following on periodic blood tests"
+  },
+  "ssm20203817304": {
+    "answer_a": "Hypoparathyroidism",
+    "answer_b": "Biliary tract obstruction"
+  },
+  "ssm20203817354": {
+    "answer_a": "CT of the entire abdomen without contrast medium",
+    "answer_b": "CT of the entire abdomen with contrast medium",
+    "answer_e": "Contrast-enhanced ultrasound of the"
+  },
+  "ssm20203817454": {
+    "answer_a": "Left pneumothorax",
+    "answer_b": "Right pneumothorax"
+  },
+  "ssm20203817604": {
+    "answer_a": "Infarction of the distal portion of the spinal cord resulting from acute ischemia in the territory of the anterior spinal artery (anterior spinal artery syndrome)",
+    "answer_b": "Brown-Séquard syndrome"
+  },
+  "ssm20203817654": {
+    "answer_a": "In the event that complete surgical excision cannot be performed, external beam radiotherapy may be considered for palliative purposes",
+    "answer_b": "These are radiosensitive tumors, so the use of radiotherapy is generally considered in the treatment planning"
+  },
+  "ssm20203817704": {
+    "answer_a": "Septic shock",
+    "answer_b": "Sepsis",
+    "question": "A 55-year-old woman with an unremarkable medical history and an active lifestyle is admitted to the intensive care unit for a urinary tract infection. The patient remains hypotensive despite infusion of 2,000 mL of fluids (blood pressure 75/50 mmHg). Blood gas analysis shows lactate of 4.7 mmol/L. This condition can be defined as"
+  },
+  "ssm20203817804": {
+    "answer_a": "11",
+    "answer_b": "7"
+  },
+  "ssm20203817854": {
+    "answer_a": "Metabolic alkalosis",
+    "answer_b": "Metabolic acidosis"
+  },
+  "ssm20203818004": {
+    "answer_a": "Rapid administration of colloids",
+    "answer_b": "Obtain cultures before administering antibiotics"
+  },
+  "ssm20203818054": {
+    "answer_a": "Provisions to ensure access to palliative care and pain therapy",
+    "answer_b": "Provisions concerning informed consent and advance treatment directives",
+    "question": "The subject of Law 38 of March 2010 is"
+  },
+  "ssm20203818104": {
+    "answer_a": "Non-weight-bearing ambulation for at least 4-5 weeks and assisted knee kinesiotherapy",
+    "answer_b": "Full weight-bearing from postoperative day 1"
+  },
+  "ssm20203818204": {
+    "answer_a": "The woman will develop breast cancer",
+    "answer_b": "50% of the woman's daughters will develop breast cancer",
+    "question": "A healthy 40-year-old woman has a mutation of the BRCA1 gene, which is also present in her sister, who has breast cancer. Her mother died at the age of 72 from a cerebral stroke. This situation indicates that"
+  },
+  "ssm20203818304": {
+    "answer_a": "Constipation, nausea, and vomiting",
+    "answer_b": "Diarrhea and headache"
+  },
+  "ssm20203818354": {
+    "answer_a": "ACE inhibitors",
+    "answer_b": "Calcium channel blockers"
+  },
+  "ssm20203818404": {
+    "answer_a": "The result of the screening test has diagnostic value",
+    "answer_b": "They are systematic and organized preventive interventions",
+    "question": "Indicate which of the following statements about mass screening programs is FALSE"
+  },
+  "ssm20203818454": {
+    "answer_a": "Pneumococcal vaccination is recommended",
+    "answer_b": "Rotavirus vaccination has become mandatory",
+    "question": "Gaia's mother, alarmed by media misinformation regarding the vaccine issue and by the adverse reactions that occurred in her two-year-old nephew, turns to the family pediatrician to ask for information and advice. The pediatrician reassures her about the safety and efficacy of all vaccines and specifies that"
+  },
+  "ssm20203818554": {
+    "answer_a": "Invasive listeriosis",
+    "answer_b": "Campylobacteriosis"
+  },
+  "ssm20203818804": {
+    "answer_a": "It is asymmetric with respect to the mean value",
+    "answer_b": "It is asymptotic to the x-axis on both sides"
+  },
+  "ssm201711": {
+    "question": "The image shows an electrocardiographic tracing corresponding to"
+  },
+  "ssm201713": {
+    "question": "A 75-year-old patient is scheduled to undergo elective intestinal resection surgery. His medical history includes chronic atrial fibrillation treated with warfarin. According to current European guidelines, in preparation for surgery"
+  },
+  "ssm201719": {
+    "question": "A 54-year-old man is admitted to the intensive care unit with a diagnosis of septic shock of urinary tract origin. Hemodynamic support with vasoactive amines serves to"
+  },
+  "ssm2017106": {
+    "question": "In a case-control study to understand the etiology of esophageal cancer, 870 cases and 902 controls were investigated regarding the habitual consumption of spirits. The association between the disease and the risk factor can be quantified by calculating"
+  },
+  "ssm2017107": {
+    "question": "In a case-control study to understand the etiology of esophageal cancer, 870 cases and 902 controls were investigated regarding the habitual consumption of spirits. Among the advantages of case-control studies, the following is generally indicated"
+  },
+  "ssm2017128": {
+    "question": "A 48-year-old man, a smoker, hypertensive and on therapy with an ACE inhibitor. He complains of epigastric pain for about 6 hours. The following parameters are recorded: BP 90/50 mmHg, HR 57/min, SpO2 99%, and an ECG is performed as shown in the figure. The patient most likely has a lesion involving the"
+  },
+  "ssm2017149": {
+    "question": "A construction worker uses a drill and a pneumatic hammer daily for several hours. The man also presents a radiological lesion characteristic of vibration-induced disease and known as \"Kienböck's disease\", namely"
+  },
+  "ssm2017192": {
+    "question": "A right-handed patient presents with expressive aphasia characterized by non-fluent spontaneous speech, articulatory difficulties, and buccofacial apraxia. The lesion causing these symptoms is most likely located in the"
+  },
+  "ssm2017194": {
+    "question": "A 67-year-old patient is referred to the neurologist for rapidly progressive cognitive decline associated with insomnia and irritability. A diagnosis of Creutzfeldt-Jakob disease (CJD) is suspected. The diagnosis is confirmed when cerebrospinal fluid examination shows"
+  },
+  "ssm2017198": {
+    "question": "\"A 15-year-old boy is brought to the Emergency Department accompanied by a classmate. The latter is deeply worried because his friend has expressed a wish to die by throwing himself into the Tiber River. Over the past few months he has become gloomy and withdrawn, has stopped seeing his friends, and seems to dwell constantly on the same thoughts: past guilt, death, and feelings of worthlessness. In recent weeks he first developed thoughts of death and then a specific suicide plan. After a thorough evaluation, the neuropsychiatrist considers hospitalization necessary for a probable major depressive disorder with high suicidal risk. The patient, however, refuses hospitalization, stating that he does not need treatment and that he will go to the banks of the Tiber to reflect a little.\" Based on the available clinical data, the child neuropsychiatrist should"
+  },
+  "ssm2017240": {
+    "question": "A five-month-old boy, an only child born at term after an uneventful pregnancy. Normal growth. Breastfed. No perinatal problems. For a few days he has had fever (39 °C), loss of appetite, and a few episodes of vomiting. The pediatrician orders a urine culture. In case of a positive urine culture, antibiotic therapy must be administered parenterally"
+  },
+  "ssm20182141954": {
+    "question": "Ulcerative colitis is"
+  },
+  "ssm20182142054": {
+    "question": "Tophi are defined as"
+  },
+  "ssm20182142104": {
+    "question": "Dopamine"
+  },
+  "ssm20182142154": {
+    "question": "The first-line treatment (the most important to administer) for anaphylactic shock involves the administration of"
+  },
+  "ssm20182142254": {
+    "question": "A physician must perform radial artery cannulation for invasive arterial blood pressure monitoring. Before the procedure, it is advisable to perform"
+  },
+  "ssm20182142754": {
+    "question": "A patient, not affected by Crohn's disease, complains of the discharge of pus from an orifice about 3 cm from the anal margin. A diagnosis of perianal fistula is made. The recommended treatment is"
+  },
+  "ssm20182142804": {
+    "question": "A 62-year-old patient underwent a right hemicolectomy 3 years earlier for adenocarcinoma (pT2, N0, M0). During follow-up, a peripheral pulmonary nodule of the right upper lobe, 2 cm in diameter, is identified as the only site of uptake on a whole-body PET scan. CT-guided needle biopsy of the nodule demonstrated that it is metastatic adenocarcinoma. The patient has no other comorbidities. The recommended treatment is"
+  },
+  "ssm20182144404": {
+    "question": "In the calculation of the specificity of a diagnostic test"
+  },
+  "ssm20182144454": {
+    "question": "The law that established the National Health Service is"
+  },
+  "ssm20182144804": {
+    "question": "A 65-year-old patient is scheduled to undergo cholecystectomy. During pre-admission, he underwent a chest radiograph. The radiographic image shown in the figure is, in the first instance, consistent with"
+  },
+  "ssm20182145454": {
+    "question": "An Emergency Department physician is evaluating a 54-year-old man complaining of retrosternal pain. The pain does not improve and the patient suddenly loses consciousness. In the figure, the rhythm shown on the monitor is"
+  },
+  "ssm20182145504": {
+    "question": "An Emergency Department physician is evaluating a 54-year-old man complaining of retrosternal pain. The pain does not improve and the patient suddenly loses consciousness. The first-line treatment is"
+  },
+  "ssm20182145654": {
+    "question": "Phalen's maneuver may elicit painful symptoms in patients affected by"
+  },
+  "ssm20182146254": {
+    "question": "On August 13, 2011, at 8 p.m., in Sicily, a forensic pathologist is contacted by the Public Prosecutor, having been notified by law enforcement of the discovery of a body at the deceased's residence. Upon arriving at the scene, the forensic pathologist is informed by the police that, due to the acrid odor present in the apartment, the windows of all the rooms in the house had been opened. The on-site examination begins; the body appears as shown in the figure. In light of the attached image and the data reported, considering a complete resolution of rigor mortis, it can be preliminarily estimated that the time elapsed is"
+  },
+  "ssm20193": {
+    "question": "Early gastric cancer is a lesion that is"
+  },
+  "ssm201911": {
+    "question": "In the treatment of nociceptive pain without spinal sensitization, it is NOT indicated to administer"
+  },
+  "ssm201912": {
+    "question": "Spinal shock presents with"
+  },
+  "ssm201913": {
+    "question": "When using a local anesthetic, it is NOT necessary to assess"
+  },
+  "ssm201959": {
+    "question": "Merkel cells are mechanoreceptors"
+  },
+  "ssm201989": {
+    "question": "Generally, during physiological pregnancy the functional residual capacity of the lungs"
+  },
+  "ssm201990": {
+    "question": "The finding of high serum levels of CA 125"
+  },
+  "ssm201994": {
+    "question": "The gynecologist prescribes, for a woman in the 3rd month of pregnancy, testing for anti-Cytomegalovirus antibodies, which come back positive. In maternal Cytomegalovirus infection, the risk of fetal disease is"
+  },
+  "ssm2019120": {
+    "question": "The methacholine test refers to"
+  },
+  "ssm2019150": {
+    "question": "A 55-year-old man, a worker in a textile factory, complains of recurrent low back pain that he attributes to his job duties, which involve repeated lifting of heavy loads. Manual handling of loads is regulated by Annex XXXIII of Legislative Decree 81/2008, which provides for the application of the models indicated by the UNI ISO 11228 standard. According to this annex, the maximum weight that can be lifted by a male subject over forty-five years of age is equal to"
+  },
+  "ssm2019213": {
+    "question": "Legg-Calvé-Perthes disease refers to"
+  },
+  "ssm2019214": {
+    "question": "Monteggia fracture-dislocation is characterized by"
+  },
+  "ssm2019215": {
+    "question": "A 65-year-old man presents to the outpatient clinic complaining of progressive and disabling flexion stiffness of the 4th and 5th fingers of the right hand. On physical examination, this flexion posture is not reducible and is accompanied by the presence of a raised, sclerotic, cord-like thickening at the palmar level, corresponding to the 4th and 5th fingers. From this clinical picture, a diagnosis can be made of"
+  },
+  "ssm2019230": {
+    "question": "Activation of the extrinsic pathway of coagulation can be triggered by vascular injury, as this event leads to the release of"
+  },
+  "ssm2019233": {
+    "question": "In tetralogy of Fallot, the severity of arterial hypoxemia generally depends mainly on"
+  },
+  "ssm202110229354": {
+    "question": "In the case of ventricular fibrillation, electrical defibrillation must be performed"
+  },
+  "ssm202110229404": {
+    "question": "CT evaluation of a patient reveals a dissection of the ascending aorta, without involvement of the aortic arch. According to the DeBakey classification, this type of dissection is defined as"
+  },
+  "ssm202110229554": {
+    "question": "The treatment of a proximal femur fracture in very advanced age"
+  },
+  "ssm202110229654": {
+    "question": "Adjuvant chemotherapy is defined as"
+  },
+  "ssm202110230004": {
+    "question": "All-trans retinoic acid and arsenic trioxide are used for the treatment of"
+  },
+  "ssm202110230504": {
+    "question": "Which of the following is NOT a common side effect of thiazide diuretics"
+  },
+  "ssm202110230704": {
+    "question": "Which of these is NOT a common side effect of ACE inhibitors"
+  },
+  "ssm202110230854": {
+    "question": "A diagnostic thoracentesis is performed on a unilateral pleural effusion. Laboratory analysis of the pleural fluid identifies an exudate, with > 80% lymphocytes among all cells, a normal NT-proBNP concentration, and an absence of eosinophils. Among the following, which is the most likely cause of this pleural effusion"
+  },
+  "ssm202110230904": {
+    "question": "A 74-year-old man is diagnosed with community-acquired pneumonia. Based on the CURB-65 prognostic score, the Emergency Department physician decides, after starting appropriate empirical antibiotic therapy, to discharge him and treat him at home. The English acronym CURB-65 stands for"
+  },
+  "ssm202110231554": {
+    "question": "Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency is characterized by the accumulation of which of the following hormones"
+  },
+  "ssm202110231604": {
+    "question": "Which of the following clinical findings is NOT a criterion for establishing the diagnosis of hemophagocytic lymphohistiocytosis"
+  },
+  "ssm202110231654": {
+    "question": "The serogroup of Neisseria meningitidis most frequently responsible for invasive meningococcal disease in the first year of life in Italy in recent years (according to the 2019 epidemiological report on invasive bacterial diseases by the Istituto Superiore di Sanità) is"
+  },
+  "ssm202110231754": {
+    "question": "Which of the following statements regarding acute epiglottitis in children is incorrect"
+  },
+  "ssm202110232554": {
+    "question": "The most likely cause of abnormal uterine bleeding in adolescence is"
+  },
+  "ssm202110232604": {
+    "question": "The most typical and frequent symptomatology of pelvic endometriosis consists of"
+  },
+  "ssm202110232654": {
+    "question": "A 27-year-old woman, with a history of recurrent miscarriage and a prior appendectomy in adolescence, presents to the Emergency Department with a body temperature of 38.3°C, pelvic pain, leukocytosis (WBC 18,000/mm3), and a negative pregnancy test. The most likely diagnostic hypothesis is"
+  },
+  "ssm202110232704": {
+    "question": "A 27-year-old woman undergoes a screening Pap test and receives a result of HSIL (High-Grade Squamous Intraepithelial Lesion) according to the Bethesda System. The correct workup to perform in order to demonstrate the possible presence of a neoplastic lesion of the uterine cervix is"
+  },
+  "ssm202110233104": {
+    "question": "A 64-year-old woman reports pain and reduced range of motion of the first metatarsophalangeal joint. On inspection, no local abnormalities are evident, whereas radiographic examination shows signs of osteoarthritis of the first metatarsophalangeal joint. The angle between the 1st and 2nd metatarsals measures 7 degrees and the hallux valgus angle measures 12 degrees. This clinical picture is consistent with"
+  },
+  "ssm202110233204": {
+    "question": "A 36-year-old woman with multiple sclerosis reports the recent onset of urinary urgency and urge urinary incontinence. Which of the following drug classes could be useful for the treatment of this problem"
+  },
+  "ssm202110233454": {
+    "question": "A 75-year-old man, with heart disease and hypertension, complains of sudden vision loss in the right eye. With reference to the clinical picture and the fundus photograph above, the most likely diagnosis is"
+  },
+  "ssm202110233554": {
+    "question": "A 37-year-old man goes to the ophthalmologist because he has noticed a reduction in visual acuity when driving at night and especially when reading the newspaper, which he necessarily has to hold farther away. He reports being worried because, until a few years earlier, it had always been his pride to be able to see at a distance much better than his friends. It is most likely that the man"
+  },
+  "ssm202110233604": {
+    "question": "A 59-year-old man in good general health presents with a squamous cell carcinoma of the left gingivo-buccal sulcus, cT4aN2cM0. Contrast-enhanced MRI reveals massive infiltration of the mandible. An appropriate therapeutic proposal includes"
+  },
+  "ssm202110233654": {
+    "question": "Pleomorphic adenoma"
+  },
+  "ssm202110233804": {
+    "question": "Due to a blunt trauma, a young man in good general condition sustains a fracture of the right 10th rib and an apical pneumothorax of approximately 15%. There is no dyspnea, and the SpO2 on room air is within normal limits. The appropriate course of action is"
+  },
+  "ssm202110233854": {
+    "question": "A 75-year-old man was found on ultrasound to have an abdominal aortic aneurysm measuring 6.0 centimeters in transverse diameter. Choose the correct option among the following"
+  },
+  "ssm202110233954": {
+    "question": "A 26-year-old young man, with no significant prior medical history, arrives at the Emergency Department in ventricular fibrillation, and despite resuscitation maneuvers he dies. A postmortem diagnostic examination is performed, during which hypertrophy of the left ventricle and in particular of the interventricular septum is observed. Histological examination reveals disarray of the myocardial fibers. The observed picture is consistent with"
+  },
+  "ssm202110234604": {
+    "question": "A 67-year-old man is brought to the Emergency Department by his family in a confused state with a Glasgow Coma Scale of 11. An urgent CT scan is performed, revealing the findings shown in the image, which correspond to"
+  },
+  "ssm202110234754": {
+    "question": "A 23-year-old young man is brought to the Emergency Department in a coma with severe acute respiratory failure; the condition progresses to respiratory arrest. Several unsuccessful attempts at tracheal intubation are made, making it necessary to proceed with an emergency cricothyroidotomy. Cricothyroidotomy is indicated when"
+  },
+  "ssm202110234804": {
+    "question": "A 67-year-old woman is admitted for acute pulmonary embolism and anticoagulant therapy with intravenous sodium heparin is started. On the third day of hospitalization, she loses consciousness and presents with diffuse hypertonia in all four limbs and hemodynamic instability. The most probable and likely cause of the woman's current clinical condition is"
+  },
+  "ssm202110235004": {
+    "question": "You are called to evaluate a 77-year-old man (history of ischemic heart disease, stable after revascularization 3 years earlier) who is to undergo knee arthroscopy under locoregional anesthesia. The anesthesiologist's assessment must necessarily include, among other things"
+  },
+  "ssm202110235204": {
+    "question": "A 27-year-old man is referred for genetic counseling by an assisted reproduction center. He underwent a semen analysis, which showed azoospermia, and a testicular ultrasound, which identified bilateral agenesis of the vas deferens. This finding is strongly suggestive of",
+    "answer_b": "Von Hippel-Lindau disease"
+  },
+  "ssm202110235454": {
+    "question": "Which of the following statements is correct"
+  },
+  "ssm202110235504": {
+    "question": "Regarding Law 833/78 that established the National Health Service (SSN), indicate which of the following statements is FALSE"
+  },
+  "ssm202110235554": {
+    "question": "Indicate which of the following statements about vaccine composition is true"
+  },
+  "ssm202110235604": {
+    "question": "Which of the following statements is correct regarding benzene"
+  },
+  "ssm2022154": {
+    "question": "All of the following drug classes are associated with an increased risk of falls, EXCEPT"
+  },
+  "ssm2022155": {
+    "question": "Which of the following investigations is NOT recommended in the first-level evaluation of a patient with recurrent falls"
+  },
+  "ssm2022156": {
+    "question": "The elderly patient presenting with a condition of sarcopenia"
+  },
+  "ssm2022162": {
+    "question": "A 32-year-old young woman, who experienced a spontaneous abortion in the preceding weeks, presents with a non-scarring hairless patch in the right parietal region. The suspected diagnosis is"
+  },
+  "ssm2022198": {
+    "question": "What is meant by erythema toxicum neonatorum"
+  },
+  "ssm2022209": {
+    "question": "Gallstone ileus is a form of"
+  },
+  "ssm2022237": {
+    "question": "The lamina papyracea is a thin bony plate that forms"
+  },
+  "ssm2022238": {
+    "question": "Benign paroxysmal positional vertigo is characterized by"
+  },
+  "ssm2022243": {
+    "question": "A young man presents with multiple hamartomatous polyps of the intestine, mucocutaneous hyperpigmentation, especially of the oral mucosa. The most likely diagnosis is"
+  },
+  "ssm2022261": {
+    "question": "In a polytrauma patient diagnosed with intracerebral hematoma, pneumothorax, and splenic rupture, the sequence of interventions is"
+  },
+  "ssm2022275": {
+    "question": "The anti-SARS-CoV-2 vaccines, both mRNA and viral vector, used for the vaccination campaign in Italy"
+  },
+  "ssm2022276": {
+    "question": "Byssinosis is"
+  },
+  "ssm2022277": {
+    "question": "According to the IARC, formaldehyde"
+  },
+  "ssm2022280": {
+    "question": "The standard deviation is obtained as"
+  },
+  "ssm2023442": {
+    "question": "Pneumothorax is generally NOT associated with"
+  },
+  "ssm2023448": {
+    "question": "Glaucoma is"
+  },
+  "ssm2023463": {
+    "question": "In a newborn, type III esophageal atresia is"
+  },
+  "ssm2023466": {
+    "question": "A 45-year-old pregnant woman at the seventeenth week of gestation, with a combined first-trimester screening test (bitest) showing high risk due to increased nuchal translucency, undergoes amniocentesis. The fetal karyotype result reveals trisomy 13, which causes the following syndrome"
+  },
+  "ssm2023467": {
+    "question": "A 60-year-old woman, postmenopausal for 5 years, presents to the gynecology outpatient clinic reporting vaginal bleeding for the past few days. The woman reports to the physician that she recently underwent a Pap test with a normal result and that she has had no genital trauma or sexual intercourse in the past few days. The most appropriate initial diagnostic strategy among the following is"
+  },
+  "ssm2023468": {
+    "question": "A pregnant woman at the thirty-fourth week of gestation presents to the Emergency Department with severe pelvic pain, intense headache, and band-like abdominal pain. The clinical picture reveals BP = 150/100, tetanic uterine contractions, genital bleeding, cervical dilatation of 2 cm, and cardiotocographic tracing abnormalities with bradycardia and late decelerations. The most likely diagnosis is"
+  },
+  "ssm2023479": {
+    "question": "A 70-year-old man presents to the urologist for a total PSA value of 20.6 ng/mL. On physical examination, the digital rectal examination is equivocal for prostate cancer. The diagnostic workup currently considered most appropriate among the following is"
+  },
+  "ssm2023480": {
+    "question": "A 65-year-old patient, who underwent radical prostatectomy 3 months ago for a neoplasm with a Gleason score of 3+3, reports daytime and nighttime incontinence. The most likely diagnosis among the following is"
+  },
+  "ssm2023492": {
+    "question": "On the peripheral blood smear, this erythrocyte morphology with schistocytes is observed. The picture is indicative of"
+  },
+  "ssm2023498": {
+    "question": "A 77-year-old man, with progressive deterioration of his general condition, presents on neurological examination with resting tremor, hypertonia, muscular rigidity, and micrographia. The most likely diagnostic hypothesis among the following is"
+  },
+  "ssm2023505": {
+    "question": "A 77-year-old woman is being evaluated for possible pacemaker implantation. A definite indication for pacemaker implantation in the case of atrioventricular (A-V) block is given by"
+  },
+  "ssm2023530": {
+    "question": "The current staging of chronic kidney disease according to international and national guidelines"
+  },
+  "ssm2023536": {
+    "question": "A 60-year-old woman with type 1 diabetes mellitus since the age of 28, complicated by diabetic retinopathy and nephropathy, has an LDL cholesterol of 130 mg/dL in the absence of lipid-lowering therapy. According to the 2019 ESC guidelines, her target should be"
+  },
+  "ssm2023543": {
+    "question": "Myocardial scintigraphy is indicated for studying"
+  },
+  "ssm2023545": {
+    "question": "68Ga-DOTA-peptides (DOTATATE, DOTATOC, DOTANOC) are PET radiopharmaceuticals routinely used for the study of"
+  },
+  "ssm2023557": {
+    "question": "The diagnosis of phenylketonuria is usually made in the context of",
+    "answer_e": "Neonatal diagnostic approaches performed selectively on offspring of patients affected by this or other amino acid metabolism disorders"
+  },
+  "ssm2023558": {
+    "question": "The measles vaccine is"
+  },
+  "ssm2023559": {
+    "question": "Tetanus toxin"
+  },
+  "ssm2023561": {
+    "question": "Among epidemiological studies"
+  },
+  "ssm2023569": {
+    "question": "A 30-year-old man, otherwise healthy, is scheduled to undergo laparoscopic cholecystectomy. Which of the following procedures should be performed beforehand to reduce the perioperative risk"
+  },
+  "ssm2023581": {
+    "question": "The Bentall surgical procedure involves"
+  },
+  "ssm2023584": {
+    "question": "A 35-year-old man, a heavy smoker, has complained for a few months of the onset of pain in the right lower limb during walking. The limb appears cold and the skin shows erythematous, painful areas. This is most likely"
+  },
+  "ssm2023586": {
+    "question": "A 60-year-old woman presents, after numerous episodes of biliary colic, with abdominal distension, subicterus, nausea associated with vomiting, and fever with chills. The most likely diagnosis among the following is"
+  },
+  "ssm2023589": {
+    "question": "Sleeve gastrectomy"
+  },
+  "ssm2023592": {
+    "question": "Necrotizing enterocolitis of the newborn"
+  },
+  "ssm2023593": {
+    "question": "Ulcers are"
+  },
+  "ssm2023595": {
+    "question": "The left internal mammary artery normally arises from"
+  },
+  "ssm2023598": {
+    "question": "During a gynecological examination of a 35-year-old woman, in the absence of symptoms, ultrasound examination reveals an intramural uterine fibroid measuring 10 cm in diameter. The patient asks the physician what the future consequences might be. The gynecologist will mention all of the following conditions EXCEPT"
+  },
+  "ssm2023599": {
+    "question": "A patient presents to the outpatient clinic to investigate certain menstrual cycle abnormalities. During history taking, the physician notes in the medical record the reported presence of dysmenorrhea, which means"
+  },
+  "ssm2023608": {
+    "question": "The Amsler test is"
+  },
+  "ssm2023609": {
+    "question": "A 72-year-old man presents with tearing, hyperemia and pain in the left eye and in the ipsilateral periorbital and frontal region. Slit lamp examination, following fluorescein staining, reveals the presence of a dendritic corneal lesion. This finding is indicative of"
+  },
+  "ssm2023619": {
+    "question": "A 50-year-old woman undergoes a contrast-enhanced CT scan that reveals a fluid-containing mass in the lower pole of the right kidney, with thick septa and solid areas within it that take up contrast. The radiological findings are consistent with"
+  },
+  "ssm2023645": {
+    "question": "When taking the medical history of a smoking patient, it emerges that he has smoked 15 cigarettes/day for 40 consecutive years. The calculation of the patient's pack-years (p-y), used to quantify his smoking habit, is"
+  },
+  "ssm2023648": {
+    "question": "A young female patient with a known history of psychiatric disorders presents with repeated episodes of vomiting associated with sweating and accompanied by general malaise. First responders find two empty blister packs, each containing ten 1 g tablets of paracetamol, near the patient, who admits to having taken all of them approximately one hour earlier. Once transferred to the nearest Emergency Department, after performing electrocardiographic and multiparametric monitoring and gastric lavage, the treatment of choice to be administered is"
+  },
+  "ssm2023663": {
+    "question": "A 70-year-old man presents to his General Practitioner complaining of unsteadiness of gait for several months. He also reports the recent onset of episodes of urinary incontinence. In addition, over the past few weeks, memory and attention deficits have appeared. In light of the reported symptoms, the most likely diagnosis is"
+  },
+  "ssm2023669": {
+    "question": "Antineoplastic treatment with palbociclib is indicated in patients with"
+  },
+  "ssm2023689": {
+    "question": "The ASA (Anesthesiologic Risk Classification) of a 45-year-old patient with a negative past medical history, scheduled to undergo emergency surgery for a ruptured abdominal aortic aneurysm, is"
+  },
+  "ssm2023704": {
+    "question": "Preventive measures related to occupational exposure to chemical substances are based on"
+  },
+  "ssm2023716": {
+    "question": "Skeletal scintigraphy for the study of bone metabolism uses 99mTc-labeled radiopharmaceuticals that contain"
+  },
+  "ssm2023720": {
+    "question": "The intercept in a regression line is"
+  },
+  "ssm201712": {
+    "question": "The patient will most likely present with"
+  },
+  "ssm20203817404": {
+    "answer_a": "Image A: T1 sequence; Image B: T2 sequence",
+    "answer_b": "Image A: T2 sequence; Image B: T1 sequence",
+    "answer_c": "Image A: T1-weighted sequence; Image B: T1-weighted sequence with contrast",
+    "answer_d": "Image A: T2 sequence; Image B: T1 sequence with contrast medium"
+  },
+  "ssm202110228854": {
+    "answer_a": "CHA2DS2-VASc"
+  },
+  "ssm202110228904": {
+    "question": "An elderly patient is admitted to the pulmonology department for the treatment of pneumonia with intravenous piperacillin/tazobactam. After a few days, he develops diarrhea not associated with fever or abdominal pain. Given the suspicion of Clostridium difficile diarrhea, which of the following interventions is the priority?"
+  },
+  "ssm202110231004": {
+    "question": "It is decided to administer pre-exposure prophylaxis (PrEP) to an \"at-risk\" patient to prevent HIV infection. Which of the following drugs (or drug combinations) is recommended?"
+  },
+  "ssm2022151": {
+    "question": "A 2-year-old girl is brought to the Emergency Department by her parents. Her mother states that the child had fever and a cold over the past few days, but today she is behaving unusually. She appears listless and lethargic. Her vital signs are: - SpO2: < 80% on room air - Respiratory rate: 8/min - Heart rate: 170/min - Capillary refill time (CRT): 3 sec - Temperature: 39.5°C. What is the first intervention to perform?"
+  },
+  "ssm2022157": {
+    "question": "In a 60-year-old patient with HER-2-positive metastatic gastric carcinoma with hepatic metastases (stage IV), which of the following treatments is most indicated:"
+  },
+  "ssm2022163": {
+    "question": "According to the Ann Arbor staging system, bone marrow involvement in a patient with Hodgkin lymphoma defines clinical stage"
+  },
+  "ssm2022165": {
+    "question": "A 78-year-old woman presents to the hematology outpatient clinic, referred by her primary care physician for a complete blood count finding of Hb 7.8 g/dL, leukocytes 3,200/mm3 with neutrophils 1,000/mm3, platelets 89,000/mm3. MCV 112 fL, with vitamin B12 and folate within the normal range. Given the suspicion of myelodysplastic syndrome, which of the following tests is NOT indicated in the diagnostic workup?"
+  },
+  "ssm2022167": {
+    "question": "A 49-year-old woman presents to her primary care physician with a fasting blood glucose of 146 mg/dL and a glycated hemoglobin of 54 mmol/mol. She has a positive family history of diabetes and hypertension and is herself hypertensive, treated with an ACE inhibitor. She has a body mass index of 28 kg/m², and also presents with hypertriglyceridemia. An abdominal ultrasound shows hepatic steatosis, with normal pancreas and adrenal glands. What is the most likely diagnosis?"
+  },
+  "ssm2022168": {
+    "question": "A 24-year-old woman with galactorrhea presents to the endocrinology clinic. The workup reveals a prolactin-secreting pituitary microadenoma. There are no visual disturbances, but menstrual cycle irregularities and breast tenderness are also present. Which of the following is the indicated treatment?"
+  },
+  "ssm2022183": {
+    "question": "A 34-year-old Italian man, residing in Maremma (Tuscany), presents to the Emergency Department with fever, headache, and diffuse pain, claiming to have malaria. He had in fact experienced an entirely similar episode three months earlier, upon returning from a stay in Mexico. The patient reports that on that occasion he had been treated with chloroquine, that the condition had resolved rapidly, and that since then he had not traveled abroad again. The blood smear examination will confirm the young man's hypothesis, revealing the presence of plasmodia on the thin smear. The new episode is most likely due to:"
+  },
+  "ssm2022217": {
+    "answer_c": "Prolonged labor"
+  },
+  "ssm2022223": {
+    "question": "A 38-year-old man reports progressively worsening swelling and pain at the left wrist for approximately 8 months. He underwent radiographic examination (see image) and biopsy, which allowed a diagnosis of giant cell tumor of bone. What is the most appropriate initial treatment for this patient?"
+  },
+  "ssm2022244": {
+    "question": "A 7-year-old child presents with difficulty maintaining balance and coordinating movements; he also has severe headaches, nausea, and vomiting. Magnetic resonance imaging reveals a cerebellar mass. Histological examination of the biopsy shows small cells with round or ovoid nuclei and frequent Homer Wright pseudorosettes. The most likely histological diagnosis is:"
+  },
+  "ssm2022246": {
+    "question": "A 72-year-old man, a hunter, sustains a clavicular fracture from recoil. The patient has a history of prior prostate carcinoma. Radiological examination reveals evident osteolysis at the fracture site. Total body CT shows multiple osteolytic lesions in different skeletal segments. Histological examination, performed on material obtained from the fracture site, reveals numerous CD138- and CD56-positive cells arranged in nests. The most likely diagnosis is:"
+  },
+  "ssm2022259": {
+    "answer_e": "Bronchial provocation test, for the measurement of nitric oxide present in exhaled air. One must always consider the cost-benefit ratio and the actual usefulness of performing a diagnostic test, useful for the risk stratification of a patient"
+  },
+  "ssm2022272": {
+    "question": "Regarding indicators currently used internationally to measure the burden of disease, indicate which of the following statements is FALSE:"
+  },
+  "ssm2023452": {
+    "question": "A 55-year-old patient, who underwent implant surgery two years earlier at the level of the right maxillary alveolar arch, complains of pain for several days in the right infraorbital facial region. Endoscopic examination reveals edema and purulent secretions involving the right ostiomeatal complex. Which of the following is the most likely diagnosis?"
+  },
+  "ssm2023459": {
+    "answer_a": "Neoadjuvant chemoradiotherapy, restaging, surgery"
+  },
+  "ssm2023461": {
+    "question": "A 39-year-old patient presents to the Emergency Department with left anterior chest pain that worsens with respiratory movements. On clinical evaluation, tachypnea is noted with a respiratory rate of 34 breaths/minute. Physical examination reveals decreased vesicular breath sounds on the left. Arterial blood gas (on room air): pH 7.50, PaO2 62 mmHg, PaCO2 28 mmHg. A chest X-ray is performed, and the radiograph is attached. The clinical, radiological, and blood gas findings are most consistent with:",
+    "answer_c": "Extensive left bronchopneumonic focus warranting antibiotic therapy"
+  },
+  "ssm2023474": {
+    "question": "A 53-year-old woman who works as a secretary reports to her physician symptoms in her right hand that began several months ago. Specifically, she complains of pain and paresthesias in the first three fingers of the hand that worsen at night. The pain and paresthesias worsen with hyperflexion of the wrist, and Tinel's sign is positive. On inspection, atrophy of the thenar eminence on the affected side is noted. Which of the following is the most likely diagnosis?"
+  },
+  "ssm2023496": {
+    "answer_e": "Craniopharyngioma"
+  },
+  "ssm2023509": {
+    "question": "A 63-year-old patient with dysmetabolic and alcohol-related liver cirrhosis was recently discharged from the gastroenterology ward, where he had been admitted for a confusional state secondary to hepatic encephalopathy. Which of the following therapies is most appropriate for the prevention of recurrent hepatic encephalopathy?"
+  },
+  "ssm2023512": {
+    "answer_c": "Intravenous nitrates"
+  },
+  "ssm2023516": {
+    "question": "A 75-year-old man with known ischemic heart disease is brought to the Emergency Department for the onset during the night of progressively worsening dyspnea. On arrival, the patient is alert and tachypneic. Chest auscultation reveals bilateral moist \"rising tide\" crackles. Blood pressure is 185/90 mmHg, heart rate is 130 bpm, with a PaO2 of 45 mmHg on room air and a pH of 7.33. Which of the following is the first intervention to be undertaken?",
+    "answer_c": "Placement of rotating tourniquets on all four limbs"
+  },
+  "ssm2023525": {
+    "answer_a": "CHA₂DS₂-VASc"
+  },
+  "ssm2023529": {
+    "answer_d": "Complete blood count with reticulocytes, glomerular filtration rate, serum uric acid, complete electrolyte panel, iron studies, PTH"
+  },
+  "ssm2023533": {
+    "answer_a": "Adjuvant chemotherapy according to the FOLFIRINOX regimen",
+    "answer_b": "Adjuvant chemotherapy according to the CHOP regimen",
+    "answer_c": "Adjuvant chemotherapy according to the Cyclophosphamide-Adriamycin regimen",
+    "answer_d": "Adjuvant immunotherapy with Atezolizumab",
+    "answer_e": "Adjuvant chemotherapy with Topotecan"
+  },
+  "ssm2023552": {
+    "question": "A 54-year-old woman, during routine blood tests, shows an elevated TSH with normal fT3 and fT4 values. A thyroid ultrasound is performed, which reveals the presence of multiple nodules, including a nodule in the left lobe, with a maximum diameter of 18 mm, hypoechoic in appearance, with irregular borders and the presence of microcalcifications. Fine-needle aspiration of this nodule is performed, and cytological examination shows: \"Numerous erythrocytes associated with groups of cells with enlarged, oval nuclei, occasionally overlapping, showing nuclear grooves and pseudoinclusions.\" Based on the clinical and cytological findings, which of the following is the most likely diagnosis?"
+  },
+  "ssm2023572": {
+    "question": "A 32-year-old woman presents to the Emergency Department with palpitations. Her past medical history is unremarkable. On physical examination: GCS 15/15, SpO2 99% on room air, RR 29/minute, BP 110/65 mmHg, HR 180 bpm. The ECG shows the following tracing: paroxysmal supraventricular tachycardia due to AV nodal reentry. In light of the ECG findings and vital signs, which of the following is the most appropriate therapeutic intervention?"
+  },
+  "ssm2023573": {
+    "answer_e": "Tracheostomy"
+  },
+  "ssm2023574": {
+    "question": "A 78-year-old woman is to undergo orthopedic surgery for reduction of a distal tibial fracture. The anesthesiologist decides to perform a popliteal sciatic nerve block with 15 mL of 0.5% bupivacaine and a femoral nerve block with 12 mL of 0.5% bupivacaine. Due to the temporary unavailability of an ultrasound device, the blocks are performed using a nerve stimulator. When the patient develops psychomotor agitation, 1 mg of Midazolam is administered. Subsequently, the patient reports a metallic taste and then develops a seizure. Based on the clinical suspicion, in addition to ensuring adequate airway management, it is indicated to proceed with:",
+    "answer_a": "Intravenous administration of 20% lipid emulsion",
+    "answer_b": "Administration of 100 mL of 3% hypertonic saline for suspected intracranial hypertension",
+    "answer_c": "Continuous infusion of dexmedetomidine",
+    "answer_d": "Administration of levetiracetam",
+    "answer_e": "Administration of phenobarbital"
   }
 }
