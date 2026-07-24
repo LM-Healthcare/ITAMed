@@ -38,6 +38,8 @@ Question_Classification/expert_review/Old/discordances_to_review_REVIEWER2_EDOAR
 Question_Classification/expert_review/Old/discordances_to_review_REVIEWER1_EMILIANO.xlsx
 Question_Classification/expert_review/Old/ITAMed_complete_to_review_REVIEWER2_EDOARDO.xlsx
 Question_Classification/expert_review/Old/ITAMed_complete_to_review_REVIEWER1_EMILIANO.xlsx
+Question_Classification/expert_review/discordances_to_review_REW1_EMILIANO_completed.xlsx
+Question_Classification/expert_review/discordances_to_review_REW_2_EDOARDO_completed.xlsx
 
 # Dataset backups
 Dataset/*/backup_pre_review/
@@ -69,3 +71,5 @@ demo/
 #README Zenodo
 README_ZENODO.md
 
+# Temporary correction report
+_CORRECTIONS_REPORT.md
