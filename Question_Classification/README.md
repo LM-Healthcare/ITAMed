@@ -263,13 +263,13 @@ After both reviewers completed their independent review, their decisions were co
 | Metric | Value |
 |:-------|------:|
 | Questions reviewed | 380 |
-| Primary-category agreement | 294/380 (77.4%) |
-| Exact-match agreement (full string) | 205/380 (53.9%) |
-| Set-based agreement (order-independent) | 223/380 (58.7%) |
-| **Cohen's Kappa (primary category)** | **κ = 0.7618** |
-| Remaining discordances | **86** |
+| Primary-category agreement | 328/380 (86.3%) |
+| Exact-match agreement (full string) | 254/380 (66.8%) |
+| Set-based agreement (order-independent) | 270/380 (71.1%) |
+| **Cohen's Kappa (primary category)** | **κ = 0.8557** |
+| Remaining discordances | **52** |
 
-The value **κ = 0.7618** indicates **substantial agreement** between the two medical reviewers, which is consistent with the inherent difficulty of classifying questions that were already ambiguous enough to cause disagreement between two state-of-the-art LLMs.
+The value **κ = 0.8557** indicates **almost perfect agreement** between the two medical reviewers, demonstrating high consistency in expert adjudication even on questions that were ambiguous enough to cause disagreement between two state-of-the-art LLMs.
 
 ### Reviewer–LLM Alignment
 
@@ -277,16 +277,16 @@ For each discordant question, we analyzed whether each reviewer's primary catego
 
 | Alignment | Reviewer 1 | Reviewer 2 |
 |:----------|:---------:|:---------:|
-| Agreed with Claude (only) | 63 (16.6%) | 75 (19.7%) |
-| Agreed with GPT (only) | 54 (14.2%) | 50 (13.2%) |
-| Chose third option | 75 (19.7%) | 36 (9.5%) |
-| Matched LLM consensus\* | 188 (49.5%) | 219 (57.6%) |
+| Agreed with Claude (only) | 61 (16.1%) | 74 (19.5%) |
+| Agreed with GPT (only) | 59 (15.5%) | 51 (13.4%) |
+| Chose third option | 63 (16.6%) | 40 (10.5%) |
+| Matched LLM consensus\* | 197 (51.8%) | 215 (56.6%) |
 
 \* *Questions where both LLMs shared the same primary category (discordance was only in secondary categories) and the reviewer confirmed that primary.*
 
 ### Discordance Resolution
 
-The **86 remaining discordances** between the two reviewers will be resolved through consensus discussion between the reviewers. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
+The **52 remaining discordances** between the two reviewers will be resolved through consensus discussion between the reviewers. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
 
 ---
 
@@ -327,7 +327,7 @@ Question_Classification/
 │
 └── results/expert_review/                              # Expert agreement analysis
     ├── expert_agreement_report.md                      #   Full markdown report
-    ├── reviewer_discordances.xlsx                      #   86 remaining discordances
+    ├── reviewer_discordances.xlsx                      #   52 remaining discordances
     ├── reviewer_discordances.json                      #   Same in JSON format
     └── reviewer_confusion_matrix.xlsx                  #   Reviewer confusion matrix
 ```

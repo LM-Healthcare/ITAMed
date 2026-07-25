@@ -12,11 +12,11 @@ Two independent medical specialists (Reviewer 1 and Reviewer 2) adjudicated 380 
 | Metric | Value |
 |:-------|------:|
 | Questions reviewed | 380 |
-| Primary-category agreement | 294/380 (77.4%) |
-| Exact-match agreement (full string) | 205/380 (53.9%) |
-| Set-based agreement (order-independent) | 223/380 (58.7%) |
-| **Cohen's κ (primary category)** | **κ = 0.7618** |
-| Remaining discordances | 86 |
+| Primary-category agreement | 328/380 (86.3%) |
+| Exact-match agreement (full string) | 254/380 (66.8%) |
+| Set-based agreement (order-independent) | 264/380 (69.5%) |
+| **Cohen's κ (primary category)** | **κ = 0.8557** |
+| Remaining discordances | 52 |
 
 ### Interpretation (Landis & Koch, 1977)
 
@@ -29,7 +29,7 @@ Two independent medical specialists (Reviewer 1 and Reviewer 2) adjudicated 380 
 | 0.61–0.80 | Substantial |
 | **0.81–1.00** | **Almost perfect** |
 
-The inter-reviewer **κ = 0.7618** indicates **substantial agreement** between the two medical specialists.
+The inter-reviewer **κ = 0.8557** indicates **almost perfect agreement** between the two medical specialists.
 
 ---
 
@@ -37,33 +37,33 @@ The inter-reviewer **κ = 0.7618** indicates **substantial agreement** between t
 
 | Category | κ | Interpretation |
 |:---------|--:|:---------------|
+| Genetica Medica | 1.0000 | Almost perfect |
 | Oftalmologia | 1.0000 | Almost perfect |
 | Psichiatria | 1.0000 | Almost perfect |
+| Neurologia e Neurochirurgia | 0.9804 | Almost perfect |
+| Ginecologia e Ostetricia | 0.9701 | Almost perfect |
+| Dermatologia e Venereologia | 0.9460 | Almost perfect |
 | Ortopedia e Traumatologia | 0.9258 | Almost perfect |
-| Neurologia e Neurochirurgia | 0.8986 | Almost perfect |
-| Dermatologia e Venereologia | 0.8973 | Almost perfect |
-| Pediatria | 0.8527 | Almost perfect |
-| Immunologia e Reumatologia | 0.8381 | Almost perfect |
-| Anestesia e Rianimazione | 0.8319 | Almost perfect |
-| Urologia | 0.8279 | Almost perfect |
-| Ginecologia e Ostetricia | 0.8011 | Substantial |
-| Malattie Infettive | 0.7959 | Substantial |
-| Ematologia | 0.7762 | Substantial |
+| Pediatria | 0.9242 | Almost perfect |
+| Urologia | 0.9204 | Almost perfect |
+| Malattie Infettive | 0.9111 | Almost perfect |
+| Ematologia | 0.9064 | Almost perfect |
+| Immunologia e Reumatologia | 0.8973 | Almost perfect |
+| Anestesia e Rianimazione | 0.8695 | Almost perfect |
+| Nefrologia | 0.8517 | Almost perfect |
+| Cardiologia e Cardiochirurgia | 0.8298 | Almost perfect |
+| Endocrinologia | 0.8128 | Almost perfect |
+| Oncologia | 0.8012 | Substantial |
+| Farmacologia e Tossicologia | 0.7946 | Substantial |
+| Chirurgia Generale | 0.7860 | Substantial |
+| Otorinolaringoiatria | 0.7725 | Substantial |
+| Pneumologia e Chirurgia Toracica | 0.7686 | Substantial |
+| Diagnostica per Immagini e Medicina Nucleare | 0.7491 | Substantial |
 | Medicina Legale | 0.7475 | Substantial |
-| Chirurgia Generale | 0.7432 | Substantial |
-| Cardiologia e Cardiochirurgia | 0.7414 | Substantial |
-| Nefrologia | 0.7315 | Substantial |
+| Gastroenterologia | 0.7296 | Substantial |
 | Medicina del Lavoro | 0.7233 | Substantial |
-| Endocrinologia | 0.7192 | Substantial |
-| Oncologia | 0.7027 | Substantial |
-| Pneumologia e Chirurgia Toracica | 0.6844 | Substantial |
-| Gastroenterologia | 0.6808 | Substantial |
-| Diagnostica per Immagini e Medicina Nucleare | 0.6774 | Substantial |
-| Otorinolaringoiatria | 0.6222 | Substantial |
-| Farmacologia e Tossicologia | 0.5697 | Moderate |
-| Genetica Medica | 0.5682 | Moderate |
-| Medicina Interna | 0.3949 | Fair |
-| Igiene, Epidemiologia e Statistica | 0.2792 | Fair |
+| Medicina Interna | 0.6643 | Substantial |
+| Igiene, Epidemiologia e Statistica | 0.3975 | Fair |
 
 ---
 
@@ -73,8 +73,8 @@ The inter-reviewer **κ = 0.7618** indicates **substantial agreement** between t
 |:-----|--:|------------------:|--:|----------------:|--:|
 | 2017 | 39 | 36/39 | 92.3% | 21/39 | 53.8% |
 | 2018 | 43 | 26/43 | 60.5% | 14/43 | 32.6% |
-| 2019 | 43 | 24/43 | 55.8% | 15/43 | 34.9% |
-| 2020 | 40 | 23/40 | 57.5% | 14/40 | 35.0% |
+| 2019 | 43 | 43/43 | 100.0% | 43/43 | 100.0% |
+| 2020 | 40 | 38/40 | 95.0% | 35/40 | 87.5% |
 | 2021 | 42 | 35/42 | 83.3% | 25/42 | 59.5% |
 | 2022 | 44 | 37/44 | 84.1% | 20/44 | 45.5% |
 | 2023 | 51 | 40/51 | 78.4% | 29/51 | 56.9% |
@@ -89,10 +89,10 @@ For each question, we checked whether the reviewer's primary category matched Cl
 
 | Metric | Reviewer 1 | Reviewer 2 |
 |:-------|:---------:|:---------:|
-| Agreed with Claude (only) | 63 (16.6%) | 75 (19.7%) |
-| Agreed with GPT (only) | 54 (14.2%) | 50 (13.2%) |
-| Chose third option | 75 (19.7%) | 36 (9.5%) |
-| Matched LLM consensus* | 188 (49.5%) | 219 (57.6%) |
+| Agreed with Claude (only) | 61 (16.1%) | 74 (19.5%) |
+| Agreed with GPT (only) | 59 (15.5%) | 51 (13.4%) |
+| Chose third option | 63 (16.6%) | 40 (10.5%) |
+| Matched LLM consensus* | 197 (51.8%) | 215 (56.6%) |
 
 \* *Questions where both LLMs had the same primary category (discordance was only in secondary categories). The reviewer confirmed that shared primary.*
 
@@ -100,16 +100,16 @@ For each question, we checked whether the reviewer's primary category matched Cl
 
 ## 5. Reviewer Discordance Categorization
 
-Of the 380 reviewed questions, **86** (22.6%) have a primary-category disagreement between the two reviewers and require final resolution.
+Of the 380 reviewed questions, **52** (13.7%) have a primary-category disagreement between the two reviewers and require final resolution.
 
 | Discordance pattern | Count |
 |:--------------------|------:|
-| R2=Claude, R1=third | 41 |
-| R1=GPT, R2=Claude | 18 |
-| R1=Claude, R2=GPT | 9 |
-| R1=Claude, R2=third | 7 |
-| R2=GPT, R1=third | 6 |
-| Both=third (different) | 4 |
+| R2=Claude, R1=third | 22 |
+| R1=GPT, R2=Claude | 15 |
+| R2=GPT, R1=third | 5 |
+| R1=Claude, R2=third | 3 |
+| Both=third (different) | 3 |
+| R1=Claude, R2=GPT | 3 |
 | R1=GPT, R2=third | 1 |
 
 ---
@@ -119,6 +119,6 @@ Of the 380 reviewed questions, **86** (22.6%) have a primary-category disagreeme
 | Stage | Questions | Agreement | κ |
 |:------|:---------:|:---------:|:-:|
 | LLM annotation (Claude vs GPT) | 1,260 | 880/1,260 (69.8%) | 0.8950 |
-| Expert adjudication (R1 vs R2) | 380 | 294/380 (77.4%) | 0.7618 |
-| **Resolved after adjudication** | **1174/1,260** | **93.2%** | — |
-| Remaining for resolution | 86 | — | — |
+| Expert adjudication (R1 vs R2) | 380 | 328/380 (86.3%) | 0.8557 |
+| **Resolved after adjudication** | **1208/1,260** | **95.9%** | — |
+| Remaining for resolution | 52 | — | — |
