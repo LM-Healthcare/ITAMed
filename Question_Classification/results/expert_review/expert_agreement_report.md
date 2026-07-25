@@ -4,7 +4,6 @@
 
 Two independent medical specialists (Reviewer 1 and Reviewer 2) adjudicated 380 questions for which the two LLM annotators (Claude Opus 4.8 and GPT-5.5) produced discordant specialty classifications. Each reviewer worked independently without access to the other's decisions.
 
-> **Note:** 1 question(s) were excluded from analysis due to missing reviewer annotations. Analysis is based on 379 questions.
 
 ---
 
@@ -12,12 +11,12 @@ Two independent medical specialists (Reviewer 1 and Reviewer 2) adjudicated 380 
 
 | Metric | Value |
 |:-------|------:|
-| Questions reviewed | 379 |
-| Primary-category agreement | 243/379 (64.1%) |
-| Exact-match agreement (full string) | 127/379 (33.5%) |
-| Set-based agreement (order-independent) | 158/379 (41.7%) |
-| **Cohen's κ (primary category)** | **κ = 0.6231** |
-| Remaining discordances | 136 |
+| Questions reviewed | 380 |
+| Primary-category agreement | 294/380 (77.4%) |
+| Exact-match agreement (full string) | 205/380 (53.9%) |
+| Set-based agreement (order-independent) | 223/380 (58.7%) |
+| **Cohen's κ (primary category)** | **κ = 0.7618** |
+| Remaining discordances | 86 |
 
 ### Interpretation (Landis & Koch, 1977)
 
@@ -30,7 +29,7 @@ Two independent medical specialists (Reviewer 1 and Reviewer 2) adjudicated 380 
 | 0.61–0.80 | Substantial |
 | **0.81–1.00** | **Almost perfect** |
 
-The inter-reviewer **κ = 0.6231** indicates **substantial agreement** between the two medical specialists.
+The inter-reviewer **κ = 0.7618** indicates **substantial agreement** between the two medical specialists.
 
 ---
 
@@ -38,33 +37,33 @@ The inter-reviewer **κ = 0.6231** indicates **substantial agreement** between t
 
 | Category | κ | Interpretation |
 |:---------|--:|:---------------|
+| Oftalmologia | 1.0000 | Almost perfect |
+| Psichiatria | 1.0000 | Almost perfect |
 | Ortopedia e Traumatologia | 0.9258 | Almost perfect |
+| Neurologia e Neurochirurgia | 0.8986 | Almost perfect |
 | Dermatologia e Venereologia | 0.8973 | Almost perfect |
+| Pediatria | 0.8527 | Almost perfect |
+| Immunologia e Reumatologia | 0.8381 | Almost perfect |
+| Anestesia e Rianimazione | 0.8319 | Almost perfect |
+| Urologia | 0.8279 | Almost perfect |
 | Ginecologia e Ostetricia | 0.8011 | Substantial |
-| Oftalmologia | 0.7987 | Substantial |
-| Urologia | 0.7759 | Substantial |
-| Immunologia e Reumatologia | 0.7551 | Substantial |
+| Malattie Infettive | 0.7959 | Substantial |
+| Ematologia | 0.7762 | Substantial |
 | Medicina Legale | 0.7475 | Substantial |
-| Nefrologia | 0.7036 | Substantial |
-| Neurologia e Neurochirurgia | 0.6957 | Substantial |
-| Malattie Infettive | 0.6730 | Substantial |
-| Psichiatria | 0.6640 | Substantial |
-| Chirurgia Generale | 0.6576 | Substantial |
-| Cardiologia e Cardiochirurgia | 0.6527 | Substantial |
-| Pediatria | 0.6275 | Substantial |
-| Diagnostica per Immagini e Medicina Nucleare | 0.6085 | Moderate |
-| Ematologia | 0.5970 | Moderate |
-| Pneumologia e Chirurgia Toracica | 0.5583 | Moderate |
-| Endocrinologia | 0.5450 | Moderate |
-| Medicina del Lavoro | 0.5393 | Moderate |
-| Anestesia e Rianimazione | 0.5230 | Moderate |
-| Oncologia | 0.5105 | Moderate |
-| Gastroenterologia | 0.4883 | Moderate |
-| Farmacologia e Tossicologia | 0.3981 | Fair |
-| Genetica Medica | 0.3286 | Fair |
-| Otorinolaringoiatria | 0.3171 | Fair |
-| Igiene, Epidemiologia e Statistica | 0.2425 | Fair |
-| Medicina Interna | 0.2186 | Fair |
+| Chirurgia Generale | 0.7432 | Substantial |
+| Cardiologia e Cardiochirurgia | 0.7414 | Substantial |
+| Nefrologia | 0.7315 | Substantial |
+| Medicina del Lavoro | 0.7233 | Substantial |
+| Endocrinologia | 0.7192 | Substantial |
+| Oncologia | 0.7027 | Substantial |
+| Pneumologia e Chirurgia Toracica | 0.6844 | Substantial |
+| Gastroenterologia | 0.6808 | Substantial |
+| Diagnostica per Immagini e Medicina Nucleare | 0.6774 | Substantial |
+| Otorinolaringoiatria | 0.6222 | Substantial |
+| Farmacologia e Tossicologia | 0.5697 | Moderate |
+| Genetica Medica | 0.5682 | Moderate |
+| Medicina Interna | 0.3949 | Fair |
+| Igiene, Epidemiologia e Statistica | 0.2792 | Fair |
 
 ---
 
@@ -72,15 +71,15 @@ The inter-reviewer **κ = 0.6231** indicates **substantial agreement** between t
 
 | Year | N | Primary Agreement | % | Exact Agreement | % |
 |:-----|--:|------------------:|--:|----------------:|--:|
-| 2017 | 39 | 23/39 | 59.0% | 10/39 | 25.6% |
+| 2017 | 39 | 36/39 | 92.3% | 21/39 | 53.8% |
 | 2018 | 43 | 26/43 | 60.5% | 14/43 | 32.6% |
 | 2019 | 43 | 24/43 | 55.8% | 15/43 | 34.9% |
 | 2020 | 40 | 23/40 | 57.5% | 14/40 | 35.0% |
-| 2021 | 42 | 31/42 | 73.8% | 17/42 | 40.5% |
-| 2022 | 44 | 34/44 | 77.3% | 16/44 | 36.4% |
-| 2023 | 50 | 31/50 | 62.0% | 13/50 | 26.0% |
-| 2024 | 32 | 19/32 | 59.4% | 9/32 | 28.1% |
-| 2025 | 46 | 32/46 | 69.6% | 19/46 | 41.3% |
+| 2021 | 42 | 35/42 | 83.3% | 25/42 | 59.5% |
+| 2022 | 44 | 37/44 | 84.1% | 20/44 | 45.5% |
+| 2023 | 51 | 40/51 | 78.4% | 29/51 | 56.9% |
+| 2024 | 32 | 30/32 | 93.8% | 26/32 | 81.2% |
+| 2025 | 46 | 43/46 | 93.5% | 41/46 | 89.1% |
 
 ---
 
@@ -90,10 +89,10 @@ For each question, we checked whether the reviewer's primary category matched Cl
 
 | Metric | Reviewer 1 | Reviewer 2 |
 |:-------|:---------:|:---------:|
-| Agreed with Claude (only) | 60 (15.8%) | 76 (20.1%) |
-| Agreed with GPT (only) | 56 (14.8%) | 47 (12.4%) |
-| Chose third option | 84 (22.2%) | 36 (9.5%) |
-| Matched LLM consensus* | 179 (47.2%) | 220 (58.0%) |
+| Agreed with Claude (only) | 63 (16.6%) | 75 (19.7%) |
+| Agreed with GPT (only) | 54 (14.2%) | 50 (13.2%) |
+| Chose third option | 75 (19.7%) | 36 (9.5%) |
+| Matched LLM consensus* | 188 (49.5%) | 219 (57.6%) |
 
 \* *Questions where both LLMs had the same primary category (discordance was only in secondary categories). The reviewer confirmed that shared primary.*
 
@@ -101,17 +100,17 @@ For each question, we checked whether the reviewer's primary category matched Cl
 
 ## 5. Reviewer Discordance Categorization
 
-Of the 379 reviewed questions, **136** (35.9%) have a primary-category disagreement between the two reviewers and require final resolution.
+Of the 380 reviewed questions, **86** (22.6%) have a primary-category disagreement between the two reviewers and require final resolution.
 
 | Discordance pattern | Count |
 |:--------------------|------:|
-| R2=Claude, R1=third | 58 |
-| R1=GPT, R2=Claude | 31 |
-| R1=Claude, R2=GPT | 18 |
-| R1=Claude, R2=third | 14 |
-| R2=GPT, R1=third | 7 |
-| Both=third (different) | 5 |
-| R1=GPT, R2=third | 3 |
+| R2=Claude, R1=third | 41 |
+| R1=GPT, R2=Claude | 18 |
+| R1=Claude, R2=GPT | 9 |
+| R1=Claude, R2=third | 7 |
+| R2=GPT, R1=third | 6 |
+| Both=third (different) | 4 |
+| R1=GPT, R2=third | 1 |
 
 ---
 
@@ -120,6 +119,6 @@ Of the 379 reviewed questions, **136** (35.9%) have a primary-category disagreem
 | Stage | Questions | Agreement | κ |
 |:------|:---------:|:---------:|:-:|
 | LLM annotation (Claude vs GPT) | 1,260 | 880/1,260 (69.8%) | 0.8950 |
-| Expert adjudication (R1 vs R2) | 379 | 243/379 (64.1%) | 0.6231 |
-| **Resolved after adjudication** | **1123/1,260** | **89.1%** | — |
-| Remaining for resolution | 136 | — | — |
+| Expert adjudication (R1 vs R2) | 380 | 294/380 (77.4%) | 0.7618 |
+| **Resolved after adjudication** | **1174/1,260** | **93.2%** | — |
+| Remaining for resolution | 86 | — | — |

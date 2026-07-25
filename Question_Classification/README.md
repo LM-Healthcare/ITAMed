@@ -258,18 +258,18 @@ Each reviewer independently selected the correct classification (or proposed a t
 
 ### Inter-Reviewer Agreement
 
-After both reviewers completed their independent review, their decisions were compared to compute inter-reviewer agreement. One question (ssm2023574) was excluded due to a missing annotation from Reviewer 2.
+After both reviewers completed their independent review, their decisions were compared to compute inter-reviewer agreement.
 
 | Metric | Value |
 |:-------|------:|
-| Questions reviewed | 379 |
-| Primary-category agreement | 243/379 (64.1%) |
-| Exact-match agreement (full string) | 127/379 (33.5%) |
-| Set-based agreement (order-independent) | 158/379 (41.7%) |
-| **Cohen's Kappa (primary category)** | **κ = 0.6231** |
-| Remaining discordances | **136** |
+| Questions reviewed | 380 |
+| Primary-category agreement | 294/380 (77.4%) |
+| Exact-match agreement (full string) | 205/380 (53.9%) |
+| Set-based agreement (order-independent) | 223/380 (58.7%) |
+| **Cohen's Kappa (primary category)** | **κ = 0.7618** |
+| Remaining discordances | **86** |
 
-The value **κ = 0.6231** indicates **substantial agreement** between the two medical reviewers, which is consistent with the inherent difficulty of classifying questions that were already ambiguous enough to cause disagreement between two state-of-the-art LLMs.
+The value **κ = 0.7618** indicates **substantial agreement** between the two medical reviewers, which is consistent with the inherent difficulty of classifying questions that were already ambiguous enough to cause disagreement between two state-of-the-art LLMs.
 
 ### Reviewer–LLM Alignment
 
@@ -277,16 +277,16 @@ For each discordant question, we analyzed whether each reviewer's primary catego
 
 | Alignment | Reviewer 1 | Reviewer 2 |
 |:----------|:---------:|:---------:|
-| Agreed with Claude (only) | 60 (15.8%) | 76 (20.1%) |
-| Agreed with GPT (only) | 56 (14.8%) | 47 (12.4%) |
-| Chose third option | 84 (22.2%) | 36 (9.5%) |
-| Matched LLM consensus\* | 179 (47.2%) | 220 (58.0%) |
+| Agreed with Claude (only) | 63 (16.6%) | 75 (19.7%) |
+| Agreed with GPT (only) | 54 (14.2%) | 50 (13.2%) |
+| Chose third option | 75 (19.7%) | 36 (9.5%) |
+| Matched LLM consensus\* | 188 (49.5%) | 219 (57.6%) |
 
 \* *Questions where both LLMs shared the same primary category (discordance was only in secondary categories) and the reviewer confirmed that primary.*
 
 ### Discordance Resolution
 
-The **136 remaining discordances** between the two reviewers will be resolved through consensus discussion between the reviewers. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
+The **86 remaining discordances** between the two reviewers will be resolved through consensus discussion between the reviewers. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
 
 ---
 
@@ -327,7 +327,7 @@ Question_Classification/
 │
 └── results/expert_review/                              # Expert agreement analysis
     ├── expert_agreement_report.md                      #   Full markdown report
-    ├── reviewer_discordances.xlsx                      #   136 remaining discordances
+    ├── reviewer_discordances.xlsx                      #   86 remaining discordances
     ├── reviewer_discordances.json                      #   Same in JSON format
     └── reviewer_confusion_matrix.xlsx                  #   Reviewer confusion matrix
 ```
