@@ -258,18 +258,35 @@ Each reviewer independently selected the correct classification (or proposed a t
 
 ### Inter-Reviewer Agreement
 
-After both reviewers completed their independent review, their decisions were compared to compute inter-reviewer agreement:
+After both reviewers completed their independent review, their decisions were compared to compute inter-reviewer agreement. One question (ssm2023574) was excluded due to a missing annotation from Reviewer 2.
 
 | Metric | Value |
 |:-------|------:|
-| Total discordances reviewed | 380 |
-| Reviewer agreement | _TBD_ |
-| **Cohen's Kappa (reviewers)** | **κ = _TBD_** |
-| Cases requiring resolution | _TBD_ |
+| Questions reviewed | 379 |
+| Primary-category agreement | 243/379 (64.1%) |
+| Exact-match agreement (full string) | 127/379 (33.5%) |
+| Set-based agreement (order-independent) | 158/379 (41.7%) |
+| **Cohen's Kappa (primary category)** | **κ = 0.6231** |
+| Remaining discordances | **136** |
 
-_This section will be updated once both reviewers have submitted their decisions._
+The value **κ = 0.6231** indicates **substantial agreement** between the two medical reviewers, which is consistent with the inherent difficulty of classifying questions that were already ambiguous enough to cause disagreement between two state-of-the-art LLMs.
 
-The final adjudicated categories were applied back to the official dataset using the `apply_expert_review.py` script, which automatically propagates changes to all dataset files with a backup of the originals.
+### Reviewer–LLM Alignment
+
+For each discordant question, we analyzed whether each reviewer's primary category aligned with Claude's, GPT's, or neither:
+
+| Alignment | Reviewer 1 | Reviewer 2 |
+|:----------|:---------:|:---------:|
+| Agreed with Claude (only) | 60 (15.8%) | 76 (20.1%) |
+| Agreed with GPT (only) | 56 (14.8%) | 47 (12.4%) |
+| Chose third option | 84 (22.2%) | 36 (9.5%) |
+| Matched LLM consensus\* | 179 (47.2%) | 220 (58.0%) |
+
+\* *Questions where both LLMs shared the same primary category (discordance was only in secondary categories) and the reviewer confirmed that primary.*
+
+### Discordance Resolution
+
+The **136 remaining discordances** between the two reviewers will be resolved through consensus discussion between the reviewers. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
 
 ---
 
@@ -282,7 +299,8 @@ Question_Classification/
 ├── scripts/
 │   ├── classify_claude.py                 # Classification with Claude Opus 4.8
 │   ├── classify_gpt.py                    # Classification with GPT-5.5
-│   ├── compute_agreement.py              # Inter-rater agreement analysis
+│   ├── compute_agreement.py              # LLM inter-rater agreement analysis
+│   ├── compute_reviewer_agreement.py     # Expert reviewer agreement analysis
 │   └── apply_expert_review.py            # Apply expert decisions to dataset
 │
 ├── results/
@@ -302,9 +320,16 @@ Question_Classification/
 │       ├── discordances.xlsx              #   Complete discordance list
 │       └── discordances.json              #   Discordances in JSON format
 │
-└── expert_review/
-    ├── discordances_to_review.xlsx        # Review file (for expert adjudication)
-    └── instructions.md                    # Compilation instructions
+├── expert_review/
+│   ├── discordances_to_review_REW_1_EMILIANO.xlsx    # Reviewer 1 template
+│   ├── discordances_to_review_REW_2_EDOARDO.xlsx     # Reviewer 2 template
+│   └── instructions.md                                # Compilation instructions
+│
+└── results/expert_review/                              # Expert agreement analysis
+    ├── expert_agreement_report.md                      #   Full markdown report
+    ├── reviewer_discordances.xlsx                      #   136 remaining discordances
+    ├── reviewer_discordances.json                      #   Same in JSON format
+    └── reviewer_confusion_matrix.xlsx                  #   Reviewer confusion matrix
 ```
 
 ---
@@ -322,10 +347,13 @@ python scripts/classify_claude.py
 export OPENAI_API_KEY="sk-..."
 python scripts/classify_gpt.py
 
-# 3. Compute inter-rater agreement
+# 3. Compute LLM inter-rater agreement
 python scripts/compute_agreement.py
 
-# 4. Apply expert-reviewed categories to the dataset
+# 4. Compute expert reviewer agreement
+python scripts/compute_reviewer_agreement.py
+
+# 5. Apply expert-reviewed categories to the dataset
 python scripts/apply_expert_review.py
 ```
 
