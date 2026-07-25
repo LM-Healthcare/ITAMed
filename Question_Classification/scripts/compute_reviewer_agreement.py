@@ -481,18 +481,25 @@ def generate_markdown_report(stats: dict, df: pd.DataFrame) -> str:
     lines.append("")
 
     # ------ Section 6: Summary ------
-    concordant_total = 880 + stats["primary_agree"]
+    total_disc_to_resolve = stats['n'] - stats['exact_agree']
+    concordant_total = 880 + stats['exact_agree']
     lines.append("## 6. Summary — Full Classification Pipeline")
     lines.append("")
     lines.append("| Stage | Questions | Agreement | κ |")
     lines.append("|:------|:---------:|:---------:|:-:|")
     lines.append("| LLM annotation (Claude vs GPT) | 1,260 | 880/1,260 (69.8%) | 0.8950 |")
     lines.append(f"| Expert adjudication (R1 vs R2) | {stats['n']} | "
-                 f"{stats['primary_agree']}/{stats['n']} ({stats['primary_rate']:.1%}) | "
+                 f"{stats['exact_agree']}/{stats['n']} exact ({stats['exact_rate']:.1%}) | "
                  f"{stats['kappa_primary']:.4f} |")
-    lines.append(f"| **Resolved after adjudication** | **{concordant_total}/1,260** | "
+    lines.append(f"| **Fully resolved** | **{concordant_total}/1,260** | "
                  f"**{concordant_total/1260:.1%}** | — |")
-    lines.append(f"| Remaining for resolution | {stats['n_discordances']} | — | — |")
+    lines.append(f"| Remaining for resolution (any disagreement) | "
+                 f"{total_disc_to_resolve} | — | — |")
+    lines.append("")
+    lines.append(f"Of the {total_disc_to_resolve} discordances to resolve:")
+    lines.append(f"- **{stats['n_discordances']}** differ on the primary category")
+    lines.append(f"- **{total_disc_to_resolve - stats['n_discordances']}** agree on primary "
+                 f"but differ on the secondary category")
     lines.append("")
 
     return "\n".join(lines)
@@ -504,8 +511,9 @@ def generate_markdown_report(stats: dict, df: pd.DataFrame) -> str:
 
 
 def save_discordances(df: pd.DataFrame, stats: dict):
-    """Save the reviewer discordances to XLSX and JSON."""
-    disc = df[df["rev1_primary"] != df["rev2_primary"]].copy()
+    """Save ALL reviewer discordances (primary + secondary) to XLSX and JSON."""
+    # Include ALL questions where full category doesn't match (not just primary)
+    disc = df[df["rev1_final"] != df["rev2_final"]].copy()
     disc = disc.sort_values(["year", "question_number"]).reset_index(drop=True)
 
     # Select columns for output

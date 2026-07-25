@@ -119,6 +119,10 @@ Of the 380 reviewed questions, **52** (13.7%) have a primary-category disagreeme
 | Stage | Questions | Agreement | κ |
 |:------|:---------:|:---------:|:-:|
 | LLM annotation (Claude vs GPT) | 1,260 | 880/1,260 (69.8%) | 0.8950 |
-| Expert adjudication (R1 vs R2) | 380 | 328/380 (86.3%) | 0.8557 |
-| **Resolved after adjudication** | **1208/1,260** | **95.9%** | — |
-| Remaining for resolution | 52 | — | — |
+| Expert adjudication (R1 vs R2) | 380 | 254/380 exact (66.8%) | 0.8557 |
+| **Fully resolved** | **1134/1,260** | **90.0%** | — |
+| Remaining for resolution (any disagreement) | 126 | — | — |
+
+Of the 126 discordances to resolve:
+- **52** differ on the primary category
+- **74** agree on primary but differ on the secondary category
