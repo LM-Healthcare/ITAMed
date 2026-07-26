@@ -286,7 +286,9 @@ For each discordant question, we analyzed whether each reviewer's primary catego
 
 ### Discordance Resolution
 
-The **126 remaining discordances** (52 on primary category + 74 on secondary category only) between the two reviewers will be resolved through consensus discussion. The final adjudicated categories will be applied to the official dataset using the `apply_expert_review.py` script.
+All **126 discordances** (52 on primary category + 74 on secondary category only) were resolved through in-person consensus discussion between the two medical reviewers. For each discordant question, the reviewers jointly reviewed the clinical content and agreed on the final category assignment.
+
+The final adjudicated categories have been applied to all official dataset files (IT + EN, JSON + XLSX, per-year + complete) using the `apply_expert_review.py` script. All **1,260 questions** now have their definitive expert-validated category.
 
 ---
 
@@ -327,8 +329,9 @@ Question_Classification/
 │
 └── results/expert_review/                              # Expert agreement analysis
     ├── expert_agreement_report.md                      #   Full markdown report
-    ├── reviewer_discordances.xlsx                      #   126 remaining discordances
+    ├── reviewer_discordances.xlsx                      #   126 pre-resolution discordances
     ├── reviewer_discordances.json                      #   Same in JSON format
+    ├── reviewer_discordances_RESOLUTION.xlsx           #   Final resolved categories
     └── reviewer_confusion_matrix.xlsx                  #   Reviewer confusion matrix
 ```
 

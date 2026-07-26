@@ -106,7 +106,7 @@
     "answer_d": "dobutamina",
     "answer_e": "amiodarone",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione",
+    "category": "Anestesia e Rianimazione; Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "caratteristico del sesso femminile",
     "answer_e": "una complicanza della dieta a basso contenuto di scorie",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Gastroenterologia",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -234,7 +234,7 @@
     "answer_d": "Fistola anale",
     "answer_e": "Prolasso anale",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Gastroenterologia",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -698,7 +698,7 @@
     "answer_d": "Tricomoniasi",
     "answer_e": "Infezione da HIV",
     "correct_answer": "A",
-    "category": "Malattie Infettive",
+    "category": "Malattie Infettive; Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Paroxetina",
     "answer_e": "Terapia ormonale sostitutiva combinata con estradiolo e progestinico per via transdermica",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Endocrinologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -842,7 +842,7 @@
     "answer_d": "la legge 24/2017",
     "answer_e": "la legge 189/2012",
     "correct_answer": "A",
-    "category": "Medicina Legale",
+    "category": "Igiene, Epidemiologia e Statistica; Medicina Legale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1034,7 +1034,7 @@
     "answer_d": "Sindrome di Cushing",
     "answer_e": "Feocromocitoma",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Nefrologia",
+    "category": "Nefrologia; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1130,7 +1130,7 @@
     "answer_d": "Spirometria",
     "answer_e": "Radiografia del torace in due proiezioni",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1146,7 +1146,7 @@
     "answer_d": "Apixaban",
     "answer_e": "Eparina a basso peso molecolare e successiva sostituzione con dabigatran",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Farmacologia e Tossicologia",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1258,7 +1258,7 @@
     "answer_d": "Acido nicotinico",
     "answer_e": "Pioglitazone",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1290,7 +1290,7 @@
     "answer_d": "Gemfibrozil",
     "answer_e": "Mannitolo",
     "correct_answer": "A",
-    "category": "Endocrinologia; Nefrologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1306,7 +1306,7 @@
     "answer_d": "Acetazolamide",
     "answer_e": "Idroclorotiazide",
     "correct_answer": "A",
-    "category": "Nefrologia; Farmacologia e Tossicologia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1322,7 +1322,7 @@
     "answer_d": "Linezolid",
     "answer_e": "Colistina",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Pneumologia e Chirurgia Toracica",
+    "category": "Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Acidosi respiratoria con aumentato gap anionico",
     "answer_e": "Acidosi respiratoria con gap anionico normale",
     "correct_answer": "A",
-    "category": "Nefrologia; Endocrinologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1466,7 +1466,7 @@
     "answer_d": "Neisseria gonorrhoeae",
     "answer_e": "Mycoplasma hominis",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Ginecologia e Ostetricia",
+    "category": "Dermatologia e Venereologia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1482,7 +1482,7 @@
     "answer_d": "Infarto renale bilaterale da ostruzione delle arterie renali",
     "answer_e": "Nefropatia ostruttiva da atonia vescicale da tossici",
     "correct_answer": "A",
-    "category": "Nefrologia; Farmacologia e Tossicologia",
+    "category": "Nefrologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1498,7 +1498,7 @@
     "answer_d": "Sindrome epato-renale",
     "answer_e": "Pielonefrite acuta",
     "correct_answer": "A",
-    "category": "Nefrologia; Immunologia e Reumatologia",
+    "category": "Immunologia e Reumatologia; Nefrologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1530,7 +1530,7 @@
     "answer_d": "Ematoma sottodurale acuto fronto-parietale sinistro",
     "answer_e": "Emorragia intraparenchimale spontanea frontale destra",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Oncologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": true,
     "image_category": "Brain MRI",
     "image_path": "images/2018/ssm20182146604.png"
@@ -1642,7 +1642,7 @@
     "answer_d": "Prescrivere bendaggio alternato degli occhi",
     "answer_e": "Prescrivere solo un integratore per somministrazione orale",
     "correct_answer": "A",
-    "category": "Oftalmologia; Pediatria",
+    "category": "Oftalmologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1754,7 +1754,7 @@
     "answer_d": "Encondroma",
     "answer_e": "Condroblastoma",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Oncologia",
+    "category": "Ortopedia e Traumatologia",
     "has_image": true,
     "image_category": "Lower limb X-ray",
     "image_path": "images/2018/ssm20182147304.png"
@@ -1786,7 +1786,7 @@
     "answer_d": "Neurinoma del VII nervo cranico",
     "answer_e": "Otite bolloso-emorragica",
     "correct_answer": "A",
-    "category": "Otorinolaringoiatria; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Otorinolaringoiatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1802,7 +1802,7 @@
     "answer_d": "Cisti branchiale",
     "answer_e": "Tiroidite di Riedel",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Pediatria",
+    "category": "Otorinolaringoiatria; Pediatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2026,7 +2026,7 @@
     "answer_d": "Controllo della risposta del tumore mammario alla chemioterapia neoadiuvante",
     "answer_e": "Pazienti con metastasi linfonodali ascellari di sospetta origine mammaria (con esami ecografico e mammografico negativi)",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2058,7 +2058,7 @@
     "answer_d": "Si prefigge di diagnosticare il tumore della mammella in fase precoce",
     "answer_e": "È proposto dalle autorità sanitarie soltanto alla popolazione di sesso femminile",
     "correct_answer": "A",
-    "category": "Igiene, Epidemiologia e Statistica; Oncologia",
+    "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2122,7 +2122,7 @@
     "answer_d": "Organo critico è sinonimo di \"gross tumor volume\"",
     "answer_e": "Organo critico è quell'organo o tessuto, ancorché importante, comunque affetto da malattia e quindi da irradiare",
     "correct_answer": "A",
-    "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""

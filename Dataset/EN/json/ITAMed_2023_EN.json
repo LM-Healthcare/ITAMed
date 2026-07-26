@@ -90,7 +90,7 @@
     "answer_d": "Tuberous sclerosis complex",
     "answer_e": "Neurofibromatosis type 1",
     "correct_answer": "A",
-    "category": "Medical Genetics; Oncology",
+    "category": "Oncology; Medical Genetics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -138,7 +138,7 @@
     "answer_d": "Isolated right fourth cranial nerve palsy",
     "answer_e": "Complete right third cranial nerve palsy",
     "correct_answer": "A",
-    "category": "Ophthalmology; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Ophthalmology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -202,7 +202,7 @@
     "answer_d": "Perforated diverticulum",
     "answer_e": "Toxic megacolon",
     "correct_answer": "A",
-    "category": "General Surgery; Oncology",
+    "category": "General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "Hyperaldosteronism",
     "answer_e": "Pancreatic endocrine tumor",
     "correct_answer": "A",
-    "category": "Endocrinology; Medical Genetics",
+    "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -346,7 +346,7 @@
     "answer_d": "Calot's triad",
     "answer_e": "Virchow's triad",
     "correct_answer": "A",
-    "category": "Gastroenterology; General Surgery",
+    "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -394,7 +394,7 @@
     "answer_d": "Amenorrhea of pituitary origin",
     "answer_e": "Polycystic ovary syndrome",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Endocrinology",
+    "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -554,7 +554,7 @@
     "answer_d": "Panner's disease",
     "answer_e": "Sinding-Larsen-Johansson disease",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; Pediatrics",
+    "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -762,7 +762,7 @@
     "answer_d": "Arthrogryposis",
     "answer_e": "Juvenile idiopathic arthritis",
     "correct_answer": "A",
-    "category": "Pediatrics; Infectious Diseases",
+    "category": "Infectious Diseases; Pediatrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Symmetrical Drug-Related Intertriginous and Flexural Exanthema (SDRIFE)",
     "answer_e": "Sézary syndrome",
     "correct_answer": "A",
-    "category": "Dermatology and Venereology; Pharmacology and Toxicology",
+    "category": "Pharmacology and Toxicology; Dermatology and Venereology",
     "has_image": true,
     "image_category": "Photograph of a skin lesion",
     "image_path": "images/2023/ssm2023491.png"
@@ -874,7 +874,7 @@
     "answer_d": "Chromogranin",
     "answer_e": "Anti-TSH receptor antibodies",
     "correct_answer": "A",
-    "category": "Endocrinology; Oncology",
+    "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -954,7 +954,7 @@
     "answer_d": "Benzodiazepine abuse",
     "answer_e": "Neuroleptic abuse",
     "correct_answer": "A",
-    "category": "Psychiatry; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Psychiatry",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1114,7 +1114,7 @@
     "answer_d": "Oral medical device containing aluminum hydroxide and hyaluronic acid",
     "answer_e": "Oral sucralfate",
     "correct_answer": "A",
-    "category": "Gastroenterology; Pharmacology and Toxicology",
+    "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1194,7 +1194,7 @@
     "answer_d": "Cryptococcus neoformans meningoencephalitis",
     "answer_e": "Haemophilus influenzae meningitis",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1210,7 +1210,7 @@
     "answer_d": "Administration of oral furosemide",
     "answer_e": "Fluid therapy",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Anesthesia and Intensive Care",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1226,7 +1226,7 @@
     "answer_d": "Pralidoxime",
     "answer_e": "Physostigmine",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Pharmacology and Toxicology",
+    "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1402,7 +1402,7 @@
     "answer_d": "Increased serum creatinine",
     "answer_e": "Hyperphosphatemia",
     "correct_answer": "A",
-    "category": "Oncology; Hematology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1610,7 +1610,7 @@
     "answer_d": "Visual evoked potentials",
     "answer_e": "Brain MR angiography",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Psychiatry",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1690,7 +1690,7 @@
     "answer_d": "Absence of contrast enhancement",
     "answer_e": "Hepatocellular carcinoma does not present a specific contrast-enhancement pattern",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Oncology",
+    "category": "Gastroenterology; Diagnostic Imaging and Nuclear Medicine",
     "has_image": true,
     "image_category": "Radiological image",
     "image_path": "images/2023/ssm2023546.png"
@@ -1770,7 +1770,7 @@
     "answer_d": "Tubular adenoma",
     "answer_e": "Breast myxoma",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Oncology",
+    "category": "Gynecology and Obstetrics; General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1818,7 +1818,7 @@
     "answer_d": "Escherichia coli",
     "answer_e": "Streptococcus agalactiae",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Neurology and Neurosurgery",
+    "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1866,7 +1866,7 @@
     "answer_d": "Neonatal diagnostic approaches carried out selectively on children of patients affected by the disease",
     "answer_e": "Neonatal diagnostic approaches performed selectively on offspring of patients affected by this or other amino acid metabolism disorders",
     "correct_answer": "A",
-    "category": "Medical Genetics; Pediatrics",
+    "category": "Pediatrics; Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1914,7 +1914,7 @@
     "answer_d": "General Practitioners and Family Pediatricians are professionals \"employed\" by the Regional Health Service",
     "answer_e": "In 2001, a constitutional law granted the Regions exclusive power in matters of healthcare",
     "correct_answer": "A",
-    "category": "Forensic Medicine",
+    "category": "Hygiene, Epidemiology and Statistics; Forensic Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1978,7 +1978,7 @@
     "answer_d": "Anyone who, in the exercise of the healthcare profession, has provided their services or assistance, in cases that may present the characteristics of an offense prosecutable upon complaint of the injured party",
     "answer_e": "The obligation does not exist because the parents would be subject to criminal prosecution",
     "correct_answer": "A",
-    "category": "Forensic Medicine; Pediatrics",
+    "category": "Forensic Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2042,7 +2042,7 @@
     "answer_d": "Hypnotics",
     "answer_e": "Antiemetics",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Immunology and Rheumatology",
+    "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Malignant hyperthermia",
     "answer_e": "Anaphylactic shock",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Urology",
+    "category": "Urology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "Administration of levetiracetam",
     "answer_e": "Administration of phenobarbital",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Pharmacology and Toxicology",
+    "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2154,7 +2154,7 @@
     "answer_d": "The recovery of deep sensation through the stimulation of thermoalgesic afferents",
     "answer_e": "The recovery of exteroceptive sensation in the plegic hemibody of the patient after a stroke",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2186,7 +2186,7 @@
     "answer_d": "Reduction of sympathetic tone",
     "answer_e": "Increase in diaphragmatic performance",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Pulmonology and Thoracic Surgery",
+    "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""

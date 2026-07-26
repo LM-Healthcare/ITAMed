@@ -26,7 +26,7 @@
     "answer_d": "Modify the antibiotic therapy with meropenem to replace piperacillin/tazobactam",
     "answer_e": "Empirically start a new antibiotic therapy with intravenous vancomycin",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Gastroenterology",
+    "category": "Gastroenterology; Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "Post-surgical hematoma",
     "answer_e": "Contact dermatitis",
     "correct_answer": "A",
-    "category": "Dermatology and Venereology; General Surgery",
+    "category": "Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -378,7 +378,7 @@
     "answer_d": "Chronic myeloid leukemia",
     "answer_e": "Chronic lymphocytic leukemia",
     "correct_answer": "A",
-    "category": "Hematology; Oncology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -426,7 +426,7 @@
     "answer_d": "Insulin",
     "answer_e": "None; it is preferable to continue with non-pharmacological therapy alone",
     "correct_answer": "A",
-    "category": "Endocrinology; Pharmacology and Toxicology",
+    "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -458,7 +458,7 @@
     "answer_d": "Vitamin E",
     "answer_e": "Vitamin A",
     "correct_answer": "A",
-    "category": "Clinical Nutrition; Gastroenterology",
+    "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -490,7 +490,7 @@
     "answer_d": "Turcot syndrome",
     "answer_e": "Birt-Hogg-Dubé syndrome",
     "correct_answer": "A",
-    "category": "Medical Genetics; Oncology",
+    "category": "Oncology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -618,7 +618,7 @@
     "answer_d": "Acute labyrinthitis with ectopic atrial tachycardia",
     "answer_e": "Vasovagal syncope in pregnancy",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery; Cardiology and Cardiac Surgery",
+    "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -650,7 +650,7 @@
     "answer_d": "Nephrotic syndrome",
     "answer_e": "Hemothorax",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery",
+    "category": "Pulmonology and Thoracic Surgery; Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -906,7 +906,7 @@
     "answer_d": "X",
     "answer_e": "Y",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Pediatrics",
+    "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1098,7 +1098,7 @@
     "answer_d": "Non-thrombosed grade IV hemorrhoids",
     "answer_e": "Anorectal prolapse",
     "correct_answer": "A",
-    "category": "General Surgery; Gastroenterology",
+    "category": "General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1290,7 +1290,7 @@
     "answer_d": "Breast",
     "answer_e": "Fallopian tubes",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Hygiene, Epidemiology and Statistics",
+    "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1306,7 +1306,7 @@
     "answer_d": "Genital herpes",
     "answer_e": "Lichen",
     "correct_answer": "A",
-    "category": "Dermatology and Venereology; Gynecology and Obstetrics",
+    "category": "Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Kienböck disease",
     "answer_e": "Scheuermann disease",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; Pediatrics",
+    "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1418,7 +1418,7 @@
     "answer_d": "Cystoscopy",
     "answer_e": "Ultrasonography of the urinary tract",
     "correct_answer": "A",
-    "category": "Urology; Oncology",
+    "category": "Urology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1466,7 +1466,7 @@
     "answer_d": "Pituitary microadenoma",
     "answer_e": "Meningioma of the left anterior clinoid",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Ophthalmology",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1562,7 +1562,7 @@
     "answer_d": "Hypothyroidism",
     "answer_e": "Reactive hypercalcemia",
     "correct_answer": "A",
-    "category": "Otorhinolaryngology; Endocrinology",
+    "category": "Otorhinolaryngology; General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1610,7 +1610,7 @@
     "answer_d": "No follow-up or treatment",
     "answer_e": "Initiation of anticoagulant therapy and monitoring of blood pressure values",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; General Surgery",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1674,7 +1674,7 @@
     "answer_d": "Phyllodes tumor",
     "answer_e": "Fibrocystic change of the breast",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Oncology",
+    "category": "Gynecology and Obstetrics; General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1882,7 +1882,7 @@
     "answer_d": "Administered intravenously to prevent withdrawal syndrome",
     "answer_e": "Also effective in benzodiazepine-induced respiratory depression",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Anesthesia and Intensive Care",
+    "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1930,7 +1930,7 @@
     "answer_d": "An infectious disease evaluation for suspected septic shock",
     "answer_e": "A 250 mL crystalloid bolus for suspected septic shock",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Pulmonology and Thoracic Surgery",
+    "category": "Pulmonology and Thoracic Surgery; Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1994,7 +1994,7 @@
     "answer_d": "Severe right ventricular dysfunction",
     "answer_e": "Cardiac tamponade",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Cardiology and Cardiac Surgery",
+    "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2074,7 +2074,7 @@
     "answer_d": "6-mercaptopurine",
     "answer_e": "Fludarabine",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Oncology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Hypothyroidism",
     "answer_e": "Dose-related pulmonary toxicity",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Cardiology and Cardiac Surgery",
+    "category": "Cardiology and Cardiac Surgery; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "It provided for the integration of hospital care into the Local Health Units",
     "answer_e": "It did not provide for an employment relationship with the SSN for general practitioners",
     "correct_answer": "A",
-    "category": "Forensic Medicine; Hygiene, Epidemiology and Statistics",
+    "category": "Hygiene, Epidemiology and Statistics; Forensic Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2170,7 +2170,7 @@
     "answer_d": "It is not a known carcinogen, it can cause myalgic encephalomyelitis",
     "answer_e": "It is not a known carcinogen, it can cause asthenia",
     "correct_answer": "A",
-    "category": "Occupational Medicine; Oncology",
+    "category": "Occupational Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2186,7 +2186,7 @@
     "answer_d": "Exposure to ionizing radiation following therapeutic applications",
     "answer_e": "SV40 virus infection",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery; Occupational Medicine",
+    "category": "Occupational Medicine; Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2218,7 +2218,7 @@
     "answer_d": "The opinion of the person exercising parental responsibility is sufficient, even if it differs from the opinion of the minor girl",
     "answer_e": "It is also necessary to obtain the opinion of the biological father if he is of legal age",
     "correct_answer": "A",
-    "category": "Forensic Medicine; Gynecology and Obstetrics",
+    "category": "Forensic Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""

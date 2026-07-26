@@ -106,7 +106,7 @@
     "answer_d": "dobutamine",
     "answer_e": "amiodarone",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care",
+    "category": "Anesthesia and Intensive Care; Immunology and Rheumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "characteristic of the female sex",
     "answer_e": "a complication of a low-residue diet",
     "correct_answer": "A",
-    "category": "General Surgery; Gastroenterology",
+    "category": "General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -234,7 +234,7 @@
     "answer_d": "Anal fistula",
     "answer_e": "Anal prolapse",
     "correct_answer": "A",
-    "category": "General Surgery; Gastroenterology",
+    "category": "General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -698,7 +698,7 @@
     "answer_d": "Trichomoniasis",
     "answer_e": "HIV infection",
     "correct_answer": "A",
-    "category": "Infectious Diseases",
+    "category": "Infectious Diseases; Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Paroxetine",
     "answer_e": "Combined transdermal hormone replacement therapy with estradiol and a progestin",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Endocrinology",
+    "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -842,7 +842,7 @@
     "answer_d": "Law 24/2017",
     "answer_e": "Law 189/2012",
     "correct_answer": "A",
-    "category": "Forensic Medicine",
+    "category": "Hygiene, Epidemiology and Statistics; Forensic Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1034,7 +1034,7 @@
     "answer_d": "Cushing's syndrome",
     "answer_e": "Pheochromocytoma",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Nephrology",
+    "category": "Nephrology; Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1130,7 +1130,7 @@
     "answer_d": "Spirometry",
     "answer_e": "Chest X-ray in two views",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery; Diagnostic Imaging and Nuclear Medicine",
+    "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1146,7 +1146,7 @@
     "answer_d": "Apixaban",
     "answer_e": "Low-molecular-weight heparin with subsequent switch to dabigatran",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery; Pharmacology and Toxicology",
+    "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1258,7 +1258,7 @@
     "answer_d": "Nicotinic acid",
     "answer_e": "Pioglitazone",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Cardiology and Cardiac Surgery",
+    "category": "Cardiology and Cardiac Surgery; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1290,7 +1290,7 @@
     "answer_d": "Gemfibrozil",
     "answer_e": "Mannitol",
     "correct_answer": "A",
-    "category": "Endocrinology; Nephrology",
+    "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1306,7 +1306,7 @@
     "answer_d": "Acetazolamide",
     "answer_e": "Hydrochlorothiazide",
     "correct_answer": "A",
-    "category": "Nephrology; Pharmacology and Toxicology",
+    "category": "Cardiology and Cardiac Surgery; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1322,7 +1322,7 @@
     "answer_d": "Linezolid",
     "answer_e": "Colistin",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Pulmonology and Thoracic Surgery",
+    "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Respiratory acidosis with increased anion gap",
     "answer_e": "Respiratory acidosis with normal anion gap",
     "correct_answer": "A",
-    "category": "Nephrology; Endocrinology",
+    "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1466,7 +1466,7 @@
     "answer_d": "Neisseria gonorrhoeae",
     "answer_e": "Mycoplasma hominis",
     "correct_answer": "A",
-    "category": "Infectious Diseases; Gynecology and Obstetrics",
+    "category": "Dermatology and Venereology; Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1482,7 +1482,7 @@
     "answer_d": "Bilateral renal infarction due to renal artery obstruction",
     "answer_e": "Obstructive nephropathy due to toxin-induced bladder atony",
     "correct_answer": "A",
-    "category": "Nephrology; Pharmacology and Toxicology",
+    "category": "Nephrology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1498,7 +1498,7 @@
     "answer_d": "Hepatorenal syndrome",
     "answer_e": "Acute pyelonephritis",
     "correct_answer": "A",
-    "category": "Nephrology; Immunology and Rheumatology",
+    "category": "Immunology and Rheumatology; Nephrology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1530,7 +1530,7 @@
     "answer_d": "Acute left fronto-parietal subdural hematoma",
     "answer_e": "Spontaneous right frontal intraparenchymal hemorrhage",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Oncology",
+    "category": "Neurology and Neurosurgery",
     "has_image": true,
     "image_category": "Brain MRI",
     "image_path": "images/2018/ssm20182146604.png"
@@ -1642,7 +1642,7 @@
     "answer_d": "Prescribe alternate patching of the eyes",
     "answer_e": "Prescribe only an oral supplement",
     "correct_answer": "A",
-    "category": "Ophthalmology; Pediatrics",
+    "category": "Ophthalmology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1754,7 +1754,7 @@
     "answer_d": "Enchondroma",
     "answer_e": "Chondroblastoma",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; Oncology",
+    "category": "Orthopedics and Traumatology",
     "has_image": true,
     "image_category": "Lower limb X-ray",
     "image_path": "images/2018/ssm20182147304.png"
@@ -1786,7 +1786,7 @@
     "answer_d": "Schwannoma of the VII cranial nerve",
     "answer_e": "Bullous hemorrhagic otitis",
     "correct_answer": "A",
-    "category": "Otorhinolaryngology; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Otorhinolaryngology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1802,7 +1802,7 @@
     "answer_d": "Branchial cleft cyst",
     "answer_e": "Riedel's thyroiditis",
     "correct_answer": "A",
-    "category": "General Surgery; Pediatrics",
+    "category": "Otorhinolaryngology; Pediatrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2026,7 +2026,7 @@
     "answer_d": "Monitoring the response of breast cancer to neoadjuvant chemotherapy",
     "answer_e": "Patients with axillary lymph node metastases of suspected breast origin (with negative ultrasound and mammographic examinations)",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Oncology",
+    "category": "Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2058,7 +2058,7 @@
     "answer_d": "It aims to diagnose breast cancer at an early stage",
     "answer_e": "It is offered by health authorities only to the female population",
     "correct_answer": "A",
-    "category": "Hygiene, Epidemiology and Statistics; Oncology",
+    "category": "Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2122,7 +2122,7 @@
     "answer_d": "Organ at risk is synonymous with \"gross tumor volume\"",
     "answer_e": "An organ at risk is that organ or tissue which, although important, is nonetheless affected by disease and therefore to be irradiated",
     "correct_answer": "A",
-    "category": "Oncology; Diagnostic Imaging and Nuclear Medicine",
+    "category": "Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""

@@ -90,7 +90,7 @@
     "answer_d": "Chiamare il 118",
     "answer_e": "Garantire la pervietà delle vie aeree",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Cardiologia e Cardiochirurgia",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -122,7 +122,7 @@
     "answer_d": "È necessario mantenere eparina sottocute per almeno 5 giorni, dopodiché va sospesa e va iniziato warfarin, con l'obiettivo di raggiungere il range terapeutico di INR (tra 2 e 3)",
     "answer_e": "È necessario mantenere eparina sottocute per due settimane, dopodiché va sospesa e va iniziato warfarin, con l'obiettivo di raggiungere il range terapeutico di INR (tra 2 e 3)",
     "correct_answer": "A",
-    "category": "Ematologia; Farmacologia e Tossicologia",
+    "category": "Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -202,7 +202,7 @@
     "answer_d": "Infusione di plasma fresco congelato",
     "answer_e": "Infusione fattore VIII",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Ematologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -234,7 +234,7 @@
     "answer_d": "Enalapril",
     "answer_e": "Metformina",
     "correct_answer": "A",
-    "category": "Urologia; Farmacologia e Tossicologia",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -282,7 +282,7 @@
     "answer_d": "Rabdomiosarcoma",
     "answer_e": "Metastasi ossea di un tumore cerebrale",
     "correct_answer": "A",
-    "category": "Oncologia; Ortopedia e Traumatologia",
+    "category": "Ematologia; Pediatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -330,7 +330,7 @@
     "answer_d": "Ciclosporina",
     "answer_e": "Sospensione dei farmaci in atto",
     "correct_answer": "A",
-    "category": "Dermatologia e Venereologia; Malattie Infettive",
+    "category": "Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -362,7 +362,7 @@
     "answer_d": "Urinocoltura",
     "answer_e": "Sierologia per infezione da EBV",
     "correct_answer": "A",
-    "category": "Ematologia; Oncologia",
+    "category": "Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -570,7 +570,7 @@
     "answer_d": "Dissecazione aortica",
     "answer_e": "Sindrome di Brugada",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Cardiologia e Cardiochirurgia",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": true,
     "image_category": "ECG tracing",
     "image_path": "images/2020/ssm20203813604.png"
@@ -762,7 +762,7 @@
     "answer_d": "Azatioprina",
     "answer_e": "Salazopirina",
     "correct_answer": "A",
-    "category": "Immunologia e Reumatologia; Farmacologia e Tossicologia",
+    "category": "Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -778,7 +778,7 @@
     "answer_d": "Malattia di Wilson",
     "answer_e": "Polineuropatia dismetabolica",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Ematologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -794,7 +794,7 @@
     "answer_d": "Sindrome di Tolosa-Hunt",
     "answer_e": "Aprassia oculo-motoria di Cogan",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Oftalmologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -970,7 +970,7 @@
     "answer_d": "Iperuricemia",
     "answer_e": "Insufficienza renale acuta",
     "correct_answer": "A",
-    "category": "Pediatria; Oncologia",
+    "category": "Pediatria; Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -986,7 +986,7 @@
     "answer_d": "Anemia da deficit di folati",
     "answer_e": "Malaria",
     "correct_answer": "A",
-    "category": "Ematologia; Pediatria",
+    "category": "Pediatria; Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1034,7 +1034,7 @@
     "answer_d": "RM addome-pelvi",
     "answer_e": "RX torace",
     "correct_answer": "A",
-    "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1178,7 +1178,7 @@
     "answer_d": "La produzione di saliva nel paziente con adenoma pleomorfo",
     "answer_e": "La quantità di feci prodotte nel paziente sottoposto a colectomia",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Anestesia e Rianimazione",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1210,7 +1210,7 @@
     "answer_d": "Glicolipidico",
     "answer_e": "Nessuna delle altre risposte è corretta",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Endocrinologia",
+    "category": "Endocrinologia; Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Per 2 settimane",
     "answer_e": "Solo in presenza di fattori di rischio per trombosi venosa profonda",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Farmacologia e Tossicologia",
+    "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1546,7 +1546,7 @@
     "answer_d": "Sindrome di Volkmann",
     "answer_e": "Sindrome di Sudeck",
     "correct_answer": "A",
-    "category": "Genetica Medica; Otorinolaringoiatria",
+    "category": "Genetica Medica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1562,7 +1562,7 @@
     "answer_d": "Otoemissioni acustiche",
     "answer_e": "RM senza gadolinio",
     "correct_answer": "A",
-    "category": "Otorinolaringoiatria; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Otorinolaringoiatria; Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1626,7 +1626,7 @@
     "answer_d": "Utilizzo dei nuovi anticoagulanti orali",
     "answer_e": "Utilizzo dell'eparina non frazionata",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Neurologia e Neurochirurgia",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1706,7 +1706,7 @@
     "answer_d": "Candida albicans",
     "answer_e": "Herpes simplex virus tipo 2",
     "correct_answer": "A",
-    "category": "Malattie Infettive",
+    "category": "Malattie Infettive; Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1770,7 +1770,7 @@
     "answer_d": "TC dell'addome completo, con e senza mezzo di contrasto",
     "answer_e": "Ecografia con mezzo di contrasto",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Urologia",
+    "category": "Urologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1786,7 +1786,7 @@
     "answer_d": "Immagine A: sequenza T2; Immagine B: sequenza T1 con mezzo di contrasto",
     "answer_e": "Immagine A: sequenza T2; Immagine B: sequenza T2 con mezzo di contrasto",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
     "image_category": "Brain MRI",
     "image_path": "images/2020/ssm20203817404.png"
@@ -1802,7 +1802,7 @@
     "answer_d": "Versamento pleurico destro",
     "answer_e": "Addensamento polmonare destro",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Pneumologia e Chirurgia Toracica",
+    "category": "Pneumologia e Chirurgia Toracica; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
     "image_category": "Chest CT scan",
     "image_path": "images/2020/ssm20203817454.png"
@@ -1818,7 +1818,7 @@
     "answer_d": "Studio radiografico del cranio come prima indagine, seguito da RM con mezzo di contrasto",
     "answer_e": "Studio radiografico del cranio come prima indagine, seguito da TC con mezzo di contrasto",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1898,7 +1898,7 @@
     "answer_d": "Prosecuzione terapia antibiotica in atto",
     "answer_e": "Esecuzione TC addome con mezzo di contrasto per valutare eziologia dell'insufficienza renale",
     "correct_answer": "A",
-    "category": "Nefrologia; Farmacologia e Tossicologia",
+    "category": "Nefrologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1930,7 +1930,7 @@
     "answer_d": "Acidosi respiratoria",
     "answer_e": "Il pH rimane in range di normalità, vi è solo alterazione degli elettroliti",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Nefrologia",
+    "category": "Nefrologia; Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "Se il soggetto è stato completamente vaccinato durante l'infanzia",
     "answer_e": "In caso di pregresso episodio di tetano in soggetto mai vaccinato",
     "correct_answer": "A",
-    "category": "Igiene, Epidemiologia e Statistica; Malattie Infettive",
+    "category": "Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""

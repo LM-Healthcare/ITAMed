@@ -126,3 +126,16 @@ Of the 380 reviewed questions, **52** (13.7%) have a primary-category disagreeme
 Of the 126 discordances to resolve:
 - **52** differ on the primary category
 - **74** agree on primary but differ on the secondary category
+
+---
+
+## 7. Discordance Resolution
+
+All **126 discordances** were resolved through in-person consensus discussion between the two medical reviewers. For each discordant question, the reviewers jointly reviewed the clinical content and agreed on the final category assignment.
+
+| Resolution outcome | Count |
+|:-------------------|------:|
+| Total discordances resolved | 126 |
+| Final categories applied to dataset | 1,260/1,260 (100%) |
+
+The final adjudicated categories have been applied to all official dataset files (IT + EN, JSON + XLSX, per-year + complete) using the `apply_expert_review.py` script.

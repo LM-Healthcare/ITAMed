@@ -1,42 +1,33 @@
 """
 ==============================================================================
-ITAMed — Apply Expert Review to Dataset
+ITAMed — Apply Final Category Assignments to All Dataset Files
 ==============================================================================
 
 Purpose:
-    Reads the expert-reviewed discordance file and updates the official
-    ITAMed dataset files with the adjudicated category decisions.
+    Builds the complete final category mapping for ALL 1,260 questions by
+    combining three sources:
 
-    This script is the final step in the dual-annotator classification
-    pipeline. After two LLMs independently classify questions and medical
-    experts resolve disagreements, this script propagates the final
-    categories back into the official dataset.
+      1. 880 LLM-concordant questions (Claude = GPT) → use agreed category
+      2. 254 reviewer-concordant questions (R1 = R2) → use agreed category
+      3. 126 resolved discordances → use consensus resolution
+
+    Then applies the final categories to ALL official dataset files:
+      - IT JSON + XLSX (per-year + complete)
+      - EN JSON + XLSX (per-year + complete)
 
 Input:
-    - Expert review file:
-      Question_Classification/expert_review/discordances_to_review.xlsx
-      Column layout: Anno | N. Domanda | Codice | Domanda | Risposta Corretta |
-      Categoria Claude | Categoria GPT | CATEGORIA FINALE 1 (compilare) |
-      CATEGORIA FINALE 2 (compilare) | CATEGORIA FINALE (formula)
-
-    - Original dataset files:
-      Dataset/IT/xlsx/ITAMed_{year}.xlsx
-      Dataset/IT/json/ITAMed_{year}.json
-      Dataset/IT/xlsx/ITAMed_complete.xlsx
-      Dataset/IT/json/ITAMed_complete.json
+    - LLM classifications: Dataset/IT/xlsx/ (Claude) + results/gpt/ (GPT)
+    - Reviewer files: expert_review/*_completed.xlsx
+    - Resolution file: results/expert_review/reviewer_discordances_RESOLUTION.xlsx
 
 Output:
-    Updated versions of all the above files.
-
-    A backup of original files is created in:
-      Dataset/IT/backup_pre_review/
+    Updated category field in all IT and EN dataset files (JSON + XLSX).
 
 Requirements:
     - openpyxl>=3.1
-    - pandas>=2.0
 
 Usage:
-    python apply_expert_review.py
+    python scripts/apply_expert_review.py
 
 Author: ITAMed Dataset Team
 ==============================================================================
@@ -45,277 +36,336 @@ Author: ITAMed Dataset Team
 import os
 import sys
 import json
-import shutil
-from datetime import datetime
 
 import openpyxl
-import pandas as pd
 
 # ==============================================================================
 # Configuration
 # ==============================================================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-DATASET_IT_DIR = os.path.join(BASE_DIR, "Dataset", "IT")
-XLSX_DIR = os.path.join(DATASET_IT_DIR, "xlsx")
-JSON_DIR = os.path.join(DATASET_IT_DIR, "json")
-REVIEW_FILE = os.path.join(
-    BASE_DIR, "Question_Classification", "expert_review", "discordances_to_review.xlsx"
+QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO = os.path.dirname(QC_DIR)
+
+IT_JSON_DIR = os.path.join(REPO, "Dataset", "IT", "json")
+IT_XLSX_DIR = os.path.join(REPO, "Dataset", "IT", "xlsx")
+EN_JSON_DIR = os.path.join(REPO, "Dataset", "EN", "json")
+EN_XLSX_DIR = os.path.join(REPO, "Dataset", "EN", "xlsx")
+GPT_DIR = os.path.join(QC_DIR, "results", "gpt")
+REVIEW_DIR = os.path.join(QC_DIR, "expert_review")
+RESOLUTION_FILE = os.path.join(
+    QC_DIR, "results", "expert_review",
+    "reviewer_discordances_RESOLUTION.xlsx",
 )
-BACKUP_DIR = os.path.join(DATASET_IT_DIR, "backup_pre_review")
+
+REV1_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW1_EM_B_completed.xlsx")
+REV2_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW_2_ED_B_completed.xlsx")
 
 YEARS = list(range(2017, 2026))
 
+# IT → EN category translation
+CAT_IT_TO_EN = {
+    "Anestesia e Rianimazione": "Anesthesia and Intensive Care",
+    "Cardiologia e Cardiochirurgia": "Cardiology and Cardiac Surgery",
+    "Chirurgia Generale": "General Surgery",
+    "Dermatologia e Venereologia": "Dermatology and Venereology",
+    "Diagnostica per Immagini e Medicina Nucleare": "Diagnostic Imaging and Nuclear Medicine",
+    "Ematologia": "Hematology",
+    "Endocrinologia": "Endocrinology",
+    "Farmacologia e Tossicologia": "Pharmacology and Toxicology",
+    "Gastroenterologia": "Gastroenterology",
+    "Genetica Medica": "Medical Genetics",
+    "Ginecologia e Ostetricia": "Gynecology and Obstetrics",
+    "Igiene, Epidemiologia e Statistica": "Hygiene, Epidemiology and Statistics",
+    "Immunologia e Reumatologia": "Immunology and Rheumatology",
+    "Malattie Infettive": "Infectious Diseases",
+    "Medicina Interna": "Internal Medicine",
+    "Medicina Legale": "Forensic Medicine",
+    "Medicina del Lavoro": "Occupational Medicine",
+    "Nefrologia": "Nephrology",
+    "Neurologia e Neurochirurgia": "Neurology and Neurosurgery",
+    "Nutrizione Clinica": "Clinical Nutrition",
+    "Oftalmologia": "Ophthalmology",
+    "Oncologia": "Oncology",
+    "Ortopedia e Traumatologia": "Orthopedics and Traumatology",
+    "Otorinolaringoiatria": "Otorhinolaryngology",
+    "Pediatria": "Pediatrics",
+    "Pneumologia e Chirurgia Toracica": "Pulmonology and Thoracic Surgery",
+    "Psichiatria": "Psychiatry",
+    "Urologia": "Urology",
+}
+
+
+def translate_category(it_cat: str) -> str:
+    """Translate an Italian category string (possibly multi-label) to English."""
+    parts = [p.strip() for p in it_cat.split(";") if p.strip()]
+    en_parts = []
+    for p in parts:
+        en = CAT_IT_TO_EN.get(p)
+        if not en:
+            print(f"  WARNING: Unknown IT category '{p}', keeping as-is")
+            en = p
+        en_parts.append(en)
+    return "; ".join(en_parts)
+
 
 # ==============================================================================
-# Core Logic
+# Data Loading
 # ==============================================================================
 
 
-def load_expert_decisions() -> dict:
+def get_primary(cat_str):
+    if not cat_str:
+        return ""
+    return cat_str.split(";")[0].strip()
+
+
+def normalize_cat(cat_str):
+    if not cat_str:
+        return ""
+    return "; ".join(p.strip() for p in cat_str.split(";") if p.strip())
+
+
+def load_claude_categories() -> dict:
+    """Load Claude categories from IT dataset (currently assigned)."""
+    path = os.path.join(IT_JSON_DIR, "ITAMed_complete.json")
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return {item["question_code"]: normalize_cat(item.get("category", ""))
+            for item in data}
+
+
+def load_gpt_categories() -> dict:
+    """Load GPT categories from classification results."""
+    # Need to map (year, q_num) -> question_code first
+    it_path = os.path.join(IT_JSON_DIR, "ITAMed_complete.json")
+    with open(it_path, "r", encoding="utf-8") as f:
+        it_data = json.load(f)
+    key_to_code = {(item["year"], item["question_number"]): item["question_code"]
+                   for item in it_data}
+
+    gpt_cats = {}
+    for year in YEARS:
+        gpt_path = os.path.join(GPT_DIR, f"{year}_classifications_gpt.json")
+        if not os.path.exists(gpt_path):
+            continue
+        with open(gpt_path, "r", encoding="utf-8") as f:
+            classifications = json.load(f)
+        for q_num_str, category in classifications.items():
+            code = key_to_code.get((year, int(q_num_str)))
+            if code:
+                gpt_cats[code] = normalize_cat(category)
+    return gpt_cats
+
+
+def load_reviewer_category(path: str) -> dict:
+    """Load final category from a completed reviewer file."""
+    wb = openpyxl.load_workbook(path, read_only=True)
+    ws = wb.active
+    cats = {}
+    for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
+        code = row[2].value
+        if not code:
+            continue
+        cat1 = str(row[7].value).strip() if row[7].value else ""
+        cat2 = str(row[8].value).strip() if row[8].value else ""
+        final = f"{cat1}; {cat2}" if cat2 else cat1
+        cats[str(code)] = normalize_cat(final)
+    wb.close()
+    return cats
+
+
+def load_resolution() -> dict:
+    """Load resolved categories from the resolution file (col K)."""
+    wb = openpyxl.load_workbook(RESOLUTION_FILE, read_only=True)
+    ws = wb.active
+    cats = {}
+    for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
+        code = row[2].value
+        resolution = row[10].value  # Column K
+        if code and resolution:
+            cats[str(code)] = normalize_cat(str(resolution).strip())
+    wb.close()
+    return cats
+
+
+# ==============================================================================
+# Build Final Category Mapping
+# ==============================================================================
+
+
+def build_final_categories() -> dict:
     """
-    Load expert-reviewed categories from the discordance review file.
+    Build the complete final category mapping for all 1,260 questions.
+
+    Priority:
+      1. Resolution file (126 consensus-resolved discordances)
+      2. Reviewer concordance (254 questions where R1 = R2)
+      3. LLM concordance (880 questions where Claude = GPT)
 
     Returns:
-        Dictionary mapping (year, question_number) -> final_category.
-
-    Raises:
-        SystemExit if the review file has unfilled rows.
+        Dict mapping question_code -> final_it_category
     """
-    if not os.path.exists(REVIEW_FILE):
-        print(f"ERROR: Review file not found: {REVIEW_FILE}")
-        sys.exit(1)
+    claude_cats = load_claude_categories()
+    gpt_cats = load_gpt_categories()
+    rev1_cats = load_reviewer_category(REV1_FILE)
+    rev2_cats = load_reviewer_category(REV2_FILE)
+    resolution_cats = load_resolution()
 
-    wb = openpyxl.load_workbook(REVIEW_FILE, data_only=True)
-    ws = wb.active
+    final = {}
+    stats = {
+        "llm_concordant": 0,
+        "reviewer_concordant": 0,
+        "resolved": 0,
+        "unresolved": 0,
+    }
 
-    decisions = {}
-    missing = []
+    all_codes = set(claude_cats.keys())
+    reviewed_codes = set(rev1_cats.keys())  # The 380 discordant questions
 
-    for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
-        year = row[0].value          # Anno
-        q_num = row[1].value         # N. Domanda
-        final_cat = row[9].value     # CATEGORIA FINALE (col J, 0-indexed = 9)
+    for code in all_codes:
+        claude = claude_cats.get(code, "")
+        gpt = gpt_cats.get(code, "")
 
-        if not final_cat or str(final_cat).strip() == "":
-            missing.append(f"  Year {year}, Question {q_num}")
+        if code in resolution_cats:
+            # Priority 1: Consensus resolution
+            final[code] = resolution_cats[code]
+            stats["resolved"] += 1
+
+        elif code in reviewed_codes:
+            # This is a reviewed question
+            r1 = rev1_cats.get(code, "")
+            r2 = rev2_cats.get(code, "")
+            if r1 == r2:
+                # Priority 2: Reviewers agree
+                final[code] = r1
+                stats["reviewer_concordant"] += 1
+            else:
+                # Should have been in resolution file — fallback to R1
+                print(f"  WARNING: {code} has reviewer disagreement but no resolution!")
+                final[code] = r1
+                stats["unresolved"] += 1
+
         else:
-            decisions[(int(year), int(q_num))] = str(final_cat).strip()
+            # Not reviewed = LLMs agreed (exact match on full string)
+            # Use Claude category (= GPT category)
+            final[code] = claude
+            stats["llm_concordant"] += 1
 
-    if missing:
-        print("ERROR: The following discordances have NOT been reviewed:")
-        for m in missing[:20]:
-            print(m)
-        if len(missing) > 20:
-            print(f"  ... and {len(missing) - 20} more")
-        print(f"\nTotal unfilled: {len(missing)} / {len(missing) + len(decisions)}")
-        print("Please complete the review file before running this script.")
-        sys.exit(1)
-
-    return decisions
+    return final, stats
 
 
-def backup_originals():
-    """Create a backup of all original dataset files before modification."""
-    os.makedirs(BACKUP_DIR, exist_ok=True)
-
-    files_to_backup = []
-
-    # Per-year XLSX and JSON
-    for year in YEARS:
-        for d, pattern in [(XLSX_DIR, f"ITAMed_{year}.xlsx"),
-                           (JSON_DIR, f"ITAMed_{year}.json")]:
-            path = os.path.join(d, pattern)
-            if os.path.exists(path):
-                files_to_backup.append(path)
-
-    # Complete files
-    for d, name in [(XLSX_DIR, "ITAMed_complete.xlsx"),
-                    (JSON_DIR, "ITAMed_complete.json")]:
-        path = os.path.join(d, name)
-        if os.path.exists(path):
-            files_to_backup.append(path)
-
-    for src in files_to_backup:
-        dst = os.path.join(BACKUP_DIR, os.path.basename(src))
-        shutil.copy2(src, dst)
-
-    print(f"  Backup created: {BACKUP_DIR} ({len(files_to_backup)} files)")
+# ==============================================================================
+# Apply Categories
+# ==============================================================================
 
 
-def update_yearly_xlsx(decisions: dict) -> int:
-    """
-    Update per-year XLSX files with expert-adjudicated categories.
-
-    Args:
-        decisions: Dict mapping (year, q_num) -> final_category.
-
-    Returns:
-        Number of cells updated.
-    """
+def apply_to_json(json_dir, suffix, final_it, final_en):
+    """Apply categories to JSON files (per-year + complete)."""
+    cats = final_en if "_EN" in suffix else final_it
     updated = 0
 
     for year in YEARS:
-        xlsx_path = os.path.join(XLSX_DIR, f"ITAMed_{year}.xlsx")
-        if not os.path.exists(xlsx_path):
+        path = os.path.join(json_dir, f"ITAMed_{year}{suffix}.json")
+        if not os.path.exists(path):
             continue
-
-        wb = openpyxl.load_workbook(xlsx_path)
-        ws = wb.active
-
-        year_updates = 0
-        for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
-            row_year = row[0].value
-            q_num = row[1].value
-            key = (int(row_year), int(q_num))
-
-            if key in decisions:
-                row[10].value = decisions[key]
-                year_updates += 1
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        changed = False
+        for item in data:
+            code = item["question_code"]
+            if code in cats and item.get("category") != cats[code]:
+                item["category"] = cats[code]
+                changed = True
                 updated += 1
+        if changed:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
 
-        if year_updates > 0:
-            wb.save(xlsx_path)
-            print(f"  {year}: updated {year_updates} categories")
+    # Complete
+    path = os.path.join(json_dir, f"ITAMed_complete{suffix}.json")
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        for item in data:
+            code = item["question_code"]
+            if code in cats and item.get("category") != cats[code]:
+                item["category"] = cats[code]
+                updated += 1
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
     return updated
 
 
-def update_json_files(decisions: dict) -> int:
-    """
-    Update all JSON files (per-year and consolidated) with expert categories.
-
-    Args:
-        decisions: Dict mapping (year, q_num) -> final_category.
-
-    Returns:
-        Total number of records updated across all files.
-    """
-    total_updated = 0
-
-    # Per-year JSON files
-    for year in YEARS:
-        json_path = os.path.join(JSON_DIR, f"ITAMed_{year}.json")
-        if not os.path.exists(json_path):
-            continue
-
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        year_updates = 0
-        for item in data:
-            key = (int(item["year"]), int(item["question_number"]))
-            if key in decisions:
-                item["category"] = decisions[key]
-                year_updates += 1
-
-        if year_updates > 0:
-            with open(json_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"  ITAMed_{year}.json: updated {year_updates} records")
-            total_updated += year_updates
-
-    # Consolidated JSON
-    json_path = os.path.join(JSON_DIR, "ITAMed_complete.json")
-    if os.path.exists(json_path):
-        with open(json_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        updated = 0
-        for item in data:
-            key = (int(item["year"]), int(item["question_number"]))
-            if key in decisions:
-                item["category"] = decisions[key]
-                updated += 1
-
-        with open(json_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"  ITAMed_complete.json: updated {updated} records")
-        total_updated += updated
-
-    return total_updated
-
-
-def update_complete_xlsx(decisions: dict) -> int:
-    """
-    Update the consolidated XLSX file with expert-adjudicated categories.
-
-    Args:
-        decisions: Dict mapping (year, q_num) -> final_category.
-
-    Returns:
-        Number of cells updated.
-    """
-    xlsx_path = os.path.join(XLSX_DIR, "ITAMed_complete.xlsx")
-    if not os.path.exists(xlsx_path):
-        print("  WARNING: ITAMed_complete.xlsx not found, skipping")
-        return 0
-
-    wb = openpyxl.load_workbook(xlsx_path)
-    ws = wb.active
-
+def apply_to_xlsx(xlsx_dir, suffix, final_it, final_en):
+    """Apply categories to XLSX files (per-year + complete)."""
+    cats = final_en if "_EN" in suffix else final_it
     updated = 0
-    for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
-        row_year = row[0].value
-        q_num = row[1].value
-        if row_year and q_num:
-            key = (int(row_year), int(q_num))
-            if key in decisions:
-                row[10].value = decisions[key]
-                updated += 1
+    CAT_COL = 11  # Column K (1-indexed), 0-indexed = 10
 
-    wb.save(xlsx_path)
-    print(f"  ITAMed_complete.xlsx: updated {updated} records")
+    for name in [f"ITAMed_{y}{suffix}.xlsx" for y in YEARS] + [f"ITAMed_complete{suffix}.xlsx"]:
+        path = os.path.join(xlsx_dir, name)
+        if not os.path.exists(path):
+            continue
+        wb = openpyxl.load_workbook(path)
+        ws = wb.active
+        changed = False
+        for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
+            code = str(row[2].value) if row[2].value else ""
+            if code in cats and row[10].value != cats[code]:
+                row[10].value = cats[code]
+                changed = True
+                updated += 1
+        if changed:
+            wb.save(path)
+
     return updated
 
 
 # ==============================================================================
-# Main Execution
+# Main
 # ==============================================================================
 
 
 def main():
-    """
-    Main entry point. Loads expert decisions, backs up originals, and
-    applies the reviewed categories to all official dataset files.
-    """
     print("=" * 70)
-    print("ITAMed — Apply Expert Review")
+    print("ITAMed — Apply Final Category Assignments")
     print("=" * 70)
-    print()
 
-    # Load decisions
-    print("Loading expert decisions...")
-    decisions = load_expert_decisions()
-    print(f"  Found {len(decisions)} adjudicated discordances")
-    print()
+    # Build final mapping
+    print("\n[1] Building final category mapping...")
+    final_it, stats = build_final_categories()
+    print(f"  LLM concordant:      {stats['llm_concordant']}")
+    print(f"  Reviewer concordant: {stats['reviewer_concordant']}")
+    print(f"  Consensus resolved:  {stats['resolved']}")
+    if stats['unresolved'] > 0:
+        print(f"  WARNING unresolved:  {stats['unresolved']}")
+    print(f"  Total:               {len(final_it)}")
 
-    # Backup
-    print("Creating backup of original files...")
-    backup_originals()
-    print()
+    # Translate to English
+    print("\n[2] Translating categories to English...")
+    final_en = {code: translate_category(cat) for code, cat in final_it.items()}
+    print(f"  Translated {len(final_en)} categories")
 
-    # Apply updates
-    print("Updating per-year XLSX files...")
-    n_yearly = update_yearly_xlsx(decisions)
-    print()
+    # Apply to IT files
+    print("\n[3] Applying to IT dataset files...")
+    n_it_json = apply_to_json(IT_JSON_DIR, "", final_it, final_en)
+    n_it_xlsx = apply_to_xlsx(IT_XLSX_DIR, "", final_it, final_en)
+    print(f"  IT JSON updates: {n_it_json}")
+    print(f"  IT XLSX updates: {n_it_xlsx}")
 
-    print("Updating JSON files (per-year + consolidated)...")
-    n_json = update_json_files(decisions)
-    print()
-
-    print("Updating consolidated XLSX...")
-    n_xlsx = update_complete_xlsx(decisions)
-    print()
+    # Apply to EN files
+    print("\n[4] Applying to EN dataset files...")
+    n_en_json = apply_to_json(EN_JSON_DIR, "_EN", final_it, final_en)
+    n_en_xlsx = apply_to_xlsx(EN_XLSX_DIR, "_EN", final_it, final_en)
+    print(f"  EN JSON updates: {n_en_json}")
+    print(f"  EN XLSX updates: {n_en_xlsx}")
 
     # Summary
-    print("=" * 70)
-    print("REVIEW APPLIED SUCCESSFULLY")
-    print(f"  Total discordances resolved: {len(decisions)}")
-    print(f"  Yearly XLSX updates:         {n_yearly}")
-    print(f"  JSON updates (all files):    {n_json}")
-    print(f"  Complete XLSX updates:        {n_xlsx}")
-    print(f"  Backup location:             {BACKUP_DIR}")
+    total = n_it_json + n_it_xlsx + n_en_json + n_en_xlsx
+    print("\n" + "=" * 70)
+    print("DONE — Final categories applied to all dataset files")
+    print(f"  Total field updates: {total}")
     print("=" * 70)
 
 

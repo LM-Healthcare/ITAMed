@@ -56,8 +56,8 @@ REPO_ROOT = os.path.dirname(QC_DIR)
 REVIEW_DIR = os.path.join(QC_DIR, "expert_review")
 OUTPUT_DIR = os.path.join(QC_DIR, "results", "expert_review")
 
-REV1_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW1_EMILIANO_completed.xlsx")
-REV2_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW_2_EDOARDO_completed.xlsx")
+REV1_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW1_EM_B_completed.xlsx")
+REV2_FILE = os.path.join(REVIEW_DIR, "discordances_to_review_REW_2_ED_B_completed.xlsx")
 
 CATEGORIES = [
     "Cardiologia e Cardiochirurgia",

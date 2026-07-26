@@ -10,7 +10,7 @@
     "answer_d": "toracotomia anteriore sinistra nel VI spazio intercostale",
     "answer_e": "toracotomia postero-laterale destra nel V spazio intercostale",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Pediatria",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -26,7 +26,7 @@
     "answer_d": "Iperplasia nodulare focale",
     "answer_e": "Lesione vascolare",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -170,7 +170,7 @@
     "answer_d": "aumento della frequenza cardiaca",
     "answer_e": "febbre",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Gastroenterologia",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -234,7 +234,7 @@
     "answer_d": "esclusivamente terapia antiipertensiva",
     "answer_e": "correzione in emergenza",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -266,7 +266,7 @@
     "answer_d": "della cervice uterina",
     "answer_e": "della mammella",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -282,7 +282,7 @@
     "answer_d": "Tumore dell’ovaio",
     "answer_e": "Mioma uterino sottosieroso",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -314,7 +314,7 @@
     "answer_d": "Ecografia transvaginale",
     "answer_e": "Non sono necessari ulteriori esami in quanto il Papillomavirus umano è endemico nella popolazione di età superiore ai 40 anni",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -490,7 +490,7 @@
     "answer_d": "Correzione dell’equinismo",
     "answer_e": "Correzione combinata del cavismo e dell’equinismo",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Pediatria",
+    "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -506,7 +506,7 @@
     "answer_d": "Ginocchio varo dell’infanzia",
     "answer_e": "Displasia congenita (o evolutiva) dell’anca",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Pediatria",
+    "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -618,7 +618,7 @@
     "answer_d": "Solifenacina",
     "answer_e": "Dutasteride",
     "correct_answer": "A",
-    "category": "Urologia; Farmacologia e Tossicologia",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -634,7 +634,7 @@
     "answer_d": "SDHB",
     "answer_e": "FH",
     "correct_answer": "A",
-    "category": "Urologia; Genetica Medica",
+    "category": "Urologia; Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -874,7 +874,7 @@
     "answer_d": "Captopril",
     "answer_e": "Verapamil",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -954,7 +954,7 @@
     "answer_d": "Tromboembolia polmonare acuta",
     "answer_e": "Edema polmonare acuto cardiogeno",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Ginecologia e Ostetricia",
+    "category": "Anestesia e Rianimazione; Pneumologia e Chirurgia Toracica",
     "has_image": true,
     "image_category": "Chest X-ray",
     "image_path": "images/2025/ssm2025920.png"
@@ -986,7 +986,7 @@
     "answer_d": "continuare solo con gli antibiotici attuali",
     "answer_e": "aggiungere oseltamivir alla terapia antibiotica attuale",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Malattie Infettive",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1050,7 +1050,7 @@
     "answer_d": "Listeria monocytogenes",
     "answer_e": "Staphylococcus aureus",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1082,7 +1082,7 @@
     "answer_d": "somministrazione di amiodarone",
     "answer_e": "intubazione orotracheale",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Anestesia e Rianimazione",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1098,7 +1098,7 @@
     "answer_d": "Sindrome della cauda equina",
     "answer_e": "Sindrome midollare completa",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Ortopedia e Traumatologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1114,7 +1114,7 @@
     "answer_d": "Trattamento anticoagulante con fondaparinux",
     "answer_e": "Trattamento anticoagulante con danaparoid",
     "correct_answer": "A",
-    "category": "Ematologia; Farmacologia e Tossicologia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1450,7 +1450,7 @@
     "answer_d": "Rottura spontanea di arterie di medio calibro e rotture capillari",
     "answer_e": "Miopia, prolasso della valvola mitrale, scoliosi",
     "correct_answer": "A",
-    "category": "Genetica Medica; Immunologia e Reumatologia",
+    "category": "Genetica Medica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1802,7 +1802,7 @@
     "answer_d": "Adrenalina EV",
     "answer_e": "Posizionamento di catetere venoso centrale",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Anestesia e Rianimazione",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1866,7 +1866,7 @@
     "answer_d": "Aggiungere un DPP-4 inibitore",
     "answer_e": "Nessuna strategia farmacologica aggiuntiva essendo in buon compenso metabolico",
     "correct_answer": "A",
-    "category": "Endocrinologia; Farmacologia e Tossicologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1962,7 +1962,7 @@
     "answer_d": "aumento della soglia di udibilità per i toni di frequenza a 750 Hz",
     "answer_e": "aumento della soglia di udibilità per i toni di frequenza a 650 Hz",
     "correct_answer": "A",
-    "category": "Medicina del Lavoro; Otorinolaringoiatria",
+    "category": "Medicina del Lavoro",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Beta Talassemia",
     "answer_e": "Anemia da flogosi cronica",
     "correct_answer": "A",
-    "category": "Gastroenterologia; Ematologia",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2122,7 +2122,7 @@
     "answer_d": "ERCP",
     "answer_e": "Ecografia con mezzo di contrasto",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "Scarsa visualizzazione del diaframma",
     "answer_e": "Epatomegalia",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Gastroenterologia",
+    "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2154,7 +2154,7 @@
     "answer_d": "RM addome completo con mdc epatospecifico",
     "answer_e": "TC addome completo senza mdc",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2170,7 +2170,7 @@
     "answer_d": "Lussazione Acromion-claveare",
     "answer_e": "Frattura della glena della scapola",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Ortopedia e Traumatologia",
     "has_image": true,
     "image_category": "Upper limb X-ray",
     "image_path": "images/2025/ssm2025996.png"
@@ -2218,7 +2218,7 @@
     "answer_d": "Brachiterapia endocavitaria",
     "answer_e": "Radio-ligand therapy con Lu-PSMA",
     "correct_answer": "A",
-    "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""

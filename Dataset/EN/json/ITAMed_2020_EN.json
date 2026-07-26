@@ -90,7 +90,7 @@
     "answer_d": "Call the emergency medical service (118)",
     "answer_e": "Ensure airway patency",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Cardiology and Cardiac Surgery",
+    "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -122,7 +122,7 @@
     "answer_d": "Subcutaneous heparin must be maintained for at least 5 days, after which it is discontinued and warfarin is started, with the goal of reaching the therapeutic INR range (between 2 and 3)",
     "answer_e": "Subcutaneous heparin must be maintained for two weeks, after which it is discontinued and warfarin is started, with the goal of reaching the therapeutic INR range (between 2 and 3)",
     "correct_answer": "A",
-    "category": "Hematology; Pharmacology and Toxicology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -202,7 +202,7 @@
     "answer_d": "Infusion of fresh frozen plasma",
     "answer_e": "Infusion of factor VIII",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Hematology",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -234,7 +234,7 @@
     "answer_d": "Enalapril",
     "answer_e": "Metformin",
     "correct_answer": "A",
-    "category": "Urology; Pharmacology and Toxicology",
+    "category": "Urology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -282,7 +282,7 @@
     "answer_d": "Rhabdomyosarcoma",
     "answer_e": "Bone metastasis from a brain tumor",
     "correct_answer": "A",
-    "category": "Oncology; Orthopedics and Traumatology",
+    "category": "Hematology; Pediatrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -330,7 +330,7 @@
     "answer_d": "Cyclosporine",
     "answer_e": "Discontinuation of current medications",
     "correct_answer": "A",
-    "category": "Dermatology and Venereology; Infectious Diseases",
+    "category": "Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -362,7 +362,7 @@
     "answer_d": "Urine culture",
     "answer_e": "Serology for EBV infection",
     "correct_answer": "A",
-    "category": "Hematology; Oncology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -570,7 +570,7 @@
     "answer_d": "Aortic dissection",
     "answer_e": "Brugada syndrome",
     "correct_answer": "A",
-    "category": "Pulmonology and Thoracic Surgery; Cardiology and Cardiac Surgery",
+    "category": "Pulmonology and Thoracic Surgery",
     "has_image": true,
     "image_category": "ECG tracing",
     "image_path": "images/2020/ssm20203813604.png"
@@ -762,7 +762,7 @@
     "answer_d": "Azathioprine",
     "answer_e": "Sulfasalazine",
     "correct_answer": "A",
-    "category": "Immunology and Rheumatology; Pharmacology and Toxicology",
+    "category": "Immunology and Rheumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -778,7 +778,7 @@
     "answer_d": "Wilson's disease",
     "answer_e": "Dysmetabolic polyneuropathy",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Hematology",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -794,7 +794,7 @@
     "answer_d": "Tolosa-Hunt syndrome",
     "answer_e": "Cogan oculomotor apraxia",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Ophthalmology",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -970,7 +970,7 @@
     "answer_d": "Hyperuricemia",
     "answer_e": "Acute renal failure",
     "correct_answer": "A",
-    "category": "Pediatrics; Oncology",
+    "category": "Pediatrics; Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -986,7 +986,7 @@
     "answer_d": "Folate deficiency anemia",
     "answer_e": "Malaria",
     "correct_answer": "A",
-    "category": "Hematology; Pediatrics",
+    "category": "Pediatrics; Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1034,7 +1034,7 @@
     "answer_d": "Abdominal-pelvic MRI",
     "answer_e": "Chest X-ray",
     "correct_answer": "A",
-    "category": "Gastroenterology; Diagnostic Imaging and Nuclear Medicine",
+    "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1178,7 +1178,7 @@
     "answer_d": "Saliva production in the patient with pleomorphic adenoma",
     "answer_e": "The amount of feces produced in the patient undergoing colectomy",
     "correct_answer": "A",
-    "category": "General Surgery; Anesthesia and Intensive Care",
+    "category": "General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1210,7 +1210,7 @@
     "answer_d": "Glycolipid",
     "answer_e": "None of the other answers is correct",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Endocrinology",
+    "category": "Endocrinology; Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "For 2 weeks",
     "answer_e": "Only in the presence of risk factors for deep vein thrombosis",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; Pharmacology and Toxicology",
+    "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1546,7 +1546,7 @@
     "answer_d": "Volkmann syndrome",
     "answer_e": "Sudeck syndrome",
     "correct_answer": "A",
-    "category": "Medical Genetics; Otorhinolaryngology",
+    "category": "Medical Genetics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1562,7 +1562,7 @@
     "answer_d": "Otoacoustic emissions",
     "answer_e": "MRI without gadolinium",
     "correct_answer": "A",
-    "category": "Otorhinolaryngology; Diagnostic Imaging and Nuclear Medicine",
+    "category": "Otorhinolaryngology; Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1626,7 +1626,7 @@
     "answer_d": "Use of the new oral anticoagulants",
     "answer_e": "Use of unfractionated heparin",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Neurology and Neurosurgery",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1706,7 +1706,7 @@
     "answer_d": "Candida albicans",
     "answer_e": "Herpes simplex virus type 2",
     "correct_answer": "A",
-    "category": "Infectious Diseases",
+    "category": "Infectious Diseases; Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1770,7 +1770,7 @@
     "answer_d": "CT of the entire abdomen, with and without contrast medium",
     "answer_e": "Contrast-enhanced ultrasound of the",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Urology",
+    "category": "Urology; Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1786,7 +1786,7 @@
     "answer_d": "Image A: T2 sequence; Image B: T1 sequence with contrast medium",
     "answer_e": "Image",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": true,
     "image_category": "Brain MRI",
     "image_path": "images/2020/ssm20203817404.png"
@@ -1802,7 +1802,7 @@
     "answer_d": "Right pleural effusion",
     "answer_e": "Right pulmonary consolidation",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Pulmonology and Thoracic Surgery",
+    "category": "Pulmonology and Thoracic Surgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": true,
     "image_category": "Chest CT scan",
     "image_path": "images/2020/ssm20203817454.png"
@@ -1818,7 +1818,7 @@
     "answer_d": "Skull radiography as the initial investigation, followed by MRI with contrast",
     "answer_e": "Skull radiography as the initial investigation, followed by CT with contrast",
     "correct_answer": "A",
-    "category": "Diagnostic Imaging and Nuclear Medicine; Neurology and Neurosurgery",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1898,7 +1898,7 @@
     "answer_d": "Continuation of the ongoing antibiotic therapy",
     "answer_e": "Performing a contrast-enhanced abdominal CT scan to evaluate the etiology of the renal failure",
     "correct_answer": "A",
-    "category": "Nephrology; Pharmacology and Toxicology",
+    "category": "Nephrology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1930,7 +1930,7 @@
     "answer_d": "Respiratory acidosis",
     "answer_e": "The pH remains within the normal range; there is only an electrolyte abnormality",
     "correct_answer": "A",
-    "category": "Anesthesia and Intensive Care; Nephrology",
+    "category": "Nephrology; Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "If the subject was completely vaccinated during childhood",
     "answer_e": "In the case of a previous episode of tetanus in a never-vaccinated subject",
     "correct_answer": "A",
-    "category": "Hygiene, Epidemiology and Statistics; Infectious Diseases",
+    "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
     "image_path": ""

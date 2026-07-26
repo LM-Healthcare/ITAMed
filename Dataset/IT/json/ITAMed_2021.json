@@ -26,7 +26,7 @@
     "answer_d": "Modificare la terapia antibiotica con meropenem in sostituzione della piperacillina/tazobactam",
     "answer_e": "Iniziare empiricamente una nuova terapia antibiotica con vancomicina endovena",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Gastroenterologia",
+    "category": "Gastroenterologia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "Ematoma post-chirurgico",
     "answer_e": "Dermatite da contatto",
     "correct_answer": "A",
-    "category": "Dermatologia e Venereologia; Chirurgia Generale",
+    "category": "Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -378,7 +378,7 @@
     "answer_d": "Leucemia mieloide cronica",
     "answer_e": "Leucemia linfatica cronica",
     "correct_answer": "A",
-    "category": "Ematologia; Oncologia",
+    "category": "Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -426,7 +426,7 @@
     "answer_d": "Insulina",
     "answer_e": "Nessuno, è preferibile proseguire con la sola terapia non farmacologica",
     "correct_answer": "A",
-    "category": "Endocrinologia; Farmacologia e Tossicologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -458,7 +458,7 @@
     "answer_d": "Vitamina E",
     "answer_e": "Vitamina A",
     "correct_answer": "A",
-    "category": "Nutrizione Clinica; Gastroenterologia",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -490,7 +490,7 @@
     "answer_d": "Sindrome di Turcot",
     "answer_e": "Sindrome di Birt-Hogg-Dubé",
     "correct_answer": "A",
-    "category": "Genetica Medica; Oncologia",
+    "category": "Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -618,7 +618,7 @@
     "answer_d": "Labirintite acuta con tachicardia atriale ectopica",
     "answer_e": "Sincope vaso-vagale in gravidanza",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Cardiologia e Cardiochirurgia",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -650,7 +650,7 @@
     "answer_d": "Sindrome nefrosica",
     "answer_e": "Emotorace",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica",
+    "category": "Pneumologia e Chirurgia Toracica; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -906,7 +906,7 @@
     "answer_d": "X",
     "answer_e": "Y",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Pediatria",
+    "category": "Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1098,7 +1098,7 @@
     "answer_d": "Emorroidi di IV grado non trombizzate",
     "answer_e": "Prolasso ano-rettale",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Gastroenterologia",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1290,7 +1290,7 @@
     "answer_d": "Mammella",
     "answer_e": "Salpingi",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Igiene, Epidemiologia e Statistica",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1306,7 +1306,7 @@
     "answer_d": "Herpes genitale",
     "answer_e": "Lichen",
     "correct_answer": "A",
-    "category": "Dermatologia e Venereologia; Ginecologia e Ostetricia",
+    "category": "Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Morbo di Kienböck",
     "answer_e": "Malattia di Scheuermann",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Pediatria",
+    "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1418,7 +1418,7 @@
     "answer_d": "Cistoscopia",
     "answer_e": "Ecografia dell'apparato urinario",
     "correct_answer": "A",
-    "category": "Urologia; Oncologia",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1466,7 +1466,7 @@
     "answer_d": "Microadenoma ipofisario",
     "answer_e": "Meningioma della clinoide anteriore di sinistra",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Oftalmologia",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1562,7 +1562,7 @@
     "answer_d": "Ipotiroidismo",
     "answer_e": "Ipercalcemia reattiva",
     "correct_answer": "A",
-    "category": "Otorinolaringoiatria; Endocrinologia",
+    "category": "Otorinolaringoiatria; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1610,7 +1610,7 @@
     "answer_d": "Nessun controllo, né trattamento",
     "answer_e": "Impostazione di terapia anticoagulante e controllo dei valori della pressione arteriosa",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Chirurgia Generale",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1674,7 +1674,7 @@
     "answer_d": "Tumore filloide",
     "answer_e": "Modificazione fibro-cistica della mammella",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1882,7 +1882,7 @@
     "answer_d": "Somministrato per via endovenosa per la prevenzione della sindrome astinenziale",
     "answer_e": "Efficace anche nella depressione respiratoria da benzodiazepine",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Anestesia e Rianimazione",
+    "category": "Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1930,7 +1930,7 @@
     "answer_d": "Una valutazione infettivologica nel sospetto di shock settico",
     "answer_e": "Una dose carico di 250 mL di cristalloidi nel sospetto di shock settico",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Pneumologia e Chirurgia Toracica",
+    "category": "Pneumologia e Chirurgia Toracica; Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1994,7 +1994,7 @@
     "answer_d": "Grave disfunzione ventricolare destra",
     "answer_e": "Tamponamento cardiaco",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Cardiologia e Cardiochirurgia",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2074,7 +2074,7 @@
     "answer_d": "6-mercaptopurina",
     "answer_e": "Fludarabina",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Oncologia",
+    "category": "Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Ipotiroidismo",
     "answer_e": "Tossicità polmonare correlata alle dosi",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "Ha previsto l'integrazione dell'assistenza ospedaliera nelle Unità Sanitarie Locali",
     "answer_e": "Non ha previsto un rapporto di lavoro dipendente dal SSN per i medici di medicina generale",
     "correct_answer": "A",
-    "category": "Medicina Legale; Igiene, Epidemiologia e Statistica",
+    "category": "Igiene, Epidemiologia e Statistica; Medicina Legale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2170,7 +2170,7 @@
     "answer_d": "Non è un cancerogeno certo, può provocare encefalomielite mialgica",
     "answer_e": "Non è un cancerogeno certo, può provocare astenia",
     "correct_answer": "A",
-    "category": "Medicina del Lavoro; Oncologia",
+    "category": "Medicina del Lavoro",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2186,7 +2186,7 @@
     "answer_d": "Esposizioni a radiazioni ionizzanti a seguito di applicazioni terapeutiche",
     "answer_e": "Infezione da virus SV40",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Medicina del Lavoro",
+    "category": "Medicina del Lavoro; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2218,7 +2218,7 @@
     "answer_d": "E' sufficiente il parere di chi esercita la responsabilità genitoriale seppur difforme dal parere della ragazza minore",
     "answer_e": "E' necessario sentire il parere anche del padre biologico se maggiorenne",
     "correct_answer": "A",
-    "category": "Medicina Legale; Ginecologia e Ostetricia",
+    "category": "Medicina Legale",
     "has_image": false,
     "image_category": "",
     "image_path": ""

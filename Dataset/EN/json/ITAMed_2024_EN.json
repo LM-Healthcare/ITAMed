@@ -202,7 +202,7 @@
     "answer_d": "Both sores and losses of substance that tend to heal spontaneously",
     "answer_e": "Breaks in continuity involving only the epidermis",
     "correct_answer": "A",
-    "category": "General Surgery",
+    "category": "Dermatology and Venereology; General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -250,7 +250,7 @@
     "answer_d": "Rupture of the endograft",
     "answer_e": "Degeneration of the endograft",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; General Surgery",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -330,7 +330,7 @@
     "answer_d": "Dysmenorrhea",
     "answer_e": "Leukorrhea",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Oncology",
+    "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -346,7 +346,7 @@
     "answer_d": "Heredity – Family history",
     "answer_e": "Nulliparity",
     "correct_answer": "A",
-    "category": "Gynecology and Obstetrics; Oncology",
+    "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -474,7 +474,7 @@
     "answer_d": "Coxa vara",
     "answer_e": "Stress fracture of the femoral neck",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; Pediatrics",
+    "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -522,7 +522,7 @@
     "answer_d": "Suprascapular nerve palsy",
     "answer_e": "Sprengel's deformity",
     "correct_answer": "A",
-    "category": "Orthopedics and Traumatology; General Surgery",
+    "category": "General Surgery; Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -602,7 +602,7 @@
     "answer_d": "Choline PET/CT",
     "answer_e": "Abdominal CT",
     "correct_answer": "A",
-    "category": "Urology; Oncology",
+    "category": "Urology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -730,7 +730,7 @@
     "answer_d": "Multiple myeloma",
     "answer_e": "Waldenström's macroglobulinemia",
     "correct_answer": "A",
-    "category": "Nephrology; Hematology",
+    "category": "Hematology; Nephrology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Abdominal ultrasound",
     "answer_e": "Thyroid function tests",
     "correct_answer": "A",
-    "category": "Gastroenterology; Hematology",
+    "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -842,7 +842,7 @@
     "answer_d": "Hypercholesterolemia",
     "answer_e": "Prostate cancer",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Pharmacology and Toxicology",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -874,7 +874,7 @@
     "answer_d": "Congenitally corrected transposition of the great arteries",
     "answer_e": "Ebstein's anomaly",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Pediatrics",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1098,7 +1098,7 @@
     "answer_d": "Metoprolol",
     "answer_e": "Nitroprusside",
     "correct_answer": "A",
-    "category": "Cardiology and Cardiac Surgery; Pharmacology and Toxicology",
+    "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1258,7 +1258,7 @@
     "answer_d": "Methylprednisolone",
     "answer_e": "Salbutamol",
     "correct_answer": "A",
-    "category": "Pharmacology and Toxicology; Pulmonology and Thoracic Surgery",
+    "category": "Pulmonology and Thoracic Surgery; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1402,7 +1402,7 @@
     "answer_d": "Cisplatin-Capecitabine",
     "answer_e": "Carboplatin-Pemetrexed with neoadjuvant intent",
     "correct_answer": "A",
-    "category": "Urology; Oncology",
+    "category": "Oncology; Urology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1418,7 +1418,7 @@
     "answer_d": "Hormone receptor-negative metastatic ovarian cancer",
     "answer_e": "Metastatic cervical cancer",
     "correct_answer": "A",
-    "category": "Oncology; Pharmacology and Toxicology",
+    "category": "Oncology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1434,7 +1434,7 @@
     "answer_d": "Chalazion",
     "answer_e": "Neuroblastoma",
     "correct_answer": "A",
-    "category": "Otorhinolaryngology; Pediatrics",
+    "category": "Ophthalmology; Pediatrics",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1498,7 +1498,7 @@
     "answer_d": "Marfan syndrome",
     "answer_e": "Down syndrome",
     "correct_answer": "A",
-    "category": "Medical Genetics; Pediatrics",
+    "category": "Medical Genetics; Endocrinology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1514,7 +1514,7 @@
     "answer_d": "A form of autoimmune hepatitis",
     "answer_e": "Gastric perforation",
     "correct_answer": "A",
-    "category": "Gastroenterology; Pediatrics",
+    "category": "Pediatrics; Gastroenterology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1546,7 +1546,7 @@
     "answer_d": "Rolandic epilepsy",
     "answer_e": "Ataxic syndrome",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Pediatrics",
+    "category": "Pediatrics; Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1610,7 +1610,7 @@
     "answer_d": "Knee CT scan",
     "answer_e": "Knee X-ray",
     "correct_answer": "A",
-    "category": "Immunology and Rheumatology; Orthopedics and Traumatology",
+    "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1658,7 +1658,7 @@
     "answer_d": "Chronic lymphocytic leukemia",
     "answer_e": "Oxyphilic carcinoma",
     "correct_answer": "A",
-    "category": "Otorhinolaryngology; Oncology",
+    "category": "Otorhinolaryngology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1674,7 +1674,7 @@
     "answer_d": "Angiomyolipoma",
     "answer_e": "Squamous cell carcinoma",
     "correct_answer": "A",
-    "category": "Oncology; Dermatology and Venereology",
+    "category": "Dermatology and Venereology; Oncology",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1770,7 +1770,7 @@
     "answer_d": "Blood cultures",
     "answer_e": "Skull radiograph",
     "correct_answer": "A",
-    "category": "Neurology and Neurosurgery; Diagnostic Imaging and Nuclear Medicine",
+    "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1786,7 +1786,7 @@
     "answer_d": "No investigation; NSAIDs are administered while awaiting symptom resolution",
     "answer_e": "Abdominal CT angiography",
     "correct_answer": "A",
-    "category": "General Surgery; Orthopedics and Traumatology",
+    "category": "Orthopedics and Traumatology; General Surgery",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Vitamin B12 and/or folic acid deficiency",
     "answer_e": "Hemolytic crisis",
     "correct_answer": "A",
-    "category": "Hematology; Gastroenterology",
+    "category": "Hematology",
     "has_image": false,
     "image_category": "",
     "image_path": ""

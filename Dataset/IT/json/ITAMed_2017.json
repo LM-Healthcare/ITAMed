@@ -58,7 +58,7 @@
     "answer_d": "HSV-1",
     "answer_e": "HSV-2",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -122,7 +122,7 @@
     "answer_d": "bisognerà aggiungere al warfarin un farmaco antiaggregante per il rischio cardiologico legato all'intervento",
     "answer_e": "bisogna eseguire un ECG per verificare che sia ancora in fibrillazione atriale",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -314,7 +314,7 @@
     "answer_d": "TC addome con mezzo di contrasto",
     "answer_e": "Scintigrafia polmonare",
     "correct_answer": "A",
-    "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Pneumologia e Chirurgia Toracica; Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -330,7 +330,7 @@
     "answer_d": "Toracentesi ed esame citologico",
     "answer_e": "Esame citologico dell'escreato",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Pneumologia e Chirurgia Toracica; Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -346,7 +346,7 @@
     "answer_d": "Antidiabetici orali",
     "answer_e": "FANS (Farmaci antinfiammatori non steroidei)",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Farmacologia e Tossicologia",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -410,7 +410,7 @@
     "answer_d": "Radioterapia",
     "answer_e": "Chemioterapia eventualmente seguita da ormonoterapia",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Oncologia",
+    "category": "Oncologia; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -426,7 +426,7 @@
     "answer_d": "Ecografia addome completo",
     "answer_e": "RM dell'addome inferiore con mezzo di contrasto",
     "correct_answer": "A",
-    "category": "Pediatria; Chirurgia Generale",
+    "category": "Pediatria; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -874,7 +874,7 @@
     "answer_d": "Il consumo di alimenti contaminati in mensa",
     "answer_e": "Trasmissione da contatto da parte di un altro operaio portatore sano di Legionella pneumophila",
     "correct_answer": "A",
-    "category": "Igiene, Epidemiologia e Statistica; Medicina del Lavoro",
+    "category": "Malattie Infettive; Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -954,7 +954,7 @@
     "answer_d": "TC del torace con mezzo di contrasto",
     "answer_e": "Ecocardiogramma transtoracico",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1018,7 +1018,7 @@
     "answer_d": "enalapril",
     "answer_e": "nitroprussiato di sodio",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": true,
     "image_category": "ECG tracing",
     "image_path": "images/2017/ssm2017127.png"
@@ -1130,7 +1130,7 @@
     "answer_d": "Allettamento per almeno 3 giorni",
     "answer_e": "Fibrillazione atriale",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Cardiologia e Cardiochirurgia",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1242,7 +1242,7 @@
     "answer_d": "Vasculopatia cerebrale",
     "answer_e": "Sordità neuro-sensoriale",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Gastroenterologia",
+    "category": "Gastroenterologia; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1338,7 +1338,7 @@
     "answer_d": "Denosumab",
     "answer_e": "Alendronato",
     "correct_answer": "A",
-    "category": "Endocrinologia; Farmacologia e Tossicologia",
+    "category": "Medicina Interna",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1466,7 +1466,7 @@
     "answer_d": "Ipercalcemia secondaria a metastasi ossee da ripresa del carcinoma mammario",
     "answer_e": "Sarcoidosi",
     "correct_answer": "A",
-    "category": "Endocrinologia; Nefrologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1498,7 +1498,7 @@
     "answer_d": "12",
     "answer_e": "15",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Anestesia e Rianimazione",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1642,7 +1642,7 @@
     "answer_d": "Ovaio",
     "answer_e": "Polmone",
     "correct_answer": "A",
-    "category": "Oncologia; Gastroenterologia",
+    "category": "Gastroenterologia; Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1658,7 +1658,7 @@
     "answer_d": "Cetuximab",
     "answer_e": "Ipilimumab",
     "correct_answer": "A",
-    "category": "Oncologia; Farmacologia e Tossicologia",
+    "category": "Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1674,7 +1674,7 @@
     "answer_d": "PET con colina",
     "answer_e": "Scan osseo con 99mTc-MDP",
     "correct_answer": "A",
-    "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Oncologia; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1866,7 +1866,7 @@
     "answer_d": "I valori antropometrici alla nascita sono adeguati all'età gestazionale",
     "answer_e": "Lo sviluppo puberale è regolare",
     "correct_answer": "A",
-    "category": "Endocrinologia; Pediatria",
+    "category": "Pediatria; Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1914,7 +1914,7 @@
     "answer_d": "RM encefalo e radiografia del polso",
     "answer_e": "Test di stimolo per secrezione di GH e radiografia del polso",
     "correct_answer": "A",
-    "category": "Endocrinologia; Pediatria",
+    "category": "Pediatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1962,7 +1962,7 @@
     "answer_d": "Gli esami ematici per la valutazione degli indici di flogosi sono indicati in caso di sospetto stato settico",
     "answer_e": "Un'infezione delle vie urinarie può essere segno di una malformazione del tratto genito-urinario",
     "correct_answer": "A",
-    "category": "Pediatria; Urologia",
+    "category": "Pediatria; Nefrologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1978,7 +1978,7 @@
     "answer_d": "non appena ottenuto l'esito dell'antibiogramma",
     "answer_e": "solo nelle infezioni da Escherichia coli",
     "correct_answer": "A",
-    "category": "Pediatria; Urologia",
+    "category": "Pediatria; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2010,7 +2010,7 @@
     "answer_d": "Benzodiazepine",
     "answer_e": "Antidepressivi Triciclici",
     "correct_answer": "A",
-    "category": "Psichiatria; Farmacologia e Tossicologia",
+    "category": "Psichiatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2218,7 +2218,7 @@
     "answer_d": "Cistina",
     "answer_e": "Xantina",
     "correct_answer": "A",
-    "category": "Urologia; Diagnostica per Immagini e Medicina Nucleare",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2234,7 +2234,7 @@
     "answer_d": "Inibitore delle 5-alfariduttasi (5-ARI)",
     "answer_e": "Inibitore delle fosfodiesterasi di tipo 5 (PDE-5)",
     "correct_answer": "A",
-    "category": "Urologia; Farmacologia e Tossicologia",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""

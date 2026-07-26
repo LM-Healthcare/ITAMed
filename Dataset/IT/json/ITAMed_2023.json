@@ -90,7 +90,7 @@
     "answer_d": "Complesso della sclerosi tuberosa",
     "answer_e": "Neurofibromatosi Tipo 1",
     "correct_answer": "A",
-    "category": "Genetica Medica; Oncologia",
+    "category": "Oncologia; Genetica Medica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -138,7 +138,7 @@
     "answer_d": "Paralisi isolata del IV nervo cranico di destra",
     "answer_e": "Paralisi completa del III nervo cranico di destra",
     "correct_answer": "A",
-    "category": "Oftalmologia; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Oftalmologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -202,7 +202,7 @@
     "answer_d": "Diverticolo perforato",
     "answer_e": "Megacolon tossico",
     "correct_answer": "A",
-    "category": "Chirurgia Generale; Oncologia",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -218,7 +218,7 @@
     "answer_d": "Iperaldosteronismo",
     "answer_e": "Tumore endocrino del pancreas",
     "correct_answer": "A",
-    "category": "Endocrinologia; Genetica Medica",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -346,7 +346,7 @@
     "answer_d": "Triade di Calot",
     "answer_e": "Triade di Virchow",
     "correct_answer": "A",
-    "category": "Gastroenterologia; Chirurgia Generale",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -394,7 +394,7 @@
     "answer_d": "Amenorrea da causa ipofisaria",
     "answer_e": "Sindrome dell’ovaio policistico",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Endocrinologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -554,7 +554,7 @@
     "answer_d": "Malattia di Panner",
     "answer_e": "Malattia di Sinding-Larsen-Johansson",
     "correct_answer": "A",
-    "category": "Ortopedia e Traumatologia; Pediatria",
+    "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -762,7 +762,7 @@
     "answer_d": "Artrogriposi",
     "answer_e": "Artrite idiopatica giovanile",
     "correct_answer": "A",
-    "category": "Pediatria; Malattie Infettive",
+    "category": "Malattie Infettive; Pediatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Symmetrical Drug-Related Intertriginous and Flexural Exanthema (SDRIFE)",
     "answer_e": "Sindrome di Sezary",
     "correct_answer": "A",
-    "category": "Dermatologia e Venereologia; Farmacologia e Tossicologia",
+    "category": "Farmacologia e Tossicologia; Dermatologia e Venereologia",
     "has_image": true,
     "image_category": "Photograph of a skin lesion",
     "image_path": "images/2023/ssm2023491.png"
@@ -874,7 +874,7 @@
     "answer_d": "Cromogranina",
     "answer_e": "Anticorpi anti-recettore del TSH",
     "correct_answer": "A",
-    "category": "Endocrinologia; Oncologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -954,7 +954,7 @@
     "answer_d": "Abuso di benzodiazepine",
     "answer_e": "Abuso di neurolettici",
     "correct_answer": "A",
-    "category": "Psichiatria; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Psichiatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1114,7 +1114,7 @@
     "answer_d": "Dispositivo medico con idrossido di alluminio e acido ialuronico per os",
     "answer_e": "Sucralfato per os",
     "correct_answer": "A",
-    "category": "Gastroenterologia; Farmacologia e Tossicologia",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1194,7 +1194,7 @@
     "answer_d": "Meningoencefalite da Cryptococcus neoformans",
     "answer_e": "Meningite da Haemophilus influenzae",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1210,7 +1210,7 @@
     "answer_d": "Somministrazione di furosemide per os",
     "answer_e": "Fluidoterapia",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Anestesia e Rianimazione",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1226,7 +1226,7 @@
     "answer_d": "Pralidossima",
     "answer_e": "Fisostigmina",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Farmacologia e Tossicologia",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1402,7 +1402,7 @@
     "answer_d": "Aumento della creatininemia",
     "answer_e": "Iperfosforemia",
     "correct_answer": "A",
-    "category": "Oncologia; Ematologia",
+    "category": "Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1610,7 +1610,7 @@
     "answer_d": "Potenziali evocativi visivi",
     "answer_e": "Angio-RM encefalo",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Psichiatria",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1690,7 +1690,7 @@
     "answer_d": "Assenza di contrast-enhancement",
     "answer_e": "L’epatocarcinoma non presenta un pattern contrastografico specifico",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
     "image_category": "Radiological image",
     "image_path": "images/2023/ssm2023546.png"
@@ -1770,7 +1770,7 @@
     "answer_d": "Adenoma tubulare",
     "answer_e": "Mixoma mammario",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Oncologia",
+    "category": "Ginecologia e Ostetricia; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1818,7 +1818,7 @@
     "answer_d": "Escherichia coli",
     "answer_e": "Streptococcus agalactiae",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Neurologia e Neurochirurgia",
+    "category": "Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1866,7 +1866,7 @@
     "answer_d": "Approcci diagnostici neonatali effettuati selettivamente su figli di pazienti affetti dalla malattia",
     "answer_e": "Approcci diagnostici neonatali effettuati selettivamente su figli di pazienti affetti da questa o da altre malattie del metabolismo degli aminoacidi",
     "correct_answer": "A",
-    "category": "Genetica Medica; Pediatria",
+    "category": "Pediatria; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1914,7 +1914,7 @@
     "answer_d": "I medici di Medicina Generale ed i Pediatri di Libera Scelta sono professionisti “dipendenti” dal Servizio Sanitario Regionale",
     "answer_e": "Nel 2001 una legge costituzionale ha attribuito alle Regioni potere esclusivo in tema di sanità",
     "correct_answer": "A",
-    "category": "Medicina Legale",
+    "category": "Igiene, Epidemiologia e Statistica; Medicina Legale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1978,7 +1978,7 @@
     "answer_d": "Su chiunque, nell’esercizio della professione sanitaria, abbia prestato la propria opera o assistenza, nei casi che possano presentare i caratteri di un delitto procedibile a querela della persona offesa",
     "answer_e": "L’obbligo non sussiste in quanto i genitori sarebbero perseguibili penalmente",
     "correct_answer": "A",
-    "category": "Medicina Legale; Pediatria",
+    "category": "Medicina Legale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2042,7 +2042,7 @@
     "answer_d": "Ipnotici",
     "answer_e": "Antiemetici",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Immunologia e Reumatologia",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2090,7 +2090,7 @@
     "answer_d": "Ipertermia maligna",
     "answer_e": "Shock anafilattico",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Urologia",
+    "category": "Urologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2138,7 +2138,7 @@
     "answer_d": "Somministrazione di levetiracetam",
     "answer_e": "Somministrazione di fenobarbitale",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Farmacologia e Tossicologia",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2154,7 +2154,7 @@
     "answer_d": "Il recupero delle sensibilità profonde tramite la stimolazione di afferenze termo-dolorifiche",
     "answer_e": "Il recupero della sensibilità esterocettiva nell'emilato plegico del paziente dopo un ictus",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2186,7 +2186,7 @@
     "answer_d": "Riduzione del tono simpatico",
     "answer_e": "Aumento della performance diaframmatica",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Pneumologia e Chirurgia Toracica",
+    "category": "Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""

@@ -10,7 +10,7 @@
     "answer_d": "Salbutamolo",
     "answer_e": "Corticosteroidi sistemici",
     "correct_answer": "A",
-    "category": "Immunologia e Reumatologia; Anestesia e Rianimazione",
+    "category": "Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -74,7 +74,7 @@
     "answer_d": "Cardiomiopatia restrittiva",
     "answer_e": "Cardiomiopatia dilatativa",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Medicina Legale",
+    "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -90,7 +90,7 @@
     "answer_d": "oppioidi",
     "answer_e": "corticosteroidi",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Anestesia e Rianimazione",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -106,7 +106,7 @@
     "answer_d": "ipertensione e tachicardia",
     "answer_e": "ipotensione ortostatica e tachicardia",
     "correct_answer": "A",
-    "category": "Neurologia e Neurochirurgia; Anestesia e Rianimazione",
+    "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -154,7 +154,7 @@
     "answer_d": "Arresto cardiaco",
     "answer_e": "Crisi comiziale",
     "correct_answer": "A",
-    "category": "Anestesia e Rianimazione; Chirurgia Generale",
+    "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -266,7 +266,7 @@
     "answer_d": "Infarto miocardico",
     "answer_e": "Trombocitopenia",
     "correct_answer": "A",
-    "category": "Chirurgia Generale",
+    "category": "Chirurgia Generale; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -314,7 +314,7 @@
     "answer_d": "Radioterapia",
     "answer_e": "Solo mammografia di controllo dopo un anno",
     "correct_answer": "A",
-    "category": "Diagnostica per Immagini e Medicina Nucleare; Oncologia",
+    "category": "Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -378,7 +378,7 @@
     "answer_d": "RM addome",
     "answer_e": "PET/TC",
     "correct_answer": "A",
-    "category": "Oncologia; Gastroenterologia",
+    "category": "Gastroenterologia; Oncologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -410,7 +410,7 @@
     "answer_d": "Lembo di rotazione",
     "answer_e": "Plastica a W",
     "correct_answer": "A",
-    "category": "Dermatologia e Venereologia; Chirurgia Generale",
+    "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -586,7 +586,7 @@
     "answer_d": "Insulina",
     "answer_e": "Liraglutide",
     "correct_answer": "A",
-    "category": "Endocrinologia; Farmacologia e Tossicologia",
+    "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -634,7 +634,7 @@
     "answer_d": "Dobutamina",
     "answer_e": "Fenoldopam",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -650,7 +650,7 @@
     "answer_d": "È un'ipotesi da escludere se alla nascita si era verificato un ileo da meconio",
     "answer_e": "È un'ipotesi da considerare solo se il cariotipo è patologico",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica; Genetica Medica",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -698,7 +698,7 @@
     "answer_d": "Cardioaspirina",
     "answer_e": "Furosemide",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Cardiologia e Cardiochirurgia",
+    "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -714,7 +714,7 @@
     "answer_d": "aumenta ma solo in alcune etnie",
     "answer_e": "si riduce ma solo dopo i 50 anni",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Pneumologia e Chirurgia Toracica",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -810,7 +810,7 @@
     "answer_d": "Solo nei parti vaginali",
     "answer_e": "Solo nei parti cesarei",
     "correct_answer": "A",
-    "category": "Ginecologia e Ostetricia; Ematologia",
+    "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -922,7 +922,7 @@
     "answer_d": "Spasmo esofageo diffuso",
     "answer_e": "Sindrome di Boerhaave",
     "correct_answer": "A",
-    "category": "Gastroenterologia; Ematologia",
+    "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1178,7 +1178,7 @@
     "answer_d": "Infarto miocardico acuto",
     "answer_e": "Pneumotorace",
     "correct_answer": "A",
-    "category": "Pneumologia e Chirurgia Toracica",
+    "category": "Malattie Infettive; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1354,7 +1354,7 @@
     "answer_d": "Vasculite",
     "answer_e": "Embolizzazione gassosa",
     "correct_answer": "A",
-    "category": "Ematologia; Ginecologia e Ostetricia",
+    "category": "Ginecologia e Ostetricia; Ematologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1402,7 +1402,7 @@
     "answer_d": "Enterococcus faecalis",
     "answer_e": "Virus HIV",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Malattie Infettive",
+    "category": "Malattie Infettive; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1562,7 +1562,7 @@
     "answer_d": "Staphylococcus aureus",
     "answer_e": "Pseudomonas aeruginosa",
     "correct_answer": "A",
-    "category": "Malattie Infettive; Neurologia e Neurochirurgia",
+    "category": "Neurologia e Neurochirurgia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1594,7 +1594,7 @@
     "answer_d": "Matrici di Raven",
     "answer_e": "Il test di Rorschach",
     "correct_answer": "A",
-    "category": "Pediatria; Psichiatria",
+    "category": "Pediatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1690,7 +1690,7 @@
     "answer_d": "Pneumotorace",
     "answer_e": "Atelettasia polmonare",
     "correct_answer": "A",
-    "category": "Oncologia; Pneumologia e Chirurgia Toracica",
+    "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1802,7 +1802,7 @@
     "answer_d": "Terapia steroidea sistemica ciclica per 6 mesi",
     "answer_e": "Terapia steroidea ciclica e profilassi antibiotica",
     "correct_answer": "A",
-    "category": "Otorinolaringoiatria; Pediatria",
+    "category": "Pediatria; Otorinolaringoiatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1818,7 +1818,7 @@
     "answer_d": "Impianto cocleare entro il sesto mese di vita",
     "answer_e": "Protesizzazione precoce; eventuale impianto cocleare in età adolescenziale",
     "correct_answer": "A",
-    "category": "Otorinolaringoiatria; Pediatria",
+    "category": "Pediatria; Otorinolaringoiatria",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1866,7 +1866,7 @@
     "answer_d": "dall'aumento delle resistenze vascolari periferiche",
     "answer_e": "dal grado di ipertrofia del ventricolo sinistro",
     "correct_answer": "A",
-    "category": "Cardiologia e Cardiochirurgia; Pediatria",
+    "category": "Pediatria; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1914,7 +1914,7 @@
     "answer_d": "Amoxicillina",
     "answer_e": "Claritromicina",
     "correct_answer": "A",
-    "category": "Genetica Medica; Pediatria",
+    "category": "Pediatria; Genetica Medica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1930,7 +1930,7 @@
     "answer_d": "Osmolalità urinaria > 500 mOsm/kg",
     "answer_e": "Azoto ureico (BUN)/Creatininemia > 20:1",
     "correct_answer": "A",
-    "category": "Nefrologia; Pediatria",
+    "category": "Pediatria; Nefrologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1946,7 +1946,7 @@
     "answer_d": "Drepanocitosi",
     "answer_e": "Anemia da Parvovirus",
     "correct_answer": "A",
-    "category": "Ematologia; Pediatria",
+    "category": "Genetica Medica",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -1978,7 +1978,7 @@
     "answer_d": "Infezione delle vie urinarie",
     "answer_e": "Malattia di Gilbert",
     "correct_answer": "A",
-    "category": "Endocrinologia; Pediatria",
+    "category": "Pediatria; Endocrinologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
@@ -2186,7 +2186,7 @@
     "answer_d": "Fase IV",
     "answer_e": "Preclinico",
     "correct_answer": "A",
-    "category": "Farmacologia e Tossicologia; Igiene, Epidemiologia e Statistica",
+    "category": "Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
     "image_path": ""
