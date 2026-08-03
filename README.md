@@ -73,8 +73,6 @@ ITAMed/
 │   ├── scripts/                          #   Generation scripts
 │   └── Output/                           #   Generated PNG charts
 │
-├── huggingface/                          # HuggingFace dataset card & data
-│
 └── README.md                             # This file
 ```
 
