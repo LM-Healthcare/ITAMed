@@ -5,7 +5,7 @@
   </p>
   <p align="center">
     <a href="https://huggingface.co/datasets/Filo-White/ITAMed"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow" alt="HuggingFace Dataset"/></a>
-    <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a>
+    <!-- <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a> -->
     <a href="#license"><img src="https://img.shields.io/badge/License-CC%20BY%204.0-green" alt="License: CC BY 4.0"/></a>
   </p>
 </p>
@@ -298,7 +298,7 @@ scikit-learn>=1.0
 
 --- -->
 
-## Citation
+<!-- ## Citation
 
 If you use this dataset, please cite:
 
@@ -312,7 +312,7 @@ If you use this dataset, please cite:
 }
 ```
 
----
+--- -->
 
 ## License
 
