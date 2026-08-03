@@ -66,8 +66,8 @@ configs:
 
 <p align="center">
   <a href="https://github.com/LM-Healthcare/ITAMed"><img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github" alt="GitHub"/></a>
-  <a href="https://huggingface.co/spaces/Filo-White/ITAMed-Explorer"><img src="https://img.shields.io/badge/🤗-Interactive%20Demo-orange" alt="Demo"/></a>
-  <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a>
+  <!-- <a href="https://huggingface.co/spaces/Filo-White/ITAMed-Explorer"><img src="https://img.shields.io/badge/🤗-Interactive%20Demo-orange" alt="Demo"/></a>
+  <a href="#citation"><img src="https://img.shields.io/badge/Scientific%20Data-paper-blue" alt="Paper"/></a> -->
 </p>
 
 ## Dataset Description
@@ -164,7 +164,7 @@ Full methodology documented in each module's README: [Data_Extraction](https://g
 - Image-bearing questions (6%) require the associated image for complete understanding.
 - Translation was performed by an LLM; while quality was reviewed, some nuances may differ from human medical translation.
 
-## Citation
+<!-- ## Citation
 
 ```bibtex
 @article{itamed2025,
@@ -174,7 +174,7 @@ Full methodology documented in each module's README: [Data_Extraction](https://g
   year    = {2025},
   doi     = {[to be assigned]}
 }
-```
+``` -->
 
 ## License
 
