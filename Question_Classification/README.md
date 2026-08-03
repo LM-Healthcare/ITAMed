@@ -323,9 +323,8 @@ Question_Classification/
 │       └── discordances.json              #   Discordances in JSON format
 │
 ├── expert_review/
-│   ├── discordances_to_review_REW_1_EMILIANO.xlsx    # Reviewer 1 template
-│   ├── discordances_to_review_REW_2_EDOARDO.xlsx     # Reviewer 2 template
-│   └── instructions.md                                # Compilation instructions
+│   ├── discordances_to_review_REW_1_EM_B.xlsx         # Reviewer 1 template
+│   └── discordances_to_review_REW_2_ED_B.xlsx         # Reviewer 2 template
 │
 └── results/expert_review/                              # Expert agreement analysis
     ├── expert_agreement_report.md                      #   Full markdown report

@@ -18,8 +18,8 @@ Purpose:
       7. Professional markdown report for paper
 
 Input:
-    - Reviewer 1: expert_review/discordances_to_review_REW1_EMILIANO_completed.xlsx
-    - Reviewer 2: expert_review/discordances_to_review_REW_2_EDOARDO_completed.xlsx
+    - Reviewer 1: expert_review/discordances_to_review_REW1_EM_B_completed.xlsx
+    - Reviewer 2: expert_review/discordances_to_review_REW_2_ED_B_completed.xlsx
 
 Output:
     - results/expert_review/expert_agreement_report.md

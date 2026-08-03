@@ -144,10 +144,10 @@ Questions were extracted from the official PDF documents of the Italian National
 ## Construction Pipeline
 
 1. **PDF Extraction** — Automated text extraction using `pdfplumber` with custom regex parsers
-2. **Specialty Classification** — LLM-based classification (Claude claude-opus-4-8) into 28 medical categories
+2. **Specialty Classification** — Dual-annotator LLM protocol (Claude claude-opus-4-8 + GPT-5.5, κ=0.895) with expert adjudication of disagreements by two independent medical specialists (κ=0.856)
 3. **Image Annotation** — Manual identification and categorization of image-bearing questions
 4. **Translation** — LLM-based medical translation (Claude claude-opus-4-8, IT→EN)
-5. **Quality Control** — Manual review and validation against official source documents
+5. **Quality Control** — Expert medical review of all translations (571 corrections across 431 questions) and validation against official source documents
 
 Full methodology documented in each module's README: [Data_Extraction](https://github.com/LM-Healthcare/ITAMed/tree/main/Data_Extraction), [Question_Classification](https://github.com/LM-Healthcare/ITAMed/tree/main/Question_Classification), [Dataset_Translation](https://github.com/LM-Healthcare/ITAMed/tree/main/Dataset_Translation)
 

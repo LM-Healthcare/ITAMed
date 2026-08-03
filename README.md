@@ -68,8 +68,12 @@ ITAMed/
 │   ├── translation_corrections.json      #   Structured log of expert corrections
 │   └── ITAMed_complete_EN_tracked.xlsx   #   Translation corrections (highlighted)
 │
-├── Charts/                               # Distribution visualizations (IT)
-├── Charts_EN/                            # Distribution visualizations (EN)
+├── Charts_EN/                            # Distribution visualizations
+│   ├── README.md                         #   Chart descriptions
+│   ├── scripts/                          #   Generation scripts
+│   └── Output/                           #   Generated PNG charts
+│
+├── huggingface/                          # HuggingFace dataset card & data
 │
 └── README.md                             # This file
 ```
@@ -215,6 +219,18 @@ Each JSON file contains an array of question objects:
 | Medical specialty categories | 28 |
 | Image categories | 21 |
 | Languages | Italian (original) + English (translated) |
+
+### Specialty Distribution
+
+<p align="center">
+  <img src="Charts_EN/Output/heatmap_categories_years.png" width="600" alt="Heatmap: Questions by Specialization and Year"/>
+</p>
+
+<p align="center">
+  <img src="Charts_EN/Output/combined_distribution_chart.png" width="750" alt="Combined Distribution Chart"/>
+</p>
+
+> All distribution charts are available in [`Charts_EN/`](Charts_EN/README.md).
 
 ---
 

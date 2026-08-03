@@ -13,9 +13,10 @@ import numpy as np
 
 # --- Paths ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+CHARTS_DIR = os.path.dirname(SCRIPT_DIR)
+REPO_ROOT = os.path.dirname(CHARTS_DIR)
 DATASET_JSON_DIR = os.path.join(REPO_ROOT, "Dataset", "EN", "json")
-CHARTS_OUTPUT_DIR = os.path.join(SCRIPT_DIR, "Output")
+CHARTS_OUTPUT_DIR = os.path.join(CHARTS_DIR, "Output")
 
 os.makedirs(CHARTS_OUTPUT_DIR, exist_ok=True)
 

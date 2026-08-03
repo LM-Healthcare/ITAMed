@@ -39,7 +39,7 @@ After the expert completed the review, the corrections were:
 
 1. **Extracted** from the reviewed XLSX into a structured JSON file (`translation_corrections.json`) documenting all modifications
 2. **Applied** to the official EN dataset files (per-year XLSX and JSON, plus the complete files)
-3. **Tracked** in a dedicated XLSX file (`Dataset/EN/ITAMed_complete_EN_tracked.xlsx`) where modified cells are highlighted in yellow with cell comments showing the original pre-correction text — analogous to Word's track-changes feature
+3. **Tracked** in a dedicated XLSX file (`Dataset_Translation/ITAMed_complete_EN_tracked.xlsx`) where modified cells are highlighted in yellow with cell comments showing the original pre-correction text — analogous to Word's track-changes feature
 
 This process is fully automated by the `apply_translation_review.py` script.
 
@@ -112,4 +112,4 @@ After running the full pipeline, the corrected English dataset is available in:
 
 - `Dataset/EN/xlsx/` — per-year and complete XLSX files (clean, final version)
 - `Dataset/EN/json/` — per-year and complete JSON files (clean, final version)
-- `Dataset/EN/ITAMed_complete_EN_tracked.xlsx` — tracked-changes version with highlighted corrections and original text in comments
+- `Dataset_Translation/ITAMed_complete_EN_tracked.xlsx` — tracked-changes version with highlighted corrections and original text in comments
