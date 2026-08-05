@@ -16,7 +16,8 @@ Purpose:
       - EN JSON + XLSX (per-year + complete)
 
 Input:
-    - LLM classifications: Dataset/IT/xlsx/ (Claude) + results/gpt/ (GPT)
+    - Claude classifications: results/claude/{year}_classifications_claude.json
+    - GPT classifications: results/gpt/{year}_classifications_gpt.json
     - Reviewer files: expert_review/*_completed.xlsx
     - Resolution file: results/expert_review/reviewer_discordances_RESOLUTION.xlsx
 
@@ -50,6 +51,7 @@ IT_JSON_DIR = os.path.join(REPO, "Dataset", "IT", "json")
 IT_XLSX_DIR = os.path.join(REPO, "Dataset", "IT", "xlsx")
 EN_JSON_DIR = os.path.join(REPO, "Dataset", "EN", "json")
 EN_XLSX_DIR = os.path.join(REPO, "Dataset", "EN", "xlsx")
+CLAUDE_DIR = os.path.join(QC_DIR, "results", "claude")
 GPT_DIR = os.path.join(QC_DIR, "results", "gpt")
 REVIEW_DIR = os.path.join(QC_DIR, "expert_review")
 RESOLUTION_FILE = os.path.join(
@@ -126,12 +128,30 @@ def normalize_cat(cat_str):
 
 
 def load_claude_categories() -> dict:
-    """Load Claude categories from IT dataset (currently assigned)."""
-    path = os.path.join(IT_JSON_DIR, "ITAMed_complete.json")
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return {item["question_code"]: normalize_cat(item.get("category", ""))
-            for item in data}
+    """Load Claude categories from raw classification output files.
+
+    Reads from results/claude/{year}_classifications_claude.json — the
+    immutable raw output produced by classify_claude.py.
+    """
+    # Need (year, q_num) -> question_code mapping
+    it_path = os.path.join(IT_JSON_DIR, "ITAMed_complete.json")
+    with open(it_path, "r", encoding="utf-8") as f:
+        it_data = json.load(f)
+    key_to_code = {(item["year"], item["question_number"]): item["question_code"]
+                   for item in it_data}
+
+    claude_cats = {}
+    for year in YEARS:
+        claude_path = os.path.join(CLAUDE_DIR, f"{year}_classifications_claude.json")
+        if not os.path.exists(claude_path):
+            continue
+        with open(claude_path, "r", encoding="utf-8") as f:
+            classifications = json.load(f)
+        for q_num_str, category in classifications.items():
+            code = key_to_code.get((year, int(q_num_str)))
+            if code:
+                claude_cats[code] = normalize_cat(category)
+    return claude_cats
 
 
 def load_gpt_categories() -> dict:

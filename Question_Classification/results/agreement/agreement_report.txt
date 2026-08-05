@@ -18,8 +18,8 @@ OVERALL STATISTICS
     0.61–0.80  Substantial
     0.81–1.00  Almost perfect
 
-  Number of discordances (primary):  126
-  Number of discordances (exact):    380
+  Primary discordances:        126
+  Exact-match discordances:    380
 
 
 PER-CATEGORY KAPPA (one-vs-all)
@@ -54,7 +54,7 @@ PER-CATEGORY KAPPA (one-vs-all)
   Diagnostica per Immagini e Medicina Nucleare        κ = 0.6951
 
 
-DISCORDANCE SUMMARY BY YEAR (exact-match)
+DISCORDANCE SUMMARY BY YEAR
 ----------------------------------------
   2017: 39 discordances
   2018: 43 discordances

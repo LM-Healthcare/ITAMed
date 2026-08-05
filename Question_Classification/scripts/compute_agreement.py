@@ -18,8 +18,7 @@ Purpose:
     exact-match agreement on the full category string.
 
 Input:
-    - Claude classifications: Dataset/IT/xlsx/ITAMed_{year}.xlsx
-      (column 'Categoria')
+    - Claude classifications: Question_Classification/results/claude/{year}_classifications_claude.json
     - GPT classifications: Question_Classification/results/gpt/{year}_classifications_gpt.json
 
 Output:
@@ -46,7 +45,6 @@ import json
 from collections import Counter
 
 import pandas as pd
-import openpyxl
 from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
 # ==============================================================================
@@ -55,9 +53,10 @@ from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
 QC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO_ROOT = os.path.dirname(QC_DIR)
-OFFICIAL_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "xlsx")
+CLAUDE_DIR = os.path.join(QC_DIR, "results", "claude")
 GPT_DIR = os.path.join(QC_DIR, "results", "gpt")
 OUTPUT_DIR = os.path.join(QC_DIR, "results", "agreement")
+IT_JSON_DIR = os.path.join(REPO_ROOT, "Dataset", "IT", "json")
 
 YEARS = list(range(2017, 2026))
 
@@ -107,33 +106,45 @@ def get_primary_category(cat_str: str) -> str:
 
 def load_claude_classifications() -> pd.DataFrame:
     """
-    Load Claude classifications from Dataset/IT/xlsx files.
+    Load Claude classifications from raw output JSON files.
+
+    Reads from results/claude/{year}_classifications_claude.json — the
+    immutable raw output produced by classify_claude.py.
 
     Returns:
         DataFrame with columns: year, question_number, question_code,
         question, claude_category (full), claude_primary (first category).
     """
+    # Load question metadata (codes, text) from dataset for context
+    it_path = os.path.join(IT_JSON_DIR, "ITAMed_complete.json")
+    with open(it_path, "r", encoding="utf-8") as f:
+        it_data = json.load(f)
+    meta = {(item["year"], item["question_number"]): item for item in it_data}
+
     records = []
     for year in YEARS:
-        xlsx_path = os.path.join(OFFICIAL_DIR, f"ITAMed_{year}.xlsx")
-        if not os.path.exists(xlsx_path):
-            print(f"  WARNING: Claude file not found: {xlsx_path}")
+        json_path = os.path.join(CLAUDE_DIR, f"{year}_classifications_claude.json")
+        if not os.path.exists(json_path):
+            print(f"  WARNING: Claude file not found: {json_path}")
             continue
 
-        wb = openpyxl.load_workbook(xlsx_path)
-        ws = wb.active
-        for row in ws.iter_rows(min_row=2, max_row=ws.max_row):
+        with open(json_path, "r", encoding="utf-8") as f:
+            classifications = json.load(f)
+
+        for q_num_str, category in classifications.items():
+            q_num = int(q_num_str)
+            item_meta = meta.get((year, q_num), {})
             records.append({
-                "year": row[0].value,
-                "question_number": row[1].value,
-                "question_code": row[2].value,
-                "question": row[3].value,
-                "answer_a": row[4].value,
-                "answer_b": row[5].value,
-                "answer_c": row[6].value,
-                "answer_d": row[7].value,
-                "answer_e": row[8].value,
-                "claude_category": str(row[10].value) if row[10].value else "",
+                "year": year,
+                "question_number": q_num,
+                "question_code": item_meta.get("question_code", ""),
+                "question": item_meta.get("question", ""),
+                "answer_a": item_meta.get("answer_a", ""),
+                "answer_b": item_meta.get("answer_b", ""),
+                "answer_c": item_meta.get("answer_c", ""),
+                "answer_d": item_meta.get("answer_d", ""),
+                "answer_e": item_meta.get("answer_e", ""),
+                "claude_category": category,
             })
 
     df = pd.DataFrame(records)
@@ -258,27 +269,39 @@ def compute_kappa(df: pd.DataFrame) -> dict:
     }
 
 
-def extract_discordances(df: pd.DataFrame) -> pd.DataFrame:
+def extract_discordances(df: pd.DataFrame) -> tuple:
     """
-    Extract all questions where Claude and GPT primary categories disagree.
+    Extract discordant questions at two levels:
+      1. Primary-category disagreements (Claude vs GPT primary ≠)
+      2. Exact-match disagreements (full category string ≠)
+
+    The exact-match set (larger) is what was sent for expert adjudication,
+    as it includes questions where models agree on primary but disagree on
+    secondary categories.
 
     Args:
         df: Merged DataFrame with both annotations.
 
     Returns:
-        DataFrame of discordant questions with all relevant columns.
+        Tuple of (primary_discordances_df, exact_match_discordances_df).
     """
-    disc = df[df["claude_primary"] != df["gpt_primary"]].copy()
-    disc = disc.sort_values(["year", "question_number"]).reset_index(drop=True)
-
-    # Select columns relevant for expert review
     cols = [
         "year", "question_number", "question_code", "question",
         "answer_a", "answer_b", "answer_c", "answer_d", "answer_e",
         "claude_category", "gpt_category",
         "claude_primary", "gpt_primary",
     ]
-    return disc[[c for c in cols if c in disc.columns]]
+    available_cols = [c for c in cols if c in df.columns]
+
+    # Primary disagreements
+    primary_disc = df[df["claude_primary"] != df["gpt_primary"]].copy()
+    primary_disc = primary_disc.sort_values(["year", "question_number"]).reset_index(drop=True)
+
+    # Exact-match disagreements (full string, sent for expert review)
+    exact_disc = df[df["claude_category"] != df["gpt_category"]].copy()
+    exact_disc = exact_disc.sort_values(["year", "question_number"]).reset_index(drop=True)
+
+    return primary_disc[available_cols], exact_disc[available_cols]
 
 
 # ==============================================================================
@@ -311,7 +334,8 @@ def generate_report(stats: dict, ct: pd.DataFrame, disc: pd.DataFrame) -> str:
         "    0.61–0.80  Substantial",
         "    0.81–1.00  Almost perfect",
         "",
-        f"  Number of discordances:      {len(disc)}",
+        f"  Primary discordances:        {stats['n_total'] - stats['n_agree_primary']}",
+        f"  Exact-match discordances:    {stats['n_total'] - stats['n_agree_exact']}",
         "",
         "",
         "PER-CATEGORY KAPPA (one-vs-all)",
@@ -415,23 +439,23 @@ def main():
 
     # --- Discordances ---
     print("\nExtracting discordances...")
-    disc = extract_discordances(merged)
-    print(f"  Found {len(disc)} discordant questions")
+    primary_disc, exact_disc = extract_discordances(merged)
+    print(f"  Primary-category discordances: {len(primary_disc)}")
+    print(f"  Exact-match discordances:      {len(exact_disc)} (sent for expert review)")
 
-    # Save discordances as XLSX
+    # Save exact-match discordances (the set sent for expert adjudication)
     disc_xlsx_path = os.path.join(OUTPUT_DIR, "discordances.xlsx")
-    disc.to_excel(disc_xlsx_path, index=False)
+    exact_disc.to_excel(disc_xlsx_path, index=False)
     print(f"  Saved: {disc_xlsx_path}")
 
-    # Save discordances as JSON
     disc_json_path = os.path.join(OUTPUT_DIR, "discordances.json")
-    disc_records = disc.to_dict(orient="records")
+    disc_records = exact_disc.to_dict(orient="records")
     with open(disc_json_path, "w", encoding="utf-8") as f:
         json.dump(disc_records, f, ensure_ascii=False, indent=2)
     print(f"  Saved: {disc_json_path}")
 
     # --- Report ---
-    report = generate_report(stats, ct, disc)
+    report = generate_report(stats, ct, exact_disc)
     report_path = os.path.join(OUTPUT_DIR, "agreement_report.txt")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(report)

@@ -299,64 +299,160 @@ Question_Classification/
 ├── README.md                              ← This file
 │
 ├── scripts/
-│   ├── classify_claude.py                 # Classification with Claude Opus 4.8
-│   ├── classify_gpt.py                    # Classification with GPT-5.5
-│   ├── compute_agreement.py              # LLM inter-rater agreement analysis
-│   ├── compute_reviewer_agreement.py     # Expert reviewer agreement analysis
-│   └── apply_expert_review.py            # Apply expert decisions to dataset
+│   ├── classify_claude.py                 # Stage A: Classification with Claude Opus 4.8
+│   ├── classify_gpt.py                    # Stage B: Classification with GPT-5.5
+│   ├── compute_agreement.py              # Stage C: LLM inter-rater agreement analysis
+│   ├── compute_reviewer_agreement.py     # Stage E: Expert reviewer agreement analysis
+│   ├── apply_expert_review.py            # Stage F: Apply expert decisions to dataset
+│   └── pipeline.py                       # End-to-end pipeline with validation
 │
 ├── results/
-│   ├── claude/                            # JSON: Claude classifications (1 file/year)
+│   ├── claude/                            # IMMUTABLE: Raw Claude output (1 file/year)
 │   │   ├── 2017_classifications_claude.json
 │   │   ├── ...
 │   │   └── 2025_classifications_claude.json
 │   │
-│   ├── gpt/                              # JSON: GPT classifications (1 file/year)
+│   ├── gpt/                              # IMMUTABLE: Raw GPT output (1 file/year)
 │   │   ├── 2017_classifications_gpt.json
 │   │   ├── ...
 │   │   └── 2025_classifications_gpt.json
 │   │
-│   └── agreement/                         # Agreement analysis outputs
-│       ├── agreement_report.txt           #   Full text report
-│       ├── contingency_table.xlsx         #   28×28 contingency matrix
-│       ├── discordances.xlsx              #   Complete discordance list
-│       └── discordances.json              #   Discordances in JSON format
+│   ├── agreement/                         # Generated: LLM agreement analysis outputs
+│   │   ├── agreement_report.txt           #   Full text report
+│   │   ├── contingency_table.xlsx         #   28×28 contingency matrix
+│   │   ├── discordances.xlsx              #   380 exact-match discordances
+│   │   └── discordances.json              #   Same in JSON format
+│   │
+│   └── expert_review/                     # Generated: Reviewer agreement analysis
+│       ├── expert_agreement_report.md     #   Full markdown report
+│       ├── reviewer_discordances.xlsx     #   126 remaining discordances
+│       ├── reviewer_discordances.json     #   Same in JSON format
+│       ├── reviewer_discordances_RESOLUTION.xlsx  # IMMUTABLE: Consensus decisions
+│       └── reviewer_confusion_matrix.xlsx #   Reviewer confusion matrix
 │
-├── expert_review/
-│   ├── discordances_to_review_REW_1_EM_B.xlsx         # Reviewer 1 template
-│   └── discordances_to_review_REW_2_ED_B.xlsx         # Reviewer 2 template
-│
-└── results/expert_review/                              # Expert agreement analysis
-    ├── expert_agreement_report.md                      #   Full markdown report
-    ├── reviewer_discordances.xlsx                      #   126 pre-resolution discordances
-    ├── reviewer_discordances.json                      #   Same in JSON format
-    ├── reviewer_discordances_RESOLUTION.xlsx           #   Final resolved categories
-    └── reviewer_confusion_matrix.xlsx                  #   Reviewer confusion matrix
+└── expert_review/                         # IMMUTABLE: Completed reviewer files
+    ├── discordances_to_review_REW1_EM_B_completed.xlsx   # Reviewer 1 decisions
+    └── discordances_to_review_REW_2_ED_B_completed.xlsx  # Reviewer 2 decisions
 ```
+
+### Immutable Artifacts
+
+The following files are produced once and never modified by downstream scripts:
+
+| File | Content | Producer |
+|:-----|:--------|:---------|
+| `results/claude/{year}_classifications_claude.json` | Raw Claude output per year | `classify_claude.py` |
+| `results/gpt/{year}_classifications_gpt.json` | Raw GPT output per year | `classify_gpt.py` |
+| `expert_review/*_completed.xlsx` | Independent expert reviewer decisions | Manual (medical specialists) |
+| `results/expert_review/reviewer_discordances_RESOLUTION.xlsx` | Consensus resolution | Manual (expert meeting) |
+
+The agreement analysis scripts (`compute_agreement.py`, `compute_reviewer_agreement.py`) read **exclusively** from these immutable files—never from the final dataset. This ensures the reported κ values can be reconstructed independently of the final category assignment.
 
 ---
 
 ## Reproducibility
 
-To re-run the full pipeline from scratch:
+### End-to-End Pipeline
+
+The entire classification pipeline can be verified or re-executed via a single command:
 
 ```bash
-# 1. Claude classification (requires ANTHROPIC_API_KEY)
+# Verify current state (no writes, only validation)
+python scripts/pipeline.py --verify-only
+
+# Full re-execution (rebuilds final dataset from immutable artifacts)
+python scripts/pipeline.py
+```
+
+The pipeline halts with a descriptive error if any of the following conditions is violated:
+
+- Total question count ≠ 1,260
+- Duplicate or missing `question_code`
+- LLM output missing any question
+- Category not in the 28-category taxonomy
+- More than 2 categories assigned to one question
+- Reviewed question without two independent reviewer decisions
+- Residual disagreement without consensus resolution entry
+- IT↔EN category mapping inconsistency
+- Referenced image file not found on disk
+
+### Step-by-Step Manual Execution
+
+```bash
+# Stage A: Claude classification (requires ANTHROPIC_API_KEY)
 export ANTHROPIC_API_KEY="sk-ant-..."
 python scripts/classify_claude.py
+#   Input:  Dataset/IT/json/ITAMed_{year}.json (text only)
+#   Output: results/claude/{year}_classifications_claude.json
 
-# 2. GPT classification (requires OPENAI_API_KEY)
+# Stage B: GPT classification (requires OPENAI_API_KEY)
 export OPENAI_API_KEY="sk-..."
 python scripts/classify_gpt.py
+#   Input:  Dataset/IT/json/ITAMed_{year}.json (text only)
+#   Output: results/gpt/{year}_classifications_gpt.json
 
-# 3. Compute LLM inter-rater agreement
+# Stage C: LLM inter-rater agreement
 python scripts/compute_agreement.py
+#   Input:  results/claude/*.json + results/gpt/*.json
+#   Output: results/agreement/{report, contingency, discordances}
 
-# 4. Compute expert reviewer agreement
+# Stage D: Expert review (manual, offline)
+#   Input:  results/agreement/discordances.xlsx (380 questions)
+#   Output: expert_review/*_completed.xlsx (R1 + R2 independent decisions)
+#           results/expert_review/reviewer_discordances_RESOLUTION.xlsx
+
+# Stage E: Reviewer agreement analysis
 python scripts/compute_reviewer_agreement.py
+#   Input:  expert_review/*_completed.xlsx
+#   Output: results/expert_review/{report, confusion_matrix, discordances}
 
-# 5. Apply expert-reviewed categories to the dataset
+# Stage F: Apply final categories
 python scripts/apply_expert_review.py
+#   Input:  results/claude/*.json + results/gpt/*.json
+#           expert_review/*_completed.xlsx
+#           results/expert_review/reviewer_discordances_RESOLUTION.xlsx
+#   Output: Updated Dataset/IT/ and Dataset/EN/ files (JSON + XLSX)
+```
+
+### Data Flow Diagram
+
+```
+Dataset/IT/json/ ──────┐
+(extracted text)       │
+                       ├──► classify_claude.py ──► results/claude/ (IMMUTABLE)
+                       │
+                       └──► classify_gpt.py ────► results/gpt/    (IMMUTABLE)
+                                                       │
+              results/claude/ + results/gpt/ ──────────►│
+                                                       ▼
+                                              compute_agreement.py
+                                                       │
+                                                       ▼
+                                           results/agreement/discordances.xlsx
+                                                  (380 questions)
+                                                       │
+                                                       ▼ (manual)
+                                              Expert Review (R1 + R2)
+                                                       │
+                                                       ▼
+                                  expert_review/*_completed.xlsx (IMMUTABLE)
+                                                       │
+                           ┌───────────────────────────┤
+                           ▼                           ▼
+            compute_reviewer_agreement.py       Consensus Meeting
+                           │                           │
+                           ▼                           ▼
+              results/expert_review/        RESOLUTION.xlsx (IMMUTABLE)
+                                                       │
+              results/claude/ + results/gpt/ ──────────►│
+              expert_review/*_completed.xlsx ──────────►│
+              RESOLUTION.xlsx ─────────────────────────►│
+                                                       ▼
+                                           apply_expert_review.py
+                                                       │
+                                                       ▼
+                                         Dataset/IT/ + Dataset/EN/
+                                             (FINAL OUTPUT)
 ```
 
 ---
