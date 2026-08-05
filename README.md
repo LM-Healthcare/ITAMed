@@ -19,7 +19,7 @@
 Every question is enriched with:
 - **Medical specialty classification** across a standardized taxonomy of 28 categories
 - **Image metadata** — presence flag, image type (21 categories), and file path to the extracted image
-- **Bilingual text** — original Italian + English translation produced by Claude (claude-opus-4-8)
+- **Bilingual text** — original Italian + English translation initially drafted by Claude (claude-opus-4-8) and fully reviewed against the Italian source by a senior bilingual physician.
 
 ### Quick Start
 

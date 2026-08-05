@@ -240,7 +240,6 @@ All categories reach at least "substantial" agreement (κ > 0.60).
 | 2024 | 32 | 22.9% |
 | 2025 | 46 | 32.9% |
 
-Year 2023 shows a slightly higher discordance rate, likely due to its atypical PDF format.
 
 ---
 
@@ -286,7 +285,8 @@ After both reviewers completed their independent review, their decisions were co
 | Exact-match agreement (full string) | 254/380 (66.8%) |
 | Set-based agreement (order-independent) | 270/380 (71.1%) |
 | **Cohen's Kappa (primary category)** | **κ = 0.8557** |
-| Remaining discordances | **52** |
+| Remaining primary-category disagreement | **52** |
+| Remaining secondary-category disagreement | **74** |
 
 The value **κ = 0.8557** indicates **almost perfect agreement** between the two medical reviewers, demonstrating high consistency in expert adjudication even on questions that were ambiguous enough to cause disagreement between two state-of-the-art LLMs.
 
@@ -307,7 +307,7 @@ For each discordant question, we analyzed whether each reviewer's primary catego
 
 All **126 discordances** (52 on primary category + 74 on secondary category only) were resolved through in-person consensus discussion between the two medical reviewers. For each discordant question, the reviewers jointly reviewed the clinical content and agreed on the final category assignment.
 
-The final adjudicated categories have been applied to all official dataset files (IT + EN, JSON + XLSX, per-year + complete) using the `apply_expert_review.py` script. All **1,260 questions** now have their definitive expert-validated category.
+The final adjudicated categories have been applied to all official dataset files (IT + EN, JSON + XLSX, per-year + complete) using the `apply_expert_review.py` script. All **1,260 questions** now have a final category assignment produced under the predefined dual-model and expert-adjudication protocol.
 
 ---
 
