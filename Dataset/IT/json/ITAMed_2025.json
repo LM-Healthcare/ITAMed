@@ -13,7 +13,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -29,7 +30,8 @@
     "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -45,7 +47,8 @@
     "category": "Oncologia; Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -61,7 +64,8 @@
     "category": "Chirurgia Generale; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -77,7 +81,8 @@
     "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -93,7 +98,8 @@
     "category": "Chirurgia Generale; Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -109,7 +115,8 @@
     "category": "Chirurgia Generale; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -125,7 +132,8 @@
     "category": "Chirurgia Generale; Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -141,7 +149,8 @@
     "category": "Chirurgia Generale; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -157,7 +166,8 @@
     "category": "Gastroenterologia; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -173,7 +183,8 @@
     "category": "Chirurgia Generale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -189,7 +200,8 @@
     "category": "Pediatria; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -205,7 +217,8 @@
     "category": "Dermatologia e Venereologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -221,7 +234,8 @@
     "category": "Otorinolaringoiatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -237,7 +251,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -253,7 +268,8 @@
     "category": "Nefrologia; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -269,7 +285,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -285,7 +302,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -301,7 +319,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -317,7 +336,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -333,7 +353,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -349,7 +370,8 @@
     "category": "Urologia; Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -365,7 +387,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -381,7 +404,8 @@
     "category": "Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -397,7 +421,8 @@
     "category": "Neurologia e Neurochirurgia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
     "image_category": "Brain CT scan",
-    "image_path": "images/2025/ssm2025885.png"
+    "image_path": "images/2025/ssm2025885.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -413,7 +438,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -429,7 +455,8 @@
     "category": "Oftalmologia; Pediatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -445,7 +472,8 @@
     "category": "Oftalmologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -461,7 +489,8 @@
     "category": "Oftalmologia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -477,7 +506,8 @@
     "category": "Ortopedia e Traumatologia; Pediatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -493,7 +523,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -509,7 +540,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -525,7 +557,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": true,
     "image_category": "Upper limb X-ray",
-    "image_path": "images/2025/ssm2025893.png"
+    "image_path": "images/2025/ssm2025893.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -541,7 +574,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -557,7 +591,8 @@
     "category": "Otorinolaringoiatria",
     "has_image": true,
     "image_category": "Audiometry report",
-    "image_path": "images/2025/ssm2025895.png"
+    "image_path": "images/2025/ssm2025895.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -573,7 +608,8 @@
     "category": "Otorinolaringoiatria",
     "has_image": true,
     "image_category": "Otoscopic image",
-    "image_path": "images/2025/ssm2025896.png"
+    "image_path": "images/2025/ssm2025896.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -589,7 +625,8 @@
     "category": "Otorinolaringoiatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -605,7 +642,8 @@
     "category": "Urologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -621,7 +659,8 @@
     "category": "Urologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -637,7 +676,8 @@
     "category": "Urologia; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -653,7 +693,8 @@
     "category": "Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -669,7 +710,8 @@
     "category": "Dermatologia e Venereologia",
     "has_image": true,
     "image_category": "Photograph of a skin lesion",
-    "image_path": "images/2025/ssm2025902.png"
+    "image_path": "images/2025/ssm2025902.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -685,7 +727,8 @@
     "category": "Dermatologia e Venereologia",
     "has_image": true,
     "image_category": "Photograph of a skin lesion",
-    "image_path": "images/2025/ssm2025903.png"
+    "image_path": "images/2025/ssm2025903.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -701,7 +744,8 @@
     "category": "Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -717,7 +761,8 @@
     "category": "Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -733,7 +778,8 @@
     "category": "Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -749,7 +795,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -765,7 +812,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -781,7 +829,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -797,7 +846,8 @@
     "category": "Malattie Infettive",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -813,7 +863,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -829,7 +880,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -845,7 +897,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": true,
     "image_category": "ECG tracing",
-    "image_path": "images/2025/ssm2025913.png"
+    "image_path": "images/2025/ssm2025913.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -861,7 +914,8 @@
     "category": "Cardiologia e Cardiochirurgia; Pediatria",
     "has_image": true,
     "image_category": "ECG tracing",
-    "image_path": "images/2025/ssm2025914.png"
+    "image_path": "images/2025/ssm2025914.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -877,7 +931,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -893,7 +948,8 @@
     "category": "Cardiologia e Cardiochirurgia; Nefrologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -909,7 +965,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -925,7 +982,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -941,7 +999,8 @@
     "category": "Genetica Medica; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -957,7 +1016,8 @@
     "category": "Anestesia e Rianimazione; Pneumologia e Chirurgia Toracica",
     "has_image": true,
     "image_category": "Chest X-ray",
-    "image_path": "images/2025/ssm2025920.png"
+    "image_path": "images/2025/ssm2025920.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -973,7 +1033,8 @@
     "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -989,7 +1050,8 @@
     "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1005,7 +1067,8 @@
     "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1021,7 +1084,8 @@
     "category": "Gastroenterologia",
     "has_image": true,
     "image_category": "Endoscopic image",
-    "image_path": "images/2025/ssm2025924.png"
+    "image_path": "images/2025/ssm2025924.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1037,7 +1101,8 @@
     "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1053,7 +1118,8 @@
     "category": "Neurologia e Neurochirurgia; Malattie Infettive",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1069,7 +1135,8 @@
     "category": "Pneumologia e Chirurgia Toracica; Malattie Infettive",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1085,7 +1152,8 @@
     "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1101,7 +1169,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1117,7 +1186,8 @@
     "category": "Cardiologia e Cardiochirurgia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1133,7 +1203,8 @@
     "category": "Pneumologia e Chirurgia Toracica; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
     "image_category": "Chest X-ray",
-    "image_path": "images/2025/ssm2025931.png"
+    "image_path": "images/2025/ssm2025931.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1149,7 +1220,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1165,7 +1237,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1181,7 +1254,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1197,7 +1271,8 @@
     "category": "Endocrinologia; Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1213,7 +1288,8 @@
     "category": "Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1229,7 +1305,8 @@
     "category": "Nefrologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1245,7 +1322,8 @@
     "category": "Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1261,7 +1339,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1277,7 +1356,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1293,7 +1373,8 @@
     "category": "Nefrologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1309,7 +1390,8 @@
     "category": "Nefrologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1325,7 +1407,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1341,7 +1424,8 @@
     "category": "Neurologia e Neurochirurgia; Genetica Medica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1357,7 +1441,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1373,7 +1458,8 @@
     "category": "Neurologia e Neurochirurgia; Pediatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1389,7 +1475,8 @@
     "category": "Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1405,7 +1492,8 @@
     "category": "Oncologia; Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1421,7 +1509,8 @@
     "category": "Oncologia; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1437,7 +1526,8 @@
     "category": "Dermatologia e Venereologia; Pediatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1453,7 +1543,8 @@
     "category": "Genetica Medica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1469,7 +1560,8 @@
     "category": "Pediatria; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1485,7 +1577,8 @@
     "category": "Pediatria; Chirurgia Generale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1501,7 +1594,8 @@
     "category": "Pediatria; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1517,7 +1611,8 @@
     "category": "Pediatria; Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1533,7 +1628,8 @@
     "category": "Pediatria; Malattie Infettive",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1549,7 +1645,8 @@
     "category": "Pediatria; Pneumologia e Chirurgia Toracica",
     "has_image": true,
     "image_category": "Chest X-ray",
-    "image_path": "images/2025/ssm2025957.png"
+    "image_path": "images/2025/ssm2025957.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1565,7 +1662,8 @@
     "category": "Psichiatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1581,7 +1679,8 @@
     "category": "Psichiatria; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1597,7 +1696,8 @@
     "category": "Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1613,7 +1713,8 @@
     "category": "Immunologia e Reumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1629,7 +1730,8 @@
     "category": "Endocrinologia; Cardiologia e Cardiochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1645,7 +1747,8 @@
     "category": "Ginecologia e Ostetricia; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1661,7 +1764,8 @@
     "category": "Gastroenterologia; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1677,7 +1781,8 @@
     "category": "Gastroenterologia; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1693,7 +1798,8 @@
     "category": "Urologia; Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1709,7 +1815,8 @@
     "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1725,7 +1832,8 @@
     "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1741,7 +1849,8 @@
     "category": "Anestesia e Rianimazione; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1757,7 +1866,8 @@
     "category": "Anestesia e Rianimazione; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1773,7 +1883,8 @@
     "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1789,7 +1900,8 @@
     "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1805,7 +1917,8 @@
     "category": "Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1821,7 +1934,8 @@
     "category": "Anestesia e Rianimazione",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1837,7 +1951,8 @@
     "category": "Malattie Infettive; Farmacologia e Tossicologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1853,7 +1968,8 @@
     "category": "Endocrinologia; Ginecologia e Ostetricia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1869,7 +1985,8 @@
     "category": "Endocrinologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1885,7 +2002,8 @@
     "category": "Genetica Medica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1901,7 +2019,8 @@
     "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1917,7 +2036,8 @@
     "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1933,7 +2053,8 @@
     "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1949,7 +2070,8 @@
     "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -1965,7 +2087,8 @@
     "category": "Medicina del Lavoro",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1981,7 +2104,8 @@
     "category": "Malattie Infettive; Medicina del Lavoro",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -1997,7 +2121,8 @@
     "category": "Neurologia e Neurochirurgia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2013,7 +2138,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2029,7 +2155,8 @@
     "category": "Medicina Legale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2045,7 +2172,8 @@
     "category": "Medicina Legale",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2025,
@@ -2061,7 +2189,8 @@
     "category": "Malattie Infettive; Pneumologia e Chirurgia Toracica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2077,7 +2206,8 @@
     "category": "Malattie Infettive; Pediatria",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2093,7 +2223,8 @@
     "category": "Gastroenterologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2109,7 +2240,8 @@
     "category": "Ematologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2125,7 +2257,8 @@
     "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2141,7 +2274,8 @@
     "category": "Gastroenterologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2157,7 +2291,8 @@
     "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2173,7 +2308,8 @@
     "category": "Ortopedia e Traumatologia",
     "has_image": true,
     "image_category": "Upper limb X-ray",
-    "image_path": "images/2025/ssm2025996.png"
+    "image_path": "images/2025/ssm2025996.png",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2189,7 +2325,8 @@
     "category": "Pneumologia e Chirurgia Toracica; Malattie Infettive",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2205,7 +2342,8 @@
     "category": "Oncologia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2221,7 +2359,8 @@
     "category": "Oncologia",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2025,
@@ -2237,6 +2376,7 @@
     "category": "Igiene, Epidemiologia e Statistica",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   }
 ]

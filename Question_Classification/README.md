@@ -311,6 +311,40 @@ The final adjudicated categories have been applied to all official dataset files
 
 ---
 
+## Question Type Annotation
+
+In addition to medical specialty classification, each question is annotated with a **question type** indicating whether it is:
+
+- **case-based**: presents a clinical scenario (patient demographics, symptoms, findings) requiring clinical reasoning to arrive at the answer
+- **knowledge-based**: asks for factual recall of a definition, mechanism, association, or classification without a patient scenario
+
+Classification was performed jointly by the two medical specialists (EM, ED) following predefined operational criteria:
+
+| Criterion | Case-Based | Knowledge-Based |
+|:----------|:-----------|:----------------|
+| Patient scenario | Present (explicit or referenced) | Absent |
+| Clinical reasoning required | Yes | No (direct recall) |
+| Correct answer derivable from | Integration of clinical data | Single factual association |
+
+### Distribution
+
+| Year | Case-Based | Knowledge-Based | % Case-Based |
+|:-----|:----------:|:---------------:|:------------:|
+| 2017 | 114 | 26 | 81.4% |
+| 2018 | 105 | 35 | 75.0% |
+| 2019 | 104 | 36 | 74.3% |
+| 2020 | 99 | 41 | 70.7% |
+| 2021 | 107 | 33 | 76.4% |
+| 2022 | 87 | 53 | 62.1% |
+| 2023 | 105 | 35 | 75.0% |
+| 2024 | 109 | 31 | 77.9% |
+| 2025 | 108 | 32 | 77.1% |
+| **Total** | **938** | **322** | **74.4%** |
+
+The annotation is stored in the `question_type` field of all dataset files (JSON + XLSX, IT + EN).
+
+---
+
 ## Folder Structure
 
 ```
@@ -323,6 +357,8 @@ Question_Classification/
 │   ├── compute_agreement.py              # Stage C: LLM inter-rater agreement analysis
 │   ├── compute_reviewer_agreement.py     # Stage E: Expert reviewer agreement analysis
 │   ├── apply_expert_review.py            # Stage F: Apply expert decisions to dataset
+│   ├── classify_question_type.py         # Question type annotation (case/knowledge)
+│   ├── apply_question_type.py            # Apply question_type to all dataset files
 │   └── pipeline.py                       # End-to-end pipeline with validation
 │
 ├── results/
@@ -342,12 +378,15 @@ Question_Classification/
 │   │   ├── discordances.xlsx              #   380 exact-match discordances
 │   │   └── discordances.json              #   Same in JSON format
 │   │
-│   └── expert_review/                     # Generated: Reviewer agreement analysis
-│       ├── expert_agreement_report.md     #   Full markdown report
-│       ├── reviewer_discordances.xlsx     #   126 remaining discordances
-│       ├── reviewer_discordances.json     #   Same in JSON format
-│       ├── reviewer_discordances_RESOLUTION.xlsx  # IMMUTABLE: Consensus decisions
-│       └── reviewer_confusion_matrix.xlsx #   Reviewer confusion matrix
+│   ├── expert_review/                     # Generated: Reviewer agreement analysis
+│   │   ├── expert_agreement_report.md     #   Full markdown report
+│   │   ├── reviewer_discordances.xlsx     #   126 remaining discordances
+│   │   ├── reviewer_discordances.json     #   Same in JSON format
+│   │   ├── reviewer_discordances_RESOLUTION.xlsx  # IMMUTABLE: Consensus decisions
+│   │   └── reviewer_confusion_matrix.xlsx #   Reviewer confusion matrix
+│   │
+│   └── question_type/                     # Question type classification output
+│       └── question_types.json            #   Maps question_code → type
 │
 └── expert_review/                         # IMMUTABLE: Completed reviewer files
     ├── discordances_to_review_REW1_EM_B_completed.xlsx   # Reviewer 1 decisions

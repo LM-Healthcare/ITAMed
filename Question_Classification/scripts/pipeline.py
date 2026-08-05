@@ -421,6 +421,15 @@ def validate(metadata, claude_raw, gpt_raw, rev1, rev2, resolution, final_it):
         fail(f"{len(empty)} questions have empty final category: {empty[:5]}")
     print(f"  ✓ No empty categories in final mapping")
 
+    # 12. question_type field present and valid for all questions
+    valid_types = {"case-based", "knowledge-based"}
+    missing_type = [item["question_code"] for item in metadata
+                    if item.get("question_type") not in valid_types]
+    if missing_type:
+        fail(f"{len(missing_type)} questions have invalid/missing question_type: "
+             f"{missing_type[:5]}")
+    print(f"  ✓ All questions have valid question_type annotation")
+
     print(f"\n  All validation checks passed.")
 
 

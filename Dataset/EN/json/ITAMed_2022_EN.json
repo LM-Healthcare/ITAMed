@@ -13,7 +13,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -29,7 +30,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -45,7 +47,8 @@
     "category": "Immunology and Rheumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -61,7 +64,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -77,7 +81,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -93,7 +98,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -109,7 +115,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -125,7 +132,8 @@
     "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -141,7 +149,8 @@
     "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -157,7 +166,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -173,7 +183,8 @@
     "category": "Pediatrics; Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -189,7 +200,8 @@
     "category": "Nephrology; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -205,7 +217,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": true,
     "image_category": "ECG tracing",
-    "image_path": "images/2022/ssm2022153.png"
+    "image_path": "images/2022/ssm2022153.png",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -221,7 +234,8 @@
     "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -237,7 +251,8 @@
     "category": "Internal Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -253,7 +268,8 @@
     "category": "Internal Medicine; Clinical Nutrition",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -269,7 +285,8 @@
     "category": "Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -285,7 +302,8 @@
     "category": "Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -301,7 +319,8 @@
     "category": "Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -317,7 +336,8 @@
     "category": "Immunology and Rheumatology; Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -333,7 +353,8 @@
     "category": "Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -349,7 +370,8 @@
     "category": "Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -365,7 +387,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -381,7 +404,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -397,7 +421,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -413,7 +438,8 @@
     "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -429,7 +455,8 @@
     "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -445,7 +472,8 @@
     "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -461,7 +489,8 @@
     "category": "Clinical Nutrition",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -477,7 +506,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -493,7 +523,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -509,7 +540,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -525,7 +557,8 @@
     "category": "Cardiology and Cardiac Surgery; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -541,7 +574,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -557,7 +591,8 @@
     "category": "Cardiology and Cardiac Surgery; Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -573,7 +608,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -589,7 +625,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -605,7 +642,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -621,7 +659,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -637,7 +676,8 @@
     "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -653,7 +693,8 @@
     "category": "Pulmonology and Thoracic Surgery; Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -669,7 +710,8 @@
     "category": "Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -685,7 +727,8 @@
     "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -701,7 +744,8 @@
     "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -717,7 +761,8 @@
     "category": "Cardiology and Cardiac Surgery; Nephrology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -733,7 +778,8 @@
     "category": "Infectious Diseases; Nephrology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -749,7 +795,8 @@
     "category": "Immunology and Rheumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -765,7 +812,8 @@
     "category": "Immunology and Rheumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -781,7 +829,8 @@
     "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -797,7 +846,8 @@
     "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -813,7 +863,8 @@
     "category": "Neurology and Neurosurgery; Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -829,7 +880,8 @@
     "category": "Neurology and Neurosurgery; Pediatrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -845,7 +897,8 @@
     "category": "Psychiatry; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -861,7 +914,8 @@
     "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -877,7 +931,8 @@
     "category": "General Surgery; Pediatrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -893,7 +948,8 @@
     "category": "Nephrology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -909,7 +965,8 @@
     "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -925,7 +982,8 @@
     "category": "Pediatrics; Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -941,7 +999,8 @@
     "category": "Pediatrics; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -957,7 +1016,8 @@
     "category": "Pediatrics; Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -973,7 +1033,8 @@
     "category": "Pediatrics; Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -989,7 +1050,8 @@
     "category": "Endocrinology; Pediatrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1005,7 +1067,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1021,7 +1084,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1037,7 +1101,8 @@
     "category": "Gastroenterology; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1053,7 +1118,8 @@
     "category": "General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1069,7 +1135,8 @@
     "category": "Gastroenterology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1085,7 +1152,8 @@
     "category": "Endocrinology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1101,7 +1169,8 @@
     "category": "General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1117,7 +1186,8 @@
     "category": "General Surgery; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1133,7 +1203,8 @@
     "category": "General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1149,7 +1220,8 @@
     "category": "General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1165,7 +1237,8 @@
     "category": "Pediatrics; General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1181,7 +1254,8 @@
     "category": "General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1197,7 +1271,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1213,7 +1288,8 @@
     "category": "Gynecology and Obstetrics; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1229,7 +1305,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1245,7 +1322,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1261,7 +1339,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1277,7 +1356,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1293,7 +1373,8 @@
     "category": "Gynecology and Obstetrics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1309,7 +1390,8 @@
     "category": "Gynecology and Obstetrics; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1325,7 +1407,8 @@
     "category": "Orthopedics and Traumatology; Oncology",
     "has_image": true,
     "image_category": "Upper limb X-ray",
-    "image_path": "images/2022/ssm2022223.png"
+    "image_path": "images/2022/ssm2022223.png",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1341,7 +1424,8 @@
     "category": "Orthopedics and Traumatology",
     "has_image": true,
     "image_category": "Upper limb X-ray",
-    "image_path": "images/2022/ssm2022224.png"
+    "image_path": "images/2022/ssm2022224.png",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1357,7 +1441,8 @@
     "category": "Orthopedics and Traumatology",
     "has_image": true,
     "image_category": "Knee arthroscopy image and knee MRI",
-    "image_path": "images/2022/ssm2022225.png"
+    "image_path": "images/2022/ssm2022225.png",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1373,7 +1458,8 @@
     "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1389,7 +1475,8 @@
     "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1405,7 +1492,8 @@
     "category": "Urology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1421,7 +1509,8 @@
     "category": "Urology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1437,7 +1526,8 @@
     "category": "Urology; Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1453,7 +1543,8 @@
     "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1469,7 +1560,8 @@
     "category": "Neurology and Neurosurgery; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1485,7 +1577,8 @@
     "category": "Ophthalmology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1501,7 +1594,8 @@
     "category": "Ophthalmology; Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1517,7 +1611,8 @@
     "category": "Ophthalmology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1533,7 +1628,8 @@
     "category": "Otorhinolaryngology; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1549,7 +1645,8 @@
     "category": "Otorhinolaryngology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1565,7 +1662,8 @@
     "category": "Otorhinolaryngology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1581,7 +1679,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1597,7 +1696,8 @@
     "category": "Orthopedics and Traumatology; Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1613,7 +1713,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1629,7 +1730,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1645,7 +1747,8 @@
     "category": "Gastroenterology; Medical Genetics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1661,7 +1764,8 @@
     "category": "Neurology and Neurosurgery; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1677,7 +1781,8 @@
     "category": "Oncology; Dermatology and Venereology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1693,7 +1798,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1709,7 +1815,8 @@
     "category": "Gynecology and Obstetrics; Infectious Diseases",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1725,7 +1832,8 @@
     "category": "Infectious Diseases",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1741,7 +1849,8 @@
     "category": "Hematology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1757,7 +1866,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1773,7 +1883,8 @@
     "category": "Diagnostic Imaging and Nuclear Medicine; General Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1789,7 +1900,8 @@
     "category": "Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1805,7 +1917,8 @@
     "category": "Pulmonology and Thoracic Surgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1821,7 +1934,8 @@
     "category": "Pulmonology and Thoracic Surgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1837,7 +1951,8 @@
     "category": "Urology; Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1853,7 +1968,8 @@
     "category": "Diagnostic Imaging and Nuclear Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1869,7 +1985,8 @@
     "category": "Neurology and Neurosurgery; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1885,7 +2002,8 @@
     "category": "Anesthesia and Intensive Care; Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1901,7 +2019,8 @@
     "category": "Anesthesia and Intensive Care; Pulmonology and Thoracic Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1917,7 +2036,8 @@
     "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1933,7 +2053,8 @@
     "category": "General Surgery; Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -1949,7 +2070,8 @@
     "category": "Cardiology and Cardiac Surgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1965,7 +2087,8 @@
     "category": "Nephrology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1981,7 +2104,8 @@
     "category": "Nephrology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -1997,7 +2121,8 @@
     "category": "Anesthesia and Intensive Care",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2013,7 +2138,8 @@
     "category": "Neurology and Neurosurgery",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2029,7 +2155,8 @@
     "category": "Orthopedics and Traumatology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -2045,7 +2172,8 @@
     "category": "Medical Genetics; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -2061,7 +2189,8 @@
     "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2077,7 +2206,8 @@
     "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2093,7 +2223,8 @@
     "category": "Pharmacology and Toxicology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2109,7 +2240,8 @@
     "category": "Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2125,7 +2257,8 @@
     "category": "Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2141,7 +2274,8 @@
     "category": "Infectious Diseases; Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2157,7 +2291,8 @@
     "category": "Infectious Diseases; Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2173,7 +2308,8 @@
     "category": "Occupational Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2189,7 +2325,8 @@
     "category": "Occupational Medicine; Oncology",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   },
   {
     "year": 2022,
@@ -2205,7 +2342,8 @@
     "category": "Forensic Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -2221,7 +2359,8 @@
     "category": "Forensic Medicine",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "case-based"
   },
   {
     "year": 2022,
@@ -2237,6 +2376,7 @@
     "category": "Hygiene, Epidemiology and Statistics",
     "has_image": false,
     "image_category": "",
-    "image_path": ""
+    "image_path": "",
+    "question_type": "knowledge-based"
   }
 ]

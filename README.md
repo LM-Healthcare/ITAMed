@@ -68,6 +68,9 @@ ITAMed/
 │   ├── translation_corrections.json      #   Structured log of expert corrections
 │   └── ITAMed_complete_EN_tracked.xlsx   #   Translation corrections (highlighted)
 │
+├── Dataset/scripts/                      # Dataset utility scripts
+│   └── shuffle_answers.py                #   Answer randomization for benchmarking
+│
 ├── Charts_EN/                            # Distribution visualizations
 │   ├── README.md                         #   Chart descriptions
 │   ├── scripts/                          #   Generation scripts
@@ -92,6 +95,7 @@ ITAMed/
 | Answer B–E | `Risposta B–E` | `Answer B–E` | str | Distractor options |
 | Correct Answer | `Risposta Corretta` | `Correct Answer` | str | Always `"A"` |
 | Category | `Categoria` | `Category` | str | Medical specialty (1–2, semicolon-separated) |
+| Question Type | `Tipo Domanda` | `Question Type` | str | `case-based` or `knowledge-based` |
 | Image | `Immagine` | `Image` | str | `Si`/`No` (IT) or `Yes`/`No` (EN) |
 | Image Category | `Categoria Immagine` | `Image Category` | str | Diagnostic image type |
 | Image Path | `Percorso Immagine` | `Image Path` | str | Relative path to image file |
@@ -113,6 +117,7 @@ Each JSON file contains an array of question objects:
   "answer_e": "Vasculitis",
   "correct_answer": "A",
   "category": "Immunology and Rheumatology",
+  "question_type": "case-based",
   "has_image": false,
   "image_category": "",
   "image_path": ""
@@ -125,13 +130,22 @@ Each JSON file contains an array of question objects:
 | `question_number` | int | Position within year (1–140) |
 | `question_code` | str | Official unique identifier |
 | `question` | str | Clinical vignette + question stem |
-| `answer_a` | str | **Always the correct answer** |
+| `answer_a` | str | **Always the correct answer** (see note below) |
 | `answer_b`–`answer_e` | str | Distractor options |
-| `correct_answer` | str | Always `"A"` |
+| `correct_answer` | str | Always `"A"` (see note below) |
 | `category` | str | Medical specialty (1–2, semicolon-separated) |
+| `question_type` | str | `"case-based"` or `"knowledge-based"` |
 | `has_image` | bool | Whether the question includes a figure |
 | `image_category` | str | Diagnostic image type (empty if no image) |
 | `image_path` | str | Relative path to image file (empty if no image) |
+
+> **Note on answer ordering:** In the official PDF release, the correct answer is always in position A. The dataset preserves this format for fidelity. For evaluation and benchmarking purposes, a shuffled version with randomized answer positions is available:
+>
+> ```bash
+> python Dataset/scripts/shuffle_answers.py --seed 42
+> ```
+>
+> This generates `ITAMed_complete_shuffled.json` (and `_EN` variant) with the `correct_answer` field updated to the new position and a `shuffle_mapping` field recording the permutation.
 
 ---
 
