@@ -322,24 +322,26 @@ Classification was performed jointly by the two medical specialists (EM, ED) fol
 
 | Criterion | Case-Based | Knowledge-Based |
 |:----------|:-----------|:----------------|
-| Patient scenario | Present (explicit or referenced) | Absent |
+| Patient scenario | Present and clinically relevant | Absent or purely decorative |
 | Clinical reasoning required | Yes | No (direct recall) |
 | Correct answer derivable from | Integration of clinical data | Single factual association |
+
+A question with a patient scenario is classified as **knowledge-based** if the scenario is *decorative*—i.e., the correct answer can be determined from factual knowledge alone without integrating the patient's demographic, symptomatic, or clinical information (e.g., asking which pathogen is associated with a disease within an unrelated clinical vignette).
 
 ### Distribution
 
 | Year | Case-Based | Knowledge-Based | % Case-Based |
 |:-----|:----------:|:---------------:|:------------:|
-| 2017 | 114 | 26 | 81.4% |
+| 2017 | 111 | 29 | 79.3% |
 | 2018 | 105 | 35 | 75.0% |
-| 2019 | 104 | 36 | 74.3% |
-| 2020 | 99 | 41 | 70.7% |
+| 2019 | 102 | 38 | 72.9% |
+| 2020 | 96 | 44 | 68.6% |
 | 2021 | 107 | 33 | 76.4% |
 | 2022 | 87 | 53 | 62.1% |
-| 2023 | 105 | 35 | 75.0% |
+| 2023 | 104 | 36 | 74.3% |
 | 2024 | 109 | 31 | 77.9% |
-| 2025 | 108 | 32 | 77.1% |
-| **Total** | **938** | **322** | **74.4%** |
+| 2025 | 107 | 33 | 76.4% |
+| **Total** | **928** | **332** | **73.7%** |
 
 The annotation is stored in the `question_type` field of all dataset files (JSON + XLSX, IT + EN).
 

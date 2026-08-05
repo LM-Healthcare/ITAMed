@@ -97,12 +97,8 @@ def shuffle_question(item: dict, rng: random.Random) -> dict:
     shuffled["correct_answer"] = POSITIONS[new_correct_pos]
 
     # Record the mapping: original position -> new position
-    mapping = {}
-    for orig_idx, new_pos_for_this in enumerate(indices):
-        # indices[new_pos] = orig_idx means: at new_pos, we placed orig_idx
-        pass
-    # More intuitive: for each new position, which original was placed there
-    mapping = {POSITIONS[new_pos]: POSITIONS[orig_idx]
+    # indices[new_pos] = orig_idx, so we invert to get orig -> new
+    mapping = {POSITIONS[orig_idx]: POSITIONS[new_pos]
                for new_pos, orig_idx in enumerate(indices)}
     shuffled["shuffle_mapping"] = mapping
 

@@ -143,6 +143,30 @@ def classify_question(question_text: str) -> str:
         text, re.IGNORECASE
     ))
 
+    # Decorative-scenario check: the question presents a patient scenario but
+    # the actual query is purely factual and does not require integrating any
+    # of the patient's clinical data. In such cases, the scenario is cosmetic
+    # and the question is classified as knowledge-based.
+    has_decorative_query = bool(re.search(
+        r"(?:"
+        # "Which infection / virus / pathogen is associated with..."
+        r"(?:quale|qual)\s+(?:è\s+(?:il|la|l'|lo)\s+)?(?:infezione|virus|batterio|patogeno|agente|microrganismo)"
+        r"|"
+        # "Which system / scale / classification / method..."
+        r"(?:quale|qual|come)\s+(?:è\s+)?(?:il|la|l'|lo\s+)?(?:sistema|scala|classificazione|score|metodo|protocollo|indice)"
+        r"(?:\s+(?:che|di|per|usato|utilizzat|viene|standardizz))?"
+        r"|"
+        # "Which name is associated with this..."
+        r"(?:quale|qual)\s+(?:è\s+(?:il|la|l'|lo)\s+)?(?:nome|termine|definizione|eponimo)"
+        r"|"
+        # "Come viene standardizzat[ao]"
+        r"come\s+viene\s+(?:standardizzat|classificat|definit|denominat)"
+        r")",
+        text, re.IGNORECASE
+    ))
+    if has_decorative_query and has_patient:
+        return "knowledge-based"
+
     # Strong heuristic: patient + (age OR clinical verb OR symptoms) -> case-based
     if has_patient and (has_age or has_clinical_verb or has_symptoms):
         return "case-based"

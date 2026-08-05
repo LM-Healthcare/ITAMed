@@ -103,9 +103,13 @@ def apply_to_json(json_dir, suffix, types):
 
 
 def apply_to_xlsx(xlsx_dir, suffix, types):
-    """Add question_type column (L) to XLSX files."""
+    """Update Tipo Domanda / Question Type column (col 12) in XLSX files."""
     updated = 0
-    TYPE_COL = 12  # Column L (0-indexed = 11, 1-indexed = 12)
+    TYPE_COL = 12  # Column L (1-indexed = 12)
+
+    # Determine correct header based on language suffix
+    is_en = "_EN" in suffix
+    expected_header = "Question Type" if is_en else "Tipo Domanda"
 
     for name in [f"ITAMed_{y}{suffix}.xlsx" for y in YEARS] + [f"ITAMed_complete{suffix}.xlsx"]:
         path = os.path.join(xlsx_dir, name)
@@ -116,10 +120,10 @@ def apply_to_xlsx(xlsx_dir, suffix, types):
         ws = wb.active
         changed = False
 
-        # Add header if not present
+        # Ensure correct header name
         header_cell = ws.cell(row=1, column=TYPE_COL)
-        if header_cell.value != "question_type":
-            header_cell.value = "question_type"
+        if header_cell.value != expected_header:
+            header_cell.value = expected_header
             changed = True
 
         for row in ws.iter_rows(min_row=2, max_row=ws.max_row):

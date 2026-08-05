@@ -65,7 +65,7 @@
     "has_image": false,
     "image_category": "",
     "image_path": "",
-    "question_type": "case-based"
+    "question_type": "knowledge-based"
   },
   {
     "year": 2017,
@@ -82,7 +82,7 @@
     "has_image": false,
     "image_category": "",
     "image_path": "",
-    "question_type": "case-based"
+    "question_type": "knowledge-based"
   },
   {
     "year": 2017,
@@ -745,7 +745,7 @@
     "has_image": false,
     "image_category": "",
     "image_path": "",
-    "question_type": "case-based"
+    "question_type": "knowledge-based"
   },
   {
     "year": 2017,
