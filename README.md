@@ -18,8 +18,9 @@
 
 Every question is enriched with:
 - **Medical specialty classification** across a standardized taxonomy of 28 categories
+- **Question-type annotation** — 928 case-based and 332 knowledge-based questions, jointly classified by two medical specialists
 - **Image metadata** — presence flag, image type (21 categories), and file path to the extracted image
-- **Bilingual text** — original Italian + English translation initially drafted by Claude (claude-opus-4-8) and fully reviewed against the Italian source by a senior bilingual physician.
+- **Bilingual text** — original Italian + English translation initially drafted by Claude (claude-opus-4-8) and fully reviewed against the Italian source by a senior bilingual physician
 
 ### Quick Start
 
@@ -44,11 +45,11 @@ ITAMed/
 │   ├── IT/
 │   │   ├── xlsx/                         #   Italian XLSX (per-year + complete)
 │   │   ├── json/                         #   Italian JSON (per-year + complete)
-│   │   └── ITAMed_Distribution_IT.xlsx   #   Category & image distribution (IT)
+│   │   └── ITAMed_Distribution_IT.xlsx   #   Specialty, question-type & image distribution
 │   ├── EN/
 │   │   ├── xlsx/                         #   English XLSX (per-year + complete)
 │   │   ├── json/                         #   English JSON (per-year + complete)
-│   │   └── ITAMed_Distribution_EN.xlsx   #   Category & image distribution (EN)
+│   │   └── ITAMed_Distribution_EN.xlsx   #   Specialty, question-type & image distribution
 │   └── images/                           #   Extracted question images by year
 │
 ├── Data_Extraction/                      # PDF sources & extraction scripts
@@ -227,6 +228,8 @@ Each JSON file contains an array of question objects:
 | Total questions | 1,260 |
 | Years covered | 2017–2025 (9 years) |
 | Questions per year | 140 |
+| Case-based questions | 928 (73.7%) |
+| Knowledge-based questions | 332 (26.3%) |
 | Questions with images | 76 (6.0%) |
 | Medical specialty categories | 28 |
 | Image categories | 21 |
@@ -285,6 +288,13 @@ python Dataset_Translation/scripts/translate_questions.py
 
 # 6. Apply expert translation review
 python Dataset_Translation/scripts/apply_translation_review.py
+
+# 7. Classify question types (case-based vs knowledge-based)
+python Question_Classification/scripts/classify_question_type.py
+python Question_Classification/scripts/apply_question_type.py
+
+# 8. Generate shuffled evaluation copies (optional)
+python Dataset/scripts/shuffle_answers.py --seed 42
 ```
 
 ### Requirements
