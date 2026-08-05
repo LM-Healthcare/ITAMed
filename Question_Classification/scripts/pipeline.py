@@ -116,6 +116,30 @@ VALID_CATEGORIES = {
     "Urologia",
 }
 
+VALID_IMAGE_CATEGORIES = {
+    "Audiometry report",
+    "Brain CT scan",
+    "Brain MRI",
+    "Chest CT scan",
+    "Chest X-ray",
+    "Clinical study table",
+    "ECG tracing",
+    "Endoscopic image",
+    "Forensic photograph",
+    "Fundus examination",
+    "Histological image",
+    "Knee arthroscopy image and knee MRI",
+    "Lower limb X-ray",
+    "Otoscopic image",
+    "Pelvic X-ray",
+    "Peripheral blood smear",
+    "Photograph of a skin lesion",
+    "Radiological image",
+    "Spine MRI",
+    "Spirometry report",
+    "Upper limb X-ray",
+}
+
 CAT_IT_TO_EN = {
     "Anestesia e Rianimazione": "Anesthesia and Intensive Care",
     "Cardiologia e Cardiochirurgia": "Cardiology and Cardiac Surgery",
@@ -394,19 +418,27 @@ def validate(metadata, claude_raw, gpt_raw, rev1, rev2, resolution, final_it):
                      f"expected '{expected_en}', got '{actual_en}'")
     print(f"  ✓ IT↔EN category mapping consistent across all files")
 
-    # 9. Referenced image files exist
+    # 9. Referenced image files exist and image_category is valid
     dataset_dir = os.path.join(REPO, "Dataset")
     missing_images = []
+    invalid_img_cats = []
     for item in metadata:
         if item.get("has_image") and item.get("image_path"):
             img_path = os.path.join(dataset_dir, item["image_path"])
             if not os.path.exists(img_path):
                 missing_images.append(item["question_code"])
+        img_cat = item.get("image_category", "")
+        if img_cat and img_cat not in VALID_IMAGE_CATEGORIES:
+            invalid_img_cats.append((item["question_code"], img_cat))
     if missing_images:
         fail(f"Missing image files for {len(missing_images)} questions: "
              f"{missing_images[:5]}")
+    if invalid_img_cats:
+        fail(f"Invalid image categories ({len(invalid_img_cats)}): "
+             f"{invalid_img_cats[:5]}")
     n_images = sum(1 for item in metadata if item.get("has_image"))
     print(f"  ✓ All {n_images} referenced image files exist")
+    print(f"  ✓ All image categories belong to 21-category vocabulary")
 
     # 10. Per-year counts
     for year in YEARS:

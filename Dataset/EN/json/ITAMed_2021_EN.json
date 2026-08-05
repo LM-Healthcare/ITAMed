@@ -1967,7 +1967,7 @@
     "correct_answer": "A",
     "category": "Neurology and Neurosurgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": true,
-    "image_category": "Brain CT Scan",
+    "image_category": "Brain CT scan",
     "image_path": "images/2021/ssm202110234604.png",
     "question_type": "case-based"
   },

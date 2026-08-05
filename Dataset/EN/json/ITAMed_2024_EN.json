@@ -2341,7 +2341,7 @@
     "correct_answer": "A",
     "category": "Neurology and Neurosurgery; Diagnostic Imaging and Nuclear Medicine",
     "has_image": true,
-    "image_category": "Brain TC scan",
+    "image_category": "Brain CT scan",
     "image_path": "images/2024/ssm2023718.png",
     "question_type": "case-based"
   },

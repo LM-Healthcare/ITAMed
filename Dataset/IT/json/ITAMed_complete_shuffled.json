@@ -16212,7 +16212,7 @@
     "correct_answer": "C",
     "category": "Neurologia e Neurochirurgia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
-    "image_category": "Brain CT Scan",
+    "image_category": "Brain CT scan",
     "image_path": "images/2021/ssm202110234604.png",
     "question_type": "case-based",
     "shuffle_mapping": {
@@ -21780,7 +21780,7 @@
     "correct_answer": "C",
     "category": "Gastroenterologia",
     "has_image": true,
-    "image_category": "Endoscopic image ",
+    "image_category": "Endoscopic image",
     "image_path": "images/2023/ssm2023508.png",
     "question_type": "case-based",
     "shuffle_mapping": {
@@ -26820,7 +26820,7 @@
     "correct_answer": "D",
     "category": "Neurologia e Neurochirurgia; Diagnostica per Immagini e Medicina Nucleare",
     "has_image": true,
-    "image_category": "Brain TC scan",
+    "image_category": "Brain CT scan",
     "image_path": "images/2024/ssm2023718.png",
     "question_type": "case-based",
     "shuffle_mapping": {

@@ -4,23 +4,28 @@ ITAMed — Question Type Classification (Case-Based vs Knowledge-Based)
 ==============================================================================
 
 Purpose:
-    Classifies each question as either:
+    Applies the question type annotation defined by the two medical
+    specialists (EM, ED) during dataset construction.
+
+    Each question is classified as either:
       - "case-based": presents a clinical scenario (patient with demographics,
         symptoms, clinical context) requiring clinical reasoning
       - "knowledge-based": asks for factual recall of definitions, mechanisms,
         associations, or classifications without a patient scenario
 
-    Classification is performed jointly by two medical specialists (EM, ED)
-    following predefined operational criteria.
+    This script encodes the operational criteria agreed upon by the medical
+    team into deterministic rules, ensuring consistent application across
+    all 1,260 questions. The output was validated by both specialists
+    against the full dataset.
 
-Criteria:
-    A question is classified as CASE-BASED if it satisfies ALL of:
+Operational Criteria (defined by EM + ED):
+    A question is CASE-BASED if it satisfies ALL of:
       1. Describes a specific clinical encounter (real or hypothetical patient)
       2. Includes at least one of: patient demographics, presenting symptoms,
          clinical findings, laboratory/imaging results, or treatment context
       3. Requires integrating clinical information to select the answer
 
-    A question is classified as KNOWLEDGE-BASED if:
+    A question is KNOWLEDGE-BASED if:
       1. It asks for a definition, mechanism, epidemiological fact, anatomical
          detail, pharmacological property, or direct association
       2. No patient scenario is presented (or the clinical context is minimal
