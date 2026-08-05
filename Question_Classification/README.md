@@ -248,13 +248,32 @@ Year 2023 shows a slightly higher discordance rate, likely due to its atypical P
 
 All **380 questions with any classification disagreement** (primary and/or secondary category) were reviewed by **two independent medical specialists** (Reviewer 1 and Reviewer 2). Each reviewer worked **separately and independently**, without access to the other's decisions.
 
-For each discordant question, each reviewer received:
+### Reviewer Protocol
 
-- The full question text and all five answer options
-- The category assigned by Claude Opus 4.8
-- The category assigned by GPT-5.5
+Each reviewer received an XLSX file (`discordances_to_review_REW{1,2}_*_completed.xlsx`) containing one row per discordant question with the following fields visible:
 
-Each reviewer independently selected the correct classification (or proposed a third option if neither LLM assignment was adequate).
+| Column | Content |
+|:-------|:--------|
+| Anno | Exam year |
+| N. Domanda | Question number within the year |
+| Codice | Unique question code |
+| Domanda | Full question text (stem) |
+| Risposta Corretta | Correct answer text only (not all five options) |
+| Categoria Claude | Category string assigned by Claude Opus 4.8 |
+| Categoria GPT | Category string assigned by GPT-5.5 |
+| CATEGORIA FINALE 1 | Reviewer's primary category (to fill) |
+| CATEGORIA FINALE 2 | Reviewer's secondary category, if applicable (to fill) |
+
+Procedural details:
+
+- **Answer options**: Only the correct answer was shown, not all five options. This design choice focuses the reviewer on the clinical content relevant to classification rather than on distractor analysis.
+- **Model identity**: The model names (Claude, GPT) were visible in column headers. The presentation order was fixed (Claude first, GPT second) for both reviewers.
+- **Year visibility**: The exam year was shown (column A).
+- **Images**: Images were not embedded in the review file. For the 76 image-based questions, reviewers classified based on the textual stem and correct answer. None of the image-based questions required the image to determine the medical specialty.
+- **Independence**: Each reviewer received their own copy of the file and submitted decisions before any cross-comparison. The two completed files were compared programmatically only after both were finalized.
+- **Decision recording**: Reviewers entered their category choice directly in columns H–I of the spreadsheet. No communication between reviewers occurred before submission.
+
+Each reviewer independently selected the correct classification from the 28-category taxonomy (or proposed a different assignment if neither LLM category was adequate).
 
 ### Inter-Reviewer Agreement
 
