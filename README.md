@@ -362,21 +362,22 @@ Manuscript submitted for publication to Scientific Data.
 ### BibTeX
 
 ```bibtex
-@dataset{bianchini2026itamed,
-  author    = {Bianchini, Filippo and
-               Bianchini, Edoardo and
-               Bianchini, Emiliano and
-               Marano, Massimo and
-               Mecella, Massimo and
-               Vuillerme, Nicolas},
-  title     = {{A bilingual Italian--English dataset of
-                case-based and knowledge-based questions
-                from medical specialization examinations}},
-  year      = {2026},
-  publisher = {Zenodo},
-  version   = {v3},
-  doi       = {10.5281/zenodo.21824685},
-  url       = {https://doi.org/10.5281/zenodo.21824685}
+@dataset{bianchini_2026_21824685,
+  author       = {Bianchini, Filippo and
+                  Bianchini, Edoardo and
+                  Bianchini, Emiliano and
+                  Marano, Massimo and
+                  Mecella, Massimo and
+                  VUILLERME, Nicolas},
+  title        = {A bilingual Italian–English dataset of case-based
+                   and knowledge-based questions from medical
+                   specialization examinations
+                  },
+  month        = aug,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.21824685},
+  url          = {https://doi.org/10.5281/zenodo.21824685},
 }
 ```
 
