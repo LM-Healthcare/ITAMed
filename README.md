@@ -344,7 +344,7 @@ If you use this dataset or code in your research, please cite the Zenodo record.
 
 ### Dataset (Zenodo)
 ```text
-Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21824685.svg)](https://doi.org/10.5281/zenodo.21824685)
+Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo.
 ```
 
 ### Paper (Under Review)
