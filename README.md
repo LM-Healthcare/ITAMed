@@ -346,9 +346,7 @@ If you use ITAMed or the associated code in your research, please cite the Zenod
 ### Dataset (Zenodo)
 
 ```text
-Bianchini, F., Bianchini, E., Bianchini, E., Marano, M., Mecella, M., & Vuillerme, N. (2026).
-A bilingual Italian–English dataset of case-based and knowledge-based questions from medical specialization examinations (Version v3) [Data set].
-Zenodo. https://doi.org/10.5281/zenodo.21824685
+Bianchini, F., Bianchini, E., Bianchini, E., Marano, M., Mecella, M., & VUILLERME, N. (2026). A bilingual Italian–English dataset of case-based and knowledge-based questions from medical specialization examinations [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.21824685
 ```
 
 ### Paper (Under Review)
