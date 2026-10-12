@@ -336,6 +336,32 @@ If you use this dataset, please cite:
 
 --- -->
 
+## Citation
+
+If you use this dataset or code in your research, please cite it as follows:
+
+[![DOI](https://zenodo.org)](https://doi.org)
+
+```text
+Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo. https://doi.org
+```
+
+### BibTeX
+
+```bibtex
+@dataset{bianchini_2024_itamed,
+  author       = {Bianchini, Filippo},
+  title        = {{ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking}},
+  month        = may,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.11403061},
+  url          = {https://doi.org}
+}
+```
+
+
 ## License
 
 This dataset is released under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
