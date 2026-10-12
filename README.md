@@ -356,7 +356,7 @@ Zenodo. https://doi.org/10.5281/zenodo.21824685
 The accompanying manuscript is currently under review at *Scientific Data*.
 
 ```text
-Bianchini, F. (2026).
+Bianchini, F., Bianchini, E., Bianchini, E., Marano, M., Mecella, M., & Vuillerme, N. (2026).
 A bilingual Italian and English dataset of clinical case questions from medical specialization exams.
 Manuscript submitted for publication to Scientific Data.
 ```
