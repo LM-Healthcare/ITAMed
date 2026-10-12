@@ -336,36 +336,52 @@ If you use this dataset, please cite:
 
 --- -->
 
+
 ## Citation
 
-If you use this dataset or code in your research, please cite the Zenodo record. You can also reference the upcoming paper currently under review:
+If you use ITAMed or the associated code in your research, please cite the Zenodo dataset record. We also encourage you to cite the accompanying manuscript once published in *Scientific Data*.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21824685.svg)](https://doi.org/10.5281/zenodo.21824685)
 
 ### Dataset (Zenodo)
+
 ```text
-Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo.
+Bianchini, F., Bianchini, E., Bianchini, E., Marano, M., Mecella, M., & Vuillerme, N. (2026).
+A bilingual Italian–English dataset of case-based and knowledge-based questions from medical specialization examinations (Version v3) [Data set].
+Zenodo. https://doi.org/10.5281/zenodo.21824685
 ```
 
 ### Paper (Under Review)
+
+The accompanying manuscript is currently under review at *Scientific Data*.
+
 ```text
-Bianchini, F. (2026). A bilingual Italian and English dataset of clinical case questions from medical specialization exams. Scientific Data (Under Review).
+Bianchini, F. (2026).
+A bilingual Italian and English dataset of clinical case questions from medical specialization exams.
+Manuscript submitted for publication to Scientific Data.
 ```
 
 ### BibTeX
+
 ```bibtex
-@dataset{bianchini_2024_itamed,
-  author       = {Bianchini, Filippo},
-  title        = {{ITAMed: A bilingual dataset for Italian Medical 
-                   Specialization Exams (SSM) benchmarking}},
-  month        = may,
-  year         = 2024,
-  publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.21824685},
-  url          = {https://doi.org}
+@dataset{bianchini2026itamed,
+  author    = {Bianchini, Filippo and
+               Bianchini, Edoardo and
+               Bianchini, Emiliano and
+               Marano, Massimo and
+               Mecella, Massimo and
+               Vuillerme, Nicolas},
+  title     = {{A bilingual Italian--English dataset of
+                case-based and knowledge-based questions
+                from medical specialization examinations}},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v3},
+  doi       = {10.5281/zenodo.21824685},
+  url       = {https://doi.org/10.5281/zenodo.21824685}
 }
 ```
+
 
 
 
