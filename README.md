@@ -338,28 +338,36 @@ If you use this dataset, please cite:
 
 ## Citation
 
-If you use this dataset or code in your research, please cite it as follows:
+If you use this dataset or code in your research, please cite the Zenodo record. You can also reference the upcoming paper currently under review:
 
-[![DOI](https://zenodo.org)](https://doi.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21824685.svg)](https://doi.org/10.5281/zenodo.21824685)
 
+### Dataset (Zenodo)
 ```text
-Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo. https://doi.org
+Bianchini, F. (2024). ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking (Version v1.0.0) [Data set]. Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21824685.svg)](https://doi.org/10.5281/zenodo.21824685)
+```
+
+### Paper (Under Review)
+```text
+Bianchini, F. (2026). A bilingual Italian and English dataset of clinical case questions from medical specialization exams. Scientific Data (Under Review).
 ```
 
 ### BibTeX
-
 ```bibtex
 @dataset{bianchini_2024_itamed,
   author       = {Bianchini, Filippo},
-  title        = {{ITAMed: A bilingual dataset for Italian Medical Specialization Exams (SSM) benchmarking}},
+  title        = {{ITAMed: A bilingual dataset for Italian Medical 
+                   Specialization Exams (SSM) benchmarking}},
   month        = may,
   year         = 2024,
   publisher    = {Zenodo},
   version      = {v1.0.0},
-  doi          = {10.5281/zenodo.11403061},
+  doi          = {10.5281/zenodo.21824685},
   url          = {https://doi.org}
 }
 ```
+
+
 
 
 ## License
